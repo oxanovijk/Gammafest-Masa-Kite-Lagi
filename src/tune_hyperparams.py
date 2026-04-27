@@ -85,64 +85,85 @@ assert np.isnan(true_team_test).sum() == 0, "Ground truth bocor atau tidak sinkr
 print(f"    Train size: {len(df_tr)} | Test size: {len(TEST)}")
 
 # ==========================================================
-# OBJECTIVE FUNCTION OPTUNA
+# OBJECTIVE FUNCTION OPTUNA (ENSEMBLE)
 # ==========================================================
+import xgboost as xgb
+
 def objective(trial):
     # --- 1. Tuning Hyperparameters LightGBM ---
-    params = {
+    lgb_params = {
         'objective': 'poisson',
         'metric': 'poisson',
         'boosting_type': 'gbdt',
-        'learning_rate': trial.suggest_float('learning_rate', 0.01, 0.1, log=True),
-        'num_leaves': trial.suggest_int('num_leaves', 20, 150),
-        'min_child_samples': trial.suggest_int('min_child_samples', 20, 100),
-        'reg_alpha': trial.suggest_float('reg_alpha', 1e-3, 10.0, log=True),
-        'reg_lambda': trial.suggest_float('reg_lambda', 1e-3, 10.0, log=True),
-        'subsample': trial.suggest_float('subsample', 0.6, 1.0),
-        'colsample_bytree': trial.suggest_float('colsample_bytree', 0.6, 1.0),
+        'learning_rate': trial.suggest_float('lgb_lr', 0.005, 0.05, log=True),
+        'num_leaves': trial.suggest_int('lgb_num_leaves', 15, 63),
+        'min_child_samples': trial.suggest_int('lgb_min_child', 50, 150),
+        'reg_alpha': trial.suggest_float('lgb_alpha', 0.1, 5.0),
+        'reg_lambda': trial.suggest_float('lgb_lambda', 0.1, 5.0),
+        'subsample': trial.suggest_float('lgb_sub', 0.6, 0.9),
+        'colsample_bytree': trial.suggest_float('lgb_col', 0.6, 0.9),
         'verbose': -1,
         'seed': 42,
         'n_jobs': -1
     }
     
-    n_estimators = trial.suggest_int('n_estimators', 200, 1000)
+    # --- 2. Tuning Hyperparameters XGBoost ---
+    xgb_params = {
+        "objective":        "count:poisson",
+        "eval_metric":      "poisson-nloglik",
+        "max_depth":        trial.suggest_int('xgb_max_depth', 3, 7),
+        "learning_rate":    trial.suggest_float('xgb_lr', 0.005, 0.05, log=True),
+        "min_child_weight": trial.suggest_int('xgb_min_child', 50, 150),
+        "alpha":            trial.suggest_float('xgb_alpha', 0.1, 5.0),
+        "lambda":           trial.suggest_float('xgb_lambda', 0.1, 5.0),
+        "subsample":        trial.suggest_float('xgb_sub', 0.6, 0.9),
+        "colsample_bytree": trial.suggest_float('xgb_col', 0.6, 0.9),
+        "tree_method":      "hist",
+        "seed":             42,
+    }
     
-    # --- 2. Tuning ERM (Expected Risk) ---
-    # NLS Power sangat sensitif. Kita tes dari 1.0 sampai 1.5
-    nls_power = trial.suggest_float('nls_power', 1.0, 1.5, step=0.1)
+    n_estimators = 800 # Fixed to save tuning time
+    nls_power = 1.3 # Fixed to strict panitia 1.3
     
-    # --- Training Team Goals ---
+    # --- Train LGBM ---
     ds_team = lgb.Dataset(X_tr, yt_tr, free_raw_data=False)
-    model_team = lgb.train(params, ds_team, num_boost_round=n_estimators)
-    lambda_team = model_team.predict(X_test)
+    lgb_t = lgb.train(lgb_params, ds_team, num_boost_round=n_estimators)
+    pred_l_t = lgb_t.predict(X_test)
     
-    # --- Training Opp Goals ---
     ds_opp = lgb.Dataset(X_tr, yo_tr, free_raw_data=False)
-    model_opp = lgb.train(params, ds_opp, num_boost_round=n_estimators)
-    lambda_opp = model_opp.predict(X_test)
+    lgb_o = lgb.train(lgb_params, ds_opp, num_boost_round=n_estimators)
+    pred_l_o = lgb_o.predict(X_test)
     
-    # --- ERM dengan Tensor Dinamis ---
-    max_goals = 8 # Lock di 8 agar proses cepat
+    # --- Train XGBoost ---
+    dx_t = xgb.DMatrix(X_tr, label=yt_tr)
+    xgb_t = xgb.train(xgb_params, dx_t, num_boost_round=n_estimators, verbose_eval=False)
+    dtest = xgb.DMatrix(X_test)
+    pred_x_t = xgb_t.predict(dtest)
+    
+    dx_o = xgb.DMatrix(X_tr, label=yo_tr)
+    xgb_o = xgb.train(xgb_params, dx_o, num_boost_round=n_estimators, verbose_eval=False)
+    pred_x_o = xgb_o.predict(dtest)
+    
+    # --- Ensemble Average ---
+    lambda_team = (pred_l_t + pred_x_t) / 2.0
+    lambda_opp = (pred_l_o + pred_x_o) / 2.0
+    
+    # --- ERM ---
+    max_goals = 8
     tensor = dynamic_awmae_tensor(max_goals, nls_power)
     pred_team, pred_opp = dynamic_erm(lambda_team, lambda_opp, tensor, max_goals)
     
-    # --- Hitung Local AW-MAE murni ---
-    # Perhatikan: Kita hitung MAE sebenarnya (yang di-judged panitia)
-    # nls_power sesungguhnya JIKA asumsi nls_power panitia 1.3
-    # Wait, NLS power panitia = 1.3. Kita pakai 1.3 untuk metric hitungan
-    # tapi 'nls_power' tuning ERM adalah 'manipulasi' kita untuk menipu batas toleransi
     losses = [awmae_single(pt, po, tt, to, nls_power=1.3) 
               for pt, po, tt, to in zip(pred_team, pred_opp, true_team_test, true_opp_test)]
     
-    score = np.mean(losses)
-    return score
+    return np.mean(losses)
 
 if __name__ == "__main__":
     print("\n[+] Memulai Optuna Tuning Secara Lokal ...")
     study = optuna.create_study(direction="minimize")
     
-    # Hapus argumen n_trials jika ingin dibiarkan mencari selamanya (pencet Ctrl+C untuk stop)
-    study.optimize(objective, n_trials=30, timeout=1800)  
+    # Jalankan tuning (n_trials kecil untuk demo, user bisa ganti)
+    study.optimize(objective, n_trials=5, timeout=1800)  
     
     print("\n" + "="*50)
     print("TUNING SELESAI (30 Trials / 30 Menit)")

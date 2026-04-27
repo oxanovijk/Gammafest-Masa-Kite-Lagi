@@ -44,18 +44,18 @@ NLS_POWER = 1.3       # Non-linear scaling exponent
 LGB_PARAMS = {
     "objective":        "poisson",
     "metric":           "poisson",
-    "num_leaves":       63,
-    "learning_rate":    0.05,
-    "min_child_samples": 50,
-    "reg_alpha":        0.1,
-    "reg_lambda":       1.0,
-    "subsample":        0.8,
-    "colsample_bytree": 0.8,
+    "num_leaves":       15,        # [DRIFT CONTROL] Very small leaves
+    "learning_rate":    0.015,     # [DRIFT CONTROL] Slow learning
+    "min_child_samples": 120,      # [DRIFT CONTROL] Needs robust evidence
+    "reg_alpha":        5.0,       # [DRIFT CONTROL] High L1 penalty
+    "reg_lambda":       10.0,      # [DRIFT CONTROL] High L2 penalty
+    "subsample":        0.7,
+    "colsample_bytree": 0.6,
     "verbose":          -1,
     "n_jobs":           -1,
     "seed":             42,
 }
-N_ESTIMATORS    = 1500
+N_ESTIMATORS    = 1200
 EARLY_STOPPING  = 100
 
 # --- Tournament Weights (AW-MAE) ---

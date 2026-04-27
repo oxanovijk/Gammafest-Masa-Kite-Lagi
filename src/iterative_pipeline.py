@@ -140,7 +140,8 @@ class IterativeEngine:
         tournament = row["tournament"]
         conf_a = str(row.get("confederation_team", "Unknown"))
         conf_b = str(row.get("confederation_opponent", "Unknown"))
-        k = get_k_factor(tournament, conf_a, conf_b)
+        k = get_k_factor(tournament, conf_a, conf_b) * 0.15 # [DRIFT CONTROL] Shrink K-factor untuk tebakan maya
+
         
         gd = abs(goals_team - goals_opp)
         if gd == 2: k *= 1.5
