@@ -1,0 +1,61 @@
+============================================================
+V20 — CLASS WEIGHTS + GPD TAIL + FRIENDLY SPECIALIZATION
+============================================================
+Features: 62
+
+--- Fase 4: Friendly Specialization ---
+  Found friendly column: is_friendly
+  Features after friendly interactions: 66
+
+--- Women Data Augmentation ---
+  Women Augmentation: 8806 -> 35224 (×4)
+Men  : train=69966, test=28464
+Women: train=35224 (orig=8806), test=13958
+
+--- ZINB Parameter Estimation ---
+  Men   : mean=1.442, var=1.932, alpha=0.3396, pi=0.2979
+  Women : mean=1.673, var=2.875, alpha=0.7180, pi=0.3305
+
+--- GPD Tail Modeling (Fase 3) ---
+  Men   Team GPD: shape fitted, p_exceed=0.0505
+  Men   Opp  GPD: p_exceed=0.0505
+  Women Team GPD: p_exceed=0.1220
+  Women Opp  GPD: p_exceed=0.1220
+
+--- Stage 1: Outcome (3-class) + Class Weights ---
+  Men   Class Weights: Home=0.86, Draw=1.48, Away=0.86
+  Women Class Weights: Home=0.76, Draw=2.60, Away=0.77
+
+--- Stage 2: Bivariate Ordinal (6×6) ---
+  Building joint PMF from ordinal marginals...
+
+--- Stage 3: xG Regression + GPD Tail ---
+
+--- Score Comparison ---
+  Men   Ordinal        : 3.35486
+  Men   Reg (Poi+GPD)  : 3.39473
+  Men   Reg (Poi noGPD): 3.42505
+  Women Ordinal        : 4.99133
+  Women Reg (ZINB+GPD) : 4.44422
+  Women Reg (ZINB only): 4.53425
+  Women Reg (Poi only) : 4.81881
+
+  Chosen: Men=Ordinal
+          Women=ZINB+GPD
+
+  FINAL Men   AW-MAE: 3.35486
+  FINAL Women AW-MAE: 4.44422
+
+Saved: C:\Users\ASUS\Documents\GitHub\Gammafest-Masa-Kite-Lagi\dataset\submission_v20.csv (42422 rows)
+==================================================
+KAGGLE LOCAL LEADERBOARD
+==================================================
+File: C:\Users\ASUS\Documents\GitHub\Gammafest-Masa-Kite-Lagi\dataset\submission_v20.csv
+Evaluated: 42422 matches
+AW-MAE: 2.61188
+Exact: 4838/42422 (11.4%)
+Outcome: 24186/42422 (57.0%)
+GD Correct: 9839/42422 (23.2%)
+  Men: AW-MAE=2.37475, Exact=12.1%, Outcome=53.6%
+  Women: AW-MAE=3.09547, Exact=10.0%, Outcome=63.9%
+==================================================

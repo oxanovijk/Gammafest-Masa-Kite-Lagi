@@ -1,0 +1,32 @@
+Kamu adalah seorang Senior AI/Machine Learning Researcher dan Ahli Strategi Data Science. Saya sedang mengikuti kompetisi data science "Gammafest Masa Kite Lagi" yang fokus pada prediksi skor pertandingan sepak bola.
+
+Berikut adalah 5 poin yang saya ingin kamu analisis dan berikan solusi komprehensifnya:
+
+### 1. KONTEKS & ATURAN KOMPETISI
+- **Tujuan**: Memprediksi jumlah gol (`team_goals` dan `opp_goals`) pada berbagai pertandingan sepak bola internasional (pria & wanita, turnamen major hingga persahabatan).
+- **Aturan Ketat**: Dilarang keras melakukan *Data Leakage* (misalnya men-scrape hasil pertandingan dari internet untuk test set). Prediksi harus murni dari Machine Learning.
+- **Metrik Evaluasi**: AW-MAE (Asymmetric Weighted Mean Absolute Error). Rumusnya sangat mem-penalti prediksi yang salah menebak "Outcome" (Menang/Seri/Kalah). Jika tebakan outcome salah, total error dikalikan 1.5. Ada juga penalti jika tebakan Exact Score salah, dan Selisih Gol (Goal Difference) salah.
+- **Formula AW-MAE**:
+  `mae = (abs(pred_t - true_t) + abs(pred_o - true_o)) / 2.0`
+  `aug = mae + 0.30*(1-exact) + 0.25*(1-out_ok) + 0.15*(1-gd_ok)`
+  `mult = 1.0 if out_ok else 1.5`
+  `awmae = (aug * mult) ** 1.3`
+
+### 2. STRATEGI YANG SUDAH DIPAKAI (DAN MENGAPA GAGAL/STUCK)
+Kami sudah mencoba memeras data tabular ini namun akurasi mentok di local validation (AW-MAE ~2.51) dan justru hancur/turun drastis di *Leaderboard* Kaggle (Overfitting/Distribution Shift). Berikut yang sudah dilakukan:
+- **Strategi 1 (Poisson + Elo)**: Menggunakan regresi Poisson standar dengan fitur Elo Rating. Hasil: Banyak *under-predict* pada hasil seri (draw).
+- **Strategi 2 (Bivariate Dixon-Coles + ERM)**: Menggunakan koreksi Dixon-Coles pada probabilitas Poisson, lalu mencari tebakan paling optimal menggunakan Expected Risk Minimization (ERM) sesuai rumus AW-MAE. Hasil: Membaik di lokal, tapi *stuck*.
+- **Strategi 3 (Classification PMF + Pi-Ratings)**: Mengganti Poisson dengan LightGBM/XGBoost *Multi-Class Classification* (memprediksi probabilitas gol 0-5 secara langsung) ditambah fitur Pi-Ratings (yang memperhitungkan selisih gol). Hasil: Exact score naik di lokal.
+- **Strategi 4 (Entity Embeddings NN + CatBoost Ensemble)**: Menggunakan PyTorch (memetakan nama negara ke *dense vector*) di-ensemble dengan CatBoost via GPU Optuna. Hasil: Sangat *overfit* terhadap local test set (kemungkinan karena data Kaggle Private Test Set memiliki distribusi yang sangat berbeda, misal didominasi turnamen persahabatan tak tertebak atau tim wanita tak terdata).
+
+### 3. PENGGUNAAN PRE-TRAINED MODEL / LLM LOKAL (AIRLLM)
+Saya mendengar tentang inovasi `AirLLM` yang memungkinkan menjalankan LLM berparameter raksasa (seperti Llama-3 70B atau Mixtral) di komputer lokal dengan komputasi/VRAM terbatas.
+- Apakah ada *pretrained model* atau LLM khusus analitik olahraga yang bisa diaplikasikan ke masalah tabular ini secara *Zero-Shot* atau *Fine-Tuned*?
+- Bagaimana cara menggunakan LLM raksasa via `AirLLM` murni untuk memprediksi probabilitas pertandingan TANPA terjadi *data leakage* (misal LLM tidak sengaja melakukan lookup hasil pertandingan karena sudah ada di weight/memorinya)?
+
+### 4. RISET DAN JURNAL TERKAIT
+Tolong rangkumkan dan berikan referensi ke 3-5 penelitian/jurnal/paper akademis paling mutakhir (State-of-the-Art) mengenai algoritma prediksi skor sepak bola (misalnya modifikasi Bayesian Hierarchical Models, xG (Expected Goals) models tanpa data event, atau ekstensi Pi-Ratings).
+
+### 5. OPSI STRATEGI PENINGKATAN AKURASI BARU
+Berdasarkan kegagalan di poin 2, berikan saya 3 opsi strategi peningkatan akurasi baru yang **berbeda** dari yang sudah saya coba. 
+Untuk setiap strategi, berikan **Justifikasi Logis** yang kuat mengapa kamu yakin strategi ini bisa mengatasi masalah *overfitting / distribution shift* di Kaggle dan lebih superior dari metode ensemble yang sudah kami pakai saat ini.
