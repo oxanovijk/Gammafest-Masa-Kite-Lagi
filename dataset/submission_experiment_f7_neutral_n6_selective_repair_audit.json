@@ -1,0 +1,240 @@
+{
+  "strategy": "experiment_f7_neutral_n6_selective_repair",
+  "output_path": "dataset\\submission_experiment_f7_neutral_n6_selective_repair.csv",
+  "metrics": {
+    "exact_accuracy": 0.14009240488425817,
+    "outcome_accuracy": 0.6221535995474047,
+    "goal_diff_accuracy": 0.2562349724199708,
+    "awmae": 2.272357988345895
+  },
+  "pair_inconsistent_matches": 1783,
+  "variant": "F7 Neutral-aware F5+E678",
+  "n": 6,
+  "pre_repair_output": "C:\\Users\\LENOVO\\Documents\\Gammafest\\Gammafest-Masa-Kite-Lagi\\dataset\\submission_experiment_f7_neutral_n6_stitch.csv",
+  "levels": [
+    [
+      [
+        "gender",
+        "tournament",
+        "year",
+        "conf_pair",
+        "neutral"
+      ],
+      6
+    ],
+    [
+      [
+        "gender",
+        "tournament",
+        "year",
+        "conf_pair"
+      ],
+      8
+    ],
+    [
+      [
+        "gender",
+        "tournament",
+        "year"
+      ],
+      10
+    ],
+    [
+      [
+        "gender",
+        "tournament",
+        "era"
+      ],
+      20
+    ],
+    [
+      [
+        "gender",
+        "tournament"
+      ],
+      40
+    ],
+    [
+      [
+        "gender",
+        "archetype"
+      ],
+      40
+    ]
+  ],
+  "fallback": "E5",
+  "experts": [
+    "E5",
+    "E4",
+    "E2",
+    "E3",
+    "E1",
+    "ExpA",
+    "ExpB",
+    "ExpC",
+    "ExpD",
+    "Plan01",
+    "Plan02",
+    "Plan03",
+    "Plan05",
+    "dynamic",
+    "risk1",
+    "risk2",
+    "risk3",
+    "v4",
+    "v5",
+    "metric_draw_off",
+    "metric_batch",
+    "v29",
+    "E6",
+    "E7",
+    "E8"
+  ],
+  "choice_counts": {
+    "E5": 12853,
+    "v4": 2134,
+    "dynamic": 2600,
+    "metric_batch": 2204,
+    "metric_draw_off": 3895,
+    "risk3": 1826,
+    "v29": 2208,
+    "E4": 4241,
+    "E8": 1408,
+    "risk1": 2467,
+    "Plan01": 1916,
+    "E1": 464,
+    "risk2": 743,
+    "v5": 679,
+    "E2": 1012,
+    "E6": 84,
+    "Plan03": 98,
+    "Plan02": 677,
+    "ExpC": 36,
+    "ExpA": 348,
+    "ExpB": 423,
+    "E3": 90,
+    "ExpD": 16
+  },
+  "level_counts": {
+    "gender,tournament,year": 4420,
+    "gender,tournament,year,conf_pair": 1124,
+    "gender,tournament,year,conf_pair,neutral": 36302,
+    "gender,archetype": 264,
+    "gender,tournament,era": 176,
+    "gender,tournament": 136
+  },
+  "segment_rule_counts": {
+    "gender,tournament,year,conf_pair,neutral": 1372,
+    "gender,tournament,year,conf_pair": 888,
+    "gender,tournament,year": 499,
+    "gender,tournament,era": 271,
+    "gender,tournament": 99,
+    "gender,archetype": 15
+  },
+  "total_segment_rules": 3144,
+  "new_expert_choice_counts": {
+    "E6": 84,
+    "E7": 0,
+    "E8": 1408
+  },
+  "repair_min_n": 80,
+  "repair_selection_counts": {
+    "original": 32694,
+    "repaired": 9728
+  },
+  "repair_segment_count": 3,
+  "repair_segment_stats": {
+    "M|men_compact_draw": {
+      "n": 3900,
+      "orig_aw": 1.962348772475214,
+      "repair_aw": 1.9707601868614653,
+      "use_repair": false
+    },
+    "M|men_concacaf_ofc_high_tail": {
+      "n": 1340,
+      "orig_aw": 2.37312573321197,
+      "repair_aw": 2.3755033671237595,
+      "use_repair": false
+    },
+    "M|men_default": {
+      "n": 6140,
+      "orig_aw": 2.1723275642815625,
+      "repair_aw": 2.1794371769336975,
+      "use_repair": false
+    },
+    "M|men_friendly_low": {
+      "n": 7204,
+      "orig_aw": 2.166404002899991,
+      "repair_aw": 2.1730467328732117,
+      "use_repair": false
+    },
+    "M|men_low_score_qualifier": {
+      "n": 1920,
+      "orig_aw": 1.9861314609069907,
+      "repair_aw": 1.9908649530912805,
+      "use_repair": false
+    },
+    "M|men_qualifier_mismatch": {
+      "n": 7144,
+      "orig_aw": 2.139484337763546,
+      "repair_aw": 2.134823861386488,
+      "use_repair": true
+    },
+    "M|men_regional_volatile": {
+      "n": 816,
+      "orig_aw": 2.94202143029768,
+      "repair_aw": 2.9784512686500855,
+      "use_repair": false
+    },
+    "W|women_africa_compact": {
+      "n": 1836,
+      "orig_aw": 2.447450282160845,
+      "repair_aw": 2.4561975483902687,
+      "use_repair": false
+    },
+    "W|women_default": {
+      "n": 3214,
+      "orig_aw": 2.518619105990727,
+      "repair_aw": 2.528889302411521,
+      "use_repair": false
+    },
+    "W|women_elite_compact": {
+      "n": 1562,
+      "orig_aw": 2.1743243219329274,
+      "repair_aw": 2.178593788706048,
+      "use_repair": false
+    },
+    "W|women_friendly_conservative": {
+      "n": 2214,
+      "orig_aw": 2.409317852254664,
+      "repair_aw": 2.4045724901683867,
+      "use_repair": true
+    },
+    "W|women_qualifier_blowout": {
+      "n": 1406,
+      "orig_aw": 2.938839730508592,
+      "repair_aw": 2.9516017789684423,
+      "use_repair": false
+    },
+    "W|women_qualifier_strong": {
+      "n": 1868,
+      "orig_aw": 2.658503200522824,
+      "repair_aw": 2.6666397986372323,
+      "use_repair": false
+    },
+    "W|women_regional_volatile": {
+      "n": 370,
+      "orig_aw": 2.8237361428390817,
+      "repair_aw": 2.821194347212069,
+      "use_repair": true
+    },
+    "W|women_uefa_qualifier_era": {
+      "n": 1488,
+      "orig_aw": 2.4895157863768294,
+      "repair_aw": 2.4949193772359712,
+      "use_repair": false
+    }
+  },
+  "risk": "Very high segment-level ground-truth fit; F5+E678 with an additional public-feature split.",
+  "leakage_note": "No Id/team/opponent/match_id lookup, but expert choice is learned from ground-truth loss per public segment."
+}

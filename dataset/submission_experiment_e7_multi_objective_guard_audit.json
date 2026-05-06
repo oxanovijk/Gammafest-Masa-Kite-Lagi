@@ -1,0 +1,75 @@
+{
+  "strategy": "experiment_e7_multi_objective_guard",
+  "output_path": "dataset\\submission_experiment_e7_multi_objective_guard.csv",
+  "metrics": {
+    "exact_accuracy": 0.1208099570977323,
+    "outcome_accuracy": 0.5993116779029749,
+    "goal_diff_accuracy": 0.23813115836122767,
+    "awmae": 2.398271235997821
+  },
+  "pair_inconsistent_matches": 1867,
+  "levels": [
+    [
+      [
+        "gender",
+        "tournament",
+        "era"
+      ],
+      80
+    ],
+    [
+      [
+        "gender",
+        "tournament"
+      ],
+      100
+    ],
+    [
+      [
+        "gender",
+        "archetype"
+      ],
+      80
+    ]
+  ],
+  "fallback": "E5",
+  "reference": "E5",
+  "min_gain": 0.0,
+  "outcome_guard_pp": 1.0,
+  "exact_guard_pp": 1.0,
+  "strategies": [
+    "Plan01",
+    "Plan02",
+    "Plan03",
+    "Plan04",
+    "Plan05",
+    "ExpA",
+    "ExpB",
+    "ExpC",
+    "ExpD",
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5"
+  ],
+  "choice_counts": {
+    "E4": 7466,
+    "ExpC": 7432,
+    "Plan01": 7892,
+    "E5": 9856,
+    "E1": 3198,
+    "ExpB": 2786,
+    "Plan02": 662,
+    "ExpA": 2330,
+    "Plan05": 770,
+    "E2": 30
+  },
+  "level_counts": {
+    "gender,archetype": 3864,
+    "gender,tournament,era": 34114,
+    "gender,tournament": 4444
+  },
+  "design": "E6 stitch with AW-MAE primary objective, but segment candidates must stay within exact/outcome guard versus E5.",
+  "leakage_note": "Segment-level expert selection only; no Id/team/opponent/match_id lookup."
+}

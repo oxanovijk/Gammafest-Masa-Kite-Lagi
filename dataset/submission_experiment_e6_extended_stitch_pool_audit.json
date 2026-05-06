@@ -1,0 +1,71 @@
+{
+  "strategy": "experiment_e6_extended_stitch_pool",
+  "output_path": "dataset\\submission_experiment_e6_extended_stitch_pool.csv",
+  "metrics": {
+    "exact_accuracy": 0.1205506576776201,
+    "outcome_accuracy": 0.5993116779029749,
+    "goal_diff_accuracy": 0.23822544905945028,
+    "awmae": 2.397823069356069
+  },
+  "pair_inconsistent_matches": 1861,
+  "levels": [
+    [
+      [
+        "gender",
+        "tournament",
+        "era"
+      ],
+      80
+    ],
+    [
+      [
+        "gender",
+        "tournament"
+      ],
+      100
+    ],
+    [
+      [
+        "gender",
+        "archetype"
+      ],
+      80
+    ]
+  ],
+  "fallback": "E5",
+  "strategies": [
+    "Plan01",
+    "Plan02",
+    "Plan03",
+    "Plan04",
+    "Plan05",
+    "ExpA",
+    "ExpB",
+    "ExpC",
+    "ExpD",
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5"
+  ],
+  "choice_counts": {
+    "E4": 7842,
+    "ExpC": 7432,
+    "Plan01": 7790,
+    "E5": 9856,
+    "E1": 3198,
+    "ExpB": 2786,
+    "Plan02": 516,
+    "ExpA": 2202,
+    "Plan05": 770,
+    "E2": 30
+  },
+  "level_counts": {
+    "gender,archetype": 3864,
+    "gender,tournament,era": 34114,
+    "gender,tournament": 4444
+  },
+  "design": "E2-style hierarchical stitch, but pool includes E1-E5 as additional experts.",
+  "leakage_note": "Segment-level expert selection only; no Id/team/opponent/match_id lookup."
+}

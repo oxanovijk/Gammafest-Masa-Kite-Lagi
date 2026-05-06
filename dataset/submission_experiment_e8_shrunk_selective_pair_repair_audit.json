@@ -1,0 +1,144 @@
+{
+  "strategy": "experiment_e8_shrunk_selective_pair_repair",
+  "output_path": "dataset\\submission_experiment_e8_shrunk_selective_pair_repair.csv",
+  "metrics": {
+    "exact_accuracy": 0.1205035123285088,
+    "outcome_accuracy": 0.5991702418556409,
+    "goal_diff_accuracy": 0.23798972231389373,
+    "awmae": 2.3975854511597756
+  },
+  "pair_inconsistent_matches": 1623,
+  "base_submission": "C:\\Users\\LENOVO\\Documents\\Gammafest\\Gammafest-Masa-Kite-Lagi\\dataset\\submission_experiment_e6_extended_stitch_pool.csv",
+  "min_n": 80,
+  "min_gain": 0.001,
+  "shrink_base_n": 370,
+  "shrink_scale": 0.002,
+  "selection_counts": {
+    "original": 36282,
+    "repaired": 6140
+  },
+  "segment_stats": {
+    "M|men_compact_draw": {
+      "n": 3900,
+      "orig_aw": 2.080891529769178,
+      "repair_aw": 2.0831309161728004,
+      "gain": -0.002239386403622312,
+      "required_gain": 0.0016160253075054461,
+      "use_repair": false
+    },
+    "M|men_concacaf_ofc_high_tail": {
+      "n": 1340,
+      "orig_aw": 2.538685484710838,
+      "repair_aw": 2.5402060320093693,
+      "gain": -0.0015205472985311275,
+      "required_gain": 0.0020509412980468027,
+      "use_repair": false
+    },
+    "M|men_default": {
+      "n": 6140,
+      "orig_aw": 2.293540867872791,
+      "repair_aw": 2.2918991351165743,
+      "gain": 0.0016417327562168182,
+      "required_gain": 0.0014909606351601653,
+      "use_repair": true
+    },
+    "M|men_friendly_low": {
+      "n": 7204,
+      "orig_aw": 2.3398099082171004,
+      "repair_aw": 2.341270218847499,
+      "gain": -0.0014603106303985314,
+      "required_gain": 0.001453256463199961,
+      "use_repair": false
+    },
+    "M|men_low_score_qualifier": {
+      "n": 1920,
+      "orig_aw": 2.058990342978894,
+      "repair_aw": 2.064451333945292,
+      "gain": -0.005460990966398072,
+      "required_gain": 0.0018779711460710617,
+      "use_repair": false
+    },
+    "M|men_qualifier_mismatch": {
+      "n": 7144,
+      "orig_aw": 2.236344030430051,
+      "repair_aw": 2.238905621306502,
+      "gain": -0.0025615908764513584,
+      "required_gain": 0.0014551558560575394,
+      "use_repair": false
+    },
+    "M|men_regional_volatile": {
+      "n": 816,
+      "orig_aw": 3.0642181854854935,
+      "repair_aw": 3.0655234528637476,
+      "gain": -0.0013052673782540936,
+      "required_gain": 0.0023467462605094094,
+      "use_repair": false
+    },
+    "W|women_africa_compact": {
+      "n": 1836,
+      "orig_aw": 2.610604065648037,
+      "repair_aw": 2.612110152231356,
+      "gain": -0.0015060865833187442,
+      "required_gain": 0.0018978308403396064,
+      "use_repair": false
+    },
+    "W|women_default": {
+      "n": 3214,
+      "orig_aw": 2.6499680315548724,
+      "repair_aw": 2.6515445808663154,
+      "gain": -0.0015765493114430207,
+      "required_gain": 0.0016785907282581372,
+      "use_repair": false
+    },
+    "W|women_elite_compact": {
+      "n": 1562,
+      "orig_aw": 2.298029777921748,
+      "repair_aw": 2.3022214853955987,
+      "gain": -0.00419170747385067,
+      "required_gain": 0.0019733977609509524,
+      "use_repair": false
+    },
+    "W|women_friendly_conservative": {
+      "n": 2214,
+      "orig_aw": 2.549049419285988,
+      "repair_aw": 2.550791708816821,
+      "gain": -0.0017422895308332187,
+      "required_gain": 0.001817602196303423,
+      "use_repair": false
+    },
+    "W|women_qualifier_blowout": {
+      "n": 1406,
+      "orig_aw": 3.088521301663915,
+      "repair_aw": 3.0916592290152938,
+      "gain": -0.0031379273513789663,
+      "required_gain": 0.002025978352085154,
+      "use_repair": false
+    },
+    "W|women_qualifier_strong": {
+      "n": 1868,
+      "orig_aw": 2.7209435305719305,
+      "repair_aw": 2.726632926952814,
+      "gain": -0.005689396380883505,
+      "required_gain": 0.0018901074207963583,
+      "use_repair": false
+    },
+    "W|women_regional_volatile": {
+      "n": 370,
+      "orig_aw": 2.9171917404723318,
+      "repair_aw": 2.9198038368247174,
+      "gain": -0.0026120963523856844,
+      "required_gain": 0.003,
+      "use_repair": false
+    },
+    "W|women_uefa_qualifier_era": {
+      "n": 1488,
+      "orig_aw": 2.5450062629202335,
+      "repair_aw": 2.5477275066532865,
+      "gain": -0.002721243733053047,
+      "required_gain": 0.001997308205077036,
+      "use_repair": false
+    }
+  },
+  "design": "Selective pair repair on E6 with shrinkage guard so small archetypes need larger gain.",
+  "leakage_note": "Pair repair decision is aggregate by gender x archetype, not by Id or match_id."
+}
