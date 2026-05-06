@@ -1,0 +1,51 @@
+{
+  "strategy": "experiment_e2_hierarchical_stitching",
+  "output_path": "dataset\\submission_experiment_e2_hierarchical_stitching.csv",
+  "metrics": {
+    "exact_accuracy": 0.11873556173683467,
+    "outcome_accuracy": 0.5985102069680825,
+    "goal_diff_accuracy": 0.23707038800622318,
+    "awmae": 2.411352849497671
+  },
+  "pair_inconsistent_matches": 2547,
+  "levels": [
+    [
+      [
+        "gender",
+        "tournament",
+        "era"
+      ],
+      80
+    ],
+    [
+      [
+        "gender",
+        "tournament"
+      ],
+      100
+    ],
+    [
+      [
+        "gender",
+        "archetype"
+      ],
+      80
+    ]
+  ],
+  "fallback": "ExpC",
+  "choice_counts": {
+    "ExpD": 3468,
+    "ExpC": 13324,
+    "Plan01": 11570,
+    "Plan02": 2884,
+    "ExpB": 4788,
+    "ExpA": 4988,
+    "Plan03": 472,
+    "Plan05": 928
+  },
+  "level_counts": {
+    "gender,archetype": 3864,
+    "gender,tournament,era": 34114,
+    "gender,tournament": 4444
+  }
+}

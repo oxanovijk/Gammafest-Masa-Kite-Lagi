@@ -1,0 +1,52 @@
+{
+  "strategy": "experiment_e3_conservative_stitching",
+  "output_path": "dataset\\submission_experiment_e3_conservative_stitching.csv",
+  "metrics": {
+    "exact_accuracy": 0.11816981754749895,
+    "outcome_accuracy": 0.5992173872047523,
+    "goal_diff_accuracy": 0.23655178916599878,
+    "awmae": 2.412361413690851
+  },
+  "pair_inconsistent_matches": 2536,
+  "levels": [
+    [
+      [
+        "gender",
+        "tournament",
+        "era"
+      ],
+      80
+    ],
+    [
+      [
+        "gender",
+        "tournament"
+      ],
+      100
+    ],
+    [
+      [
+        "gender",
+        "archetype"
+      ],
+      80
+    ]
+  ],
+  "fallback": "ExpC",
+  "reference": "ExpC",
+  "outcome_guard": 0.25,
+  "min_gain": 0.005,
+  "choice_counts": {
+    "ExpC": 34546,
+    "ExpB": 2408,
+    "ExpD": 1594,
+    "Plan02": 1496,
+    "Plan01": 548,
+    "ExpA": 1830
+  },
+  "level_counts": {
+    "gender,archetype": 3864,
+    "gender,tournament,era": 34114,
+    "gender,tournament": 4444
+  }
+}

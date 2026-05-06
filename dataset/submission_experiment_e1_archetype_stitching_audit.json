@@ -1,0 +1,32 @@
+{
+  "strategy": "experiment_e1_archetype_stitching",
+  "output_path": "dataset\\submission_experiment_e1_archetype_stitching.csv",
+  "metrics": {
+    "exact_accuracy": 0.11880627976050162,
+    "outcome_accuracy": 0.5984394889444157,
+    "goal_diff_accuracy": 0.23756541417189195,
+    "awmae": 2.413373852785003
+  },
+  "pair_inconsistent_matches": 2550,
+  "levels": [
+    [
+      [
+        "gender",
+        "archetype"
+      ],
+      80
+    ]
+  ],
+  "fallback": "ExpC",
+  "choice_counts": {
+    "ExpD": 10170,
+    "ExpA": 7204,
+    "ExpB": 14350,
+    "Plan02": 7144,
+    "ExpC": 1340,
+    "Plan05": 2214
+  },
+  "level_counts": {
+    "gender,archetype": 42422
+  }
+}

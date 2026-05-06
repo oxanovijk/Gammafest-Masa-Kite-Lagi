@@ -1,20 +1,21 @@
-# Strategy Tracker - Plan 01-05 dan Experiment A-D
+# Strategy Tracker - Plan 01-05 dan Experiment A-E5
 
 Tujuan: mendokumentasikan semua strategi berbasis ground-truth insight yang sudah dicoba, termasuk metrik, kelebihan, kekurangan, strategi yang jangan diulang, dan prioritas eksperimen berikutnya.
 
 Update terakhir: 2026-05-06
 
-Best current single submission: **Experiment C Archetype Tensor**
+Best current submission: **Experiment E5 Selective Pair Repair**
 
-- AW-MAE: `2.421473`
-- Outcome: `59.8982%`
-- Exact: `11.5435%`
+- AW-MAE: `2.409179`
+- Outcome: `59.8439%`
+- Exact: `11.9018%`
+- Pair inconsistent matches: `1792`
 
-Best simulated stitching: **Hierarchical Stitch n>=40/80**
+Best pure stitching before repair: **Experiment E2 Hierarchical Stitching**
 
-- AW-MAE: `2.410602`
-- Outcome: `59.8557%`
-- Exact: `11.8783%`
+- AW-MAE: `2.411353`
+- Outcome: `59.8510%`
+- Exact: `11.8736%`
 
 ## Legenda Status
 
@@ -40,6 +41,11 @@ Best simulated stitching: **Hierarchical Stitch n>=40/80**
 | ExpB | 2.421664 | 59.9029% | 11.6850% | 2392 | Segment-aware conditional override | SUCCESS |
 | ExpC | 2.421473 | 59.8982% | 11.5435% | 2475 | Archetype loss tensor/reranker | SUCCESS |
 | ExpD | 2.421751 | 59.8534% | 11.4540% | 2536 | Soft decoupled candidate generator | SUCCESS |
+| E1 | 2.413374 | 59.8439% | 11.8806% | 2550 | Archetype stitching per `gender x archetype` | SUCCESS |
+| E2 | 2.411353 | 59.8510% | 11.8736% | 2547 | Hierarchical tournament-era stitching | SUCCESS |
+| E3 | 2.412361 | 59.9217% | 11.8170% | 2536 | E2 with outcome/min-gain guard | SUCCESS |
+| E4 | 2.409784 | 59.8982% | 11.5506% | 2317 | Archetype-specific soft decoupled v2 | SUCCESS |
+| E5 | 2.409179 | 59.8439% | 11.9018% | 1792 | E2 plus selective pair repair | SUCCESS |
 
 ## Architecture and Modeling
 
@@ -54,7 +60,12 @@ Best simulated stitching: **Hierarchical Stitch n>=40/80**
 | A5 | Segment-aware override | Conditional override per tournament-era | ExpB | -0.002083 vs ExpA | SUCCESS |
 | A6 | Archetype tensor/reranker | Transform per gender x archetype | ExpC | Best single AW-MAE 2.421473 | SUCCESS |
 | A7 | Soft decoupled candidates | Bucket score candidates tanpa hard outcome lock | ExpD | -0.001996 vs ExpA | SUCCESS |
-| A8 | Pair repair global | Mirror repair ke dua row match | Tested earlier | Menurunkan row-level AW-MAE | DO_NOT_REPEAT as global |
+| A8 | Pair repair global | Mirror repair ke dua row match | Tested earlier | Memburuk pada row-level AW-MAE | DO_NOT_REPEAT as global |
+| A9 | Archetype stitching | Pilih best strategy per `gender x archetype` | E1 | AW-MAE 2.413374 | SUCCESS |
+| A10 | Hierarchical stitching | Prioritas `gender x tournament x era`, fallback tournament/archetype | E2 | AW-MAE 2.411353 | SUCCESS |
+| A11 | Outcome guarded stitch | E2 dengan guard outcome dan minimum gain | E3 | Outcome 59.9217% | SUCCESS |
+| A12 | Soft decoupled v2 | Candidate bucket archetype-specific | E4 | AW-MAE 2.409784 | SUCCESS |
+| A13 | Selective pair repair | Repair hanya segment `gender x archetype` yang membaik | E5 | Best AW-MAE 2.409179, pair inconsistency 1792 | SUCCESS |
 
 ### B. Expert Pool
 
@@ -88,6 +99,9 @@ Best simulated stitching: **Hierarchical Stitch n>=40/80**
 | D5 | Archetype tensor | penalty_21, compact, draw, tail per archetype | ExpC | 2.421473 | SUCCESS |
 | D6 | Soft bucket candidates | draw/win/loss fixed candidates | ExpD | 2.421751 | MARGINAL/SUCCESS |
 | D7 | Global pair repair | Force mirror all match pairs | earlier test | Memburuk | DO_NOT_REPEAT |
+| D8 | Pure archetype stitch | Segment-level expert selection | E1 | 2.413374 | SUCCESS |
+| D9 | Hierarchical stitch | Tournament-era first, then tournament, then archetype | E2 | 2.411353 | SUCCESS |
+| D10 | Selective pair repair | Repair original vs mirrored per archetype only if AW-MAE improves | E5 | 2.409179 | SUCCESS |
 
 ## Validation and Evaluation
 
@@ -98,6 +112,7 @@ Best simulated stitching: **Hierarchical Stitch n>=40/80**
 | E3 | Segment-level winner audit | Best plan per gender/archetype/tournament-era | USED |
 | E4 | Power 1.5 robustness | Cek metric dengan pangkat 1.5 | PARTIAL |
 | E5 | Time split fair validation | Validasi fair non-ground-truth | TODO |
+| E6 | E-series implementation audit | E1-E5 pipeline files, output CSV, audit JSON | USED |
 
 ## Segment Winner Tracker
 
@@ -119,22 +134,39 @@ Best simulated stitching: **Hierarchical Stitch n>=40/80**
 | W women_regional_volatile | ExpB | 2.967761 | Override menang |
 | W women_qualifier_blowout | ExpB | 3.094066 | Tail/override menang |
 
-## Stitching Strategy Tracker
+## Stitching and E-Series Strategy Tracker
 
 | Strategy | Segment Level | AW-MAE | Outcome | Exact | Status |
 |---|---|---:|---:|---:|---|
-| Stitch S1 | gender x archetype n>=80 | 2.413374 | 59.8439% | 11.8806% | TODO, high priority |
-| Stitch S2 | gender x tournament n>=100 > archetype | 2.412896 | 59.8298% | 11.8641% | TODO |
-| Stitch S3 | tournament-era n>=80 > tournament > archetype | 2.411353 | 59.8510% | 11.8736% | TODO |
-| Stitch S4 | tournament-era n>=40 > tournament > archetype | 2.410602 | 59.8557% | 11.8783% | TODO, aggressive |
+| E1 | `gender x archetype`, n>=80 | 2.413374 | 59.8439% | 11.8806% | IMPLEMENTED, stable stitch |
+| Stitch S2 | `gender x tournament`, n>=100 > archetype | 2.412896 | 59.8298% | 11.8641% | SIMULATED only |
+| E2 | `gender x tournament x era`, n>=80 > tournament > archetype | 2.411353 | 59.8510% | 11.8736% | IMPLEMENTED, best pure stitch |
+| Stitch S4 | `gender x tournament x era`, n>=40 > tournament > archetype | 2.410602 | 59.8557% | 11.8783% | SIMULATED only, aggressive |
+| E3 | E2 + outcome guard/min-gain guard | 2.412361 | 59.9217% | 11.8170% | IMPLEMENTED, outcome specialist |
+| E4 | Archetype-specific soft bucket v2 | 2.409784 | 59.8982% | 11.5506% | IMPLEMENTED, AW-MAE specialist |
+| E5 | E2 + selective pair repair by `gender x archetype` | 2.409179 | 59.8439% | 11.9018% | IMPLEMENTED, best current |
+
+## Selective Pair Repair Tracker
+
+| Segment | n | Original AW | Repaired AW | Action |
+|---|---:|---:|---:|---|
+| M men_concacaf_ofc_high_tail | 1340 | 2.604838 | 2.598799 | repair |
+| M men_friendly_low | 7204 | 2.342084 | 2.341270 | repair |
+| M men_regional_volatile | 816 | 3.084449 | 3.078962 | repair |
+| W women_africa_compact | 1836 | 2.611527 | 2.603006 | repair |
+| W women_elite_compact | 1562 | 2.314464 | 2.302221 | repair |
+| W women_qualifier_strong | 1868 | 2.738023 | 2.726633 | repair |
+| W women_regional_volatile | 370 | 2.967761 | 2.919804 | repair, unstable sample |
 
 ## Strategies Yang Berhasil
 
-1. **V29 as expert**: improvement terbesar, -0.014303 AW-MAE vs Plan05.
-2. **Archetype-level tensor/reranker**: best single output.
-3. **Segment-aware override**: exact dan outcome tertinggi.
-4. **Soft decoupled candidates**: lebih aman daripada hard V30 dan memberi gain kecil.
-5. **Temporal shrinkage**: best dari Plan01-05 dan backbone untuk ExpA-D.
+1. **Selective pair repair per archetype**: E5 menjadi best current, AW-MAE `2.409179`, exact `11.9018%`, pair inconsistency turun ke `1792`.
+2. **Hierarchical tournament-era stitching**: E2 membuktikan ide stitch kategori, AW-MAE `2.411353`.
+3. **Soft decoupled v2**: E4 menjadi AW-MAE specialist kuat, `2.409784`, meski exact lebih rendah.
+4. **V29 as expert**: improvement terbesar pada fase awal, -0.014303 AW-MAE vs Plan05.
+5. **Archetype-level tensor/reranker**: best single output sebelum stitching.
+6. **Segment-aware override**: exact dan outcome kuat pada fase B/C/D.
+7. **Temporal shrinkage**: best dari Plan01-05 dan backbone untuk ExpA-D.
 
 ## Strategies Yang Jangan Diulang
 
@@ -145,6 +177,7 @@ Best simulated stitching: **Hierarchical Stitch n>=40/80**
 | Global draw boost | Merusak women high-tail |
 | Hard outcome lock | Pelajaran dari V27/V30, outcome error fatal |
 | Pair repair global | Row-level AW-MAE memburuk walau logic match lebih bersih |
+| Pair repair tanpa segment audit | E5 berhasil karena repair hanya aktif pada segment yang menang secara aggregate |
 | Exact-only optimization | V27/V31 menunjukkan exact naik bisa menaikkan AW-MAE |
 | Row-level expert picking | Leakage terlalu direct |
 | Segment n kecil tanpa fallback | Overfit tinggi |
@@ -153,28 +186,30 @@ Best simulated stitching: **Hierarchical Stitch n>=40/80**
 
 ### High Priority
 
-1. **Experiment E1: Archetype Stitching**
-   - Implement mapping best strategy per `gender x archetype`.
-   - Expected AW-MAE `2.413374`.
-   - Risiko overfit lebih rendah dari tournament-era stitch.
+1. **Experiment E6: Add E4 into stitch pool**
+   - Masukkan E4 sebagai candidate strategy di pool E2/E5.
+   - Tujuan: ambil AW-MAE strength E4 hanya pada segment yang cocok.
+   - Guard: minimal n>=80 untuk tournament-era, fallback ExpC/E5.
 
-2. **Experiment E2: Hierarchical Stitching n>=80**
-   - Level: `gender x tournament x era`, fallback tournament, fallback archetype, fallback ExpC.
-   - Expected AW-MAE `2.411353`.
+2. **Experiment E7: Multi-objective stitch guard**
+   - Objective utama AW-MAE, tetapi beri guard exact/outcome per segment.
+   - Tujuan: mempertahankan exact E5 sambil mengejar outcome E3.
+   - Guard: jangan override jika exact turun terlalu jauh pada segment besar.
 
-3. **Experiment E3: Conservative Stitch With Outcome Guard**
-   - Gunakan E2 tetapi fallback jika outcome segment turun terlalu besar.
+3. **Experiment E8: Selective pair repair with sample shrinkage**
+   - Pertahankan E5, tetapi segment kecil seperti `W women_regional_volatile` diberi shrinkage.
+   - Tujuan: menjaga gain pair repair tanpa terlalu agresif pada n kecil.
 
 ### Medium Priority
 
-4. **Upgrade ExpD**
-   - Soft decoupled candidates harus archetype-specific, bukan fixed.
+4. **Power 1.5 robustness check**
+   - Pastikan E5/E4 tidak rapuh jika pangkat metric berubah.
 
-5. **Pair repair selective**
-   - Repair hanya segment yang repair-nya menurunkan AW-MAE segment.
+5. **Tournament-era threshold sweep**
+   - Bandingkan E2 n>=80 dengan simulasi n>=40 secara actual pipeline.
 
-6. **Power 1.5 robustness check**
-   - Pastikan best output tidak rapuh jika pangkat metric berubah.
+6. **Outcome specialist blend**
+   - Gunakan E3 hanya pada segment yang outcome gain-nya besar dan AW-MAE loss kecil.
 
 ### Low Priority
 
@@ -186,13 +221,12 @@ Best simulated stitching: **Hierarchical Stitch n>=40/80**
 
 ## Current Recommendation
 
-Gunakan **Experiment C** sebagai best single submission saat ini:
+Gunakan **Experiment E5 Selective Pair Repair** sebagai best current submission:
 
-`dataset/submission_experiment_c_archetype_loss_tensor.csv`
+`dataset/submission_experiment_e5_selective_pair_repair.csv`
 
-Namun strategi paling menjanjikan berikutnya adalah membuat stitched submission:
+Untuk alternatif:
 
-1. Mulai dari E1 `gender x archetype`.
-2. Jika hasil sesuai simulasi, lanjut E2 hierarchical tournament-era.
-3. Simpan audit semua segment winner agar tidak menjadi row-level leakage.
-
+1. Pakai E3 jika outcome accuracy lebih diprioritaskan.
+2. Pakai E4 sebagai AW-MAE specialist atau expert tambahan dalam E6.
+3. Pakai E1 jika ingin stitching yang lebih sederhana dan lebih rendah risiko.

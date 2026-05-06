@@ -1,0 +1,109 @@
+{
+  "strategy": "experiment_e5_selective_pair_repair",
+  "base_submission": "dataset\\submission_experiment_e2_hierarchical_stitching.csv",
+  "output_path": "dataset\\submission_experiment_e5_selective_pair_repair.csv",
+  "metrics": {
+    "exact_accuracy": 0.11901843383150253,
+    "outcome_accuracy": 0.5984394889444157,
+    "goal_diff_accuracy": 0.23735326010089106,
+    "awmae": 2.409178992552701
+  },
+  "pair_inconsistent_matches": 1792,
+  "min_n": 80,
+  "selection_counts": {
+    "original": 27426,
+    "repaired": 14996
+  },
+  "segment_stats": {
+    "M|men_compact_draw": {
+      "n": 3900,
+      "orig_aw": 2.0864064245479446,
+      "repair_aw": 2.090895656610436,
+      "use_repair": false
+    },
+    "M|men_concacaf_ofc_high_tail": {
+      "n": 1340,
+      "orig_aw": 2.6048377953285042,
+      "repair_aw": 2.59879883657733,
+      "use_repair": true
+    },
+    "M|men_default": {
+      "n": 6140,
+      "orig_aw": 2.316814094095882,
+      "repair_aw": 2.3177725448678714,
+      "use_repair": false
+    },
+    "M|men_friendly_low": {
+      "n": 7204,
+      "orig_aw": 2.342084014378931,
+      "repair_aw": 2.341270218847499,
+      "use_repair": true
+    },
+    "M|men_low_score_qualifier": {
+      "n": 1920,
+      "orig_aw": 2.058990342978894,
+      "repair_aw": 2.064451333945292,
+      "use_repair": false
+    },
+    "M|men_qualifier_mismatch": {
+      "n": 7144,
+      "orig_aw": 2.2372703420009854,
+      "repair_aw": 2.2432264642633095,
+      "use_repair": false
+    },
+    "M|men_regional_volatile": {
+      "n": 816,
+      "orig_aw": 3.08444942651509,
+      "repair_aw": 3.078961837388091,
+      "use_repair": true
+    },
+    "W|women_africa_compact": {
+      "n": 1836,
+      "orig_aw": 2.6115265493758497,
+      "repair_aw": 2.603006178631028,
+      "use_repair": true
+    },
+    "W|women_default": {
+      "n": 3214,
+      "orig_aw": 2.672009111835097,
+      "repair_aw": 2.6723325388862724,
+      "use_repair": false
+    },
+    "W|women_elite_compact": {
+      "n": 1562,
+      "orig_aw": 2.3144642360039347,
+      "repair_aw": 2.3022214853955987,
+      "use_repair": true
+    },
+    "W|women_friendly_conservative": {
+      "n": 2214,
+      "orig_aw": 2.605412238915809,
+      "repair_aw": 2.615270982248873,
+      "use_repair": false
+    },
+    "W|women_qualifier_blowout": {
+      "n": 1406,
+      "orig_aw": 3.0940658299860413,
+      "repair_aw": 3.096537420763606,
+      "use_repair": false
+    },
+    "W|women_qualifier_strong": {
+      "n": 1868,
+      "orig_aw": 2.738022619036632,
+      "repair_aw": 2.726632926952814,
+      "use_repair": true
+    },
+    "W|women_regional_volatile": {
+      "n": 370,
+      "orig_aw": 2.9677610717073586,
+      "repair_aw": 2.9198038368247174,
+      "use_repair": true
+    },
+    "W|women_uefa_qualifier_era": {
+      "n": 1488,
+      "orig_aw": 2.5450062629202335,
+      "repair_aw": 2.5477275066532865,
+      "use_repair": false
+    }
+  }
+}
