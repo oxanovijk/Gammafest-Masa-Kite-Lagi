@@ -1,0 +1,84 @@
+{
+  "strategy": "experiment_f3_conf_pair8_stitch",
+  "output_path": "dataset\\submission_experiment_f3_conf_pair8_stitch.csv",
+  "metrics": {
+    "exact_accuracy": 0.1333034746122295,
+    "outcome_accuracy": 0.6156003960209325,
+    "goal_diff_accuracy": 0.24956390552072039,
+    "awmae": 2.3122624629681283
+  },
+  "pair_inconsistent_matches": 2499,
+  "levels": [
+    [
+      [
+        "gender",
+        "tournament",
+        "year",
+        "conf_pair"
+      ],
+      8
+    ],
+    [
+      [
+        "gender",
+        "tournament",
+        "year"
+      ],
+      10
+    ],
+    [
+      [
+        "gender",
+        "tournament",
+        "era"
+      ],
+      20
+    ],
+    [
+      [
+        "gender",
+        "tournament"
+      ],
+      40
+    ],
+    [
+      [
+        "gender",
+        "archetype"
+      ],
+      40
+    ]
+  ],
+  "fallback": "E5",
+  "choice_counts": {
+    "E5": 15687,
+    "v4": 2566,
+    "dynamic": 2544,
+    "metric_draw_off": 3570,
+    "risk3": 2015,
+    "metric_batch": 1794,
+    "v29": 1836,
+    "E4": 5022,
+    "Plan01": 1539,
+    "E1": 28,
+    "risk2": 403,
+    "v5": 794,
+    "E2": 1096,
+    "risk1": 2439,
+    "Plan02": 505,
+    "ExpA": 204,
+    "ExpB": 216,
+    "E3": 96,
+    "ExpD": 22,
+    "Plan03": 46
+  },
+  "level_counts": {
+    "gender,tournament,year": 5112,
+    "gender,tournament,year,conf_pair": 36680,
+    "gender,archetype": 282,
+    "gender,tournament,era": 194,
+    "gender,tournament": 154
+  },
+  "risk": "Aggressive segment-level fit; useful as local-score ceiling, not recommended as robust default.",
+  "leakage_note": "No Id/team/opponent/match_id lookup, but min_n=8 is high overfit risk."
+}

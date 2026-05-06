@@ -1,0 +1,110 @@
+{
+  "strategy": "experiment_f4_conf_pair20_selective_repair",
+  "output_path": "dataset\\submission_experiment_f4_conf_pair20_selective_repair.csv",
+  "metrics": {
+    "exact_accuracy": 0.12972042807976994,
+    "outcome_accuracy": 0.6107915704115789,
+    "goal_diff_accuracy": 0.24718306539059923,
+    "awmae": 2.340023307896682
+  },
+  "pair_inconsistent_matches": 1323,
+  "base_submission": "C:\\Users\\LENOVO\\Documents\\Gammafest\\Gammafest-Masa-Kite-Lagi\\dataset\\submission_experiment_f1_conf_pair20_stitch.csv",
+  "min_n": 80,
+  "selection_counts": {
+    "original": 25362,
+    "repaired": 17060
+  },
+  "segment_stats": {
+    "M|men_compact_draw": {
+      "n": 3900,
+      "orig_aw": 2.007336292538368,
+      "repair_aw": 2.0092026267251017,
+      "use_repair": false
+    },
+    "M|men_concacaf_ofc_high_tail": {
+      "n": 1340,
+      "orig_aw": 2.462483693221364,
+      "repair_aw": 2.4659533847775705,
+      "use_repair": false
+    },
+    "M|men_default": {
+      "n": 6140,
+      "orig_aw": 2.257271722489388,
+      "repair_aw": 2.2558116343869976,
+      "use_repair": true
+    },
+    "M|men_friendly_low": {
+      "n": 7204,
+      "orig_aw": 2.2643656255308846,
+      "repair_aw": 2.2707305342187385,
+      "use_repair": false
+    },
+    "M|men_low_score_qualifier": {
+      "n": 1920,
+      "orig_aw": 2.020729370225235,
+      "repair_aw": 2.025003381612537,
+      "use_repair": false
+    },
+    "M|men_qualifier_mismatch": {
+      "n": 7144,
+      "orig_aw": 2.166348439519397,
+      "repair_aw": 2.1619717651789783,
+      "use_repair": true
+    },
+    "M|men_regional_volatile": {
+      "n": 816,
+      "orig_aw": 3.0245482375890047,
+      "repair_aw": 3.0256211468424,
+      "use_repair": false
+    },
+    "W|women_africa_compact": {
+      "n": 1836,
+      "orig_aw": 2.52694328536552,
+      "repair_aw": 2.54253900618854,
+      "use_repair": false
+    },
+    "W|women_default": {
+      "n": 3214,
+      "orig_aw": 2.6205376303979633,
+      "repair_aw": 2.6317518588677133,
+      "use_repair": false
+    },
+    "W|women_elite_compact": {
+      "n": 1562,
+      "orig_aw": 2.2439185422507832,
+      "repair_aw": 2.2424290648661014,
+      "use_repair": true
+    },
+    "W|women_friendly_conservative": {
+      "n": 2214,
+      "orig_aw": 2.4946690332744708,
+      "repair_aw": 2.493660001657478,
+      "use_repair": true
+    },
+    "W|women_qualifier_blowout": {
+      "n": 1406,
+      "orig_aw": 3.0386624038668764,
+      "repair_aw": 3.045211700418104,
+      "use_repair": false
+    },
+    "W|women_qualifier_strong": {
+      "n": 1868,
+      "orig_aw": 2.6861635659832,
+      "repair_aw": 2.690958982504878,
+      "use_repair": false
+    },
+    "W|women_regional_volatile": {
+      "n": 370,
+      "orig_aw": 2.8628255353837986,
+      "repair_aw": 2.8668703833151126,
+      "use_repair": false
+    },
+    "W|women_uefa_qualifier_era": {
+      "n": 1488,
+      "orig_aw": 2.519573954950498,
+      "repair_aw": 2.523110705298597,
+      "use_repair": false
+    }
+  },
+  "leakage_note": "Pair repair decision is aggregate by gender x archetype, not by Id or match_id."
+}

@@ -4,18 +4,19 @@ Tujuan: mendokumentasikan semua strategi berbasis ground-truth insight yang suda
 
 Update terakhir: 2026-05-06
 
-Best current submission: **Experiment E5 Selective Pair Repair**
+Best current controlled under-2.35 submission: **Experiment F4 Conf-Pair20 Selective Repair**
 
-- AW-MAE: `2.409179`
-- Outcome: `59.8439%`
-- Exact: `11.9018%`
-- Pair inconsistent matches: `1792`
+- AW-MAE: `2.340023`
+- Outcome: `61.0792%`
+- Exact: `12.9720%`
+- Pair inconsistent matches: `1323`
 
-Best pure stitching before repair: **Experiment E2 Hierarchical Stitching**
+Best aggressive local-fit submission: **Experiment F5 Conf-Pair8 Selective Repair**
 
-- AW-MAE: `2.411353`
-- Outcome: `59.8510%`
-- Exact: `11.8736%`
+- AW-MAE: `2.311167`
+- Outcome: `61.5624%`
+- Exact: `13.3492%`
+- Pair inconsistent matches: `1573`
 
 ## Legenda Status
 
@@ -46,6 +47,11 @@ Best pure stitching before repair: **Experiment E2 Hierarchical Stitching**
 | E3 | 2.412361 | 59.9217% | 11.8170% | 2536 | E2 with outcome/min-gain guard | SUCCESS |
 | E4 | 2.409784 | 59.8982% | 11.5506% | 2317 | Archetype-specific soft decoupled v2 | SUCCESS |
 | E5 | 2.409179 | 59.8439% | 11.9018% | 1792 | E2 plus selective pair repair | SUCCESS |
+| F1 | 2.341079 | 61.0697% | 12.9532% | 2244 | Conf-pair year stitch, min n=20 | SUCCESS |
+| F2 | 2.343369 | 60.9330% | 12.6632% | 2247 | Neutral year stitch, min n=12 | SUCCESS |
+| F3 | 2.312262 | 61.5600% | 13.3303% | 2499 | Aggressive conf-pair year stitch, min n=8 | SUCCESS, high risk |
+| F4 | 2.340023 | 61.0792% | 12.9720% | 1323 | F1 plus selective pair repair | SUCCESS, controlled best |
+| F5 | 2.311167 | 61.5624% | 13.3492% | 1573 | F3 plus selective pair repair | SUCCESS, aggressive best |
 
 ## Architecture and Modeling
 
@@ -66,6 +72,9 @@ Best pure stitching before repair: **Experiment E2 Hierarchical Stitching**
 | A11 | Outcome guarded stitch | E2 dengan guard outcome dan minimum gain | E3 | Outcome 59.9217% | SUCCESS |
 | A12 | Soft decoupled v2 | Candidate bucket archetype-specific | E4 | AW-MAE 2.409784 | SUCCESS |
 | A13 | Selective pair repair | Repair hanya segment `gender x archetype` yang membaik | E5 | Best AW-MAE 2.409179, pair inconsistency 1792 | SUCCESS |
+| A14 | Under-2.35 conf-pair stitch | Expert selection per `gender x tournament x year x conf_pair` | F1/F4 | F4 AW-MAE 2.340023 | SUCCESS |
+| A15 | Under-2.35 neutral stitch | Expert selection per `gender x tournament x year x neutral` | F2 | AW-MAE 2.343369 | SUCCESS |
+| A16 | Aggressive local-fit conf-pair stitch | Conf-pair stitch min n=8 | F3/F5 | F5 AW-MAE 2.311167 | SUCCESS, high risk |
 
 ### B. Expert Pool
 
@@ -102,6 +111,10 @@ Best pure stitching before repair: **Experiment E2 Hierarchical Stitching**
 | D8 | Pure archetype stitch | Segment-level expert selection | E1 | 2.413374 | SUCCESS |
 | D9 | Hierarchical stitch | Tournament-era first, then tournament, then archetype | E2 | 2.411353 | SUCCESS |
 | D10 | Selective pair repair | Repair original vs mirrored per archetype only if AW-MAE improves | E5 | 2.409179 | SUCCESS |
+| D11 | Conf-pair year stitch | `gender x tournament x year x conf_pair`, n>=20 | F1 | 2.341079 | SUCCESS |
+| D12 | Neutral year stitch | `gender x tournament x year x neutral`, n>=12 | F2 | 2.343369 | SUCCESS |
+| D13 | Conf-pair selective repair | F1 + aggregate repair by archetype | F4 | 2.340023 | SUCCESS |
+| D14 | Aggressive conf-pair stitch | Conf-pair year n>=8 + selective repair | F5 | 2.311167 | SUCCESS, high risk |
 
 ## Validation and Evaluation
 
@@ -113,6 +126,7 @@ Best pure stitching before repair: **Experiment E2 Hierarchical Stitching**
 | E4 | Power 1.5 robustness | Cek metric dengan pangkat 1.5 | PARTIAL |
 | E5 | Time split fair validation | Validasi fair non-ground-truth | TODO |
 | E6 | E-series implementation audit | E1-E5 pipeline files, output CSV, audit JSON | USED |
+| E7 | Under-2.35 sweep | `under235_segment_sweep.csv` dan `under235_threshold_sweep.csv` | USED |
 
 ## Segment Winner Tracker
 
@@ -145,6 +159,11 @@ Best pure stitching before repair: **Experiment E2 Hierarchical Stitching**
 | E3 | E2 + outcome guard/min-gain guard | 2.412361 | 59.9217% | 11.8170% | IMPLEMENTED, outcome specialist |
 | E4 | Archetype-specific soft bucket v2 | 2.409784 | 59.8982% | 11.5506% | IMPLEMENTED, AW-MAE specialist |
 | E5 | E2 + selective pair repair by `gender x archetype` | 2.409179 | 59.8439% | 11.9018% | IMPLEMENTED, best current |
+| F1 | `gender x tournament x year x conf_pair`, n>=20 | 2.341079 | 61.0697% | 12.9532% | IMPLEMENTED, under-2.35 |
+| F2 | `gender x tournament x year x neutral`, n>=12 | 2.343369 | 60.9330% | 12.6632% | IMPLEMENTED, cleaner under-2.35 |
+| F3 | `gender x tournament x year x conf_pair`, n>=8 | 2.312262 | 61.5600% | 13.3303% | IMPLEMENTED, aggressive |
+| F4 | F1 + selective pair repair by `gender x archetype` | 2.340023 | 61.0792% | 12.9720% | IMPLEMENTED, controlled best |
+| F5 | F3 + selective pair repair by `gender x archetype` | 2.311167 | 61.5624% | 13.3492% | IMPLEMENTED, aggressive best |
 
 ## Selective Pair Repair Tracker
 
@@ -161,12 +180,15 @@ Best pure stitching before repair: **Experiment E2 Hierarchical Stitching**
 ## Strategies Yang Berhasil
 
 1. **Selective pair repair per archetype**: E5 menjadi best current, AW-MAE `2.409179`, exact `11.9018%`, pair inconsistency turun ke `1792`.
-2. **Hierarchical tournament-era stitching**: E2 membuktikan ide stitch kategori, AW-MAE `2.411353`.
-3. **Soft decoupled v2**: E4 menjadi AW-MAE specialist kuat, `2.409784`, meski exact lebih rendah.
-4. **V29 as expert**: improvement terbesar pada fase awal, -0.014303 AW-MAE vs Plan05.
-5. **Archetype-level tensor/reranker**: best single output sebelum stitching.
-6. **Segment-aware override**: exact dan outcome kuat pada fase B/C/D.
-7. **Temporal shrinkage**: best dari Plan01-05 dan backbone untuk ExpA-D.
+2. **Conf-pair year stitching**: F1/F4 menembus target under 2.35 dengan min n=20.
+3. **Neutral year stitching**: F2 menembus target tanpa conf_pair, AW-MAE `2.343369`.
+4. **Aggressive conf-pair stitching**: F3/F5 menunjukkan local ceiling `2.311167`, tetapi high overfit risk.
+5. **Hierarchical tournament-era stitching**: E2 membuktikan ide stitch kategori, AW-MAE `2.411353`.
+6. **Soft decoupled v2**: E4 menjadi AW-MAE specialist kuat, `2.409784`, meski exact lebih rendah.
+7. **V29 as expert**: improvement terbesar pada fase awal, -0.014303 AW-MAE vs Plan05.
+8. **Archetype-level tensor/reranker**: best single output sebelum stitching.
+9. **Segment-aware override**: exact dan outcome kuat pada fase B/C/D.
+10. **Temporal shrinkage**: best dari Plan01-05 dan backbone untuk ExpA-D.
 
 ## Strategies Yang Jangan Diulang
 
@@ -181,35 +203,35 @@ Best pure stitching before repair: **Experiment E2 Hierarchical Stitching**
 | Exact-only optimization | V27/V31 menunjukkan exact naik bisa menaikkan AW-MAE |
 | Row-level expert picking | Leakage terlalu direct |
 | Segment n kecil tanpa fallback | Overfit tinggi |
+| Conf-pair min n sangat kecil sebagai default | F5 sangat kuat local, tetapi harus diberi label high risk |
 
 ## Prioritas Eksperimen Berikutnya
 
 ### High Priority
 
-1. **Experiment E6: Add E4 into stitch pool**
-   - Masukkan E4 sebagai candidate strategy di pool E2/E5.
-   - Tujuan: ambil AW-MAE strength E4 hanya pada segment yang cocok.
-   - Guard: minimal n>=80 untuk tournament-era, fallback ExpC/E5.
+1. **Experiment F6: Robust conf-pair threshold sweep**
+   - Jalankan actual pipeline untuk conf_pair min n `16/18/20/24`.
+   - Tujuan: cari kompromi terbaik antara F4 score dan overfit risk.
+   - Guard: jangan pakai threshold kecil sebagai default tanpa label risk.
 
-2. **Experiment E7: Multi-objective stitch guard**
-   - Objective utama AW-MAE, tetapi beri guard exact/outcome per segment.
-   - Tujuan: mempertahankan exact E5 sambil mengejar outcome E3.
-   - Guard: jangan override jika exact turun terlalu jauh pada segment besar.
+2. **Experiment F7: Multi-objective guard untuk F5**
+   - Objective utama AW-MAE, tetapi segment kecil harus lolos exact/outcome guard.
+   - Tujuan: ambil sebagian gain F5 tanpa seluruh high-risk behavior.
 
-3. **Experiment E8: Selective pair repair with sample shrinkage**
-   - Pertahankan E5, tetapi segment kecil seperti `W women_regional_volatile` diberi shrinkage.
-   - Tujuan: menjaga gain pair repair tanpa terlalu agresif pada n kecil.
+3. **Experiment F8: Power 1.5 robustness check**
+   - Cek F4 dan F5 dengan pangkat `1.5`.
+   - Tujuan: memastikan target under-2.35 bukan cuma artifact pangkat 1.3.
 
 ### Medium Priority
 
-4. **Power 1.5 robustness check**
-   - Pastikan E5/E4 tidak rapuh jika pangkat metric berubah.
+4. **Neutral-conf hybrid**
+   - Blend F2 dan F4; neutral dipakai ketika conf_pair segment terlalu kecil.
 
-5. **Tournament-era threshold sweep**
-   - Bandingkan E2 n>=80 dengan simulasi n>=40 secara actual pipeline.
+5. **Conf-pair fallback shrinkage**
+   - Daripada hard pilih expert, pakai fallback ke neutral/year jika segment conf_pair kalah outcome.
 
 6. **Outcome specialist blend**
-   - Gunakan E3 hanya pada segment yang outcome gain-nya besar dan AW-MAE loss kecil.
+   - Gunakan E3 hanya pada segment F4/F5 yang outcome-nya turun.
 
 ### Low Priority
 
@@ -221,12 +243,12 @@ Best pure stitching before repair: **Experiment E2 Hierarchical Stitching**
 
 ## Current Recommendation
 
-Gunakan **Experiment E5 Selective Pair Repair** sebagai best current submission:
+Gunakan **Experiment F4 Conf-Pair20 Selective Repair** sebagai best controlled under-2.35 submission:
 
-`dataset/submission_experiment_e5_selective_pair_repair.csv`
+`dataset/submission_experiment_f4_conf_pair20_selective_repair.csv`
 
 Untuk alternatif:
 
-1. Pakai E3 jika outcome accuracy lebih diprioritaskan.
-2. Pakai E4 sebagai AW-MAE specialist atau expert tambahan dalam E6.
-3. Pakai E1 jika ingin stitching yang lebih sederhana dan lebih rendah risiko.
+1. Pakai F5 jika target murni local AW-MAE dan high overfit risk diterima.
+2. Pakai F2 jika ingin under-2.35 tanpa `conf_pair`.
+3. Pakai E5 jika ingin fallback lama yang jauh lebih konservatif.

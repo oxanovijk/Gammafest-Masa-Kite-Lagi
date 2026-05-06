@@ -1,0 +1,1414 @@
+level,min_n,key,n,best,best_aw,best_exact,best_outcome
+"gender,tournament,year,neutral",12,M|AFC Asian Cup|2015|0,12,risk1,1.6348716385097573,8.333333333333332,83.33333333333334
+"gender,tournament,year,neutral",12,M|AFC Asian Cup|2015|1,52,E5,1.6835175653072683,26.923076923076923,61.53846153846154
+"gender,tournament,year,neutral",12,M|AFC Asian Cup|2019|0,12,Plan01,2.295697858292391,25.0,50.0
+"gender,tournament,year,neutral",12,M|AFC Asian Cup|2019|1,90,E5,2.2819619069466626,14.444444444444443,62.22222222222222
+"gender,tournament,year,neutral",12,M|AFC Asian Cup|2024|0,14,E5,1.7803149529611655,35.714285714285715,57.14285714285714
+"gender,tournament,year,neutral",12,M|AFC Asian Cup|2024|1,88,E5,1.9863787446406602,13.636363636363635,59.09090909090909
+"gender,tournament,year,neutral",12,M|AFC Asian Cup qualification|2013|0,82,risk2,1.6272243096317536,23.170731707317074,73.17073170731707
+"gender,tournament,year,neutral",12,M|AFC Asian Cup qualification|2013|1,14,metric_draw_off,1.321615938712214,28.57142857142857,85.71428571428571
+"gender,tournament,year,neutral",12,M|AFC Asian Cup qualification|2014|0,20,metric_batch,2.1464246692126667,25.0,65.0
+"gender,tournament,year,neutral",12,M|AFC Asian Cup qualification|2016|0,26,E5,2.114055001474235,3.8461538461538463,69.23076923076923
+"gender,tournament,year,neutral",12,M|AFC Asian Cup qualification|2017|0,104,E5,2.6782810814302795,7.6923076923076925,57.692307692307686
+"gender,tournament,year,neutral",12,M|AFC Asian Cup qualification|2017|1,12,metric_batch,2.605721998120464,0.0,33.33333333333333
+"gender,tournament,year,neutral",12,M|AFC Asian Cup qualification|2018|0,20,Plan01,1.980729533898137,20.0,60.0
+"gender,tournament,year,neutral",12,M|AFC Asian Cup qualification|2022|0,36,risk2,1.9337182057654008,8.333333333333332,66.66666666666666
+"gender,tournament,year,neutral",12,M|AFC Asian Cup qualification|2022|1,36,metric_draw_off,1.955239364613906,16.666666666666664,77.77777777777779
+"gender,tournament,year,neutral",12,M|AFC Asian Cup qualification|2025|0,92,E5,1.8284417229245482,19.565217391304348,69.56521739130434
+"gender,tournament,year,neutral",12,M|AFC Asian Cup qualification|2025|1,26,dynamic,1.9847692715135894,15.384615384615385,92.3076923076923
+"gender,tournament,year,neutral",12,M|AFC Challenge Cup|2012|1,26,metric_draw_off,1.9374338423506858,15.384615384615385,76.92307692307693
+"gender,tournament,year,neutral",12,M|AFC Challenge Cup|2014|1,22,metric_draw_off,2.5149588870205077,9.090909090909092,63.63636363636363
+"gender,tournament,year,neutral",12,M|AFC Challenge Cup|2016|1,26,E5,2.8983134157393127,15.384615384615385,30.76923076923077
+"gender,tournament,year,neutral",12,M|AFC Challenge Cup qualification|2013|0,26,metric_draw_off,2.711792098422705,7.6923076923076925,53.84615384615385
+"gender,tournament,year,neutral",12,M|AFC Challenge Cup qualification|2013|1,24,E5,2.049638147438266,16.666666666666664,83.33333333333334
+"gender,tournament,year,neutral",12,M|AFF Championship|2012|0,24,Plan02,1.6077025714106685,8.333333333333332,79.16666666666666
+"gender,tournament,year,neutral",12,M|AFF Championship|2012|1,12,risk3,2.683569096097455,0.0,50.0
+"gender,tournament,year,neutral",12,M|AFF Championship|2014|0,24,E5,2.443947955849486,12.5,45.83333333333333
+"gender,tournament,year,neutral",12,M|AFF Championship|2014|1,12,Plan01,2.8060858096321315,8.333333333333332,66.66666666666666
+"gender,tournament,year,neutral",12,M|AFF Championship|2016|0,24,Plan01,1.3939108320849005,25.0,75.0
+"gender,tournament,year,neutral",12,M|AFF Championship|2016|1,12,E5,1.8547886009557626,0.0,83.33333333333334
+"gender,tournament,year,neutral",12,M|AFF Championship|2018|0,50,dynamic,1.7582941589063392,12.0,76.0
+"gender,tournament,year,neutral",12,M|AFF Championship|2021|0,12,E5,2.263810995177078,0.0,58.333333333333336
+"gender,tournament,year,neutral",12,M|AFF Championship|2021|1,38,E5,2.002826183930825,10.526315789473683,84.21052631578947
+"gender,tournament,year,neutral",12,M|AFF Championship|2022|0,28,v4,1.9598058556879985,10.714285714285714,75.0
+"gender,tournament,year,neutral",12,M|AFF Championship|2023|0,20,E4,1.446133856700196,10.0,80.0
+"gender,tournament,year,neutral",12,M|AFF Championship qualification|2012|1,12,E5,3.0207602127807167,16.666666666666664,50.0
+"gender,tournament,year,neutral",12,M|AFF Championship qualification|2014|1,12,E5,1.8872178753129394,16.666666666666664,83.33333333333334
+"gender,tournament,year,neutral",12,M|ASEAN Championship|2024|0,44,E5,2.2046014217567236,13.636363636363635,63.63636363636363
+"gender,tournament,year,neutral",12,M|African Cup of Nations|2012|0,16,E5,1.5986296858637612,37.5,62.5
+"gender,tournament,year,neutral",12,M|African Cup of Nations|2012|1,48,E5,1.8939192396732814,20.833333333333336,50.0
+"gender,tournament,year,neutral",12,M|African Cup of Nations|2013|1,56,E5,1.8360452155096858,25.0,57.14285714285714
+"gender,tournament,year,neutral",12,M|African Cup of Nations|2015|0,12,Plan02,1.704978348776712,16.666666666666664,66.66666666666666
+"gender,tournament,year,neutral",12,M|African Cup of Nations|2015|1,52,E5,1.8832472990346951,17.307692307692307,46.15384615384615
+"gender,tournament,year,neutral",12,M|African Cup of Nations|2017|1,58,Plan02,1.6723523197810086,17.24137931034483,58.620689655172406
+"gender,tournament,year,neutral",12,M|African Cup of Nations|2019|1,96,v4,2.0736333743480455,15.625,46.875
+"gender,tournament,year,neutral",12,M|African Cup of Nations|2022|0,14,metric_batch,1.993861637715901,14.285714285714285,71.42857142857143
+"gender,tournament,year,neutral",12,M|African Cup of Nations|2022|1,90,metric_draw_off,1.8550458278608049,22.22222222222222,48.888888888888886
+"gender,tournament,year,neutral",12,M|African Cup of Nations|2024|0,14,Plan01,2.2214714510466833,28.57142857142857,57.14285714285714
+"gender,tournament,year,neutral",12,M|African Cup of Nations|2024|1,90,E5,2.1555735963025016,18.88888888888889,45.55555555555556
+"gender,tournament,year,neutral",12,M|African Cup of Nations|2025|1,66,Plan01,1.7690384639846648,18.181818181818183,63.63636363636363
+"gender,tournament,year,neutral",12,M|African Cup of Nations|2026|1,24,dynamic,1.7696396435108142,8.333333333333332,58.333333333333336
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2011|0,82,E4,1.5555642090033548,21.951219512195124,70.73170731707317
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2012|0,118,E5,2.339889920013554,16.101694915254235,51.69491525423729
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2014|0,238,E5,1.9745195549836418,18.907563025210084,57.56302521008403
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2014|1,12,E5,2.0496861460932787,8.333333333333332,25.0
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2015|0,90,dynamic,1.7598380583315891,26.666666666666668,68.88888888888889
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2016|0,188,E5,1.9157582375347557,21.808510638297875,61.170212765957444
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2017|0,56,v29,2.249804292944063,12.5,60.71428571428571
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2018|0,182,E5,1.9899246947483906,9.89010989010989,52.74725274725275
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2019|0,150,E5,1.9898430540461869,18.666666666666668,63.33333333333333
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2020|0,90,metric_batch,1.923454871110889,10.0,64.44444444444444
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2021|0,88,metric_draw_off,2.377577067382766,15.909090909090908,45.45454545454545
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2022|0,62,v29,1.838392944959917,16.129032258064516,64.51612903225806
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2022|1,46,v5,1.8513738771392352,23.91304347826087,76.08695652173914
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2023|0,122,Plan02,2.1393524757725455,11.475409836065573,50.81967213114754
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2023|1,54,Plan02,2.1941860063141405,7.4074074074074066,59.25925925925925
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2024|0,186,E5,2.163020232010158,12.903225806451612,50.53763440860215
+"gender,tournament,year,neutral",12,M|African Cup of Nations qualification|2024|1,116,E5,1.951595263603781,18.96551724137931,51.724137931034484
+"gender,tournament,year,neutral",12,M|Arab Cup|2012|1,14,metric_draw_off,1.3436101287760098,28.57142857142857,85.71428571428571
+"gender,tournament,year,neutral",12,M|Arab Cup|2021|0,12,E5,1.9594956170898967,16.666666666666664,66.66666666666666
+"gender,tournament,year,neutral",12,M|Arab Cup|2021|1,52,E4,2.2905217871194656,11.538461538461538,57.692307692307686
+"gender,tournament,year,neutral",12,M|Arab Cup|2025|1,56,E5,2.4021232524145106,10.714285714285714,44.642857142857146
+"gender,tournament,year,neutral",12,M|Arab Cup qualification|2021|1,12,metric_batch,2.7527404949698453,0.0,50.0
+"gender,tournament,year,neutral",12,M|Arab Cup qualification|2025|1,14,metric_draw_off,2.805879032283111,14.285714285714285,57.14285714285714
+"gender,tournament,year,neutral",12,M|CECAFA Cup|2011|0,12,E5,2.1991468596770067,16.666666666666664,16.666666666666664
+"gender,tournament,year,neutral",12,M|CECAFA Cup|2011|1,40,metric_batch,2.2924096722466323,12.5,37.5
+"gender,tournament,year,neutral",12,M|CECAFA Cup|2012|0,12,v4,0.6604887951704447,50.0,100.0
+"gender,tournament,year,neutral",12,M|CECAFA Cup|2012|1,40,v29,2.2526408365741877,5.0,57.49999999999999
+"gender,tournament,year,neutral",12,M|CECAFA Cup|2013|0,12,E5,0.8255982912209121,33.33333333333333,83.33333333333334
+"gender,tournament,year,neutral",12,M|CECAFA Cup|2013|1,40,ExpC,1.5640589797862685,35.0,65.0
+"gender,tournament,year,neutral",12,M|CECAFA Cup|2015|0,12,E4,0.5922610808972115,66.66666666666666,83.33333333333334
+"gender,tournament,year,neutral",12,M|CECAFA Cup|2015|1,40,metric_draw_off,1.8140903589582198,5.0,65.0
+"gender,tournament,year,neutral",12,M|CECAFA Cup|2017|0,12,metric_batch,1.4514049694706044,0.0,83.33333333333334
+"gender,tournament,year,neutral",12,M|CECAFA Cup|2017|1,28,E5,2.6122951115028106,7.142857142857142,35.714285714285715
+"gender,tournament,year,neutral",12,M|CFU Caribbean Cup|2012|1,26,metric_draw_off,1.8852776649631715,30.76923076923077,46.15384615384615
+"gender,tournament,year,neutral",12,M|CFU Caribbean Cup|2014|1,18,E5,1.8368960688844114,11.11111111111111,66.66666666666666
+"gender,tournament,year,neutral",12,M|CFU Caribbean Cup qualification|2012|0,32,v29,3.1353025439531503,0.0,62.5
+"gender,tournament,year,neutral",12,M|CFU Caribbean Cup qualification|2012|1,42,v29,2.867794121811007,16.666666666666664,76.19047619047619
+"gender,tournament,year,neutral",12,M|CFU Caribbean Cup qualification|2014|0,28,v4,2.21627788490418,7.142857142857142,57.14285714285714
+"gender,tournament,year,neutral",12,M|CFU Caribbean Cup qualification|2014|1,40,E5,2.3890823208767213,25.0,55.00000000000001
+"gender,tournament,year,neutral",12,M|CFU Caribbean Cup qualification|2016|0,72,risk1,2.409552160868479,15.277777777777779,68.05555555555556
+"gender,tournament,year,neutral",12,M|CONCACAF Nations League|2019|0,176,ExpA,2.330331104367669,12.5,65.9090909090909
+"gender,tournament,year,neutral",12,M|CONCACAF Nations League|2019|1,28,v4,2.265524312148799,7.142857142857142,64.28571428571429
+"gender,tournament,year,neutral",12,M|CONCACAF Nations League|2022|0,102,metric_draw_off,2.199761513173524,19.607843137254903,58.82352941176471
+"gender,tournament,year,neutral",12,M|CONCACAF Nations League|2022|1,32,E5,2.6343940326213064,6.25,50.0
+"gender,tournament,year,neutral",12,M|CONCACAF Nations League|2023|0,226,E5,2.7118326156217116,7.964601769911504,53.98230088495575
+"gender,tournament,year,neutral",12,M|CONCACAF Nations League|2023|1,44,E5,3.0347516676744206,4.545454545454546,63.63636363636363
+"gender,tournament,year,neutral",12,M|CONCACAF Nations League|2024|0,154,risk2,2.5500290913739705,6.493506493506493,61.038961038961034
+"gender,tournament,year,neutral",12,M|CONCACAF Nations League|2024|1,66,E5,2.2153257692464945,15.151515151515152,75.75757575757575
+"gender,tournament,year,neutral",12,M|CONCACAF Nations League qualification|2018|0,76,E4,3.1332284913550192,10.526315789473683,71.05263157894737
+"gender,tournament,year,neutral",12,M|CONCACAF Nations League qualification|2018|1,24,E5,3.9083889851447764,8.333333333333332,66.66666666666666
+"gender,tournament,year,neutral",12,M|CONCACAF Nations League qualification|2019|0,28,E4,1.8750085640766156,28.57142857142857,57.14285714285714
+"gender,tournament,year,neutral",12,M|CONCACAF Series|2025|0,16,metric_draw_off,4.062900023001651,0.0,25.0
+"gender,tournament,year,neutral",12,M|CONCACAF Series|2025|1,22,E5,3.017410976094001,13.636363636363635,50.0
+"gender,tournament,year,neutral",12,M|CONCACAF Series|2026|0,12,E4,2.461343471950832,16.666666666666664,33.33333333333333
+"gender,tournament,year,neutral",12,M|CONCACAF Series|2026|1,20,E4,2.3497014990803455,0.0,60.0
+"gender,tournament,year,neutral",12,M|CONIFA European Football Cup|2015|1,16,E5,2.290544929900537,0.0,75.0
+"gender,tournament,year,neutral",12,M|CONIFA European Football Cup|2017|1,26,E5,2.6535491320474867,15.384615384615385,46.15384615384615
+"gender,tournament,year,neutral",12,M|CONIFA European Football Cup|2019|1,30,E5,3.1383424443092447,13.333333333333334,33.33333333333333
+"gender,tournament,year,neutral",12,M|CONIFA World Football Cup|2014|1,48,E4,6.15914271765148,0.0,41.66666666666667
+"gender,tournament,year,neutral",12,M|CONIFA World Football Cup|2016|1,46,risk2,4.0582915016742875,4.3478260869565215,47.82608695652174
+"gender,tournament,year,neutral",12,M|CONIFA World Football Cup|2018|0,12,v4,4.624363955075423,0.0,58.333333333333336
+"gender,tournament,year,neutral",12,M|CONIFA World Football Cup|2018|1,78,E5,3.0433832014455025,5.128205128205128,58.97435897435898
+"gender,tournament,year,neutral",12,M|COSAFA Cup|2013|1,34,risk1,2.0850557136295755,17.647058823529413,55.88235294117647
+"gender,tournament,year,neutral",12,M|COSAFA Cup|2015|1,42,v29,2.9400682497641264,9.523809523809524,23.809523809523807
+"gender,tournament,year,neutral",12,M|COSAFA Cup|2016|1,40,E5,2.665946312854595,15.0,55.00000000000001
+"gender,tournament,year,neutral",12,M|COSAFA Cup|2017|1,40,metric_draw_off,2.667217721799237,10.0,55.00000000000001
+"gender,tournament,year,neutral",12,M|COSAFA Cup|2018|1,40,E5,1.9370701381892055,30.0,50.0
+"gender,tournament,year,neutral",12,M|COSAFA Cup|2019|1,34,Plan02,1.818033081621786,14.705882352941178,44.11764705882353
+"gender,tournament,year,neutral",12,M|COSAFA Cup|2021|0,12,dynamic,1.297698172300374,16.666666666666664,66.66666666666666
+"gender,tournament,year,neutral",12,M|COSAFA Cup|2021|1,36,E5,2.1962581781773043,16.666666666666664,33.33333333333333
+"gender,tournament,year,neutral",12,M|COSAFA Cup|2022|1,40,E5,2.0789252779603444,30.0,42.5
+"gender,tournament,year,neutral",12,M|COSAFA Cup|2023|1,34,E5,1.9734710089537515,17.647058823529413,50.0
+"gender,tournament,year,neutral",12,M|Confederations Cup|2013|1,22,risk1,2.430356897484861,18.181818181818183,68.18181818181817
+"gender,tournament,year,neutral",12,M|Confederations Cup|2017|1,26,E4,1.3373499901085952,23.076923076923077,76.92307692307693
+"gender,tournament,year,neutral",12,M|Copa América|2015|0,12,E5,1.7060083123325274,16.666666666666664,83.33333333333334
+"gender,tournament,year,neutral",12,M|Copa América|2015|1,40,E5,2.193776316991253,10.0,40.0
+"gender,tournament,year,neutral",12,M|Copa América|2016|0,12,v29,2.0726880144043105,16.666666666666664,50.0
+"gender,tournament,year,neutral",12,M|Copa América|2016|1,52,dynamic,2.5565776386458428,7.6923076923076925,57.692307692307686
+"gender,tournament,year,neutral",12,M|Copa América|2019|0,12,E5,1.8383141040371866,0.0,66.66666666666666
+"gender,tournament,year,neutral",12,M|Copa América|2019|1,40,v29,1.8829941076656005,20.0,60.0
+"gender,tournament,year,neutral",12,M|Copa América|2021|0,14,metric_draw_off,1.5972877775520093,14.285714285714285,71.42857142857143
+"gender,tournament,year,neutral",12,M|Copa América|2021|1,42,metric_batch,1.647505599549727,14.285714285714285,71.42857142857143
+"gender,tournament,year,neutral",12,M|Copa América|2024|1,58,E5,2.183301692898208,13.793103448275861,37.93103448275862
+"gender,tournament,year,neutral",12,M|Coupe de l'Outre-Mer|2012|1,32,E5,2.934643207042202,12.5,62.5
+"gender,tournament,year,neutral",12,M|EAFF Championship|2012|0,12,metric_draw_off,1.542349012930223,0.0,100.0
+"gender,tournament,year,neutral",12,M|EAFF Championship|2012|1,14,v4,3.151351309642748,14.285714285714285,57.14285714285714
+"gender,tournament,year,neutral",12,M|EAFF Championship|2014|1,12,metric_draw_off,2.137110512990251,16.666666666666664,66.66666666666666
+"gender,tournament,year,neutral",12,M|EAFF Championship|2016|1,12,risk3,3.4254407407352274,0.0,50.0
+"gender,tournament,year,neutral",12,M|EAFF Championship|2018|0,12,E5,1.7887068257917875,50.0,83.33333333333334
+"gender,tournament,year,neutral",12,M|EAFF Championship|2018|1,12,E5,2.238084321358705,0.0,66.66666666666666
+"gender,tournament,year,neutral",12,M|FIFA Series|2024|0,16,E5,2.4932335238697076,12.5,62.5
+"gender,tournament,year,neutral",12,M|FIFA Series|2024|1,32,metric_draw_off,2.450256149134199,12.5,75.0
+"gender,tournament,year,neutral",12,M|FIFA Series|2026|0,32,v29,1.9786402750030603,3.125,81.25
+"gender,tournament,year,neutral",12,M|FIFA Series|2026|1,34,E5,2.910496456010084,5.88235294117647,58.82352941176471
+"gender,tournament,year,neutral",12,M|FIFA World Cup|2014|0,14,metric_batch,3.5742631979289747,14.285714285714285,42.857142857142854
+"gender,tournament,year,neutral",12,M|FIFA World Cup|2014|1,114,E4,2.2557464233992985,13.157894736842104,50.0
+"gender,tournament,year,neutral",12,M|FIFA World Cup|2018|1,118,E4,2.2289161111051614,14.40677966101695,48.30508474576271
+"gender,tournament,year,neutral",12,M|FIFA World Cup|2022|1,122,E5,2.366336445311857,11.475409836065573,52.459016393442624
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2011|0,310,E1,2.089932130848571,13.225806451612904,66.77419354838709
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2012|0,468,dynamic,2.0439074854707107,18.803418803418804,64.52991452991454
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2012|1,14,risk1,1.2242969764509153,42.857142857142854,85.71428571428571
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2013|0,682,E1,2.069666474710481,15.689149560117302,59.09090909090909
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2013|1,12,metric_draw_off,0.871618822669577,50.0,66.66666666666666
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2015|0,504,metric_draw_off,2.3891838801609344,15.079365079365079,61.50793650793651
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2015|1,56,E1,2.329052764188405,10.714285714285714,78.57142857142857
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2016|0,494,risk1,2.1114791376524313,9.919028340080972,65.78947368421053
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2016|1,26,metric_draw_off,2.4401548965806126,15.384615384615385,61.53846153846154
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2017|0,590,E5,2.14089260834526,13.220338983050848,60.50847457627119
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2017|1,32,risk1,3.0373337242719876,0.0,28.125
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2019|0,240,E5,1.968983509563545,21.666666666666668,65.41666666666667
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2019|1,32,v29,2.0730938582704774,12.5,43.75
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2020|0,42,risk1,2.7037372477442303,9.523809523809524,45.23809523809524
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2021|0,990,risk1,2.154567394229939,13.535353535353536,64.44444444444444
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2021|1,228,E5,2.2503930180292446,14.035087719298245,68.42105263157895
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2022|0,164,v29,2.1043421668065263,17.682926829268293,51.829268292682926
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2022|1,36,metric_draw_off,1.8729567380404417,11.11111111111111,61.111111111111114
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2023|0,216,v4,2.2152148993516074,13.88888888888889,57.870370370370374
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2023|1,60,dynamic,1.9047418023497094,10.0,60.0
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2024|0,408,v4,2.1796996596173788,12.254901960784313,63.725490196078425
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2024|1,102,v4,2.455772449708118,11.76470588235294,57.84313725490197
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2025|0,822,dynamic,2.385747070493179,12.652068126520682,58.88077858880778
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2025|1,162,E4,2.680354335223221,7.4074074074074066,58.0246913580247
+"gender,tournament,year,neutral",12,M|FIFA World Cup qualification|2026|0,22,metric_batch,1.3612994385155006,31.818181818181817,86.36363636363636
+"gender,tournament,year,neutral",12,M|Friendly|2011|0,310,dynamic,2.21829112415927,15.483870967741936,52.25806451612903
+"gender,tournament,year,neutral",12,M|Friendly|2011|1,60,v4,2.135087334578045,8.333333333333332,60.0
+"gender,tournament,year,neutral",12,M|Friendly|2012|0,620,risk1,2.3700607742361597,11.29032258064516,51.12903225806451
+"gender,tournament,year,neutral",12,M|Friendly|2012|1,200,v4,2.2645994437018135,7.5,57.99999999999999
+"gender,tournament,year,neutral",12,M|Friendly|2013|0,512,E5,2.317863641204834,10.9375,52.5390625
+"gender,tournament,year,neutral",12,M|Friendly|2013|1,142,E5,2.402228241200366,11.267605633802818,45.07042253521127
+"gender,tournament,year,neutral",12,M|Friendly|2014|0,580,E2,2.2585014261490386,10.172413793103448,58.44827586206897
+"gender,tournament,year,neutral",12,M|Friendly|2014|1,194,metric_batch,2.3995108559363314,13.402061855670103,51.03092783505154
+"gender,tournament,year,neutral",12,M|Friendly|2015|0,448,E4,2.173610248064773,10.9375,55.13392857142857
+"gender,tournament,year,neutral",12,M|Friendly|2015|1,132,v29,2.1788945147959256,20.454545454545457,56.81818181818182
+"gender,tournament,year,neutral",12,M|Friendly|2016|0,494,E5,2.1632036321165478,10.728744939271255,56.07287449392713
+"gender,tournament,year,neutral",12,M|Friendly|2016|1,96,E4,2.8327570209409245,8.333333333333332,56.25
+"gender,tournament,year,neutral",12,M|Friendly|2017|0,470,E2,2.31503941085664,8.936170212765958,48.51063829787234
+"gender,tournament,year,neutral",12,M|Friendly|2017|1,120,E5,2.2466818829228945,11.666666666666666,46.666666666666664
+"gender,tournament,year,neutral",12,M|Friendly|2018|0,632,E2,2.421708249816609,9.49367088607595,48.734177215189874
+"gender,tournament,year,neutral",12,M|Friendly|2018|1,230,Plan01,2.239936839937923,10.869565217391305,50.8695652173913
+"gender,tournament,year,neutral",12,M|Friendly|2019|0,372,Plan01,2.167642138728583,9.946236559139784,60.752688172043015
+"gender,tournament,year,neutral",12,M|Friendly|2019|1,124,metric_batch,2.439055901084951,6.451612903225806,43.54838709677419
+"gender,tournament,year,neutral",12,M|Friendly|2020|0,144,dynamic,2.3203197251993912,8.333333333333332,52.77777777777778
+"gender,tournament,year,neutral",12,M|Friendly|2020|1,64,E5,2.0893031009361516,10.9375,57.8125
+"gender,tournament,year,neutral",12,M|Friendly|2021|0,286,risk1,2.157262324887474,9.79020979020979,65.03496503496503
+"gender,tournament,year,neutral",12,M|Friendly|2021|1,144,metric_batch,2.1115945537623784,13.88888888888889,54.166666666666664
+"gender,tournament,year,neutral",12,M|Friendly|2022|0,412,E5,2.1436109722109844,11.650485436893204,58.495145631067956
+"gender,tournament,year,neutral",12,M|Friendly|2022|1,284,metric_batch,2.2139453462578733,9.507042253521126,52.816901408450704
+"gender,tournament,year,neutral",12,M|Friendly|2023|0,352,E2,2.2490512849920306,13.920454545454545,57.10227272727273
+"gender,tournament,year,neutral",12,M|Friendly|2023|1,152,Plan01,2.149009694803135,6.578947368421052,48.68421052631579
+"gender,tournament,year,neutral",12,M|Friendly|2024|0,308,E4,2.2168609785279627,13.636363636363635,55.84415584415584
+"gender,tournament,year,neutral",12,M|Friendly|2024|1,174,Plan01,2.2592291053541267,6.896551724137931,55.172413793103445
+"gender,tournament,year,neutral",12,M|Friendly|2025|0,316,E5,2.3989059392026495,9.49367088607595,57.59493670886076
+"gender,tournament,year,neutral",12,M|Friendly|2025|1,124,v5,2.271938806434556,12.096774193548388,54.03225806451613
+"gender,tournament,year,neutral",12,M|Friendly|2026|0,102,metric_batch,2.3376003803706724,9.803921568627452,47.05882352941176
+"gender,tournament,year,neutral",12,M|Friendly|2026|1,50,Plan01,2.232561473628899,8.0,60.0
+"gender,tournament,year,neutral",12,M|Gold Cup|2013|0,12,v4,1.2416378872420715,33.33333333333333,100.0
+"gender,tournament,year,neutral",12,M|Gold Cup|2013|1,38,metric_draw_off,2.0183738002664753,15.789473684210526,68.42105263157895
+"gender,tournament,year,neutral",12,M|Gold Cup|2015|0,14,risk3,1.8697535599286523,7.142857142857142,50.0
+"gender,tournament,year,neutral",12,M|Gold Cup|2015|1,38,dynamic,2.017055110673087,26.31578947368421,57.89473684210527
+"gender,tournament,year,neutral",12,M|Gold Cup|2017|0,12,metric_batch,0.9815138431753616,16.666666666666664,83.33333333333334
+"gender,tournament,year,neutral",12,M|Gold Cup|2017|1,38,metric_draw_off,1.4959480331782296,26.31578947368421,57.89473684210527
+"gender,tournament,year,neutral",12,M|Gold Cup|2019|0,14,risk1,1.7173518063750755,14.285714285714285,85.71428571428571
+"gender,tournament,year,neutral",12,M|Gold Cup|2019|1,48,dynamic,2.038474118232307,20.833333333333336,66.66666666666666
+"gender,tournament,year,neutral",12,M|Gold Cup|2021|0,12,risk3,1.2824513945658405,33.33333333333333,83.33333333333334
+"gender,tournament,year,neutral",12,M|Gold Cup|2021|1,50,v29,1.8631468318780733,18.0,68.0
+"gender,tournament,year,neutral",12,M|Gold Cup|2023|0,12,risk1,2.4726825990145795,8.333333333333332,33.33333333333333
+"gender,tournament,year,neutral",12,M|Gold Cup|2023|1,50,E4,2.0636659936852038,12.0,72.0
+"gender,tournament,year,neutral",12,M|Gold Cup|2025|0,14,E4,1.8553348436943102,28.57142857142857,71.42857142857143
+"gender,tournament,year,neutral",12,M|Gold Cup|2025|1,48,E4,1.934953816229564,16.666666666666664,62.5
+"gender,tournament,year,neutral",12,M|Gold Cup qualification|2021|1,18,Plan02,2.572916185410383,22.22222222222222,77.77777777777779
+"gender,tournament,year,neutral",12,M|Gold Cup qualification|2023|1,18,v4,1.7305718823604697,16.666666666666664,72.22222222222221
+"gender,tournament,year,neutral",12,M|Gold Cup qualification|2025|0,26,E5,1.899103120744731,23.076923076923077,76.92307692307693
+"gender,tournament,year,neutral",12,M|Gulf Cup|2013|1,22,E5,1.9701047953438175,27.27272727272727,36.36363636363637
+"gender,tournament,year,neutral",12,M|Gulf Cup|2014|1,22,E4,2.599129141819537,9.090909090909092,36.36363636363637
+"gender,tournament,year,neutral",12,M|Gulf Cup|2017|1,18,E4,1.4534445827845286,33.33333333333333,66.66666666666666
+"gender,tournament,year,neutral",12,M|Gulf Cup|2019|1,22,E5,2.7268528364683933,0.0,36.36363636363637
+"gender,tournament,year,neutral",12,M|Gulf Cup|2023|1,20,E5,1.645427490650444,20.0,40.0
+"gender,tournament,year,neutral",12,M|Gulf Cup|2024|1,20,risk1,2.1687791320091003,15.0,35.0
+"gender,tournament,year,neutral",12,M|Indian Ocean Island Games|2011|1,12,E5,2.1985247535347123,16.666666666666664,66.66666666666666
+"gender,tournament,year,neutral",12,M|Indian Ocean Island Games|2015|1,18,E5,2.289468655430464,22.22222222222222,66.66666666666666
+"gender,tournament,year,neutral",12,M|Indian Ocean Island Games|2019|1,18,E4,2.0298748377789715,5.555555555555555,66.66666666666666
+"gender,tournament,year,neutral",12,M|Indian Ocean Island Games|2023|1,12,E4,1.4638799035667887,16.666666666666664,50.0
+"gender,tournament,year,neutral",12,M|Inter Games|2019|1,28,E5,2.4375238672623207,14.285714285714285,85.71428571428571
+"gender,tournament,year,neutral",12,M|Island Games|2015|1,60,E4,1.9248537355214603,23.333333333333332,76.66666666666667
+"gender,tournament,year,neutral",12,M|Island Games|2017|1,60,v4,2.5845852227341126,8.333333333333332,60.0
+"gender,tournament,year,neutral",12,M|Island Games|2023|1,50,E5,1.9715585629624044,8.0,76.0
+"gender,tournament,year,neutral",12,M|Island Games|2025|1,22,E5,3.974868344929645,0.0,45.45454545454545
+"gender,tournament,year,neutral",12,M|Kirin Challenge Cup|2019|0,12,E5,2.426254296166812,16.666666666666664,33.33333333333333
+"gender,tournament,year,neutral",12,"M|Morocco, Capital of African Football|2026|1",12,v4,2.5959343887560222,0.0,25.0
+"gender,tournament,year,neutral",12,M|Nehru Cup|2012|1,12,E5,1.4068075616993931,25.0,66.66666666666666
+"gender,tournament,year,neutral",12,M|Oceania Nations Cup|2012|1,22,E4,2.9517083152748924,9.090909090909092,63.63636363636363
+"gender,tournament,year,neutral",12,M|Oceania Nations Cup|2016|1,20,E4,1.700761701425233,20.0,70.0
+"gender,tournament,year,neutral",12,M|Oceania Nations Cup|2024|0,14,ExpA,2.5111497196332486,0.0,85.71428571428571
+"gender,tournament,year,neutral",12,M|Oceania Nations Cup|2024|1,12,E5,1.3182057467025405,33.33333333333333,83.33333333333334
+"gender,tournament,year,neutral",12,M|Pacific Games|2011|0,14,metric_draw_off,1.7992218480804554,14.285714285714285,85.71428571428571
+"gender,tournament,year,neutral",12,M|Pacific Games|2011|1,44,metric_batch,2.2681633269382018,6.8181818181818175,81.81818181818183
+"gender,tournament,year,neutral",12,M|Pacific Games|2019|1,38,E5,4.046589153287492,5.263157894736842,68.42105263157895
+"gender,tournament,year,neutral",12,M|Pacific Games|2023|1,40,E5,2.86022233451184,5.0,75.0
+"gender,tournament,year,neutral",12,M|Pacific Mini Games|2017|1,20,E4,2.346870017095374,10.0,90.0
+"gender,tournament,year,neutral",12,M|SAFF Cup|2011|1,20,metric_draw_off,2.2215221036424593,10.0,40.0
+"gender,tournament,year,neutral",12,M|SAFF Cup|2013|1,20,E5,3.3159165384837017,5.0,60.0
+"gender,tournament,year,neutral",12,M|SAFF Cup|2015|1,16,E5,2.9594719949063832,0.0,62.5
+"gender,tournament,year,neutral",12,M|SAFF Cup|2018|1,18,E5,1.8246578595669984,11.11111111111111,66.66666666666666
+"gender,tournament,year,neutral",12,M|SAFF Cup|2021|1,14,E4,1.72696425285415,21.428571428571427,50.0
+"gender,tournament,year,neutral",12,M|SAFF Cup|2023|1,20,E4,1.1029399041612908,20.0,100.0
+"gender,tournament,year,neutral",12,M|Tynwald Hill Tournament|2013|1,12,v4,3.8634257834821564,0.0,66.66666666666666
+"gender,tournament,year,neutral",12,M|UEFA Euro|2012|0,12,E5,1.636350882874849,33.33333333333333,33.33333333333333
+"gender,tournament,year,neutral",12,M|UEFA Euro|2012|1,50,dynamic,2.1290192040277014,20.0,44.0
+"gender,tournament,year,neutral",12,M|UEFA Euro|2016|0,14,metric_batch,2.115132870420718,28.57142857142857,57.14285714285714
+"gender,tournament,year,neutral",12,M|UEFA Euro|2016|1,88,E5,2.256544286372053,18.181818181818183,29.545454545454547
+"gender,tournament,year,neutral",12,M|UEFA Euro|2021|0,56,v29,2.2783346959493476,17.857142857142858,51.78571428571429
+"gender,tournament,year,neutral",12,M|UEFA Euro|2021|1,46,E5,2.292540893769099,13.043478260869565,47.82608695652174
+"gender,tournament,year,neutral",12,M|UEFA Euro|2024|1,92,E4,1.9400046974934315,28.26086956521739,54.347826086956516
+"gender,tournament,year,neutral",12,M|UEFA Euro qualification|2011|0,198,risk3,2.1162707496188236,14.14141414141414,60.1010101010101
+"gender,tournament,year,neutral",12,M|UEFA Euro qualification|2014|0,202,E5,2.307972264560362,9.900990099009901,51.98019801980198
+"gender,tournament,year,neutral",12,M|UEFA Euro qualification|2015|0,322,E5,1.9735355685276073,13.354037267080745,63.975155279503106
+"gender,tournament,year,neutral",12,M|UEFA Euro qualification|2019|0,498,risk1,2.1059231326708687,11.44578313253012,67.06827309236948
+"gender,tournament,year,neutral",12,M|UEFA Euro qualification|2020|0,24,metric_batch,1.7014119292375807,25.0,41.66666666666667
+"gender,tournament,year,neutral",12,M|UEFA Euro qualification|2023|0,428,E1,2.1603302001490454,15.42056074766355,66.35514018691589
+"gender,tournament,year,neutral",12,M|UEFA Euro qualification|2023|1,32,E5,1.549283744392448,18.75,87.5
+"gender,tournament,year,neutral",12,M|UEFA Euro qualification|2024|0,14,v4,1.631157498410022,14.285714285714285,92.85714285714286
+"gender,tournament,year,neutral",12,M|UEFA Nations League|2018|0,276,E5,2.106615653664439,21.014492753623188,57.608695652173914
+"gender,tournament,year,neutral",12,M|UEFA Nations League|2020|0,312,E4,2.3957354011703176,12.5,46.47435897435898
+"gender,tournament,year,neutral",12,M|UEFA Nations League|2020|1,12,dynamic,1.7473181385965804,16.666666666666664,50.0
+"gender,tournament,year,neutral",12,M|UEFA Nations League|2022|0,306,E4,2.3219030493564237,11.76470588235294,51.633986928104584
+"gender,tournament,year,neutral",12,M|UEFA Nations League|2022|1,14,dynamic,1.5614841762208738,14.285714285714285,42.857142857142854
+"gender,tournament,year,neutral",12,M|UEFA Nations League|2024|0,294,E5,2.3761538473190824,12.244897959183673,53.74149659863946
+"gender,tournament,year,neutral",12,M|UEFA Nations League|2024|1,22,dynamic,2.193604925376817,9.090909090909092,54.54545454545454
+"gender,tournament,year,neutral",12,M|UEFA Nations League|2025|0,48,E5,2.4420873531744958,14.583333333333334,54.166666666666664
+"gender,tournament,year,neutral",12,M|UNCAF Cup|2013|1,18,E4,1.2929787870636664,33.33333333333333,66.66666666666666
+"gender,tournament,year,neutral",12,M|UNCAF Cup|2017|1,14,Plan01,1.4895816716619237,14.285714285714285,85.71428571428571
+"gender,tournament,year,neutral",12,M|Viva World Cup|2012|1,28,E4,3.838107490466583,14.285714285714285,92.85714285714286
+"gender,tournament,year,neutral",12,M|WAFF Championship|2012|1,32,E4,1.748313100870768,25.0,37.5
+"gender,tournament,year,neutral",12,M|WAFF Championship|2013|1,12,E4,1.6982893491064361,0.0,50.0
+"gender,tournament,year,neutral",12,M|WAFF Championship|2019|1,24,E5,2.34178397085457,16.666666666666664,33.33333333333333
+"gender,tournament,year,neutral",12,W|AFC Asian Cup|2014|1,26,E5,2.0806014905591277,23.076923076923077,84.61538461538461
+"gender,tournament,year,neutral",12,W|AFC Asian Cup|2018|1,28,E5,2.0537242042995545,17.857142857142858,71.42857142857143
+"gender,tournament,year,neutral",12,W|AFC Asian Cup|2022|1,50,E4,3.4183825835944135,8.0,64.0
+"gender,tournament,year,neutral",12,W|AFC Asian Cup|2026|0,12,E5,1.9583580341205444,33.33333333333333,75.0
+"gender,tournament,year,neutral",12,W|AFC Asian Cup|2026|1,42,metric_draw_off,2.5417497195744168,23.809523809523807,76.19047619047619
+"gender,tournament,year,neutral",12,W|AFC Asian Cup qualification|2013|0,24,dynamic,5.327785760979793,0.0,66.66666666666666
+"gender,tournament,year,neutral",12,W|AFC Asian Cup qualification|2013|1,24,E5,4.674240538827012,12.5,70.83333333333334
+"gender,tournament,year,neutral",12,W|AFC Asian Cup qualification|2017|0,30,E5,2.6662941017554043,6.666666666666667,86.66666666666667
+"gender,tournament,year,neutral",12,W|AFC Asian Cup qualification|2017|1,46,v4,4.268610368050067,2.1739130434782608,73.91304347826086
+"gender,tournament,year,neutral",12,W|AFC Asian Cup qualification|2021|0,16,E5,3.482891951784768,12.5,75.0
+"gender,tournament,year,neutral",12,W|AFC Asian Cup qualification|2021|1,36,E5,3.2704552588657148,11.11111111111111,75.0
+"gender,tournament,year,neutral",12,W|AFC Asian Cup qualification|2025|0,112,E5,3.2297352815314073,5.357142857142857,66.96428571428571
+"gender,tournament,year,neutral",12,W|AFC Olympic Qualifying Tournament|2015|0,22,dynamic,3.405510241275372,9.090909090909092,81.81818181818183
+"gender,tournament,year,neutral",12,W|AFC Olympic Qualifying Tournament|2015|1,22,E5,2.235882590496413,18.181818181818183,63.63636363636363
+"gender,tournament,year,neutral",12,W|AFC Olympic Qualifying Tournament|2016|1,20,v29,2.0504270714274755,20.0,60.0
+"gender,tournament,year,neutral",12,W|AFC Olympic Qualifying Tournament|2018|0,20,E5,2.948053099053105,10.0,70.0
+"gender,tournament,year,neutral",12,W|AFC Olympic Qualifying Tournament|2018|1,30,E5,3.7311286739359018,0.0,66.66666666666666
+"gender,tournament,year,neutral",12,W|AFC Olympic Qualifying Tournament|2019|0,12,E5,1.7369994740919583,33.33333333333333,83.33333333333334
+"gender,tournament,year,neutral",12,W|AFC Olympic Qualifying Tournament|2019|1,24,metric_draw_off,3.159471271529418,8.333333333333332,75.0
+"gender,tournament,year,neutral",12,W|AFC Olympic Qualifying Tournament|2020|0,14,metric_batch,1.9907335121488683,14.285714285714285,85.71428571428571
+"gender,tournament,year,neutral",12,W|AFC Olympic Qualifying Tournament|2023|0,48,E5,2.1681517660611322,8.333333333333332,87.5
+"gender,tournament,year,neutral",12,W|AFC Olympic Qualifying Tournament|2023|1,36,E5,4.037989171180352,5.555555555555555,50.0
+"gender,tournament,year,neutral",12,W|AFC Olympic qualification|2011|1,20,E5,0.9843901892490905,40.0,100.0
+"gender,tournament,year,neutral",12,W|AFF Championship|2011|1,22,metric_batch,2.5958642103730263,9.090909090909092,77.27272727272727
+"gender,tournament,year,neutral",12,W|AFF Championship|2012|1,16,Plan03,3.8519593126134324,0.0,87.5
+"gender,tournament,year,neutral",12,W|AFF Championship|2013|1,18,v4,3.673318074908766,27.77777777777778,66.66666666666666
+"gender,tournament,year,neutral",12,W|AFF Championship|2015|1,14,E5,2.498026038631123,0.0,100.0
+"gender,tournament,year,neutral",12,W|AFF Championship|2016|1,16,v4,4.809317099065999,0.0,68.75
+"gender,tournament,year,neutral",12,W|AFF Championship|2018|1,28,E5,3.379413457528295,7.142857142857142,82.14285714285714
+"gender,tournament,year,neutral",12,W|AFF Championship|2019|0,12,metric_batch,1.8154784719652797,16.666666666666664,83.33333333333334
+"gender,tournament,year,neutral",12,W|AFF Championship|2019|1,28,E5,3.558411573392064,14.285714285714285,85.71428571428571
+"gender,tournament,year,neutral",12,W|AFF Championship|2022|0,12,E5,7.24710086248871,0.0,50.0
+"gender,tournament,year,neutral",12,W|AFF Championship|2022|1,36,Plan01,2.322890427432349,11.11111111111111,72.22222222222221
+"gender,tournament,year,neutral",12,W|AFF Women's Cup|2024|1,16,v5,1.8492932857117026,0.0,75.0
+"gender,tournament,year,neutral",12,W|ASEAN Championship|2025|1,14,E5,3.1339847875724507,0.0,57.14285714285714
+"gender,tournament,year,neutral",12,W|Africa Cup of Nations qualification|2025|0,78,E5,2.5877326716035647,5.128205128205128,53.84615384615385
+"gender,tournament,year,neutral",12,W|Africa Cup of Nations qualification|2025|1,22,dynamic,1.6873704421563664,36.36363636363637,63.63636363636363
+"gender,tournament,year,neutral",12,W|African Championship|2012|1,22,v5,2.0585328697952505,13.636363636363635,63.63636363636363
+"gender,tournament,year,neutral",12,W|African Championship|2014|1,26,E5,1.7182617401756208,30.76923076923077,69.23076923076923
+"gender,tournament,year,neutral",12,W|African Championship qualification|2012|0,56,v4,2.4261608426747614,5.357142857142857,76.78571428571429
+"gender,tournament,year,neutral",12,W|African Championship qualification|2014|0,54,E5,2.1681133963369623,18.51851851851852,66.66666666666666
+"gender,tournament,year,neutral",12,W|African Cup of Nations|2016|1,22,dynamic,2.1273200155789165,9.090909090909092,63.63636363636363
+"gender,tournament,year,neutral",12,W|African Cup of Nations|2018|1,26,E5,3.006647625885154,7.6923076923076925,53.84615384615385
+"gender,tournament,year,neutral",12,W|African Cup of Nations|2022|0,12,E5,1.223764909880372,33.33333333333333,83.33333333333334
+"gender,tournament,year,neutral",12,W|African Cup of Nations|2022|1,44,E5,2.0871057087019844,31.818181818181817,59.09090909090909
+"gender,tournament,year,neutral",12,W|African Cup of Nations|2025|0,12,Plan01,1.665807589556602,16.666666666666664,66.66666666666666
+"gender,tournament,year,neutral",12,W|African Cup of Nations|2025|1,40,E4,2.1318754198724914,10.0,50.0
+"gender,tournament,year,neutral",12,W|African Cup of Nations qualification|2016|0,60,Plan01,2.123519637794707,16.666666666666664,55.00000000000001
+"gender,tournament,year,neutral",12,W|African Cup of Nations qualification|2018|0,62,risk3,2.192997337917146,14.516129032258066,66.12903225806451
+"gender,tournament,year,neutral",12,W|African Cup of Nations qualification|2021|0,70,E5,3.3299301227323976,2.857142857142857,62.857142857142854
+"gender,tournament,year,neutral",12,W|African Cup of Nations qualification|2022|0,36,v4,2.1789410719004336,27.77777777777778,83.33333333333334
+"gender,tournament,year,neutral",12,W|African Games|2011|1,22,risk3,2.485525442226588,9.090909090909092,40.909090909090914
+"gender,tournament,year,neutral",12,W|African Games|2015|1,20,E5,1.6045529992787686,40.0,50.0
+"gender,tournament,year,neutral",12,W|Algarve Cup|2012|1,40,E5,1.8391915496439253,20.0,75.0
+"gender,tournament,year,neutral",12,W|Algarve Cup|2013|1,40,E5,1.8690506318740194,10.0,60.0
+"gender,tournament,year,neutral",12,W|Algarve Cup|2014|1,40,E5,2.1466196602139087,20.0,60.0
+"gender,tournament,year,neutral",12,W|Algarve Cup|2015|1,40,risk3,2.172796422277366,20.0,60.0
+"gender,tournament,year,neutral",12,W|Algarve Cup|2016|1,24,v29,2.945625912908542,4.166666666666666,41.66666666666667
+"gender,tournament,year,neutral",12,W|Algarve Cup|2017|1,40,metric_draw_off,2.283361001781155,20.0,55.00000000000001
+"gender,tournament,year,neutral",12,W|Algarve Cup|2018|1,38,E5,2.199560503159204,21.052631578947366,68.42105263157895
+"gender,tournament,year,neutral",12,W|Algarve Cup|2019|1,30,E5,2.5095622659425043,20.0,53.333333333333336
+"gender,tournament,year,neutral",12,W|Algarve Cup|2020|1,18,Plan02,1.8136629796863255,11.11111111111111,66.66666666666666
+"gender,tournament,year,neutral",12,W|Aphrodite Cup|2015|1,24,E4,5.856025686933726,0.0,41.66666666666667
+"gender,tournament,year,neutral",12,W|Aphrodite Cup|2016|1,12,E5,1.9611511377329414,0.0,66.66666666666666
+"gender,tournament,year,neutral",12,W|Aphrodite Cup|2017|1,12,v29,1.7957647961520944,0.0,41.66666666666667
+"gender,tournament,year,neutral",12,W|Arab Cup|2021|1,16,E4,3.054131738560406,0.0,68.75
+"gender,tournament,year,neutral",12,W|Asian Games|2014|0,12,E5,2.68441980025602,16.666666666666664,100.0
+"gender,tournament,year,neutral",12,W|Asian Games|2014|1,34,metric_draw_off,2.4574424830422363,23.52941176470588,76.47058823529412
+"gender,tournament,year,neutral",12,W|Asian Games|2018|1,40,Plan03,2.8309058514993715,12.5,85.0
+"gender,tournament,year,neutral",12,W|Asian Games|2023|1,46,Plan01,2.4787367671733858,10.869565217391305,80.43478260869566
+"gender,tournament,year,neutral",12,W|CAF Olympic Qualifying Tournament|2015|0,42,E5,2.0376775978623898,28.57142857142857,57.14285714285714
+"gender,tournament,year,neutral",12,W|CAF Olympic Qualifying Tournament|2019|0,78,E5,2.522104731554847,5.128205128205128,53.84615384615385
+"gender,tournament,year,neutral",12,W|CAF Olympic Qualifying Tournament|2023|0,44,Plan01,1.7412520586716331,13.636363636363635,72.72727272727273
+"gender,tournament,year,neutral",12,W|CAF Olympic Qualifying Tournament|2024|0,24,E4,2.766437982145904,20.833333333333336,50.0
+"gender,tournament,year,neutral",12,W|CAFA Championship|2018|1,12,metric_draw_off,1.976269983726383,0.0,100.0
+"gender,tournament,year,neutral",12,W|CAFA Championship|2022|1,12,E4,2.268823098936114,33.33333333333333,83.33333333333334
+"gender,tournament,year,neutral",12,W|CECAFA Championship|2016|1,16,E4,4.208881923649668,12.5,62.5
+"gender,tournament,year,neutral",12,W|CECAFA Championship|2018|1,12,E5,1.929794098591712,0.0,66.66666666666666
+"gender,tournament,year,neutral",12,W|CECAFA Championship|2019|1,22,risk1,3.8697141690120858,0.0,72.72727272727273
+"gender,tournament,year,neutral",12,W|CECAFA Championship|2022|1,22,risk3,2.55099702771846,9.090909090909092,81.81818181818183
+"gender,tournament,year,neutral",12,W|CECAFA Championship|2025|1,12,risk3,2.9969027546707743,0.0,66.66666666666666
+"gender,tournament,year,neutral",12,W|CONCACAF Championship|2014|1,22,metric_draw_off,1.7944933415079518,18.181818181818183,81.81818181818183
+"gender,tournament,year,neutral",12,W|CONCACAF Championship|2018|1,22,Plan02,4.58558938562032,0.0,59.09090909090909
+"gender,tournament,year,neutral",12,W|CONCACAF Championship|2022|1,26,E5,1.8810533702472374,30.76923076923077,76.92307692307693
+"gender,tournament,year,neutral",12,W|CONCACAF Championship qualification|2014|1,12,metric_draw_off,2.1911557352491204,16.666666666666664,100.0
+"gender,tournament,year,neutral",12,W|CONCACAF Championship qualification|2018|0,42,v29,3.571895808011874,4.761904761904762,61.904761904761905
+"gender,tournament,year,neutral",12,W|CONCACAF Championship qualification|2018|1,66,E5,2.803524040959059,12.121212121212121,81.81818181818183
+"gender,tournament,year,neutral",12,W|CONCACAF Championship qualification|2022|0,94,E5,3.2652602386837852,7.446808510638298,85.1063829787234
+"gender,tournament,year,neutral",12,W|CONCACAF Championship qualification|2022|1,26,metric_batch,4.001038036391844,7.6923076923076925,84.61538461538461
+"gender,tournament,year,neutral",12,W|CONCACAF Championship qualification|2025|0,32,E5,3.4412988916798404,12.5,68.75
+"gender,tournament,year,neutral",12,W|CONCACAF Gold Cup qualification|2023|0,148,E5,3.1623549640256607,6.756756756756757,68.91891891891892
+"gender,tournament,year,neutral",12,W|CONCACAF Gold Cup qualification|2023|1,20,risk3,3.440912790622156,10.0,60.0
+"gender,tournament,year,neutral",12,W|CONCACAF Olympic Qualifying Tournament|2012|1,20,v29,3.8492713982156572,10.0,80.0
+"gender,tournament,year,neutral",12,W|CONCACAF Olympic Qualifying Tournament|2016|1,20,E5,2.3419248746988233,10.0,80.0
+"gender,tournament,year,neutral",12,W|CONCACAF Olympic Qualifying Tournament|2020|1,20,risk2,2.285592486336038,5.0,90.0
+"gender,tournament,year,neutral",12,W|CONCACAF Olympic Qualifying Tournament qualification|2011|1,12,E5,1.8741798523626254,33.33333333333333,83.33333333333334
+"gender,tournament,year,neutral",12,W|CONCACAF Olympic Qualifying Tournament qualification|2015|0,24,E5,3.433682930457982,25.0,75.0
+"gender,tournament,year,neutral",12,W|CONCACAF Olympic Qualifying Tournament qualification|2015|1,24,E4,3.048786668564565,8.333333333333332,83.33333333333334
+"gender,tournament,year,neutral",12,W|CONCACAF Olympic Qualifying Tournament qualification|2019|0,28,E5,3.4735201267049476,14.285714285714285,85.71428571428571
+"gender,tournament,year,neutral",12,W|CONCACAF Olympic Qualifying Tournament qualification|2019|1,30,E5,2.5539468153945717,0.0,93.33333333333333
+"gender,tournament,year,neutral",12,W|CONMEBOL Nations League|2025|0,32,E5,2.4706568110063363,6.25,62.5
+"gender,tournament,year,neutral",12,W|COSAFA Championship|2017|1,34,E4,3.5524606477384926,0.0,58.82352941176471
+"gender,tournament,year,neutral",12,W|COSAFA Championship|2018|1,34,Plan02,2.741786144965329,8.823529411764707,64.70588235294117
+"gender,tournament,year,neutral",12,W|COSAFA Championship|2019|1,34,Plan02,4.283369028145476,0.0,70.58823529411765
+"gender,tournament,year,neutral",12,W|COSAFA Championship|2020|1,20,Plan01,3.729511637367718,0.0,40.0
+"gender,tournament,year,neutral",12,W|COSAFA Championship|2021|1,34,E4,2.4561650149587497,8.823529411764707,67.64705882352942
+"gender,tournament,year,neutral",12,W|COSAFA Championship|2022|1,34,v4,2.1495037450453944,5.88235294117647,70.58823529411765
+"gender,tournament,year,neutral",12,W|COSAFA Championship|2023|1,38,E4,2.456824435168787,10.526315789473683,42.10526315789473
+"gender,tournament,year,neutral",12,W|COSAFA Championship|2024|1,32,E4,3.2838952196578033,18.75,59.375
+"gender,tournament,year,neutral",12,W|Central American Games|2013|1,16,E5,2.943233988066532,0.0,75.0
+"gender,tournament,year,neutral",12,W|Central American and Caribbean Games|2014|1,22,E4,3.341458743641908,9.090909090909092,63.63636363636363
+"gender,tournament,year,neutral",12,W|Central American and Caribbean Games|2018|1,20,E4,2.0258151690049715,20.0,60.0
+"gender,tournament,year,neutral",12,W|Central American and Caribbean Games|2023|1,22,E5,3.5689302126746956,4.545454545454546,45.45454545454545
+"gender,tournament,year,neutral",12,W|Copa América|2018|0,14,risk2,2.2476714910026727,14.285714285714285,71.42857142857143
+"gender,tournament,year,neutral",12,W|Copa América|2018|1,38,E5,2.018693413172202,23.684210526315788,78.94736842105263
+"gender,tournament,year,neutral",12,W|Copa América|2022|0,12,E5,1.0280620948186996,41.66666666666667,100.0
+"gender,tournament,year,neutral",12,W|Copa América|2022|1,38,E5,2.1688141496023388,13.157894736842104,81.57894736842105
+"gender,tournament,year,neutral",12,W|Copa América|2025|1,42,risk2,2.9024407412907975,9.523809523809524,69.04761904761905
+"gender,tournament,year,neutral",12,W|Cyprus Cup|2012|1,48,risk1,1.7085053515689863,12.5,68.75
+"gender,tournament,year,neutral",12,W|Cyprus Cup|2013|1,48,Plan02,2.2281418439249734,25.0,45.83333333333333
+"gender,tournament,year,neutral",12,W|Cyprus Cup|2014|1,48,dynamic,2.228646514461919,12.5,54.166666666666664
+"gender,tournament,year,neutral",12,W|Cyprus Cup|2015|1,48,metric_draw_off,2.2946077385901273,8.333333333333332,50.0
+"gender,tournament,year,neutral",12,W|Cyprus Cup|2016|1,32,dynamic,1.9660625961853953,25.0,50.0
+"gender,tournament,year,neutral",12,W|Cyprus Cup|2017|1,48,v4,3.332148664123736,2.083333333333333,45.83333333333333
+"gender,tournament,year,neutral",12,W|Cyprus Cup|2018|1,48,E5,2.1632282754023824,8.333333333333332,54.166666666666664
+"gender,tournament,year,neutral",12,W|Cyprus Cup|2019|1,48,v29,2.56264084067207,8.333333333333332,66.66666666666666
+"gender,tournament,year,neutral",12,W|Cyprus Cup|2020|1,12,E5,2.4624887862112814,16.666666666666664,33.33333333333333
+"gender,tournament,year,neutral",12,W|Cyprus Cup|2023|1,12,metric_draw_off,3.2176206566289114,16.666666666666664,66.66666666666666
+"gender,tournament,year,neutral",12,W|EAFF E-1 Championship|2018|1,18,Plan02,2.983886999496951,11.11111111111111,77.77777777777779
+"gender,tournament,year,neutral",12,W|EAFF E-1 Championship qualification|2023|1,24,E5,5.712786904353333,4.166666666666666,70.83333333333334
+"gender,tournament,year,neutral",12,W|FIFA Unites Women's Series|2025|1,12,v29,7.69640522241239,0.0,66.66666666666666
+"gender,tournament,year,neutral",12,W|FIFA World Cup|2015|1,94,E5,2.027155540611788,14.893617021276595,72.3404255319149
+"gender,tournament,year,neutral",12,W|FIFA World Cup|2019|1,94,E4,1.9409574784020351,15.957446808510639,72.3404255319149
+"gender,tournament,year,neutral",12,W|FIFA World Cup|2023|0,20,ExpA,2.5141643131609883,10.0,45.0
+"gender,tournament,year,neutral",12,W|FIFA World Cup|2023|1,108,E5,2.4820382627596396,14.814814814814813,57.407407407407405
+"gender,tournament,year,neutral",12,W|FIFA World Cup qualification|2013|0,166,E5,2.753158991070008,7.228915662650602,69.87951807228916
+"gender,tournament,year,neutral",12,W|FIFA World Cup qualification|2014|0,290,E2,2.634239445114332,6.206896551724138,76.20689655172413
+"gender,tournament,year,neutral",12,W|FIFA World Cup qualification|2017|0,142,E5,2.0121922753855404,16.901408450704224,78.87323943661971
+"gender,tournament,year,neutral",12,W|FIFA World Cup qualification|2017|1,24,v29,3.985924611717334,16.666666666666664,54.166666666666664
+"gender,tournament,year,neutral",12,W|FIFA World Cup qualification|2018|0,178,metric_draw_off,2.0374168462682336,12.359550561797752,74.15730337078652
+"gender,tournament,year,neutral",12,W|FIFA World Cup qualification|2021|0,260,E2,2.8974777136622976,4.615384615384616,80.38461538461539
+"gender,tournament,year,neutral",12,W|FIFA World Cup qualification|2022|0,200,E2,2.7366958991661816,5.5,74.5
+"gender,tournament,year,neutral",12,W|FIFA World Cup qualification|2022|1,12,E5,3.259249953296385,0.0,50.0
+"gender,tournament,year,neutral",12,W|FIFA World Cup qualification|2023|1,14,E5,2.6793786442661554,14.285714285714285,42.857142857142854
+"gender,tournament,year,neutral",12,W|FIFA World Cup qualification|2026|0,116,E5,2.2995891267751802,10.344827586206897,72.41379310344827
+"gender,tournament,year,neutral",12,W|Friendly|2012|0,28,E5,1.3876187959499888,14.285714285714285,100.0
+"gender,tournament,year,neutral",12,W|Friendly|2013|0,24,dynamic,1.9545158275499581,0.0,91.66666666666666
+"gender,tournament,year,neutral",12,W|Friendly|2014|0,26,E5,2.126508372140074,7.6923076923076925,76.92307692307693
+"gender,tournament,year,neutral",12,W|Friendly|2015|0,44,v5,2.5808721864792585,25.0,68.18181818181817
+"gender,tournament,year,neutral",12,W|Friendly|2016|0,68,v29,2.0201075034800313,13.23529411764706,75.0
+"gender,tournament,year,neutral",12,W|Friendly|2017|0,104,metric_draw_off,1.7084796147628087,19.230769230769234,80.76923076923077
+"gender,tournament,year,neutral",12,W|Friendly|2017|1,12,E5,3.6104207405334816,0.0,50.0
+"gender,tournament,year,neutral",12,W|Friendly|2018|0,72,v4,2.4700316663049233,2.7777777777777777,66.66666666666666
+"gender,tournament,year,neutral",12,W|Friendly|2019|0,146,risk1,1.7270925648710518,17.123287671232877,73.28767123287672
+"gender,tournament,year,neutral",12,W|Friendly|2019|1,22,dynamic,1.9466096631790153,27.27272727272727,54.54545454545454
+"gender,tournament,year,neutral",12,W|Friendly|2021|0,212,metric_draw_off,2.4543039070004196,10.377358490566039,62.264150943396224
+"gender,tournament,year,neutral",12,W|Friendly|2021|1,36,dynamic,3.835983770584499,0.0,33.33333333333333
+"gender,tournament,year,neutral",12,W|Friendly|2022|0,214,E5,2.453302745535545,12.616822429906541,61.6822429906542
+"gender,tournament,year,neutral",12,W|Friendly|2022|1,36,risk2,2.3642999327653746,5.555555555555555,50.0
+"gender,tournament,year,neutral",12,W|Friendly|2023|0,226,E5,2.6926409797869284,8.849557522123893,58.4070796460177
+"gender,tournament,year,neutral",12,W|Friendly|2023|1,32,metric_draw_off,2.7702670345264195,12.5,56.25
+"gender,tournament,year,neutral",12,W|Friendly|2024|0,354,E4,2.8614155011267024,8.47457627118644,54.23728813559322
+"gender,tournament,year,neutral",12,W|Friendly|2024|1,74,risk3,2.3704604842910766,12.162162162162163,64.86486486486487
+"gender,tournament,year,neutral",12,W|Friendly|2025|0,438,E4,2.623572216787361,6.621004566210045,57.534246575342465
+"gender,tournament,year,neutral",12,W|Friendly|2025|1,58,dynamic,2.6211120148534675,17.24137931034483,55.172413793103445
+"gender,tournament,year,neutral",12,W|Friendly|2026|0,36,v4,2.8500440731282373,5.555555555555555,50.0
+"gender,tournament,year,neutral",12,W|Indian Ocean Island Games|2015|1,12,E5,2.356590000533409,0.0,66.66666666666666
+"gender,tournament,year,neutral",12,W|Inter Games|2019|1,14,E5,1.6850821675599172,7.142857142857142,100.0
+"gender,tournament,year,neutral",12,W|Island Games|2015|1,36,v29,2.5783787787195807,16.666666666666664,83.33333333333334
+"gender,tournament,year,neutral",12,W|Island Games|2017|1,34,E4,2.743941703346814,11.76470588235294,61.76470588235294
+"gender,tournament,year,neutral",12,W|Island Games|2023|1,32,E5,2.9822856169432947,0.0,68.75
+"gender,tournament,year,neutral",12,W|Island Games|2025|1,36,v29,3.1540842899507684,5.555555555555555,55.55555555555556
+"gender,tournament,year,neutral",12,W|Istria Cup|2015|1,32,E4,2.222273811902368,18.75,31.25
+"gender,tournament,year,neutral",12,W|Istria Cup|2017|1,14,E5,4.6609401224975375,0.0,28.57142857142857
+"gender,tournament,year,neutral",12,W|Istria Cup|2019|1,12,Plan02,3.0289969891085975,16.666666666666664,50.0
+"gender,tournament,year,neutral",12,W|OFC Nations Cup|2018|1,22,E5,4.514367287431128,13.636363636363635,81.81818181818183
+"gender,tournament,year,neutral",12,W|OFC Nations Cup|2022|1,24,E4,2.1970874099245847,16.666666666666664,50.0
+"gender,tournament,year,neutral",12,W|OFC Nations Cup|2025|1,26,E5,2.625256330824755,23.076923076923077,53.84615384615385
+"gender,tournament,year,neutral",12,W|OFC Olympic Qualifying Tournament|2012|0,12,E5,1.9207082226899532,0.0,100.0
+"gender,tournament,year,neutral",12,W|OFC Olympic Qualifying Tournament|2024|1,22,E5,3.1608153815419713,0.0,81.81818181818183
+"gender,tournament,year,neutral",12,W|Olympic Games|2012|1,44,v4,1.8112456669320058,22.727272727272727,72.72727272727273
+"gender,tournament,year,neutral",12,W|Olympic Games|2016|0,12,Plan03,2.5866845202256035,0.0,33.33333333333333
+"gender,tournament,year,neutral",12,W|Olympic Games|2016|1,40,E4,1.8213079090755735,10.0,70.0
+"gender,tournament,year,neutral",12,W|Olympic Games|2021|1,44,E5,3.283646387837877,9.090909090909092,59.09090909090909
+"gender,tournament,year,neutral",12,W|Olympic Games|2024|1,44,E5,2.210050569248348,27.27272727272727,68.18181818181817
+"gender,tournament,year,neutral",12,W|Pacific Games|2011|0,12,E5,3.0163581469917773,16.666666666666664,50.0
+"gender,tournament,year,neutral",12,W|Pacific Games|2011|1,28,metric_draw_off,1.893748929034443,7.142857142857142,71.42857142857143
+"gender,tournament,year,neutral",12,W|Pacific Games|2015|1,16,E5,1.8123511910719623,25.0,62.5
+"gender,tournament,year,neutral",12,W|Pacific Games|2019|1,34,E5,3.273499238111775,11.76470588235294,82.35294117647058
+"gender,tournament,year,neutral",12,W|Pacific Games|2023|1,34,E4,3.1520970074221424,0.0,55.88235294117647
+"gender,tournament,year,neutral",12,W|Pan American Games|2011|1,22,E4,2.08331119275036,18.181818181818183,63.63636363636363
+"gender,tournament,year,neutral",12,W|Pan American Games|2015|1,22,E4,1.5648176943869665,22.727272727272727,72.72727272727273
+"gender,tournament,year,neutral",12,W|Pan American Games|2019|1,28,E4,2.067779229927797,7.142857142857142,71.42857142857143
+"gender,tournament,year,neutral",12,W|Pan American Games|2023|1,18,E5,3.4616481351568975,0.0,55.55555555555556
+"gender,tournament,year,neutral",12,W|Pinatar Cup|2020|1,12,E4,1.9811949610358015,33.33333333333333,66.66666666666666
+"gender,tournament,year,neutral",12,W|Pinatar Cup|2022|1,24,E4,2.540293135006258,8.333333333333332,37.5
+"gender,tournament,year,neutral",12,W|Pinatar Cup|2023|1,12,E5,1.6403030299234043,16.666666666666664,66.66666666666666
+"gender,tournament,year,neutral",12,W|Pinatar Cup|2025|1,12,metric_batch,2.351986065504486,0.0,66.66666666666666
+"gender,tournament,year,neutral",12,W|Pink Ladies Cup|2024|1,16,E5,2.046489194506525,12.5,87.5
+"gender,tournament,year,neutral",12,W|Pink Ladies Cup|2025|1,18,metric_draw_off,1.3613741280342944,22.22222222222222,88.88888888888889
+"gender,tournament,year,neutral",12,W|SAFF Championship|2012|1,22,E5,2.24398882837302,13.636363636363635,81.81818181818183
+"gender,tournament,year,neutral",12,W|SAFF Championship|2014|1,24,metric_batch,2.055390923492784,16.666666666666664,91.66666666666666
+"gender,tournament,year,neutral",12,W|SAFF Championship|2016|1,14,metric_draw_off,2.286191404276458,14.285714285714285,85.71428571428571
+"gender,tournament,year,neutral",12,W|SAFF Championship|2022|1,16,E5,4.199426460482962,0.0,75.0
+"gender,tournament,year,neutral",12,W|SAFF Championship|2024|1,14,E5,5.169787721745636,14.285714285714285,50.0
+"gender,tournament,year,neutral",12,W|SAFF Women's Friendly Tournament|2023|0,14,E5,1.7118949510919073,28.57142857142857,42.857142857142854
+"gender,tournament,year,neutral",12,W|SAFF Women's Friendly Tournament|2023|1,20,E5,2.051580727134401,20.0,50.0
+"gender,tournament,year,neutral",12,W|Slavic Cup|2013|1,12,v4,2.8898154958405264,0.0,66.66666666666666
+"gender,tournament,year,neutral",12,W|South Asian Games|2016|1,12,metric_draw_off,0.95989036024567,66.66666666666666,83.33333333333334
+"gender,tournament,year,neutral",12,W|Southeast Asian Games|2013|1,12,E5,1.9304429817092321,16.666666666666664,83.33333333333334
+"gender,tournament,year,neutral",12,W|Southeast Asian Games|2017|1,12,v29,1.6173624999613347,16.666666666666664,100.0
+"gender,tournament,year,neutral",12,W|Southeast Asian Games|2019|1,12,E5,1.3699730977620852,41.66666666666667,75.0
+"gender,tournament,year,neutral",12,W|Southeast Asian Games|2022|1,18,E4,2.2416563369461873,11.11111111111111,66.66666666666666
+"gender,tournament,year,neutral",12,W|Southeast Asian Games|2023|1,22,E5,2.487873653399284,0.0,63.63636363636363
+"gender,tournament,year,neutral",12,W|Southeast Asian Games|2025|1,18,E4,2.338313777555524,11.11111111111111,77.77777777777779
+"gender,tournament,year,neutral",12,W|Turkish Women's Cup|2018|1,32,E5,1.6653150119021423,15.625,68.75
+"gender,tournament,year,neutral",12,W|Turkish Women's Cup|2019|1,24,E5,5.006492552874238,0.0,41.66666666666667
+"gender,tournament,year,neutral",12,W|Turkish Women's Cup|2020|1,14,v4,3.5427122655529826,14.285714285714285,71.42857142857143
+"gender,tournament,year,neutral",12,W|Turkish Women's Cup|2022|1,18,risk3,2.0578287275581713,11.11111111111111,55.55555555555556
+"gender,tournament,year,neutral",12,W|Turkish Women's Cup|2023|1,22,Plan02,2.906450200129299,13.636363636363635,40.909090909090914
+"gender,tournament,year,neutral",12,W|Turkish Women's Cup|2024|1,12,E5,1.7757704816834379,33.33333333333333,83.33333333333334
+"gender,tournament,year,neutral",12,W|UEFA Euro|2013|1,40,E5,2.012310511962362,20.0,40.0
+"gender,tournament,year,neutral",12,W|UEFA Euro|2017|0,12,E5,1.7475390596925593,33.33333333333333,83.33333333333334
+"gender,tournament,year,neutral",12,W|UEFA Euro|2017|1,50,E5,2.5680204212497597,8.0,36.0
+"gender,tournament,year,neutral",12,W|UEFA Euro|2022|0,12,Plan02,3.0098923253864895,16.666666666666664,66.66666666666666
+"gender,tournament,year,neutral",12,W|UEFA Euro|2022|1,50,E5,1.7501158234854786,12.0,68.0
+"gender,tournament,year,neutral",12,W|UEFA Euro|2025|1,54,E5,2.40435088851308,11.11111111111111,55.55555555555556
+"gender,tournament,year,neutral",12,W|UEFA Euro qualification|2011|0,158,E5,2.6382515938227478,10.126582278481013,74.68354430379746
+"gender,tournament,year,neutral",12,W|UEFA Euro qualification|2012|0,192,risk1,2.2188803276549525,12.5,78.64583333333334
+"gender,tournament,year,neutral",12,W|UEFA Euro qualification|2015|0,146,E4,2.4943395643622437,12.32876712328767,74.65753424657534
+"gender,tournament,year,neutral",12,W|UEFA Euro qualification|2015|1,14,E5,3.1194817350277915,14.285714285714285,78.57142857142857
+"gender,tournament,year,neutral",12,W|UEFA Euro qualification|2016|0,188,v4,2.474968817230738,4.787234042553192,77.12765957446808
+"gender,tournament,year,neutral",12,W|UEFA Euro qualification|2019|0,172,E5,2.779841867672086,5.813953488372093,76.74418604651163
+"gender,tournament,year,neutral",12,W|UEFA Euro qualification|2020|0,198,E5,2.6491241964169276,7.07070707070707,72.72727272727273
+"gender,tournament,year,neutral",12,W|UEFA Euro qualification|2021|0,30,v4,4.115439113150317,10.0,53.333333333333336
+"gender,tournament,year,neutral",12,W|UEFA Euro qualification|2024|0,358,E5,2.2574300613752336,12.849162011173185,64.24581005586593
+"gender,tournament,year,neutral",12,W|UEFA Euro qualification|2024|1,24,v4,2.374357317354535,12.5,66.66666666666666
+"gender,tournament,year,neutral",12,W|UEFA Nations League|2023|0,280,E5,2.9755292110996927,4.642857142857143,45.357142857142854
+"gender,tournament,year,neutral",12,W|UEFA Nations League|2023|1,20,E5,2.236819777034767,10.0,50.0
+"gender,tournament,year,neutral",12,W|UEFA Nations League|2024|0,34,v29,2.210389095259732,14.705882352941178,70.58823529411765
+"gender,tournament,year,neutral",12,W|UEFA Nations League|2025|0,282,Plan01,2.56020090637121,6.382978723404255,54.96453900709219
+"gender,tournament,year,neutral",12,W|UEFA Nations League|2025|1,18,E5,2.7810300821459397,22.22222222222222,44.44444444444444
+"gender,tournament,year,neutral",12,W|UEFA Women's Nations League|2025|0,40,E5,2.704679360373548,10.0,57.49999999999999
+"gender,tournament,year,neutral",12,W|UNIFFAC Cup|2020|1,12,metric_draw_off,2.6184043381657305,0.0,33.33333333333333
+"gender,tournament,year,neutral",12,W|WAFF Championship|2011|1,22,Plan01,3.8555041729994866,0.0,81.81818181818183
+"gender,tournament,year,neutral",12,W|WAFF Championship|2019|1,12,metric_draw_off,3.0267983326108623,16.666666666666664,50.0
+"gender,tournament,year,neutral",12,W|WAFF Championship|2024|1,24,E5,1.8003019632303967,0.0,83.33333333333334
+"gender,tournament,year,neutral",12,W|WAFF Women's Championship|2025|1,12,E5,2.877031078032505,16.666666666666664,66.66666666666666
+"gender,tournament,year,neutral",12,W|WAFU Zone A Cup|2020|1,26,Plan02,1.7912573717024454,7.6923076923076925,92.3076923076923
+"gender,tournament,year,neutral",12,W|WAFU Zone A Cup|2023|1,18,dynamic,2.2316796727062505,0.0,88.88888888888889
+"gender,tournament,year,neutral",12,W|WAFU Zone A Cup|2025|1,26,E5,2.7926403556606396,7.6923076923076925,46.15384615384615
+"gender,tournament,year,neutral",12,W|WAFU Zone B Cup|2018|1,22,E5,2.4678156549207695,9.090909090909092,81.81818181818183
+"gender,tournament,year,neutral",12,W|WAFU Zone B Cup|2019|1,22,E5,3.3947126664893603,9.090909090909092,72.72727272727273
+"gender,tournament,year",12,M|AFC Asian Cup|2015,64,E5,1.6964395163312236,25.0,65.625
+"gender,tournament,year",12,M|AFC Asian Cup|2019,102,E5,2.3253171309233878,15.686274509803921,59.80392156862745
+"gender,tournament,year",12,M|AFC Asian Cup|2024,102,E5,1.9580954791160234,16.666666666666664,58.82352941176471
+"gender,tournament,year",12,M|AFC Asian Cup qualification|2013,96,risk2,1.681931067743528,19.791666666666664,70.83333333333334
+"gender,tournament,year",12,M|AFC Asian Cup qualification|2014,24,E5,2.092984647460736,16.666666666666664,50.0
+"gender,tournament,year",12,M|AFC Asian Cup qualification|2016,28,E5,2.029872023635125,3.571428571428571,71.42857142857143
+"gender,tournament,year",12,M|AFC Asian Cup qualification|2017,116,E5,2.6919761081338778,6.896551724137931,55.172413793103445
+"gender,tournament,year",12,M|AFC Asian Cup qualification|2018,26,Plan01,1.7788734577976262,23.076923076923077,69.23076923076923
+"gender,tournament,year",12,M|AFC Asian Cup qualification|2022,72,metric_draw_off,1.9543017687570376,13.88888888888889,72.22222222222221
+"gender,tournament,year",12,M|AFC Asian Cup qualification|2024,12,risk2,2.9429141426566923,16.666666666666664,41.66666666666667
+"gender,tournament,year",12,M|AFC Asian Cup qualification|2025,118,E5,1.930702132966894,15.254237288135593,71.1864406779661
+"gender,tournament,year",12,M|AFC Challenge Cup|2012,32,E4,1.9254106331541243,12.5,68.75
+"gender,tournament,year",12,M|AFC Challenge Cup|2014,32,E4,2.4710319687688926,0.0,56.25
+"gender,tournament,year",12,M|AFC Challenge Cup|2016,26,E5,2.8983134157393127,15.384615384615385,30.76923076923077
+"gender,tournament,year",12,M|AFC Challenge Cup qualification|2013,50,metric_draw_off,2.4132508008217037,16.0,68.0
+"gender,tournament,year",12,M|AFF Championship|2012,36,Plan02,2.16024114102113,5.555555555555555,58.333333333333336
+"gender,tournament,year",12,M|AFF Championship|2014,36,risk3,2.5831551163973234,8.333333333333332,55.55555555555556
+"gender,tournament,year",12,M|AFF Championship|2016,36,E5,1.5701896090275378,19.444444444444446,69.44444444444444
+"gender,tournament,year",12,M|AFF Championship|2018,52,dynamic,1.744761947919091,11.538461538461538,76.92307692307693
+"gender,tournament,year",12,M|AFF Championship|2021,50,E5,2.065462538629926,8.0,78.0
+"gender,tournament,year",12,M|AFF Championship|2022,34,v4,1.9079238087236343,11.76470588235294,73.52941176470588
+"gender,tournament,year",12,M|AFF Championship|2023,20,E4,1.446133856700196,10.0,80.0
+"gender,tournament,year",12,M|AFF Championship qualification|2012,20,metric_draw_off,2.567879602134011,10.0,60.0
+"gender,tournament,year",12,M|AFF Championship qualification|2014,20,E5,1.6047823537503294,20.0,90.0
+"gender,tournament,year",12,M|AFF Championship qualification|2016,12,Plan02,0.9967203501180154,50.0,100.0
+"gender,tournament,year",12,M|ASEAN Championship|2024,48,E5,2.269406718228939,16.666666666666664,66.66666666666666
+"gender,tournament,year",12,M|African Cup of Nations|2012,64,E5,1.8200968512209013,25.0,53.125
+"gender,tournament,year",12,M|African Cup of Nations|2013,64,metric_batch,1.861649326084003,9.375,56.25
+"gender,tournament,year",12,M|African Cup of Nations|2015,64,Plan02,1.8571806733849354,17.1875,50.0
+"gender,tournament,year",12,M|African Cup of Nations|2017,64,E5,1.7064998540669114,18.75,56.25
+"gender,tournament,year",12,M|African Cup of Nations|2019,104,v4,2.03303188009037,14.423076923076922,49.03846153846153
+"gender,tournament,year",12,M|African Cup of Nations|2022,104,E5,1.9478098690011127,15.384615384615385,50.0
+"gender,tournament,year",12,M|African Cup of Nations|2024,104,E5,2.191491705080332,18.269230769230766,47.11538461538461
+"gender,tournament,year",12,M|African Cup of Nations|2025,72,Plan01,1.7522737561506692,16.666666666666664,63.888888888888886
+"gender,tournament,year",12,M|African Cup of Nations|2026,32,dynamic,1.633381362804946,6.25,68.75
+"gender,tournament,year",12,M|African Cup of Nations qualification|2011,84,E5,1.525479253173453,26.190476190476193,71.42857142857143
+"gender,tournament,year",12,M|African Cup of Nations qualification|2012,120,E5,2.3469241352879817,15.833333333333332,50.83333333333333
+"gender,tournament,year",12,M|African Cup of Nations qualification|2014,250,E5,1.9781275513569034,18.4,56.00000000000001
+"gender,tournament,year",12,M|African Cup of Nations qualification|2015,96,dynamic,1.8889090682927143,25.0,64.58333333333334
+"gender,tournament,year",12,M|African Cup of Nations qualification|2016,192,E5,1.9150975721507344,21.354166666666664,60.9375
+"gender,tournament,year",12,M|African Cup of Nations qualification|2017,58,risk1,2.280320385943025,5.172413793103448,55.172413793103445
+"gender,tournament,year",12,M|African Cup of Nations qualification|2018,184,E5,1.9835826510363204,9.782608695652174,53.2608695652174
+"gender,tournament,year",12,M|African Cup of Nations qualification|2019,158,E5,1.9649921812135356,17.72151898734177,64.55696202531645
+"gender,tournament,year",12,M|African Cup of Nations qualification|2020,96,dynamic,1.957474909564703,16.666666666666664,56.25
+"gender,tournament,year",12,M|African Cup of Nations qualification|2021,96,E5,2.3276369995858723,16.666666666666664,46.875
+"gender,tournament,year",12,M|African Cup of Nations qualification|2022,108,v5,1.955990720019874,21.296296296296298,65.74074074074075
+"gender,tournament,year",12,M|African Cup of Nations qualification|2023,176,Plan02,2.156176399915989,10.227272727272728,53.40909090909091
+"gender,tournament,year",12,M|African Cup of Nations qualification|2024,302,E5,2.08181064149645,15.2317880794702,50.993377483443716
+"gender,tournament,year",12,M|Arab Cup|2012,22,metric_draw_off,2.114796350474721,18.181818181818183,63.63636363636363
+"gender,tournament,year",12,M|Arab Cup|2021,64,E4,2.3089000402188438,12.5,59.375
+"gender,tournament,year",12,M|Arab Cup|2025,62,E5,2.4001393395684745,9.67741935483871,43.54838709677419
+"gender,tournament,year",12,M|Arab Cup qualification|2021,12,metric_batch,2.7527404949698453,0.0,50.0
+"gender,tournament,year",12,M|Arab Cup qualification|2025,14,metric_draw_off,2.805879032283111,14.285714285714285,57.14285714285714
+"gender,tournament,year",12,M|CAFA Nations Cup|2023,20,E5,1.883957332928155,0.0,70.0
+"gender,tournament,year",12,M|CECAFA Cup|2011,52,metric_batch,2.320050486611042,9.615384615384617,32.69230769230769
+"gender,tournament,year",12,M|CECAFA Cup|2012,52,v29,1.9537140200673127,7.6923076923076925,67.3076923076923
+"gender,tournament,year",12,M|CECAFA Cup|2013,52,E5,1.4477394621649515,30.76923076923077,69.23076923076923
+"gender,tournament,year",12,M|CECAFA Cup|2015,52,E4,1.5718030861031695,26.923076923076923,65.38461538461539
+"gender,tournament,year",12,M|CECAFA Cup|2017,40,metric_batch,2.296207143906277,5.0,50.0
+"gender,tournament,year",12,M|CFU Caribbean Cup|2012,32,metric_draw_off,2.172116640561404,25.0,37.5
+"gender,tournament,year",12,M|CFU Caribbean Cup|2014,20,E5,1.8679174432105081,10.0,60.0
+"gender,tournament,year",12,M|CFU Caribbean Cup qualification|2012,74,v29,2.983473439494096,9.45945945945946,70.27027027027027
+"gender,tournament,year",12,M|CFU Caribbean Cup qualification|2014,68,E5,2.3782307573128176,20.588235294117645,55.88235294117647
+"gender,tournament,year",12,M|CFU Caribbean Cup qualification|2016,72,risk1,2.409552160868479,15.277777777777779,68.05555555555556
+"gender,tournament,year",12,M|CONCACAF Nations League|2019,204,ExpA,2.3835195584000513,11.76470588235294,64.70588235294117
+"gender,tournament,year",12,M|CONCACAF Nations League|2022,134,E5,2.3053481891493615,13.432835820895523,59.70149253731343
+"gender,tournament,year",12,M|CONCACAF Nations League|2023,270,E5,2.7644564611414126,7.4074074074074066,55.55555555555556
+"gender,tournament,year",12,M|CONCACAF Nations League|2024,220,E4,2.4688547766359163,6.8181818181818175,65.0
+"gender,tournament,year",12,M|CONCACAF Nations League qualification|2018,100,E4,3.3302215411518947,10.0,70.0
+"gender,tournament,year",12,M|CONCACAF Nations League qualification|2019,36,E4,1.819809390214889,27.77777777777778,61.111111111111114
+"gender,tournament,year",12,M|CONCACAF Series|2025,38,E5,3.509473061199366,10.526315789473683,42.10526315789473
+"gender,tournament,year",12,M|CONCACAF Series|2026,32,E4,2.391567238906778,6.25,50.0
+"gender,tournament,year",12,M|CONIFA European Football Cup|2015,22,v5,2.6906598544483504,0.0,54.54545454545454
+"gender,tournament,year",12,M|CONIFA European Football Cup|2017,36,E5,2.5882497933447075,22.22222222222222,55.55555555555556
+"gender,tournament,year",12,M|CONIFA European Football Cup|2019,40,E5,3.10208821003014,15.0,30.0
+"gender,tournament,year",12,M|CONIFA World Football Cup|2014,56,E4,5.880000276618797,0.0,39.285714285714285
+"gender,tournament,year",12,M|CONIFA World Football Cup|2016,56,risk3,4.046470044408749,3.571428571428571,46.42857142857143
+"gender,tournament,year",12,M|CONIFA World Football Cup|2018,90,E5,3.4066266465335033,4.444444444444445,57.77777777777777
+"gender,tournament,year",12,M|COSAFA Cup|2013,40,risk1,1.9597176894952626,15.0,62.5
+"gender,tournament,year",12,M|COSAFA Cup|2015,46,v29,2.8711153421451048,8.695652173913043,21.73913043478261
+"gender,tournament,year",12,M|COSAFA Cup|2016,46,E5,2.670307523887293,17.391304347826086,52.17391304347826
+"gender,tournament,year",12,M|COSAFA Cup|2017,46,E5,2.5131130895068905,13.043478260869565,47.82608695652174
+"gender,tournament,year",12,M|COSAFA Cup|2018,46,E5,1.9876149535770715,26.08695652173913,52.17391304347826
+"gender,tournament,year",12,M|COSAFA Cup|2019,40,E5,1.6999241732284809,10.0,65.0
+"gender,tournament,year",12,M|COSAFA Cup|2021,48,E5,2.020675810522158,16.666666666666664,45.83333333333333
+"gender,tournament,year",12,M|COSAFA Cup|2022,46,E5,2.055616602466763,26.08695652173913,41.30434782608695
+"gender,tournament,year",12,M|COSAFA Cup|2023,44,E5,1.8816724209949003,18.181818181818183,47.72727272727273
+"gender,tournament,year",12,M|Confederations Cup|2013,32,risk1,2.127103358533174,21.875,75.0
+"gender,tournament,year",12,M|Confederations Cup|2017,32,E4,1.413453925464325,18.75,68.75
+"gender,tournament,year",12,M|Copa América|2015,52,E5,2.081214469762316,11.538461538461538,50.0
+"gender,tournament,year",12,M|Copa América|2016,64,v29,2.5271631993707793,12.5,54.6875
+"gender,tournament,year",12,M|Copa América|2019,52,v29,1.9910660798170883,19.230769230769234,61.53846153846154
+"gender,tournament,year",12,M|Copa América|2021,56,metric_batch,1.6860733565666293,14.285714285714285,71.42857142857143
+"gender,tournament,year",12,M|Copa América|2024,64,E5,2.180472752460408,12.5,37.5
+"gender,tournament,year",12,M|Coupe de l'Outre-Mer|2012,32,E5,2.934643207042202,12.5,62.5
+"gender,tournament,year",12,M|EAFF Championship|2012,26,v4,2.584927004606754,7.6923076923076925,69.23076923076923
+"gender,tournament,year",12,M|EAFF Championship|2013,12,metric_batch,3.408884315923879,0.0,41.66666666666667
+"gender,tournament,year",12,M|EAFF Championship|2014,18,metric_draw_off,2.8301170568035987,11.11111111111111,55.55555555555556
+"gender,tournament,year",12,M|EAFF Championship|2015,12,E5,1.4344147994717344,33.33333333333333,50.0
+"gender,tournament,year",12,M|EAFF Championship|2016,18,risk3,3.060812887621711,0.0,66.66666666666666
+"gender,tournament,year",12,M|EAFF Championship|2017,12,metric_batch,1.9096962221359484,16.666666666666664,58.333333333333336
+"gender,tournament,year",12,M|EAFF Championship|2018,24,E5,2.0133955735752465,25.0,75.0
+"gender,tournament,year",12,M|EAFF Championship|2019,12,E5,0.7839309849883609,50.0,83.33333333333334
+"gender,tournament,year",12,M|EAFF Championship|2022,12,v4,1.4593404791792297,8.333333333333332,83.33333333333334
+"gender,tournament,year",12,M|FIFA Series|2024,48,metric_draw_off,2.563908147311541,12.5,70.83333333333334
+"gender,tournament,year",12,M|FIFA Series|2026,66,E5,2.5019546855211634,12.121212121212121,69.6969696969697
+"gender,tournament,year",12,M|FIFA World Cup|2014,128,E4,2.4235505333308343,13.28125,49.21875
+"gender,tournament,year",12,M|FIFA World Cup|2018,128,E4,2.2487832789703512,13.28125,49.21875
+"gender,tournament,year",12,M|FIFA World Cup|2022,128,E5,2.3609386700882684,12.5,51.5625
+"gender,tournament,year",12,M|FIFA World Cup qualification|2011,320,E1,2.105916748265431,13.4375,65.3125
+"gender,tournament,year",12,M|FIFA World Cup qualification|2012,482,dynamic,2.0318548951111177,19.08713692946058,64.73029045643153
+"gender,tournament,year",12,M|FIFA World Cup qualification|2013,694,E1,2.0580734347721426,15.85014409221902,59.0778097982709
+"gender,tournament,year",12,M|FIFA World Cup qualification|2015,560,E1,2.3843843498558766,12.5,64.28571428571429
+"gender,tournament,year",12,M|FIFA World Cup qualification|2016,520,risk1,2.1481614269793976,9.423076923076923,65.57692307692308
+"gender,tournament,year",12,M|FIFA World Cup qualification|2017,622,E5,2.2046412882378745,12.540192926045016,58.36012861736335
+"gender,tournament,year",12,M|FIFA World Cup qualification|2019,272,E5,2.0156029371745716,20.22058823529412,62.86764705882353
+"gender,tournament,year",12,M|FIFA World Cup qualification|2020,42,risk1,2.7037372477442303,9.523809523809524,45.23809523809524
+"gender,tournament,year",12,M|FIFA World Cup qualification|2021,1218,E5,2.1887702687851056,14.039408866995073,64.36781609195403
+"gender,tournament,year",12,M|FIFA World Cup qualification|2022,200,v29,2.066653927197972,15.5,55.50000000000001
+"gender,tournament,year",12,M|FIFA World Cup qualification|2023,276,E5,2.1729719372911314,13.405797101449277,55.79710144927537
+"gender,tournament,year",12,M|FIFA World Cup qualification|2024,510,v4,2.2349142176355263,12.156862745098039,62.549019607843135
+"gender,tournament,year",12,M|FIFA World Cup qualification|2025,984,dynamic,2.4348756508361946,11.38211382113821,58.13008130081301
+"gender,tournament,year",12,M|FIFA World Cup qualification|2026,32,metric_batch,1.5330323382499929,25.0,75.0
+"gender,tournament,year",12,M|Friendly|2011,370,v4,2.228379062627372,12.702702702702704,55.13513513513514
+"gender,tournament,year",12,M|Friendly|2012,820,E5,2.374717210102889,10.975609756097562,51.829268292682926
+"gender,tournament,year",12,M|Friendly|2013,654,E5,2.336181337228329,11.009174311926607,50.917431192660544
+"gender,tournament,year",12,M|Friendly|2014,774,E2,2.2956555794098406,10.465116279069768,56.201550387596896
+"gender,tournament,year",12,M|Friendly|2015,580,v29,2.1885412336506715,13.96551724137931,55.51724137931034
+"gender,tournament,year",12,M|Friendly|2016,590,E5,2.2761065714714284,10.677966101694915,56.10169491525424
+"gender,tournament,year",12,M|Friendly|2017,590,E2,2.3064550384526488,9.661016949152543,47.96610169491525
+"gender,tournament,year",12,M|Friendly|2018,862,v29,2.393200615417999,11.020881670533642,49.419953596287705
+"gender,tournament,year",12,M|Friendly|2019,496,Plan01,2.2732754486036897,8.870967741935484,56.048387096774185
+"gender,tournament,year",12,M|Friendly|2020,208,E5,2.3233877508917335,9.134615384615383,52.40384615384615
+"gender,tournament,year",12,M|Friendly|2021,430,metric_draw_off,2.2437554878139006,12.093023255813954,58.6046511627907
+"gender,tournament,year",12,M|Friendly|2022,696,metric_draw_off,2.2098435521066486,10.919540229885058,54.88505747126437
+"gender,tournament,year",12,M|Friendly|2023,504,E2,2.2353270636100673,14.285714285714285,54.563492063492056
+"gender,tournament,year",12,M|Friendly|2024,482,E4,2.2815258131999916,12.033195020746888,54.56431535269709
+"gender,tournament,year",12,M|Friendly|2025,440,metric_draw_off,2.3951789045120684,12.272727272727273,56.81818181818182
+"gender,tournament,year",12,M|Friendly|2026,152,E5,2.382154577421996,9.868421052631579,48.026315789473685
+"gender,tournament,year",12,M|Gold Cup|2013,50,E5,1.9256309112946826,16.0,76.0
+"gender,tournament,year",12,M|Gold Cup|2015,52,dynamic,2.0005232501789703,23.076923076923077,57.692307692307686
+"gender,tournament,year",12,M|Gold Cup|2017,50,metric_draw_off,1.4117855491262963,28.000000000000004,64.0
+"gender,tournament,year",12,M|Gold Cup|2019,62,dynamic,2.0323489165138287,16.129032258064516,70.96774193548387
+"gender,tournament,year",12,M|Gold Cup|2021,62,v29,1.8079618755337545,16.129032258064516,74.19354838709677
+"gender,tournament,year",12,M|Gold Cup|2023,62,E4,2.2045847473162747,9.67741935483871,64.51612903225806
+"gender,tournament,year",12,M|Gold Cup|2025,62,E4,1.9169753385603134,19.35483870967742,64.51612903225806
+"gender,tournament,year",12,M|Gold Cup qualification|2021,18,Plan02,2.572916185410383,22.22222222222222,77.77777777777779
+"gender,tournament,year",12,M|Gold Cup qualification|2023,18,v4,1.7305718823604697,16.666666666666664,72.22222222222221
+"gender,tournament,year",12,M|Gold Cup qualification|2025,28,E5,2.0046511736067463,21.428571428571427,71.42857142857143
+"gender,tournament,year",12,M|Gulf Cup|2013,32,E5,2.133678111389794,31.25,43.75
+"gender,tournament,year",12,M|Gulf Cup|2014,32,E4,2.4180107287777153,12.5,43.75
+"gender,tournament,year",12,M|Gulf Cup|2017,24,E4,1.5960003426702631,25.0,54.166666666666664
+"gender,tournament,year",12,M|Gulf Cup|2019,30,E5,2.716879077610041,0.0,40.0
+"gender,tournament,year",12,M|Gulf Cup|2023,30,dynamic,2.0082218086272783,20.0,53.333333333333336
+"gender,tournament,year",12,M|Gulf Cup|2024,28,E5,1.9630512255476142,28.57142857142857,42.857142857142854
+"gender,tournament,year",12,M|Indian Ocean Island Games|2011,20,E5,2.109760049482767,20.0,60.0
+"gender,tournament,year",12,M|Indian Ocean Island Games|2015,26,E5,1.8371277842742657,23.076923076923077,76.92307692307693
+"gender,tournament,year",12,M|Indian Ocean Island Games|2019,26,E5,1.7425756927419005,15.384615384615385,61.53846153846154
+"gender,tournament,year",12,M|Indian Ocean Island Games|2023,20,E4,1.8388184132405498,20.0,50.0
+"gender,tournament,year",12,M|Inter Games|2019,38,E5,2.1761385536400906,23.684210526315788,78.94736842105263
+"gender,tournament,year",12,M|Intercontinental Cup|2018,14,metric_draw_off,1.6619825530923673,14.285714285714285,85.71428571428571
+"gender,tournament,year",12,M|Intercontinental Cup|2019,14,dynamic,2.8262533269669916,42.857142857142854,71.42857142857143
+"gender,tournament,year",12,M|Island Games|2013,16,v29,5.384674564811933,0.0,75.0
+"gender,tournament,year",12,M|Island Games|2015,68,E4,1.8665981738653332,23.52941176470588,76.47058823529412
+"gender,tournament,year",12,M|Island Games|2017,68,v4,2.703783911149606,7.352941176470589,61.76470588235294
+"gender,tournament,year",12,M|Island Games|2023,58,E5,1.8861713735867986,10.344827586206897,79.3103448275862
+"gender,tournament,year",12,M|Island Games|2025,30,E5,3.372819804303368,0.0,53.333333333333336
+"gender,tournament,year",12,M|Kirin Challenge Cup|2019,12,E5,2.426254296166812,16.666666666666664,33.33333333333333
+"gender,tournament,year",12,M|MSG Prime Minister's Cup|2022,12,risk1,2.186671925580822,0.0,50.0
+"gender,tournament,year",12,M|MSG Prime Minister's Cup|2023,12,metric_draw_off,1.424628758067539,16.666666666666664,66.66666666666666
+"gender,tournament,year",12,M|MSG Prime Minister's Cup|2024,12,v4,2.804613505926542,16.666666666666664,33.33333333333333
+"gender,tournament,year",12,M|Mahinda Rajapaksa Cup|2021,14,dynamic,2.2174342403698657,14.285714285714285,57.14285714285714
+"gender,tournament,year",12,M|Mapinduzi Cup|2025,14,metric_draw_off,1.7729165664079267,42.857142857142854,57.14285714285714
+"gender,tournament,year",12,"M|Morocco, Capital of African Football|2026",12,v4,2.5959343887560222,0.0,25.0
+"gender,tournament,year",12,M|Nehru Cup|2012,22,E5,1.9276341760883484,13.636363636363635,54.54545454545454
+"gender,tournament,year",12,M|Oceania Nations Cup|2012,32,E4,2.942086711695941,6.25,56.25
+"gender,tournament,year",12,M|Oceania Nations Cup|2016,30,E4,2.018986524926819,20.0,66.66666666666666
+"gender,tournament,year",12,M|Oceania Nations Cup|2024,26,E5,2.0345822333639094,15.384615384615385,84.61538461538461
+"gender,tournament,year",12,M|Pacific Games|2011,58,E5,2.192357627941119,6.896551724137931,86.20689655172413
+"gender,tournament,year",12,M|Pacific Games|2019,44,E5,4.134800614354604,4.545454545454546,72.72727272727273
+"gender,tournament,year",12,M|Pacific Games|2023,48,E5,2.8465228014225534,4.166666666666666,70.83333333333334
+"gender,tournament,year",12,M|Pacific Mini Games|2017,30,E4,2.2781046351177587,13.333333333333334,93.33333333333333
+"gender,tournament,year",12,M|SAFF Cup|2011,30,metric_draw_off,2.0783941636212195,6.666666666666667,53.333333333333336
+"gender,tournament,year",12,M|SAFF Cup|2013,28,risk2,3.2580311650103293,0.0,39.285714285714285
+"gender,tournament,year",12,M|SAFF Cup|2015,22,E5,2.3964064255801216,9.090909090909092,72.72727272727273
+"gender,tournament,year",12,M|SAFF Cup|2018,24,metric_draw_off,1.892975204453262,25.0,66.66666666666666
+"gender,tournament,year",12,M|SAFF Cup|2021,22,E4,1.797981345757421,22.727272727272727,50.0
+"gender,tournament,year",12,M|SAFF Cup|2023,30,E4,1.5187139606739881,20.0,80.0
+"gender,tournament,year",12,M|Tri Nation Tournament|2023,14,metric_draw_off,1.0564103280588173,42.857142857142854,71.42857142857143
+"gender,tournament,year",12,M|Tynwald Hill Tournament|2013,12,v4,3.8634257834821564,0.0,66.66666666666666
+"gender,tournament,year",12,M|UEFA Euro|2012,62,E5,2.0963584153701955,25.806451612903224,48.38709677419355
+"gender,tournament,year",12,M|UEFA Euro|2016,102,E4,2.3515719089150435,15.686274509803921,39.21568627450981
+"gender,tournament,year",12,M|UEFA Euro|2021,102,E4,2.3905884298098585,8.823529411764707,50.0
+"gender,tournament,year",12,M|UEFA Euro|2024,102,E4,1.9174115418255506,25.49019607843137,54.90196078431373
+"gender,tournament,year",12,M|UEFA Euro qualification|2011,198,risk3,2.1162707496188236,14.14141414141414,60.1010101010101
+"gender,tournament,year",12,M|UEFA Euro qualification|2014,206,E5,2.3715438271673293,9.70873786407767,51.94174757281553
+"gender,tournament,year",12,M|UEFA Euro qualification|2015,328,E5,2.007347898258635,13.109756097560975,64.63414634146342
+"gender,tournament,year",12,M|UEFA Euro qualification|2019,500,risk1,2.0974994401401856,11.799999999999999,67.2
+"gender,tournament,year",12,M|UEFA Euro qualification|2020,24,metric_batch,1.7014119292375807,25.0,41.66666666666667
+"gender,tournament,year",12,M|UEFA Euro qualification|2023,460,E5,2.143655221241049,11.73913043478261,65.43478260869566
+"gender,tournament,year",12,M|UEFA Euro qualification|2024,18,v4,2.0572408706079366,11.11111111111111,83.33333333333334
+"gender,tournament,year",12,M|UEFA Nations League|2018,276,E5,2.106615653664439,21.014492753623188,57.608695652173914
+"gender,tournament,year",12,M|UEFA Nations League|2020,324,E4,2.41082893329468,12.037037037037036,45.370370370370374
+"gender,tournament,year",12,M|UEFA Nations League|2022,320,E4,2.3163069426555465,12.5,51.24999999999999
+"gender,tournament,year",12,M|UEFA Nations League|2024,316,E5,2.382492724935547,12.658227848101266,52.84810126582279
+"gender,tournament,year",12,M|UEFA Nations League|2025,56,E5,2.3719310904129602,16.071428571428573,57.14285714285714
+"gender,tournament,year",12,M|UNCAF Cup|2013,28,E4,1.051386586246077,42.857142857142854,71.42857142857143
+"gender,tournament,year",12,M|UNCAF Cup|2017,16,metric_draw_off,1.4095321906106826,12.5,87.5
+"gender,tournament,year",12,M|Viva World Cup|2012,36,E4,3.387723306964861,11.11111111111111,94.44444444444444
+"gender,tournament,year",12,M|WAFF Championship|2012,38,E4,1.8688049416795238,21.052631578947366,42.10526315789473
+"gender,tournament,year",12,M|WAFF Championship|2013,16,E4,1.8638883782676898,12.5,50.0
+"gender,tournament,year",12,M|WAFF Championship|2019,34,E5,2.2409590336514276,11.76470588235294,29.411764705882355
+"gender,tournament,year",12,M|Windward Islands Tournament|2017,12,metric_draw_off,2.638500646661248,0.0,16.666666666666664
+"gender,tournament,year",12,W|AFC Asian Cup|2014,34,E5,1.882435830858478,17.647058823529413,82.35294117647058
+"gender,tournament,year",12,W|AFC Asian Cup|2018,34,E5,2.614361121975643,14.705882352941178,70.58823529411765
+"gender,tournament,year",12,W|AFC Asian Cup|2022,50,E4,3.4183825835944135,8.0,64.0
+"gender,tournament,year",12,W|AFC Asian Cup|2026,54,E5,2.4198462890113013,29.629629629629626,75.92592592592592
+"gender,tournament,year",12,W|AFC Asian Cup qualification|2013,48,E5,5.208776098515938,6.25,68.75
+"gender,tournament,year",12,W|AFC Asian Cup qualification|2017,76,E5,3.6584526439037246,2.631578947368421,78.94736842105263
+"gender,tournament,year",12,W|AFC Asian Cup qualification|2021,52,E5,3.3358203951485006,11.538461538461538,75.0
+"gender,tournament,year",12,W|AFC Asian Cup qualification|2025,112,E5,3.2297352815314073,5.357142857142857,66.96428571428571
+"gender,tournament,year",12,W|AFC Olympic Qualifying Tournament|2015,44,dynamic,2.8711238299245467,4.545454545454546,72.72727272727273
+"gender,tournament,year",12,W|AFC Olympic Qualifying Tournament|2016,30,v4,2.31878258700532,6.666666666666667,46.666666666666664
+"gender,tournament,year",12,W|AFC Olympic Qualifying Tournament|2018,50,E5,3.4178984439827826,4.0,68.0
+"gender,tournament,year",12,W|AFC Olympic Qualifying Tournament|2019,36,E5,2.859531439484479,16.666666666666664,77.77777777777779
+"gender,tournament,year",12,W|AFC Olympic Qualifying Tournament|2020,22,metric_batch,2.2973077548570475,9.090909090909092,81.81818181818183
+"gender,tournament,year",12,W|AFC Olympic Qualifying Tournament|2023,84,E5,2.969510653969369,7.142857142857142,71.42857142857143
+"gender,tournament,year",12,W|AFC Olympic qualification|2011,30,E5,1.2702888414069184,33.33333333333333,86.66666666666667
+"gender,tournament,year",12,W|AFF Championship|2011,32,E5,2.568588485262657,25.0,87.5
+"gender,tournament,year",12,W|AFF Championship|2012,26,v29,3.4757297165335808,0.0,84.61538461538461
+"gender,tournament,year",12,W|AFF Championship|2013,26,v4,3.2281643967317564,19.230769230769234,76.92307692307693
+"gender,tournament,year",12,W|AFF Championship|2015,22,E5,2.123701634599129,0.0,100.0
+"gender,tournament,year",12,W|AFF Championship|2016,22,v4,5.438604235930534,0.0,68.18181818181817
+"gender,tournament,year",12,W|AFF Championship|2018,36,E5,3.325018068621453,11.11111111111111,75.0
+"gender,tournament,year",12,W|AFF Championship|2019,40,E5,3.197863841922472,10.0,85.0
+"gender,tournament,year",12,W|AFF Championship|2022,48,E5,3.587180444890629,10.416666666666668,66.66666666666666
+"gender,tournament,year",12,W|AFF Women's Cup|2024,20,E5,2.1353057834500313,10.0,50.0
+"gender,tournament,year",12,W|ASEAN Championship|2025,22,E5,2.5089002827599556,0.0,72.72727272727273
+"gender,tournament,year",12,W|Africa Cup of Nations qualification|2025,100,E5,2.416969788276009,8.0,56.00000000000001
+"gender,tournament,year",12,W|African Championship|2012,32,E4,2.2685614884811507,3.125,75.0
+"gender,tournament,year",12,W|African Championship|2014,32,risk3,1.8020529108655157,18.75,68.75
+"gender,tournament,year",12,W|African Championship qualification|2012,56,v4,2.4261608426747614,5.357142857142857,76.78571428571429
+"gender,tournament,year",12,W|African Championship qualification|2014,54,E5,2.1681133963369623,18.51851851851852,66.66666666666666
+"gender,tournament,year",12,W|African Cup of Nations|2016,32,E4,1.9876243306039674,6.25,59.375
+"gender,tournament,year",12,W|African Cup of Nations|2018,32,E5,2.876047592668951,6.25,50.0
+"gender,tournament,year",12,W|African Cup of Nations|2022,56,E5,1.902104108954496,32.142857142857146,64.28571428571429
+"gender,tournament,year",12,W|African Cup of Nations|2025,52,E4,2.2662483508160673,11.538461538461538,53.84615384615385
+"gender,tournament,year",12,W|African Cup of Nations qualification|2016,60,Plan01,2.123519637794707,16.666666666666664,55.00000000000001
+"gender,tournament,year",12,W|African Cup of Nations qualification|2018,64,risk3,2.4433679025093,14.0625,65.625
+"gender,tournament,year",12,W|African Cup of Nations qualification|2021,76,E5,3.299100043148305,5.263157894736842,60.526315789473685
+"gender,tournament,year",12,W|African Cup of Nations qualification|2022,40,v4,2.138725288979553,25.0,80.0
+"gender,tournament,year",12,W|African Games|2011,26,E4,2.7637418247093546,7.6923076923076925,42.30769230769231
+"gender,tournament,year",12,W|African Games|2015,26,E4,1.8432343671835367,34.61538461538461,50.0
+"gender,tournament,year",12,W|Aisha Buhari Cup|2021,12,dynamic,2.1660954791775353,0.0,66.66666666666666
+"gender,tournament,year",12,W|Algarve Cup|2012,48,E5,1.7726322147646885,25.0,75.0
+"gender,tournament,year",12,W|Algarve Cup|2013,48,E5,1.9502487282880605,8.333333333333332,58.333333333333336
+"gender,tournament,year",12,W|Algarve Cup|2014,48,E5,2.0661088484075996,16.666666666666664,62.5
+"gender,tournament,year",12,W|Algarve Cup|2015,48,risk1,2.1495606374625655,20.833333333333336,58.333333333333336
+"gender,tournament,year",12,W|Algarve Cup|2016,32,v29,2.4666402614099203,9.375,53.125
+"gender,tournament,year",12,W|Algarve Cup|2017,48,metric_draw_off,2.2356708808316257,20.833333333333336,58.333333333333336
+"gender,tournament,year",12,W|Algarve Cup|2018,46,E5,2.5838323586099246,17.391304347826086,56.52173913043478
+"gender,tournament,year",12,W|Algarve Cup|2019,36,E5,2.6445907933915844,16.666666666666664,50.0
+"gender,tournament,year",12,W|Algarve Cup|2020,24,risk2,1.7563466014105538,25.0,66.66666666666666
+"gender,tournament,year",12,W|Algarve Cup|2022,12,risk3,2.286529410953972,0.0,33.33333333333333
+"gender,tournament,year",12,W|Aphrodite Cup|2015,32,E4,4.775008490496594,12.5,50.0
+"gender,tournament,year",12,W|Aphrodite Cup|2016,20,risk1,1.8656607664657465,0.0,70.0
+"gender,tournament,year",12,W|Aphrodite Cup|2017,18,E4,3.15595403062837,0.0,22.22222222222222
+"gender,tournament,year",12,W|Aphrodite Cup|2019,12,v29,2.0757046698590904,16.666666666666664,33.33333333333333
+"gender,tournament,year",12,W|Arab Cup|2021,24,E4,3.2671100911842275,0.0,62.5
+"gender,tournament,year",12,W|Armenia International Friendly Tournament|2021,12,metric_batch,2.6262403561954124,0.0,58.333333333333336
+"gender,tournament,year",12,W|Arnold Clark Cup|2022,12,v29,3.2813330779111722,16.666666666666664,16.666666666666664
+"gender,tournament,year",12,W|Arnold Clark Cup|2023,12,dynamic,2.755503239978595,16.666666666666664,66.66666666666666
+"gender,tournament,year",12,W|Asian Games|2014,46,E5,2.623993653789533,17.391304347826086,82.6086956521739
+"gender,tournament,year",12,W|Asian Games|2018,46,E5,2.9398377215356755,8.695652173913043,86.95652173913044
+"gender,tournament,year",12,W|Asian Games|2023,56,E5,2.696131804842544,7.142857142857142,80.35714285714286
+"gender,tournament,year",12,W|Baltic Cup|2016,12,ExpA,1.5632329886654874,33.33333333333333,75.0
+"gender,tournament,year",12,W|CAF Olympic Qualifying Tournament|2015,42,E5,2.0376775978623898,28.57142857142857,57.14285714285714
+"gender,tournament,year",12,W|CAF Olympic Qualifying Tournament|2019,78,E5,2.522104731554847,5.128205128205128,53.84615384615385
+"gender,tournament,year",12,W|CAF Olympic Qualifying Tournament|2023,48,Plan01,1.9159082859871226,12.5,70.83333333333334
+"gender,tournament,year",12,W|CAF Olympic Qualifying Tournament|2024,24,E4,2.766437982145904,20.833333333333336,50.0
+"gender,tournament,year",12,W|CAFA Championship|2018,20,metric_draw_off,3.9665309489452896,10.0,100.0
+"gender,tournament,year",12,W|CAFA Championship|2022,20,E4,2.3046716014093582,30.0,80.0
+"gender,tournament,year",12,W|CECAFA Championship|2016,26,E4,4.44489630434334,7.6923076923076925,61.53846153846154
+"gender,tournament,year",12,W|CECAFA Championship|2018,20,E5,1.897363688796199,0.0,60.0
+"gender,tournament,year",12,W|CECAFA Championship|2019,32,E5,3.590812051906733,12.5,81.25
+"gender,tournament,year",12,W|CECAFA Championship|2022,32,E5,2.0767887186588636,18.75,87.5
+"gender,tournament,year",12,W|CECAFA Championship|2025,20,E2,2.377161714991478,15.0,70.0
+"gender,tournament,year",12,W|CONCACAF Championship|2014,32,E5,1.7626565753283263,15.625,81.25
+"gender,tournament,year",12,W|CONCACAF Championship|2018,32,E5,3.4815880860037085,12.5,71.875
+"gender,tournament,year",12,W|CONCACAF Championship|2022,32,E5,2.267008130707392,25.0,68.75
+"gender,tournament,year",12,W|CONCACAF Championship qualification|2014,20,E5,1.7624699107366482,20.0,100.0
+"gender,tournament,year",12,W|CONCACAF Championship qualification|2018,108,E5,3.164807256192358,7.4074074074074066,72.22222222222221
+"gender,tournament,year",12,W|CONCACAF Championship qualification|2022,120,E5,3.507615830625065,5.833333333333333,85.0
+"gender,tournament,year",12,W|CONCACAF Championship qualification|2025,34,E5,3.83648680795136,11.76470588235294,70.58823529411765
+"gender,tournament,year",12,W|CONCACAF Gold Cup qualification|2023,168,E5,3.223728579397477,7.142857142857142,66.66666666666666
+"gender,tournament,year",12,W|CONCACAF Olympic Qualifying Tournament|2012,30,E2,3.1560295434944368,13.333333333333334,83.33333333333334
+"gender,tournament,year",12,W|CONCACAF Olympic Qualifying Tournament|2016,30,E5,1.9454248943372063,20.0,86.66666666666667
+"gender,tournament,year",12,W|CONCACAF Olympic Qualifying Tournament|2020,30,E2,1.8108291179416105,13.333333333333334,96.66666666666667
+"gender,tournament,year",12,W|CONCACAF Olympic Qualifying Tournament qualification|2011,20,E5,1.7119614824348308,20.0,90.0
+"gender,tournament,year",12,W|CONCACAF Olympic Qualifying Tournament qualification|2015,48,E5,3.275563465978236,16.666666666666664,79.16666666666666
+"gender,tournament,year",12,W|CONCACAF Olympic Qualifying Tournament qualification|2019,58,E5,2.9978787587857876,6.896551724137931,89.65517241379311
+"gender,tournament,year",12,W|CONIFA World Cup|2024,14,v4,1.9993179210755574,14.285714285714285,78.57142857142857
+"gender,tournament,year",12,W|CONMEBOL Nations League|2025,32,E5,2.4706568110063363,6.25,62.5
+"gender,tournament,year",12,W|COSAFA Championship|2017,44,E4,3.3714797349395527,0.0,54.54545454545454
+"gender,tournament,year",12,W|COSAFA Championship|2018,44,E5,2.4941214959784443,13.636363636363635,72.72727272727273
+"gender,tournament,year",12,W|COSAFA Championship|2019,44,Plan02,4.019657449068364,0.0,77.27272727272727
+"gender,tournament,year",12,W|COSAFA Championship|2020,30,risk3,3.3631338211784074,0.0,60.0
+"gender,tournament,year",12,W|COSAFA Championship|2021,44,E5,2.6707360618237033,4.545454545454546,59.09090909090909
+"gender,tournament,year",12,W|COSAFA Championship|2022,34,v4,2.1495037450453944,5.88235294117647,70.58823529411765
+"gender,tournament,year",12,W|COSAFA Championship|2023,44,E5,2.548446644545831,4.545454545454546,45.45454545454545
+"gender,tournament,year",12,W|COSAFA Championship|2024,42,E4,3.1163335184782994,16.666666666666664,61.904761904761905
+"gender,tournament,year",12,W|Caribbean Queen's Friendly Tournament|2024,12,v29,5.13344913666194,0.0,33.33333333333333
+"gender,tournament,year",12,W|Central American Games|2013,26,E5,2.651765617854014,7.6923076923076925,84.61538461538461
+"gender,tournament,year",12,W|Central American Games|2017,20,E5,2.2551059198083068,20.0,60.0
+"gender,tournament,year",12,W|Central American Games|2025,18,E5,3.073288078709309,11.11111111111111,66.66666666666666
+"gender,tournament,year",12,W|Central American and Caribbean Games|2014,32,E4,2.9207863555284552,6.25,68.75
+"gender,tournament,year",12,W|Central American and Caribbean Games|2018,26,E4,2.186012314224115,15.384615384615385,53.84615384615385
+"gender,tournament,year",12,W|Central American and Caribbean Games|2023,32,E5,3.4963405433828503,3.125,37.5
+"gender,tournament,year",12,W|Copa América|2018,52,E5,2.1178840351812975,21.153846153846153,76.92307692307693
+"gender,tournament,year",12,W|Copa América|2022,50,E5,1.8950336564542647,20.0,86.0
+"gender,tournament,year",12,W|Copa América|2025,50,E5,2.837802499174752,12.0,60.0
+"gender,tournament,year",12,W|Cup of Nations|2019,12,dynamic,1.2721852152538755,16.666666666666664,100.0
+"gender,tournament,year",12,W|Cup of Nations|2023,12,v5,1.3064851072472474,8.333333333333332,100.0
+"gender,tournament,year",12,W|Cyprus Cup|2012,48,risk1,1.7085053515689863,12.5,68.75
+"gender,tournament,year",12,W|Cyprus Cup|2013,48,Plan02,2.2281418439249734,25.0,45.83333333333333
+"gender,tournament,year",12,W|Cyprus Cup|2014,48,dynamic,2.228646514461919,12.5,54.166666666666664
+"gender,tournament,year",12,W|Cyprus Cup|2015,48,metric_draw_off,2.2946077385901273,8.333333333333332,50.0
+"gender,tournament,year",12,W|Cyprus Cup|2016,32,dynamic,1.9660625961853953,25.0,50.0
+"gender,tournament,year",12,W|Cyprus Cup|2017,48,v4,3.332148664123736,2.083333333333333,45.83333333333333
+"gender,tournament,year",12,W|Cyprus Cup|2018,48,E5,2.1632282754023824,8.333333333333332,54.166666666666664
+"gender,tournament,year",12,W|Cyprus Cup|2019,48,v29,2.56264084067207,8.333333333333332,66.66666666666666
+"gender,tournament,year",12,W|Cyprus Cup|2020,12,E5,2.4624887862112814,16.666666666666664,33.33333333333333
+"gender,tournament,year",12,W|Cyprus Cup|2023,12,metric_draw_off,3.2176206566289114,16.666666666666664,66.66666666666666
+"gender,tournament,year",12,W|EAFF E-1 Championship|2016,18,E5,3.753539253609578,11.11111111111111,88.88888888888889
+"gender,tournament,year",12,W|EAFF E-1 Championship|2017,12,dynamic,1.886145640096992,0.0,83.33333333333334
+"gender,tournament,year",12,W|EAFF E-1 Championship|2018,24,Plan02,3.08599033303094,8.333333333333332,66.66666666666666
+"gender,tournament,year",12,W|EAFF E-1 Championship|2019,12,v29,1.3823259410774025,16.666666666666664,100.0
+"gender,tournament,year",12,W|EAFF E-1 Championship|2022,12,E5,0.9398465369428103,33.33333333333333,83.33333333333334
+"gender,tournament,year",12,W|EAFF E-1 Championship qualification|2023,24,E5,5.712786904353333,4.166666666666666,70.83333333333334
+"gender,tournament,year",12,W|EAFF East Asian Cup|2012,18,risk2,2.3076330457969036,11.11111111111111,88.88888888888889
+"gender,tournament,year",12,W|EAFF East Asian Cup|2013,12,v4,1.6688242450113824,16.666666666666664,50.0
+"gender,tournament,year",12,W|EAFF East Asian Cup|2014,18,E5,3.6403996078680865,11.11111111111111,100.0
+"gender,tournament,year",12,W|EAFF East Asian Cup|2015,12,Plan02,2.511520978221123,0.0,50.0
+"gender,tournament,year",12,W|FIFA Unites Women's Series|2025,12,v29,7.69640522241239,0.0,66.66666666666666
+"gender,tournament,year",12,W|FIFA World Cup|2015,104,E5,2.059707967519682,13.461538461538462,69.23076923076923
+"gender,tournament,year",12,W|FIFA World Cup|2019,104,E4,1.8921307753770682,18.269230769230766,73.07692307692307
+"gender,tournament,year",12,W|FIFA World Cup|2023,128,E5,2.4917762544769015,14.0625,56.25
+"gender,tournament,year",12,W|FIFA World Cup qualification|2013,166,E5,2.753158991070008,7.228915662650602,69.87951807228916
+"gender,tournament,year",12,W|FIFA World Cup qualification|2014,290,E2,2.634239445114332,6.206896551724138,76.20689655172413
+"gender,tournament,year",12,W|FIFA World Cup qualification|2017,166,E5,2.369831620122986,14.457831325301203,75.90361445783132
+"gender,tournament,year",12,W|FIFA World Cup qualification|2018,178,metric_draw_off,2.0374168462682336,12.359550561797752,74.15730337078652
+"gender,tournament,year",12,W|FIFA World Cup qualification|2021,260,E2,2.8974777136622976,4.615384615384616,80.38461538461539
+"gender,tournament,year",12,W|FIFA World Cup qualification|2022,212,E2,2.774502292203464,5.188679245283019,73.11320754716981
+"gender,tournament,year",12,W|FIFA World Cup qualification|2023,14,E5,2.6793786442661554,14.285714285714285,42.857142857142854
+"gender,tournament,year",12,W|FIFA World Cup qualification|2026,124,E5,2.3005155761264313,9.67741935483871,74.19354838709677
+"gender,tournament,year",12,W|Four Nations Tournament|2012,12,E4,1.0844081877992315,50.0,83.33333333333334
+"gender,tournament,year",12,W|Four Nations Tournament|2013,12,v29,1.5982970120318425,33.33333333333333,66.66666666666666
+"gender,tournament,year",12,W|Four Nations Tournament|2014,12,E5,1.0305426326655056,33.33333333333333,83.33333333333334
+"gender,tournament,year",12,W|Four Nations Tournament|2015,12,Plan01,1.675286776596301,33.33333333333333,58.333333333333336
+"gender,tournament,year",12,W|Four Nations Tournament|2016,12,risk1,3.17762593355481,0.0,50.0
+"gender,tournament,year",12,W|Four Nations Tournament|2017,12,metric_draw_off,1.3216941426517894,33.33333333333333,100.0
+"gender,tournament,year",12,W|Four Nations Tournament|2018,12,Plan02,1.1592273817808423,16.666666666666664,83.33333333333334
+"gender,tournament,year",12,W|Friendly|2012,30,v4,1.588109987396988,23.333333333333332,86.66666666666667
+"gender,tournament,year",12,W|Friendly|2013,24,dynamic,1.9545158275499581,0.0,91.66666666666666
+"gender,tournament,year",12,W|Friendly|2014,30,risk1,2.2512356245694654,6.666666666666667,73.33333333333333
+"gender,tournament,year",12,W|Friendly|2015,46,v5,2.5620129528125677,23.91304347826087,65.21739130434783
+"gender,tournament,year",12,W|Friendly|2016,70,v29,2.00257462261597,12.857142857142856,75.71428571428571
+"gender,tournament,year",12,W|Friendly|2017,116,E5,1.9232344268924129,12.068965517241379,75.86206896551724
+"gender,tournament,year",12,W|Friendly|2018,78,risk1,2.3292754715237267,10.256410256410255,69.23076923076923
+"gender,tournament,year",12,W|Friendly|2019,168,E5,1.8151568088304781,16.071428571428573,67.85714285714286
+"gender,tournament,year",12,W|Friendly|2021,248,metric_draw_off,2.658784732377982,9.67741935483871,58.06451612903226
+"gender,tournament,year",12,W|Friendly|2022,250,E5,2.4462746324523783,11.600000000000001,60.0
+"gender,tournament,year",12,W|Friendly|2023,258,risk3,2.7579272965517383,9.30232558139535,56.97674418604651
+"gender,tournament,year",12,W|Friendly|2024,428,E4,2.780568279623597,8.411214953271028,56.074766355140184
+"gender,tournament,year",12,W|Friendly|2025,496,E4,2.6265041222956884,6.653225806451612,56.451612903225815
+"gender,tournament,year",12,W|Friendly|2026,40,v4,2.9960375563719426,5.0,50.0
+"gender,tournament,year",12,W|Gold Cup India|2019,14,v29,2.556919101138692,0.0,64.28571428571429
+"gender,tournament,year",12,W|Indian Ocean Island Games|2015,20,E5,1.9093129750525921,0.0,70.0
+"gender,tournament,year",12,W|Inter Games|2019,22,E5,2.413032780799161,4.545454545454546,81.81818181818183
+"gender,tournament,year",12,W|International Tournament|2011,12,risk2,2.1517421595656763,16.666666666666664,83.33333333333334
+"gender,tournament,year",12,W|International Tournament|2012,20,Plan01,2.0991947980415704,20.0,60.0
+"gender,tournament,year",12,W|International Tournament|2013,16,E5,2.335897693553576,12.5,62.5
+"gender,tournament,year",12,W|International Tournament|2014,16,Plan01,2.618827577154745,12.5,68.75
+"gender,tournament,year",12,W|International Tournament|2015,16,E5,1.3516972635773015,12.5,100.0
+"gender,tournament,year",12,W|International Tournament|2016,16,E5,1.4257611714666278,12.5,100.0
+"gender,tournament,year",12,W|International Tournament|2021,12,Plan01,2.6752436345394837,0.0,66.66666666666666
+"gender,tournament,year",12,W|International Women's Championship|2025,14,dynamic,1.9639218840795287,0.0,85.71428571428571
+"gender,tournament,year",12,W|Island Games|2015,44,risk3,2.650269360828755,11.363636363636363,75.0
+"gender,tournament,year",12,W|Island Games|2017,44,E4,2.4220229133057756,18.181818181818183,70.45454545454545
+"gender,tournament,year",12,W|Island Games|2023,38,E5,3.2282072002540367,0.0,63.1578947368421
+"gender,tournament,year",12,W|Island Games|2025,44,v29,3.2506201792342564,4.545454545454546,59.09090909090909
+"gender,tournament,year",12,W|Istria Cup|2014,12,dynamic,2.7155729308468923,0.0,50.0
+"gender,tournament,year",12,W|Istria Cup|2015,40,E4,2.099885521343702,20.0,30.0
+"gender,tournament,year",12,W|Istria Cup|2017,18,E5,4.156645932392622,0.0,33.33333333333333
+"gender,tournament,year",12,W|Istria Cup|2019,18,E5,2.6975227182662134,0.0,55.55555555555556
+"gender,tournament,year",12,W|MSG Prime Minister's Cup|2025,12,metric_draw_off,2.1717195508665017,16.666666666666664,66.66666666666666
+"gender,tournament,year",12,W|OFC Championship|2014,12,risk1,3.586240178585555,0.0,83.33333333333334
+"gender,tournament,year",12,W|OFC Nations Cup|2018,32,E5,4.322213310592758,9.375,75.0
+"gender,tournament,year",12,W|OFC Nations Cup|2022,34,E4,1.8422728627306166,17.647058823529413,58.82352941176471
+"gender,tournament,year",12,W|OFC Nations Cup|2025,36,E5,2.5141065862407572,22.22222222222222,55.55555555555556
+"gender,tournament,year",12,W|OFC Nations Cup qualification|2018,12,v29,2.033447756476182,33.33333333333333,66.66666666666666
+"gender,tournament,year",12,W|OFC Olympic Qualifying Tournament|2012,20,E5,2.9666482077334697,0.0,90.0
+"gender,tournament,year",12,W|OFC Olympic Qualifying Tournament|2024,30,E5,2.8367682678596235,13.333333333333334,80.0
+"gender,tournament,year",12,W|Olympic Games|2012,52,E5,2.008879282865909,19.230769230769234,69.23076923076923
+"gender,tournament,year",12,W|Olympic Games|2016,52,E2,2.147911692386044,7.6923076923076925,61.53846153846154
+"gender,tournament,year",12,W|Olympic Games|2021,52,E5,3.174897643824709,7.6923076923076925,53.84615384615385
+"gender,tournament,year",12,W|Olympic Games|2024,52,E5,2.127536461410168,26.923076923076923,69.23076923076923
+"gender,tournament,year",12,W|Pacific Games|2011,40,metric_draw_off,2.3523046830488767,5.0,70.0
+"gender,tournament,year",12,W|Pacific Games|2015,26,E5,2.7984880677299655,15.384615384615385,61.53846153846154
+"gender,tournament,year",12,W|Pacific Games|2019,44,E5,2.9604144861437516,18.181818181818183,81.81818181818183
+"gender,tournament,year",12,W|Pacific Games|2023,42,E5,3.0889064683058,0.0,52.38095238095239
+"gender,tournament,year",12,W|Pan American Games|2011,32,E4,1.7006651715340455,31.25,62.5
+"gender,tournament,year",12,W|Pan American Games|2015,32,E4,2.2638175564164444,15.625,62.5
+"gender,tournament,year",12,W|Pan American Games|2019,36,E4,1.9477195445642894,5.555555555555555,72.22222222222221
+"gender,tournament,year",12,W|Pan American Games|2023,26,E5,3.093712351731337,15.384615384615385,65.38461538461539
+"gender,tournament,year",12,W|Pinatar Cup|2020,12,E4,1.9811949610358015,33.33333333333333,66.66666666666666
+"gender,tournament,year",12,W|Pinatar Cup|2022,24,E4,2.540293135006258,8.333333333333332,37.5
+"gender,tournament,year",12,W|Pinatar Cup|2023,12,E5,1.6403030299234043,16.666666666666664,66.66666666666666
+"gender,tournament,year",12,W|Pinatar Cup|2025,12,metric_batch,2.351986065504486,0.0,66.66666666666666
+"gender,tournament,year",12,W|Pink Ladies Cup|2024,16,E5,2.046489194506525,12.5,87.5
+"gender,tournament,year",12,W|Pink Ladies Cup|2025,18,metric_draw_off,1.3613741280342944,22.22222222222222,88.88888888888889
+"gender,tournament,year",12,W|SAFF Championship|2012,30,E5,2.1542803931353753,10.0,80.0
+"gender,tournament,year",12,W|SAFF Championship|2014,30,v29,2.167422753968057,6.666666666666667,93.33333333333333
+"gender,tournament,year",12,W|SAFF Championship|2016,18,metric_draw_off,2.4828548386106886,11.11111111111111,77.77777777777779
+"gender,tournament,year",12,W|SAFF Championship|2019,18,metric_draw_off,1.1321763765897817,22.22222222222222,100.0
+"gender,tournament,year",12,W|SAFF Championship|2022,24,E5,3.7760733219013214,0.0,66.66666666666666
+"gender,tournament,year",12,W|SAFF Championship|2024,24,E5,4.66834087111696,8.333333333333332,45.83333333333333
+"gender,tournament,year",12,W|SAFF Women's Friendly Tournament|2023,34,E5,1.9117101134698449,23.52941176470588,47.05882352941176
+"gender,tournament,year",12,W|SheBelieves Cup|2016,12,E4,0.7032283366189431,50.0,100.0
+"gender,tournament,year",12,W|SheBelieves Cup|2017,12,E4,2.305427919996383,33.33333333333333,33.33333333333333
+"gender,tournament,year",12,W|SheBelieves Cup|2018,12,E5,2.881141266754181,8.333333333333332,33.33333333333333
+"gender,tournament,year",12,W|SheBelieves Cup|2019,12,risk3,3.326732520786514,0.0,16.666666666666664
+"gender,tournament,year",12,W|SheBelieves Cup|2020,12,dynamic,2.3385664584855954,16.666666666666664,50.0
+"gender,tournament,year",12,W|SheBelieves Cup|2022,12,E5,2.1629828642885287,16.666666666666664,83.33333333333334
+"gender,tournament,year",12,W|SheBelieves Cup|2023,12,dynamic,1.5258778440061267,33.33333333333333,83.33333333333334
+"gender,tournament,year",12,W|SheBelieves Cup|2025,12,E5,1.9342732035849821,25.0,66.66666666666666
+"gender,tournament,year",12,W|SheBelieves Cup|2026,12,v5,1.7341991852112313,0.0,83.33333333333334
+"gender,tournament,year",12,W|Slavic Cup|2013,18,v5,2.855581727082302,0.0,55.55555555555556
+"gender,tournament,year",12,W|South Asian Games|2016,22,metric_draw_off,1.9781477200124267,36.36363636363637,72.72727272727273
+"gender,tournament,year",12,W|South Asian Games|2019,14,v29,0.9984721688004997,35.714285714285715,100.0
+"gender,tournament,year",12,W|Southeast Asian Games|2013,20,E5,1.583623600660976,20.0,80.0
+"gender,tournament,year",12,W|Southeast Asian Games|2017,20,E5,1.3601171497340876,35.0,85.0
+"gender,tournament,year",12,W|Southeast Asian Games|2019,20,E5,1.6129073066787754,25.0,75.0
+"gender,tournament,year",12,W|Southeast Asian Games|2022,26,E4,2.0448928575782586,23.076923076923077,76.92307692307693
+"gender,tournament,year",12,W|Southeast Asian Games|2023,32,E4,2.2349228070713654,12.5,75.0
+"gender,tournament,year",12,W|Southeast Asian Games|2025,26,E4,2.263372561659727,23.076923076923077,76.92307692307693
+"gender,tournament,year",12,W|Tournament of Nations|2017,12,E5,4.016637517458907,0.0,33.33333333333333
+"gender,tournament,year",12,W|Tournament of Nations|2018,12,E5,2.5989001269783913,16.666666666666664,50.0
+"gender,tournament,year",12,W|Tournoi de France|2020,12,E5,1.9110787142360912,0.0,66.66666666666666
+"gender,tournament,year",12,W|Tournoi de France|2022,12,E4,2.418666911260351,0.0,50.0
+"gender,tournament,year",12,W|Tournoi de France|2023,12,metric_draw_off,2.1638478612263126,0.0,66.66666666666666
+"gender,tournament,year",12,W|Turkish Women's Cup|2018,32,E5,1.6653150119021423,15.625,68.75
+"gender,tournament,year",12,W|Turkish Women's Cup|2019,24,E5,5.006492552874238,0.0,41.66666666666667
+"gender,tournament,year",12,W|Turkish Women's Cup|2020,14,v4,3.5427122655529826,14.285714285714285,71.42857142857143
+"gender,tournament,year",12,W|Turkish Women's Cup|2022,18,risk3,2.0578287275581713,11.11111111111111,55.55555555555556
+"gender,tournament,year",12,W|Turkish Women's Cup|2023,22,Plan02,2.906450200129299,13.636363636363635,40.909090909090914
+"gender,tournament,year",12,W|Turkish Women's Cup|2024,12,E5,1.7757704816834379,33.33333333333333,83.33333333333334
+"gender,tournament,year",12,W|UEFA Euro|2013,50,E5,2.014564048919994,20.0,48.0
+"gender,tournament,year",12,W|UEFA Euro|2017,62,E5,2.409217577077398,12.903225806451612,45.16129032258064
+"gender,tournament,year",12,W|UEFA Euro|2022,62,E5,2.0602541511352928,12.903225806451612,67.74193548387096
+"gender,tournament,year",12,W|UEFA Euro|2025,62,E5,2.2765915559058953,16.129032258064516,58.06451612903226
+"gender,tournament,year",12,W|UEFA Euro qualification|2011,158,E5,2.6382515938227478,10.126582278481013,74.68354430379746
+"gender,tournament,year",12,W|UEFA Euro qualification|2012,192,risk1,2.2188803276549525,12.5,78.64583333333334
+"gender,tournament,year",12,W|UEFA Euro qualification|2015,160,E4,2.5490395042954797,12.5,75.0
+"gender,tournament,year",12,W|UEFA Euro qualification|2016,188,v4,2.474968817230738,4.787234042553192,77.12765957446808
+"gender,tournament,year",12,W|UEFA Euro qualification|2019,172,E5,2.779841867672086,5.813953488372093,76.74418604651163
+"gender,tournament,year",12,W|UEFA Euro qualification|2020,204,E5,2.6243272241558415,6.862745098039216,73.52941176470588
+"gender,tournament,year",12,W|UEFA Euro qualification|2021,32,risk2,4.175450686888019,15.625,56.25
+"gender,tournament,year",12,W|UEFA Euro qualification|2024,382,E5,2.3193896203092526,12.56544502617801,63.87434554973822
+"gender,tournament,year",12,W|UEFA Nations League|2023,300,E5,2.9262819154953643,5.0,45.666666666666664
+"gender,tournament,year",12,W|UEFA Nations League|2024,36,v29,2.139561551730119,13.88888888888889,72.22222222222221
+"gender,tournament,year",12,W|UEFA Nations League|2025,300,E5,2.5783188961986694,9.666666666666666,54.333333333333336
+"gender,tournament,year",12,W|UEFA Olympic Qualifying Tournament|2016,12,metric_batch,2.5605958604352224,8.333333333333332,50.0
+"gender,tournament,year",12,W|UEFA Women's Nations League|2025,40,E5,2.704679360373548,10.0,57.49999999999999
+"gender,tournament,year",12,W|UNIFFAC Cup|2020,22,ExpD,2.256131955122636,27.27272727272727,63.63636363636363
+"gender,tournament,year",12,W|WAFF Championship|2011,32,Plan01,3.5000634303516174,0.0,75.0
+"gender,tournament,year",12,W|WAFF Championship|2014,12,E5,4.046340256684783,0.0,83.33333333333334
+"gender,tournament,year",12,W|WAFF Championship|2019,20,metric_draw_off,2.829678091214646,10.0,50.0
+"gender,tournament,year",12,W|WAFF Championship|2022,12,risk1,1.0183404305280088,33.33333333333333,83.33333333333334
+"gender,tournament,year",12,W|WAFF Championship|2024,30,E5,2.042484244187153,0.0,73.33333333333333
+"gender,tournament,year",12,W|WAFF Women's Championship|2025,20,E5,2.599172071143843,20.0,60.0
+"gender,tournament,year",12,W|WAFU Zone A Cup|2020,32,E4,2.1047626266086086,12.5,75.0
+"gender,tournament,year",12,W|WAFU Zone A Cup|2023,26,dynamic,2.4101488405472766,0.0,84.61538461538461
+"gender,tournament,year",12,W|WAFU Zone A Cup|2025,32,v4,2.7982385177555233,9.375,53.125
+"gender,tournament,year",12,W|WAFU Zone B Cup|2018,32,risk1,2.478913670003423,3.125,75.0
+"gender,tournament,year",12,W|WAFU Zone B Cup|2019,32,E5,3.193128912324556,6.25,68.75
+"gender,tournament,year",12,W|Windward Islands Tournament|2025,16,v29,1.5428509007054934,25.0,75.0
+"gender,tournament,year",12,W|Women's Revelations Cup|2023,12,v4,1.870760328414497,16.666666666666664,33.33333333333333
+"gender,tournament,year",12,W|Yongchuan International Tournament|2016,12,E5,1.1452710162951736,33.33333333333333,83.33333333333334
+"gender,tournament,year",12,W|Yongchuan International Tournament|2017,12,E5,1.1875304198359025,33.33333333333333,83.33333333333334
+"gender,tournament,year",12,W|Yongchuan International Tournament|2018,12,metric_draw_off,3.144202402598632,16.666666666666664,33.33333333333333
+"gender,tournament,era",20,M|ABCS Tournament|2011-2014,24,E4,2.9178379132564785,8.333333333333332,58.333333333333336
+"gender,tournament,era",20,M|AFC Asian Cup|2015-2018,64,E5,1.6964395163312236,25.0,65.625
+"gender,tournament,era",20,M|AFC Asian Cup|2019-2022,102,E5,2.3253171309233878,15.686274509803921,59.80392156862745
+"gender,tournament,era",20,M|AFC Asian Cup|2023-2026,102,E5,1.9580954791160234,16.666666666666664,58.82352941176471
+"gender,tournament,era",20,M|AFC Asian Cup qualification|2011-2014,120,E5,1.8213582631309018,16.666666666666664,65.0
+"gender,tournament,era",20,M|AFC Asian Cup qualification|2015-2018,170,E5,2.466713954203014,9.411764705882353,60.0
+"gender,tournament,era",20,M|AFC Asian Cup qualification|2019-2022,80,metric_draw_off,1.8579449111569004,15.0,75.0
+"gender,tournament,era",20,M|AFC Asian Cup qualification|2023-2026,130,E5,2.0719581315494198,14.615384615384617,66.92307692307692
+"gender,tournament,era",20,M|AFC Challenge Cup|2011-2014,64,E4,2.198221300961509,6.25,62.5
+"gender,tournament,era",20,M|AFC Challenge Cup|2015-2018,26,E5,2.8983134157393127,15.384615384615385,30.76923076923077
+"gender,tournament,era",20,M|AFC Challenge Cup qualification|2011-2014,50,metric_draw_off,2.4132508008217037,16.0,68.0
+"gender,tournament,era",20,M|AFF Championship|2011-2014,72,E5,2.418735670131321,9.722222222222223,56.94444444444444
+"gender,tournament,era",20,M|AFF Championship|2015-2018,88,E5,1.6857966653921492,12.5,73.86363636363636
+"gender,tournament,era",20,M|AFF Championship|2019-2022,84,E5,2.105737028681741,5.952380952380952,73.80952380952381
+"gender,tournament,era",20,M|AFF Championship|2023-2026,20,E4,1.446133856700196,10.0,80.0
+"gender,tournament,era",20,M|AFF Championship qualification|2011-2014,40,E4,2.1428344258356584,15.0,75.0
+"gender,tournament,era",20,M|ASEAN Championship|2023-2026,52,E5,2.307294111940495,15.384615384615385,61.53846153846154
+"gender,tournament,era",20,M|African Cup of Nations|2011-2014,128,E5,1.8880174248363746,23.4375,53.125
+"gender,tournament,era",20,M|African Cup of Nations|2015-2018,128,E5,1.7835162489823313,17.96875,53.125
+"gender,tournament,era",20,M|African Cup of Nations|2019-2022,208,metric_draw_off,2.0029421729321766,21.153846153846153,51.92307692307693
+"gender,tournament,era",20,M|African Cup of Nations|2023-2026,208,E5,2.053680165353363,15.865384615384615,54.32692307692307
+"gender,tournament,era",20,M|African Cup of Nations qualification|2011-2014,454,E5,1.991856919251881,19.162995594713657,57.48898678414097
+"gender,tournament,era",20,M|African Cup of Nations qualification|2015-2018,530,E5,2.0185018288698138,15.283018867924527,56.9811320754717
+"gender,tournament,era",20,M|African Cup of Nations qualification|2019-2022,458,metric_draw_off,2.091503532289604,13.973799126637553,58.515283842794766
+"gender,tournament,era",20,M|African Cup of Nations qualification|2023-2026,478,E5,2.127492970841056,15.062761506276152,51.88284518828452
+"gender,tournament,era",20,M|Arab Cup|2011-2014,22,metric_draw_off,2.114796350474721,18.181818181818183,63.63636363636363
+"gender,tournament,era",20,M|Arab Cup|2019-2022,64,E4,2.3089000402188438,12.5,59.375
+"gender,tournament,era",20,M|Arab Cup|2023-2026,62,E5,2.4001393395684745,9.67741935483871,43.54838709677419
+"gender,tournament,era",20,M|CAFA Nations Cup|2023-2026,20,E5,1.883957332928155,0.0,70.0
+"gender,tournament,era",20,M|CECAFA Cup|2011-2014,156,E5,2.034485343270966,15.384615384615385,51.28205128205128
+"gender,tournament,era",20,M|CECAFA Cup|2015-2018,92,E4,1.987666849182293,17.391304347826086,54.347826086956516
+"gender,tournament,era",20,M|CFU Caribbean Cup|2011-2014,52,E5,2.1345558891892153,13.461538461538462,46.15384615384615
+"gender,tournament,era",20,M|CFU Caribbean Cup qualification|2011-2014,142,E5,2.729452799070387,14.084507042253522,61.97183098591549
+"gender,tournament,era",20,M|CFU Caribbean Cup qualification|2015-2018,78,risk1,2.529866461220868,14.102564102564102,65.38461538461539
+"gender,tournament,era",20,M|CONCACAF Nations League|2019-2022,346,E5,2.3866345431042806,12.716763005780345,62.42774566473989
+"gender,tournament,era",20,M|CONCACAF Nations League|2023-2026,498,E5,2.6224180950012776,7.630522088353414,59.43775100401606
+"gender,tournament,era",20,M|CONCACAF Nations League qualification|2015-2018,100,E4,3.3302215411518947,10.0,70.0
+"gender,tournament,era",20,M|CONCACAF Nations League qualification|2019-2022,36,E4,1.819809390214889,27.77777777777778,61.111111111111114
+"gender,tournament,era",20,M|CONCACAF Series|2023-2026,70,E4,3.178976203411416,4.285714285714286,41.42857142857143
+"gender,tournament,era",20,M|CONIFA European Football Cup|2015-2018,58,E5,2.68042667045613,13.793103448275861,55.172413793103445
+"gender,tournament,era",20,M|CONIFA European Football Cup|2019-2022,40,E5,3.10208821003014,15.0,30.0
+"gender,tournament,era",20,M|CONIFA World Football Cup|2011-2014,56,E4,5.880000276618797,0.0,39.285714285714285
+"gender,tournament,era",20,M|CONIFA World Football Cup|2015-2018,146,metric_draw_off,3.7196919958142622,2.73972602739726,54.794520547945204
+"gender,tournament,era",20,M|COSAFA Cup|2011-2014,40,risk1,1.9597176894952626,15.0,62.5
+"gender,tournament,era",20,M|COSAFA Cup|2015-2018,184,E5,2.5272840842507223,15.217391304347828,43.47826086956522
+"gender,tournament,era",20,M|COSAFA Cup|2019-2022,134,E5,1.93692365334085,17.91044776119403,50.0
+"gender,tournament,era",20,M|COSAFA Cup|2023-2026,44,E5,1.8816724209949003,18.181818181818183,47.72727272727273
+"gender,tournament,era",20,M|Confederations Cup|2011-2014,32,risk1,2.127103358533174,21.875,75.0
+"gender,tournament,era",20,M|Confederations Cup|2015-2018,32,E4,1.413453925464325,18.75,68.75
+"gender,tournament,era",20,M|Copa América|2015-2018,116,E5,2.3793713968377768,10.344827586206897,50.86206896551724
+"gender,tournament,era",20,M|Copa América|2019-2022,108,E5,1.9778015473161272,12.962962962962962,60.18518518518518
+"gender,tournament,era",20,M|Copa América|2023-2026,64,E5,2.180472752460408,12.5,37.5
+"gender,tournament,era",20,M|Coupe de l'Outre-Mer|2011-2014,32,E5,2.934643207042202,12.5,62.5
+"gender,tournament,era",20,M|EAFF Championship|2011-2014,56,E5,3.0152906234619685,0.0,57.14285714285714
+"gender,tournament,era",20,M|EAFF Championship|2015-2018,66,E4,2.369172688016387,15.151515151515152,63.63636363636363
+"gender,tournament,era",20,M|EAFF Championship|2019-2022,24,E5,1.433049877196308,33.33333333333333,75.0
+"gender,tournament,era",20,M|FIFA Series|2023-2026,114,E5,2.5464538081305212,14.035087719298245,68.42105263157895
+"gender,tournament,era",20,M|FIFA World Cup|2011-2014,128,E4,2.4235505333308343,13.28125,49.21875
+"gender,tournament,era",20,M|FIFA World Cup|2015-2018,128,E4,2.2487832789703512,13.28125,49.21875
+"gender,tournament,era",20,M|FIFA World Cup|2019-2022,128,E5,2.3609386700882684,12.5,51.5625
+"gender,tournament,era",20,M|FIFA World Cup qualification|2011-2014,1496,E1,2.071641035227389,15.508021390374333,61.16310160427807
+"gender,tournament,era",20,M|FIFA World Cup qualification|2015-2018,1702,E1,2.2775771011823545,12.27967097532315,61.750881316098706
+"gender,tournament,era",20,M|FIFA World Cup qualification|2019-2022,1732,E5,2.1741375615912926,15.069284064665128,62.413394919168596
+"gender,tournament,era",20,M|FIFA World Cup qualification|2023-2026,1802,E5,2.3522482724560376,12.042175360710322,59.211986681465035
+"gender,tournament,era",20,M|Friendly|2011-2014,2618,E2,2.3358184257166044,10.886172650878533,52.67379679144385
+"gender,tournament,era",20,M|Friendly|2015-2018,2622,E2,2.317612528934436,10.106788710907704,51.906941266209
+"gender,tournament,era",20,M|Friendly|2019-2022,1830,E5,2.2617182247896053,10.92896174863388,55.9016393442623
+"gender,tournament,era",20,M|Friendly|2023-2026,1578,E5,2.3120515562457267,11.4702154626109,54.372623574144484
+"gender,tournament,era",20,M|Gold Cup|2011-2014,50,E5,1.9256309112946826,16.0,76.0
+"gender,tournament,era",20,M|Gold Cup|2015-2018,102,E5,1.7508440020473315,19.607843137254903,66.66666666666666
+"gender,tournament,era",20,M|Gold Cup|2019-2022,124,E5,2.046490874105613,12.096774193548388,66.12903225806451
+"gender,tournament,era",20,M|Gold Cup|2023-2026,124,E4,2.060780042938294,14.516129032258066,64.51612903225806
+"gender,tournament,era",20,M|Gold Cup qualification|2023-2026,46,E5,1.9136437672539248,21.73913043478261,69.56521739130434
+"gender,tournament,era",20,M|Gulf Cup|2011-2014,64,E4,2.3343127520666727,15.625,43.75
+"gender,tournament,era",20,M|Gulf Cup|2015-2018,30,E4,1.6568453606381202,20.0,50.0
+"gender,tournament,era",20,M|Gulf Cup|2019-2022,30,E5,2.716879077610041,0.0,40.0
+"gender,tournament,era",20,M|Gulf Cup|2023-2026,60,E5,2.0176640863162874,20.0,40.0
+"gender,tournament,era",20,M|Indian Ocean Island Games|2011-2014,20,E5,2.109760049482767,20.0,60.0
+"gender,tournament,era",20,M|Indian Ocean Island Games|2015-2018,26,E5,1.8371277842742657,23.076923076923077,76.92307692307693
+"gender,tournament,era",20,M|Indian Ocean Island Games|2019-2022,26,E5,1.7425756927419005,15.384615384615385,61.53846153846154
+"gender,tournament,era",20,M|Indian Ocean Island Games|2023-2026,20,E4,1.8388184132405498,20.0,50.0
+"gender,tournament,era",20,M|Inter Games|2019-2022,38,E5,2.1761385536400906,23.684210526315788,78.94736842105263
+"gender,tournament,era",20,M|Island Games|2015-2018,136,E4,2.384236948038458,15.441176470588236,66.91176470588235
+"gender,tournament,era",20,M|Island Games|2023-2026,88,E5,2.3929833386038113,6.8181818181818175,70.45454545454545
+"gender,tournament,era",20,M|King's Cup|2023-2026,24,E4,2.803928151260367,25.0,58.333333333333336
+"gender,tournament,era",20,M|Kirin Challenge Cup|2015-2018,22,E4,2.066610672523514,18.181818181818183,72.72727272727273
+"gender,tournament,era",20,M|MSG Prime Minister's Cup|2023-2026,34,metric_draw_off,2.2252753884187664,11.76470588235294,41.17647058823529
+"gender,tournament,era",20,M|Nehru Cup|2011-2014,22,E5,1.9276341760883484,13.636363636363635,54.54545454545454
+"gender,tournament,era",20,M|Oceania Nations Cup|2011-2014,32,E4,2.942086711695941,6.25,56.25
+"gender,tournament,era",20,M|Oceania Nations Cup|2015-2018,30,E4,2.018986524926819,20.0,66.66666666666666
+"gender,tournament,era",20,M|Oceania Nations Cup|2023-2026,26,E5,2.0345822333639094,15.384615384615385,84.61538461538461
+"gender,tournament,era",20,M|Pacific Games|2011-2014,58,E5,2.192357627941119,6.896551724137931,86.20689655172413
+"gender,tournament,era",20,M|Pacific Games|2019-2022,44,E5,4.134800614354604,4.545454545454546,72.72727272727273
+"gender,tournament,era",20,M|Pacific Games|2023-2026,48,E5,2.8465228014225534,4.166666666666666,70.83333333333334
+"gender,tournament,era",20,M|Pacific Mini Games|2015-2018,30,E4,2.2781046351177587,13.333333333333334,93.33333333333333
+"gender,tournament,era",20,M|SAFF Cup|2011-2014,58,metric_draw_off,2.7377962653252927,3.4482758620689653,48.275862068965516
+"gender,tournament,era",20,M|SAFF Cup|2015-2018,48,E5,2.115883568569938,8.333333333333332,70.83333333333334
+"gender,tournament,era",20,M|SAFF Cup|2019-2022,22,E4,1.797981345757421,22.727272727272727,50.0
+"gender,tournament,era",20,M|SAFF Cup|2023-2026,30,E4,1.5187139606739881,20.0,80.0
+"gender,tournament,era",20,M|UEFA Euro|2011-2014,62,E5,2.0963584153701955,25.806451612903224,48.38709677419355
+"gender,tournament,era",20,M|UEFA Euro|2015-2018,102,E4,2.3515719089150435,15.686274509803921,39.21568627450981
+"gender,tournament,era",20,M|UEFA Euro|2019-2022,102,E4,2.3905884298098585,8.823529411764707,50.0
+"gender,tournament,era",20,M|UEFA Euro|2023-2026,102,E4,1.9174115418255506,25.49019607843137,54.90196078431373
+"gender,tournament,era",20,M|UEFA Euro qualification|2011-2014,404,risk1,2.268580394691045,12.128712871287128,57.67326732673267
+"gender,tournament,era",20,M|UEFA Euro qualification|2015-2018,328,E5,2.007347898258635,13.109756097560975,64.63414634146342
+"gender,tournament,era",20,M|UEFA Euro qualification|2019-2022,524,risk1,2.1159872749275737,12.022900763358779,65.45801526717557
+"gender,tournament,era",20,M|UEFA Euro qualification|2023-2026,478,E5,2.1565162141971244,11.715481171548117,65.48117154811716
+"gender,tournament,era",20,M|UEFA Nations League|2015-2018,276,E5,2.106615653664439,21.014492753623188,57.608695652173914
+"gender,tournament,era",20,M|UEFA Nations League|2019-2022,660,E4,2.3462372934524645,12.575757575757576,48.78787878787879
+"gender,tournament,era",20,M|UEFA Nations League|2023-2026,380,E5,2.3982496778694635,13.421052631578947,52.89473684210526
+"gender,tournament,era",20,M|UNCAF Cup|2011-2014,32,E4,1.1091782291713157,37.5,75.0
+"gender,tournament,era",20,M|Viva World Cup|2011-2014,36,E4,3.387723306964861,11.11111111111111,94.44444444444444
+"gender,tournament,era",20,M|WAFF Championship|2011-2014,64,E4,1.9689252346086965,15.625,43.75
+"gender,tournament,era",20,M|WAFF Championship|2019-2022,34,E5,2.2409590336514276,11.76470588235294,29.411764705882355
+"gender,tournament,era",20,W|AFC Asian Cup|2011-2014,34,E5,1.882435830858478,17.647058823529413,82.35294117647058
+"gender,tournament,era",20,W|AFC Asian Cup|2015-2018,34,E5,2.614361121975643,14.705882352941178,70.58823529411765
+"gender,tournament,era",20,W|AFC Asian Cup|2019-2022,50,E4,3.4183825835944135,8.0,64.0
+"gender,tournament,era",20,W|AFC Asian Cup|2023-2026,54,E5,2.4198462890113013,29.629629629629626,75.92592592592592
+"gender,tournament,era",20,W|AFC Asian Cup qualification|2011-2014,48,E5,5.208776098515938,6.25,68.75
+"gender,tournament,era",20,W|AFC Asian Cup qualification|2015-2018,76,E5,3.6584526439037246,2.631578947368421,78.94736842105263
+"gender,tournament,era",20,W|AFC Asian Cup qualification|2019-2022,52,E5,3.3358203951485006,11.538461538461538,75.0
+"gender,tournament,era",20,W|AFC Asian Cup qualification|2023-2026,112,E5,3.2297352815314073,5.357142857142857,66.96428571428571
+"gender,tournament,era",20,W|AFC Olympic Qualifying Tournament|2015-2018,124,E5,3.0971388106857427,8.064516129032258,62.903225806451616
+"gender,tournament,era",20,W|AFC Olympic Qualifying Tournament|2019-2022,62,E5,2.6062173901760803,16.129032258064516,77.41935483870968
+"gender,tournament,era",20,W|AFC Olympic Qualifying Tournament|2023-2026,92,E5,2.9815530932221557,6.521739130434782,73.91304347826086
+"gender,tournament,era",20,W|AFC Olympic qualification|2011-2014,30,E5,1.2702888414069184,33.33333333333333,86.66666666666667
+"gender,tournament,era",20,W|AFF Championship|2011-2014,84,E5,3.188452484381677,17.857142857142858,82.14285714285714
+"gender,tournament,era",20,W|AFF Championship|2015-2018,80,E5,3.742860699847115,5.0,78.75
+"gender,tournament,era",20,W|AFF Championship|2019-2022,88,E5,3.4102183526323757,10.227272727272728,75.0
+"gender,tournament,era",20,W|AFF Women's Cup|2023-2026,20,E5,2.1353057834500313,10.0,50.0
+"gender,tournament,era",20,W|ASEAN Championship|2023-2026,22,E5,2.5089002827599556,0.0,72.72727272727273
+"gender,tournament,era",20,W|Africa Cup of Nations qualification|2023-2026,100,E5,2.416969788276009,8.0,56.00000000000001
+"gender,tournament,era",20,W|African Championship|2011-2014,64,E5,2.052952832775035,12.5,71.875
+"gender,tournament,era",20,W|African Championship qualification|2011-2014,110,E5,2.3341808132227024,18.181818181818183,70.9090909090909
+"gender,tournament,era",20,W|African Cup of Nations|2015-2018,64,E5,2.4717767674350317,6.25,53.125
+"gender,tournament,era",20,W|African Cup of Nations|2019-2022,56,E5,1.902104108954496,32.142857142857146,64.28571428571429
+"gender,tournament,era",20,W|African Cup of Nations|2023-2026,52,E4,2.2662483508160673,11.538461538461538,53.84615384615385
+"gender,tournament,era",20,W|African Cup of Nations qualification|2015-2018,124,E5,2.2955374441295704,13.709677419354838,58.06451612903226
+"gender,tournament,era",20,W|African Cup of Nations qualification|2019-2022,116,E5,2.946023587358602,10.344827586206897,65.51724137931035
+"gender,tournament,era",20,W|African Games|2011-2014,26,E4,2.7637418247093546,7.6923076923076925,42.30769230769231
+"gender,tournament,era",20,W|African Games|2015-2018,26,E4,1.8432343671835367,34.61538461538461,50.0
+"gender,tournament,era",20,W|Algarve Cup|2011-2014,144,E5,1.9296632638201165,16.666666666666664,65.27777777777779
+"gender,tournament,era",20,W|Algarve Cup|2015-2018,174,E5,2.464698682385219,18.39080459770115,57.47126436781609
+"gender,tournament,era",20,W|Algarve Cup|2019-2022,72,E5,2.357963067748133,11.11111111111111,52.77777777777778
+"gender,tournament,era",20,W|Aphrodite Cup|2015-2018,70,E4,3.539325630847048,11.428571428571429,48.57142857142857
+"gender,tournament,era",20,W|Arab Cup|2019-2022,24,E4,3.2671100911842275,0.0,62.5
+"gender,tournament,era",20,W|Asian Games|2011-2014,46,E5,2.623993653789533,17.391304347826086,82.6086956521739
+"gender,tournament,era",20,W|Asian Games|2015-2018,46,E5,2.9398377215356755,8.695652173913043,86.95652173913044
+"gender,tournament,era",20,W|Asian Games|2023-2026,56,E5,2.696131804842544,7.142857142857142,80.35714285714286
+"gender,tournament,era",20,W|Baltic Cup|2015-2018,30,E5,2.376979186504102,20.0,46.666666666666664
+"gender,tournament,era",20,W|Baltic Cup|2019-2022,22,E5,2.25339009161258,9.090909090909092,63.63636363636363
+"gender,tournament,era",20,W|CAF Olympic Qualifying Tournament|2015-2018,42,E5,2.0376775978623898,28.57142857142857,57.14285714285714
+"gender,tournament,era",20,W|CAF Olympic Qualifying Tournament|2019-2022,82,E5,2.5157394406021916,4.878048780487805,53.65853658536586
+"gender,tournament,era",20,W|CAF Olympic Qualifying Tournament|2023-2026,72,E4,2.229239154319847,13.88888888888889,62.5
+"gender,tournament,era",20,W|CAFA Championship|2015-2018,20,metric_draw_off,3.9665309489452896,10.0,100.0
+"gender,tournament,era",20,W|CAFA Championship|2019-2022,20,E4,2.3046716014093582,30.0,80.0
+"gender,tournament,era",20,W|CECAFA Championship|2015-2018,46,E5,3.372859384156852,4.3478260869565215,60.86956521739131
+"gender,tournament,era",20,W|CECAFA Championship|2019-2022,64,E5,2.8338003852827987,15.625,84.375
+"gender,tournament,era",20,W|CECAFA Championship|2023-2026,20,E2,2.377161714991478,15.0,70.0
+"gender,tournament,era",20,W|CONCACAF Championship|2011-2014,32,E5,1.7626565753283263,15.625,81.25
+"gender,tournament,era",20,W|CONCACAF Championship|2015-2018,32,E5,3.4815880860037085,12.5,71.875
+"gender,tournament,era",20,W|CONCACAF Championship|2019-2022,32,E5,2.267008130707392,25.0,68.75
+"gender,tournament,era",20,W|CONCACAF Championship qualification|2011-2014,20,E5,1.7624699107366482,20.0,100.0
+"gender,tournament,era",20,W|CONCACAF Championship qualification|2015-2018,108,E5,3.164807256192358,7.4074074074074066,72.22222222222221
+"gender,tournament,era",20,W|CONCACAF Championship qualification|2019-2022,120,E5,3.507615830625065,5.833333333333333,85.0
+"gender,tournament,era",20,W|CONCACAF Championship qualification|2023-2026,34,E5,3.83648680795136,11.76470588235294,70.58823529411765
+"gender,tournament,era",20,W|CONCACAF Gold Cup qualification|2023-2026,174,E5,3.2218138406315147,6.896551724137931,65.51724137931035
+"gender,tournament,era",20,W|CONCACAF Olympic Qualifying Tournament|2011-2014,30,E2,3.1560295434944368,13.333333333333334,83.33333333333334
+"gender,tournament,era",20,W|CONCACAF Olympic Qualifying Tournament|2015-2018,30,E5,1.9454248943372063,20.0,86.66666666666667
+"gender,tournament,era",20,W|CONCACAF Olympic Qualifying Tournament|2019-2022,30,E2,1.8108291179416105,13.333333333333334,96.66666666666667
+"gender,tournament,era",20,W|CONCACAF Olympic Qualifying Tournament qualification|2011-2014,20,E5,1.7119614824348308,20.0,90.0
+"gender,tournament,era",20,W|CONCACAF Olympic Qualifying Tournament qualification|2015-2018,48,E5,3.275563465978236,16.666666666666664,79.16666666666666
+"gender,tournament,era",20,W|CONCACAF Olympic Qualifying Tournament qualification|2019-2022,58,E5,2.9978787587857876,6.896551724137931,89.65517241379311
+"gender,tournament,era",20,W|CONMEBOL Nations League|2023-2026,32,E5,2.4706568110063363,6.25,62.5
+"gender,tournament,era",20,W|COSAFA Championship|2015-2018,88,E4,2.9328006154589987,6.8181818181818175,63.63636363636363
+"gender,tournament,era",20,W|COSAFA Championship|2019-2022,152,E5,3.164961176280586,6.578947368421052,67.10526315789474
+"gender,tournament,era",20,W|COSAFA Championship|2023-2026,86,E4,2.8406763404795283,12.790697674418606,53.48837209302325
+"gender,tournament,era",20,W|Central American Games|2011-2014,26,E5,2.651765617854014,7.6923076923076925,84.61538461538461
+"gender,tournament,era",20,W|Central American Games|2015-2018,20,E5,2.2551059198083068,20.0,60.0
+"gender,tournament,era",20,W|Central American and Caribbean Games|2011-2014,32,E4,2.9207863555284552,6.25,68.75
+"gender,tournament,era",20,W|Central American and Caribbean Games|2015-2018,26,E4,2.186012314224115,15.384615384615385,53.84615384615385
+"gender,tournament,era",20,W|Central American and Caribbean Games|2023-2026,32,E5,3.4963405433828503,3.125,37.5
+"gender,tournament,era",20,W|Copa América|2015-2018,52,E5,2.1178840351812975,21.153846153846153,76.92307692307693
+"gender,tournament,era",20,W|Copa América|2019-2022,50,E5,1.8950336564542647,20.0,86.0
+"gender,tournament,era",20,W|Copa América|2023-2026,50,E5,2.837802499174752,12.0,60.0
+"gender,tournament,era",20,W|Cyprus Cup|2011-2014,144,E5,2.1926108760571545,8.333333333333332,50.0
+"gender,tournament,era",20,W|Cyprus Cup|2015-2018,176,E5,2.6164831754160507,9.090909090909092,45.45454545454545
+"gender,tournament,era",20,W|Cyprus Cup|2019-2022,60,E5,2.5882167756908205,13.333333333333334,60.0
+"gender,tournament,era",20,W|EAFF E-1 Championship|2015-2018,54,E5,3.222909043467766,9.25925925925926,72.22222222222221
+"gender,tournament,era",20,W|EAFF E-1 Championship|2019-2022,24,E5,1.2176158240789992,29.166666666666668,91.66666666666666
+"gender,tournament,era",20,W|EAFF E-1 Championship qualification|2023-2026,24,E5,5.712786904353333,4.166666666666666,70.83333333333334
+"gender,tournament,era",20,W|EAFF East Asian Cup|2011-2014,48,E5,2.8349108321028313,16.666666666666664,77.08333333333334
+"gender,tournament,era",20,W|FIFA World Cup|2015-2018,104,E5,2.059707967519682,13.461538461538462,69.23076923076923
+"gender,tournament,era",20,W|FIFA World Cup|2019-2022,104,E4,1.8921307753770682,18.269230769230766,73.07692307692307
+"gender,tournament,era",20,W|FIFA World Cup|2023-2026,128,E5,2.4917762544769015,14.0625,56.25
+"gender,tournament,era",20,W|FIFA World Cup qualification|2011-2014,456,E5,2.6976078568935447,6.578947368421052,73.24561403508771
+"gender,tournament,era",20,W|FIFA World Cup qualification|2015-2018,344,E5,2.2480366280631383,15.69767441860465,73.25581395348837
+"gender,tournament,era",20,W|FIFA World Cup qualification|2019-2022,472,E2,2.8422429904646855,4.872881355932203,77.11864406779661
+"gender,tournament,era",20,W|FIFA World Cup qualification|2023-2026,144,E5,2.480700397566573,9.722222222222223,68.05555555555556
+"gender,tournament,era",20,W|Four Nations Tournament|2011-2014,36,E4,1.4326939549678839,38.88888888888889,72.22222222222221
+"gender,tournament,era",20,W|Four Nations Tournament|2015-2018,48,E5,2.0641748778649407,12.5,70.83333333333334
+"gender,tournament,era",20,W|Friendly|2011-2014,84,E5,2.039149316993304,7.142857142857142,83.33333333333334
+"gender,tournament,era",20,W|Friendly|2015-2018,310,E5,2.1937185449092054,10.32258064516129,72.90322580645162
+"gender,tournament,era",20,W|Friendly|2019-2022,676,E5,2.403459979235054,9.911242603550296,60.79881656804734
+"gender,tournament,era",20,W|Friendly|2023-2026,1222,E4,2.7261946318680046,7.937806873977086,56.137479541734855
+"gender,tournament,era",20,W|Indian Ocean Island Games|2015-2018,20,E5,1.9093129750525921,0.0,70.0
+"gender,tournament,era",20,W|Inter Games|2019-2022,22,E5,2.413032780799161,4.545454545454546,81.81818181818183
+"gender,tournament,era",20,W|International Tournament|2011-2014,64,E5,2.433422505676109,12.5,65.625
+"gender,tournament,era",20,W|International Tournament|2015-2018,32,E5,1.3887292175219645,12.5,100.0
+"gender,tournament,era",20,W|International Tournament|2019-2022,20,E5,2.69500109922839,0.0,60.0
+"gender,tournament,era",20,W|Island Games|2015-2018,88,E4,2.5610883272083105,14.772727272727273,72.72727272727273
+"gender,tournament,era",20,W|Island Games|2023-2026,82,E5,3.3492203624338206,0.0,56.09756097560976
+"gender,tournament,era",20,W|Istria Cup|2015-2018,64,E5,2.725835170879743,9.375,31.25
+"gender,tournament,era",20,W|OFC Nations Cup|2015-2018,32,E5,4.322213310592758,9.375,75.0
+"gender,tournament,era",20,W|OFC Nations Cup|2019-2022,34,E4,1.8422728627306166,17.647058823529413,58.82352941176471
+"gender,tournament,era",20,W|OFC Nations Cup|2023-2026,36,E5,2.5141065862407572,22.22222222222222,55.55555555555556
+"gender,tournament,era",20,W|OFC Olympic Qualifying Tournament|2011-2014,20,E5,2.9666482077334697,0.0,90.0
+"gender,tournament,era",20,W|OFC Olympic Qualifying Tournament|2023-2026,30,E5,2.8367682678596235,13.333333333333334,80.0
+"gender,tournament,era",20,W|Olympic Games|2011-2014,52,E5,2.008879282865909,19.230769230769234,69.23076923076923
+"gender,tournament,era",20,W|Olympic Games|2015-2018,52,E2,2.147911692386044,7.6923076923076925,61.53846153846154
+"gender,tournament,era",20,W|Olympic Games|2019-2022,52,E5,3.174897643824709,7.6923076923076925,53.84615384615385
+"gender,tournament,era",20,W|Olympic Games|2023-2026,52,E5,2.127536461410168,26.923076923076923,69.23076923076923
+"gender,tournament,era",20,W|Pacific Games|2011-2014,40,metric_draw_off,2.3523046830488767,5.0,70.0
+"gender,tournament,era",20,W|Pacific Games|2015-2018,26,E5,2.7984880677299655,15.384615384615385,61.53846153846154
+"gender,tournament,era",20,W|Pacific Games|2019-2022,44,E5,2.9604144861437516,18.181818181818183,81.81818181818183
+"gender,tournament,era",20,W|Pacific Games|2023-2026,42,E5,3.0889064683058,0.0,52.38095238095239
+"gender,tournament,era",20,W|Pan American Games|2011-2014,32,E4,1.7006651715340455,31.25,62.5
+"gender,tournament,era",20,W|Pan American Games|2015-2018,32,E4,2.2638175564164444,15.625,62.5
+"gender,tournament,era",20,W|Pan American Games|2019-2022,36,E4,1.9477195445642894,5.555555555555555,72.22222222222221
+"gender,tournament,era",20,W|Pan American Games|2023-2026,26,E5,3.093712351731337,15.384615384615385,65.38461538461539
+"gender,tournament,era",20,W|Pinatar Cup|2019-2022,36,E4,2.353927077016106,16.666666666666664,47.22222222222222
+"gender,tournament,era",20,W|Pinatar Cup|2023-2026,32,E5,1.905985712679589,18.75,68.75
+"gender,tournament,era",20,W|Pink Ladies Cup|2023-2026,40,E5,2.011810012710614,15.0,85.0
+"gender,tournament,era",20,W|SAFF Championship|2011-2014,60,metric_draw_off,2.2384007021158987,10.0,83.33333333333334
+"gender,tournament,era",20,W|SAFF Championship|2015-2018,24,metric_draw_off,2.255850819426821,8.333333333333332,83.33333333333334
+"gender,tournament,era",20,W|SAFF Championship|2019-2022,42,E5,2.6768291842855296,7.142857142857142,80.95238095238095
+"gender,tournament,era",20,W|SAFF Championship|2023-2026,24,E5,4.66834087111696,8.333333333333332,45.83333333333333
+"gender,tournament,era",20,W|SAFF Women's Friendly Tournament|2023-2026,34,E5,1.9117101134698449,23.52941176470588,47.05882352941176
+"gender,tournament,era",20,W|SheBelieves Cup|2015-2018,36,E4,1.989075624984318,38.88888888888889,55.55555555555556
+"gender,tournament,era",20,W|SheBelieves Cup|2019-2022,42,E5,2.4726205670654253,7.142857142857142,57.14285714285714
+"gender,tournament,era",20,W|SheBelieves Cup|2023-2026,44,E5,1.7750596503989373,18.181818181818183,63.63636363636363
+"gender,tournament,era",20,W|South Asian Games|2015-2018,22,metric_draw_off,1.9781477200124267,36.36363636363637,72.72727272727273
+"gender,tournament,era",20,W|Southeast Asian Games|2011-2014,20,E5,1.583623600660976,20.0,80.0
+"gender,tournament,era",20,W|Southeast Asian Games|2015-2018,20,E5,1.3601171497340876,35.0,85.0
+"gender,tournament,era",20,W|Southeast Asian Games|2019-2022,46,E5,2.039440416761955,19.565217391304348,76.08695652173914
+"gender,tournament,era",20,W|Southeast Asian Games|2023-2026,58,E4,2.247676145335114,17.24137931034483,75.86206896551724
+"gender,tournament,era",20,W|Tournament of Nations|2015-2018,24,E5,3.3077688222186494,8.333333333333332,41.66666666666667
+"gender,tournament,era",20,W|Tournoi de France|2019-2022,24,E5,2.566887505209961,8.333333333333332,50.0
+"gender,tournament,era",20,W|Turkish Women's Cup|2015-2018,32,E5,1.6653150119021423,15.625,68.75
+"gender,tournament,era",20,W|Turkish Women's Cup|2019-2022,62,E5,3.7707626418930147,4.838709677419355,58.06451612903226
+"gender,tournament,era",20,W|Turkish Women's Cup|2023-2026,40,E5,2.5187037398180236,15.0,52.5
+"gender,tournament,era",20,W|UEFA Euro|2011-2014,50,E5,2.014564048919994,20.0,48.0
+"gender,tournament,era",20,W|UEFA Euro|2015-2018,62,E5,2.409217577077398,12.903225806451612,45.16129032258064
+"gender,tournament,era",20,W|UEFA Euro|2019-2022,62,E5,2.0602541511352928,12.903225806451612,67.74193548387096
+"gender,tournament,era",20,W|UEFA Euro|2023-2026,62,E5,2.2765915559058953,16.129032258064516,58.06451612903226
+"gender,tournament,era",20,W|UEFA Euro qualification|2011-2014,350,metric_draw_off,2.4401603057952994,13.142857142857142,77.14285714285715
+"gender,tournament,era",20,W|UEFA Euro qualification|2015-2018,348,E5,2.578797527577254,11.781609195402298,76.4367816091954
+"gender,tournament,era",20,W|UEFA Euro qualification|2019-2022,408,E5,2.813566088890633,6.127450980392156,73.77450980392157
+"gender,tournament,era",20,W|UEFA Euro qualification|2023-2026,382,E5,2.3193896203092526,12.56544502617801,63.87434554973822
+"gender,tournament,era",20,W|UEFA Nations League|2023-2026,636,E5,2.7701617442032007,7.232704402515723,50.62893081761006
+"gender,tournament,era",20,W|UEFA Women's Nations League|2023-2026,40,E5,2.704679360373548,10.0,57.49999999999999
+"gender,tournament,era",20,W|UNIFFAC Cup|2019-2022,22,ExpD,2.256131955122636,27.27272727272727,63.63636363636363
+"gender,tournament,era",20,W|WAFF Championship|2011-2014,44,E5,3.6932465035041955,2.272727272727273,77.27272727272727
+"gender,tournament,era",20,W|WAFF Championship|2019-2022,32,risk1,2.1984685029515743,12.5,62.5
+"gender,tournament,era",20,W|WAFF Championship|2023-2026,30,E5,2.042484244187153,0.0,73.33333333333333
+"gender,tournament,era",20,W|WAFF Women's Championship|2023-2026,20,E5,2.599172071143843,20.0,60.0
+"gender,tournament,era",20,W|WAFU Zone A Cup|2019-2022,32,E4,2.1047626266086086,12.5,75.0
+"gender,tournament,era",20,W|WAFU Zone A Cup|2023-2026,58,E4,2.7023169290148505,6.896551724137931,58.620689655172406
+"gender,tournament,era",20,W|WAFU Zone B Cup|2015-2018,32,risk1,2.478913670003423,3.125,75.0
+"gender,tournament,era",20,W|WAFU Zone B Cup|2019-2022,32,E5,3.193128912324556,6.25,68.75
+"gender,tournament,era",20,W|Yongchuan International Tournament|2015-2018,42,metric_draw_off,1.891928751239359,28.57142857142857,61.904761904761905
+"gender,tournament",40,M|AFC Asian Cup,268,E5,2.0353739375717104,18.28358208955224,60.820895522388064
+"gender,tournament",40,M|AFC Asian Cup qualification,500,E5,2.1182526832063466,14.000000000000002,65.4
+"gender,tournament",40,M|AFC Challenge Cup,90,E4,2.407431856333423,4.444444444444445,55.55555555555556
+"gender,tournament",40,M|AFC Challenge Cup qualification,50,metric_draw_off,2.4132508008217037,16.0,68.0
+"gender,tournament",40,M|AFF Championship,264,E4,2.0011502361637667,9.469696969696969,69.6969696969697
+"gender,tournament",40,M|AFF Championship qualification,60,Plan02,1.9845590362798935,20.0,80.0
+"gender,tournament",40,M|ASEAN Championship,52,E5,2.307294111940495,15.384615384615385,61.53846153846154
+"gender,tournament",40,M|African Cup of Nations,672,E5,1.9598993355539231,16.964285714285715,52.529761904761905
+"gender,tournament",40,M|African Cup of Nations qualification,1920,E5,2.058990342978894,16.822916666666668,56.30208333333333
+"gender,tournament",40,M|Arab Cup,148,E4,2.3284743530227034,14.18918918918919,52.02702702702703
+"gender,tournament",40,M|Baltic Cup,50,dynamic,2.194394782073681,12.0,40.0
+"gender,tournament",40,M|CECAFA Cup,248,E4,2.017117192238071,16.129032258064516,52.41935483870967
+"gender,tournament",40,M|CFU Caribbean Cup,60,Plan02,2.3040161861397914,11.666666666666666,40.0
+"gender,tournament",40,M|CFU Caribbean Cup qualification,220,E5,2.7056159262128383,14.545454545454545,60.909090909090914
+"gender,tournament",40,M|CONCACAF Nations League,844,E5,2.5257580132994284,9.715639810426541,60.66350710900474
+"gender,tournament",40,M|CONCACAF Nations League qualification,136,E4,2.930406560021511,14.705882352941178,67.64705882352942
+"gender,tournament",40,M|CONCACAF Series,70,E4,3.178976203411416,4.285714285714286,41.42857142857143
+"gender,tournament",40,M|CONIFA European Football Cup,98,E5,2.8525334213026654,14.285714285714285,44.89795918367347
+"gender,tournament",40,M|CONIFA World Football Cup,202,E4,4.331136698911435,1.9801980198019802,48.51485148514851
+"gender,tournament",40,M|COSAFA Cup,402,E5,2.2071370955044323,17.16417910447761,47.2636815920398
+"gender,tournament",40,M|Confederations Cup,64,E4,1.7859074099499597,18.75,78.125
+"gender,tournament",40,M|Copa América,288,E5,2.1845830045166315,11.805555555555555,51.388888888888886
+"gender,tournament",40,M|EAFF Championship,146,E4,2.463115543668926,12.32876712328767,63.013698630136986
+"gender,tournament",40,M|FIFA Series,114,E5,2.5464538081305212,14.035087719298245,68.42105263157895
+"gender,tournament",40,M|FIFA World Cup,384,E4,2.3444241607964846,13.020833333333334,50.0
+"gender,tournament",40,M|FIFA World Cup qualification,6732,E1,2.22538821355097,13.65121806298277,61.111111111111114
+"gender,tournament",40,M|Friendly,8648,E5,2.3114979734382852,10.730804810360777,53.28399629972248
+"gender,tournament",40,M|Gold Cup,400,E4,1.9604230687175161,15.25,67.0
+"gender,tournament",40,M|Gold Cup qualification,68,Plan02,2.141968134081274,20.588235294117645,70.58823529411765
+"gender,tournament",40,M|Gulf Cup,184,E4,2.182976056840702,15.217391304347828,42.934782608695656
+"gender,tournament",40,M|Indian Ocean Island Games,92,E4,1.8916112753760281,19.565217391304348,63.04347826086957
+"gender,tournament",40,M|Island Games,240,E5,2.6182007564272696,11.666666666666666,68.33333333333333
+"gender,tournament",40,M|King's Cup,56,E4,2.6897227840442546,16.071428571428573,44.642857142857146
+"gender,tournament",40,M|Kirin Challenge Cup,44,E4,2.378124196057799,13.636363636363635,50.0
+"gender,tournament",40,M|MSG Prime Minister's Cup,46,metric_draw_off,2.215204919852346,8.695652173913043,43.47826086956522
+"gender,tournament",40,M|Muratti Vase,40,risk2,2.3648427005818147,15.0,77.5
+"gender,tournament",40,M|Oceania Nations Cup,88,E4,2.359267143062913,13.636363636363635,68.18181818181817
+"gender,tournament",40,M|Pacific Games,150,E5,2.971473759469801,5.333333333333334,77.33333333333333
+"gender,tournament",40,M|SAFF Cup,158,E4,2.191346966738009,10.126582278481013,62.0253164556962
+"gender,tournament",40,M|UEFA Euro,368,E4,2.199050417307332,18.206521739130434,48.09782608695652
+"gender,tournament",40,M|UEFA Euro qualification,1734,E5,2.1504841290433943,11.591695501730104,62.918108419838525
+"gender,tournament",40,M|UEFA Nations League,1316,E4,2.311001072705477,14.58966565349544,51.82370820668692
+"gender,tournament",40,M|UNCAF Cup,48,E4,1.3483699973439662,25.0,70.83333333333334
+"gender,tournament",40,M|WAFF Championship,98,E5,2.1406728862242095,10.204081632653061,38.775510204081634
+"gender,tournament",40,W|AFC Asian Cup,172,E4,2.6423367743179713,18.023255813953487,72.67441860465115
+"gender,tournament",40,W|AFC Asian Cup qualification,288,E5,3.6918634227246105,5.902777777777778,71.875
+"gender,tournament",40,W|AFC Olympic Qualifying Tournament,278,E5,2.949401349972616,9.352517985611511,69.7841726618705
+"gender,tournament",40,W|AFF Championship,252,E5,3.4418971416963458,11.11111111111111,78.57142857142857
+"gender,tournament",40,W|Africa Cup of Nations qualification,100,E5,2.416969788276009,8.0,56.00000000000001
+"gender,tournament",40,W|African Championship,64,E5,2.052952832775035,12.5,71.875
+"gender,tournament",40,W|African Championship qualification,110,E5,2.3341808132227024,18.181818181818183,70.9090909090909
+"gender,tournament",40,W|African Cup of Nations,172,E5,2.231314671560447,16.27906976744186,56.97674418604651
+"gender,tournament",40,W|African Cup of Nations qualification,240,E5,2.609939080023602,12.083333333333334,61.66666666666667
+"gender,tournament",40,W|African Games,52,E4,2.3034880959464457,21.153846153846153,46.15384615384615
+"gender,tournament",40,W|Algarve Cup,390,E5,2.2474421066743346,16.41025641025641,59.48717948717949
+"gender,tournament",40,W|Aphrodite Cup,82,E4,3.3579321992558837,12.195121951219512,46.34146341463415
+"gender,tournament",40,W|Asian Games,148,E5,2.7494569211901494,10.81081081081081,83.1081081081081
+"gender,tournament",40,W|Baltic Cup,86,E5,2.4284677107103496,13.953488372093023,54.65116279069767
+"gender,tournament",40,W|CAF Olympic Qualifying Tournament,196,E5,2.324925650930949,13.26530612244898,57.14285714285714
+"gender,tournament",40,W|CAFA Championship,40,E4,3.2884188982797498,22.5,87.5
+"gender,tournament",40,W|CECAFA Championship,130,E5,2.956215342050301,10.76923076923077,73.84615384615385
+"gender,tournament",40,W|CONCACAF Championship,96,E5,2.503750930679809,17.708333333333336,73.95833333333334
+"gender,tournament",40,W|CONCACAF Championship qualification,282,E5,3.2922093369817786,8.156028368794328,79.43262411347519
+"gender,tournament",40,W|CONCACAF Gold Cup qualification,174,E5,3.2218138406315147,6.896551724137931,65.51724137931035
+"gender,tournament",40,W|CONCACAF Olympic Qualifying Tournament,90,E2,2.3339389675361706,13.333333333333334,88.88888888888889
+"gender,tournament",40,W|CONCACAF Olympic Qualifying Tournament qualification,126,E5,2.8995495557557756,12.698412698412698,85.71428571428571
+"gender,tournament",40,W|COSAFA Championship,326,E4,3.0275780158055703,8.588957055214724,62.57668711656442
+"gender,tournament",40,W|Central American Games,64,E5,2.6463626543302823,12.5,71.875
+"gender,tournament",40,W|Central American and Caribbean Games,90,E4,2.913159788166541,7.777777777777778,53.333333333333336
+"gender,tournament",40,W|Copa América,152,E5,2.2813932737557785,17.763157894736842,74.3421052631579
+"gender,tournament",40,W|Cyprus Cup,392,E5,2.4801471209944057,9.693877551020408,50.0
+"gender,tournament",40,W|EAFF E-1 Championship,78,E5,2.605895745194299,15.384615384615385,78.2051282051282
+"gender,tournament",40,W|EAFF East Asian Cup,60,Plan02,2.77023286132649,13.333333333333334,71.66666666666667
+"gender,tournament",40,W|FIFA World Cup,336,E5,2.1801113955729656,14.880952380952381,65.47619047619048
+"gender,tournament",40,W|FIFA World Cup qualification,1416,E5,2.6220488163740012,8.333333333333332,73.72881355932203
+"gender,tournament",40,W|Four Nations Tournament,92,Plan02,1.848307364654971,15.217391304347828,70.65217391304348
+"gender,tournament",40,W|Friendly,2292,E4,2.533808934404402,8.81326352530541,60.776614310645726
+"gender,tournament",40,W|International Tournament,116,E5,2.1903310112805316,10.344827586206897,74.13793103448276
+"gender,tournament",40,W|Island Games,180,E5,2.9157747518961212,7.777777777777778,65.55555555555556
+"gender,tournament",40,W|Istria Cup,94,E5,2.8663177588401174,6.382978723404255,36.17021276595745
+"gender,tournament",40,W|OFC Nations Cup,102,E4,2.8574111801615345,16.666666666666664,62.745098039215684
+"gender,tournament",40,W|OFC Olympic Qualifying Tournament,52,E5,2.9345778897413655,7.6923076923076925,84.61538461538461
+"gender,tournament",40,W|Olympic Games,208,E2,2.364806270121708,15.384615384615385,63.46153846153846
+"gender,tournament",40,W|Pacific Games,152,E5,2.824396997709111,10.526315789473683,65.78947368421053
+"gender,tournament",40,W|Pan American Games,126,E4,2.2017291432043242,16.666666666666664,65.87301587301587
+"gender,tournament",40,W|Pinatar Cup,68,E4,2.143131140857744,17.647058823529413,57.35294117647059
+"gender,tournament",40,W|Pink Ladies Cup,40,E5,2.011810012710614,15.0,85.0
+"gender,tournament",40,W|SAFF Championship,150,E5,2.813553673218524,6.0,78.0
+"gender,tournament",40,W|SheBelieves Cup,122,E4,2.07835582732571,20.491803278688526,59.01639344262295
+"gender,tournament",40,W|Southeast Asian Games,144,E4,2.0014099392154328,20.833333333333336,77.77777777777779
+"gender,tournament",40,W|Turkish Women's Cup,134,E5,2.8942202520220626,10.44776119402985,58.95522388059702
+"gender,tournament",40,W|UEFA Euro,236,E5,2.1990852799209835,15.254237288135593,55.08474576271186
+"gender,tournament",40,W|UEFA Euro qualification,1488,E5,2.5450062629202335,9.946236559139784,71.9758064516129
+"gender,tournament",40,W|UEFA Nations League,636,E5,2.7701617442032007,7.232704402515723,50.62893081761006
+"gender,tournament",40,W|UEFA Women's Nations League,40,E5,2.704679360373548,10.0,57.49999999999999
+"gender,tournament",40,W|WAFF Championship,106,E5,2.790471364867964,4.716981132075472,71.69811320754717
+"gender,tournament",40,W|WAFU Zone A Cup,90,E4,2.489853177048187,8.88888888888889,64.44444444444444
+"gender,tournament",40,W|WAFU Zone B Cup,64,E5,2.8455843087269646,6.25,71.875
+"gender,tournament",40,W|Yongchuan International Tournament,64,metric_draw_off,1.8648701875402787,25.0,68.75
+"gender,archetype",40,M|men_compact_draw,3900,E5,2.0864064245479446,16.512820512820515,53.38461538461539
+"gender,archetype",40,M|men_concacaf_ofc_high_tail,1340,E4,2.559157703595714,10.223880597014926,60.895522388059696
+"gender,archetype",40,M|men_default,6140,E4,2.293540867872791,13.680781758957655,56.67752442996743
+"gender,archetype",40,M|men_friendly_low,7204,E5,2.341270218847499,9.938922820655192,53.775680177679064
+"gender,archetype",40,M|men_low_score_qualifier,1920,E5,2.058990342978894,16.822916666666668,56.30208333333333
+"gender,archetype",40,M|men_qualifier_mismatch,7144,E5,2.2372703420009854,12.23404255319149,61.828107502799554
+"gender,archetype",40,M|men_regional_volatile,816,E4,3.07287733177571,8.088235294117647,61.39705882352941
+"gender,archetype",40,W|women_africa_compact,1836,E5,2.603006178631028,11.982570806100219,64.4880174291939
+"gender,archetype",40,W|women_default,3214,E4,2.650843237947677,11.947728686994399,61.66770379589297
+"gender,archetype",40,W|women_elite_compact,1562,E5,2.3022214853955987,14.084507042253522,58.25864276568502
+"gender,archetype",40,W|women_friendly_conservative,2214,E4,2.549049419285988,8.897922312556458,59.98193315266486
+"gender,archetype",40,W|women_qualifier_blowout,1406,E5,3.0940658299860413,8.677098150782362,77.16927453769559
+"gender,archetype",40,W|women_qualifier_strong,1868,E5,2.726632926952814,8.35117773019272,72.37687366167023
+"gender,archetype",40,W|women_regional_volatile,370,E5,2.9198038368247174,8.64864864864865,65.94594594594595
+"gender,archetype",40,W|women_uefa_qualifier_era,1488,E5,2.5450062629202335,9.946236559139784,71.9758064516129

@@ -1,0 +1,83 @@
+{
+  "strategy": "experiment_f1_conf_pair20_stitch",
+  "output_path": "dataset\\submission_experiment_f1_conf_pair20_stitch.csv",
+  "metrics": {
+    "exact_accuracy": 0.12953184668332468,
+    "outcome_accuracy": 0.6106972797133563,
+    "goal_diff_accuracy": 0.2468294752722644,
+    "awmae": 2.3410791860285847
+  },
+  "pair_inconsistent_matches": 2244,
+  "levels": [
+    [
+      [
+        "gender",
+        "tournament",
+        "year",
+        "conf_pair"
+      ],
+      20
+    ],
+    [
+      [
+        "gender",
+        "tournament",
+        "year"
+      ],
+      20
+    ],
+    [
+      [
+        "gender",
+        "tournament",
+        "era"
+      ],
+      20
+    ],
+    [
+      [
+        "gender",
+        "tournament"
+      ],
+      40
+    ],
+    [
+      [
+        "gender",
+        "archetype"
+      ],
+      40
+    ]
+  ],
+  "fallback": "E5",
+  "choice_counts": {
+    "E5": 16432,
+    "v4": 2326,
+    "dynamic": 2050,
+    "risk3": 1899,
+    "metric_draw_off": 3530,
+    "metric_batch": 1233,
+    "v29": 1894,
+    "E4": 5780,
+    "E1": 156,
+    "Plan01": 1279,
+    "risk2": 286,
+    "v5": 723,
+    "E2": 1576,
+    "risk1": 2224,
+    "Plan02": 450,
+    "ExpB": 216,
+    "E3": 96,
+    "ExpA": 204,
+    "ExpD": 22,
+    "Plan03": 46
+  },
+  "level_counts": {
+    "gender,tournament,year": 8332,
+    "gender,tournament,year,conf_pair": 31734,
+    "gender,archetype": 742,
+    "gender,tournament,era": 1216,
+    "gender,tournament": 398
+  },
+  "leakage_note": "Segment-level expert selection only; no Id/team/opponent/match_id lookup."
+}

@@ -1,0 +1,82 @@
+{
+  "strategy": "experiment_f2_neutral12_stitch",
+  "output_path": "dataset\\submission_experiment_f2_neutral12_stitch.csv",
+  "metrics": {
+    "exact_accuracy": 0.12663240771297912,
+    "outcome_accuracy": 0.6093300645891283,
+    "goal_diff_accuracy": 0.2459808589882608,
+    "awmae": 2.34336919362568
+  },
+  "pair_inconsistent_matches": 2247,
+  "levels": [
+    [
+      [
+        "gender",
+        "tournament",
+        "year",
+        "neutral"
+      ],
+      12
+    ],
+    [
+      [
+        "gender",
+        "tournament",
+        "year"
+      ],
+      12
+    ],
+    [
+      [
+        "gender",
+        "tournament",
+        "era"
+      ],
+      20
+    ],
+    [
+      [
+        "gender",
+        "tournament"
+      ],
+      40
+    ],
+    [
+      [
+        "gender",
+        "archetype"
+      ],
+      40
+    ]
+  ],
+  "fallback": "E5",
+  "choice_counts": {
+    "E5": 14798,
+    "v4": 2134,
+    "dynamic": 2786,
+    "risk3": 584,
+    "metric_batch": 1404,
+    "metric_draw_off": 2448,
+    "E1": 1486,
+    "E4": 5384,
+    "Plan01": 1748,
+    "risk2": 528,
+    "risk1": 3680,
+    "v29": 1352,
+    "E2": 2812,
+    "Plan03": 68,
+    "v5": 290,
+    "Plan02": 648,
+    "ExpC": 40,
+    "ExpA": 222,
+    "ExpD": 10
+  },
+  "level_counts": {
+    "gender,tournament,year": 2710,
+    "gender,tournament,year,neutral": 38826,
+    "gender,archetype": 352,
+    "gender,tournament,era": 306,
+    "gender,tournament": 228
+  },
+  "leakage_note": "Cleaner public-feature stitch using neutral but not conf_pair/is_home."
+}
