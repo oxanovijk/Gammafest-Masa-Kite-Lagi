@@ -1,0 +1,5 @@
+levels,fallback,aw_mae,exact_pct,outcome_pct
+"gender,tournament,era:40 > gender,tournament:80 > gender,archetype:80",ExpC,2.4106024864080835,11.878270708594597,59.855735231719386
+"gender,tournament,era:80 > gender,tournament:100 > gender,archetype:80",ExpC,2.411352849497671,11.873556173683466,59.851020696808256
+"gender,tournament:100 > gender,archetype:80",ExpC,2.4128955350977317,11.864127103861204,59.82980528970817
+"gender,archetype:80",ExpC,2.413373852785003,11.880627976050162,59.84394889444157
