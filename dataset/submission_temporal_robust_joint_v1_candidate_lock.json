@@ -1,0 +1,57 @@
+{
+  "pipeline_version": "temporal_robust_joint_v1",
+  "timestamp_utc": "2026-05-05T15:45:54+00:00",
+  "selected_config": {
+    "name": "joint_no_expert_prior_s50",
+    "kind": "joint",
+    "smoothing": 50,
+    "max_goals": 8,
+    "alpha": 0.5,
+    "gamma": 1.25,
+    "delta": 1.0,
+    "eta": 1.0,
+    "theta": 0.5,
+    "kappa": 0.5,
+    "beta": 0.25,
+    "use_poisson": true,
+    "use_empirical_prior": true,
+    "use_expert_prior": false,
+    "draw_correction": 1.0,
+    "tail_dampening": 0.93,
+    "pair_consistency": true,
+    "use_hist_features": true,
+    "gd_selector_weight": 0.0,
+    "outcome_selector_weight": 0.0,
+    "complexity": 0.0015
+  },
+  "validation_metrics": {
+    "weighted_awmae_p15": 2.7809568990604734,
+    "unweighted_awmae_p15": 2.7845051795115277,
+    "weighted_awmae_p13": 2.3131423293146773,
+    "unweighted_awmae_p13": 2.316314220268173,
+    "outcome_accuracy": 0.5957305532204817,
+    "exact_accuracy": 0.13075090371296938,
+    "goal_diff_accuracy": 0.22652976902396071
+  },
+  "baseline_metrics": {
+    "weighted_awmae_p15": 2.80470840289421,
+    "unweighted_awmae_p15": 2.808005358978994,
+    "weighted_awmae_p13": 2.3467214196250232,
+    "unweighted_awmae_p13": 2.3487316808789442,
+    "outcome_accuracy": 0.5832721617481178,
+    "exact_accuracy": 0.09974012278452335,
+    "goal_diff_accuracy": 0.24949549478552896
+  },
+  "script_hash": "1f0988d6eb0d17b59edb2abdd4b24d6d0321dbdb31bd88a559096a0f2ef08775",
+  "config_hash": "e6696b36df004f4dbdec6d1b8c313c4c7f514baab3823fcf72f67e38ea2d9533",
+  "leakage_checklist": {
+    "no_model_pipeline_v5_import": true,
+    "no_old_submission_anchor": true,
+    "selection_validation_only": true,
+    "gt_not_read_before_candidate_lock": true,
+    "friend_not_used_for_selection": true,
+    "historical_features_fold_safe": true,
+    "pair_consistency_label_free": true,
+    "gd_is_soft_penalty_not_hard_veto": true
+  }
+}

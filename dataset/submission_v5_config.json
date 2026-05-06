@@ -1,0 +1,312 @@
+{
+  "timestamp": "2026-04-27T23:25:03",
+  "seed": 42,
+  "fast_mode": true,
+  "feature_profile": "v4_stable_surface",
+  "static_submission_consensus": {
+    "enabled": true,
+    "applied": true,
+    "rule": "Use V4 when V3 and V4 agree on W/D/L outcome; otherwise use V3.",
+    "reason": "V3 is the outcome-stability prior, V4 is the exact-score/AW-MAE prior.",
+    "v3_path": "C:\\Users\\LENOVO\\Documents\\Gammafest\\Gammafest-Masa-Kite-Lagi\\dataset\\submission_v3.csv",
+    "v4_path": "C:\\Users\\LENOVO\\Documents\\Gammafest\\Gammafest-Masa-Kite-Lagi\\dataset\\submission_v4.csv",
+    "rows_from_v4": 40577,
+    "rows_from_v3": 1845,
+    "agreement_rate": 0.9565084154448164
+  },
+  "validation_mode": "latest_window",
+  "model_names": [
+    "xgb_poisson",
+    "sk_hgb_poisson",
+    "cat_poisson",
+    "lgb_poisson"
+  ],
+  "model_availability": {
+    "xgb": true,
+    "hgb": true,
+    "lgb": true,
+    "catboost": true,
+    "optuna": true
+  },
+  "ensemble_mode": "weighted_blend",
+  "best_optuna_params": {
+    "tuner": "optuna",
+    "team_w_0": 0.4509574022006012,
+    "team_w_1": 0.6833931121773626,
+    "team_w_2": 0.1832316540852617,
+    "team_w_3": 0.2026029358070967,
+    "opp_w_0": 0.032985648622956644,
+    "opp_w_1": 0.5052931975450691,
+    "opp_w_2": 0.15217510408135645,
+    "opp_w_3": 0.07831953297075613,
+    "team_scale": 0.9012524095392146,
+    "opp_scale": 0.9370877374933598,
+    "team_bias": 0.043422456858937565,
+    "opp_bias": -0.003796307790154607,
+    "draw_boost": 1.0392410632924793,
+    "low_score_boost": 0.9557106294169351,
+    "outcome_blend_alpha": 0.07378533145996943,
+    "max_goals": 10
+  },
+  "team_weights": [
+    0.2966463761115838,
+    0.4495459863786696,
+    0.12053246250772309,
+    0.13327517500202363
+  ],
+  "opp_weights": [
+    0.04290685012286149,
+    0.6572718864190824,
+    0.1979453082121735,
+    0.10187595524588265
+  ],
+  "meta_model_type": null,
+  "team_scale": 0.9012524095392146,
+  "opp_scale": 0.9370877374933598,
+  "team_bias": 0.043422456858937565,
+  "opp_bias": -0.003796307790154607,
+  "draw_boost": 1.0392410632924793,
+  "low_score_boost": 0.9557106294169351,
+  "outcome_blend_alpha": 0.07378533145996943,
+  "max_goals": 10,
+  "validation_weighted_awmae": 2.2949422281987304,
+  "validation_outcome_accuracy": 0.5922987411403787,
+  "validation_exact_accuracy": 0.12345287210409393,
+  "validation_goal_difference_accuracy": 0.2463768115942029,
+  "train_rows": 69319,
+  "validation_rows": 9453,
+  "full_train_rows": 78772,
+  "test_rows": 42422,
+  "feature_count": 44,
+  "feature_columns": [
+    "days_since_last_opp_feat",
+    "days_since_last_team_feat",
+    "elo_diff_feat",
+    "elo_opponent_feat",
+    "elo_team_feat",
+    "form_diff_feat",
+    "form_opp_feat",
+    "form_team_feat",
+    "gd_last5_ewma_diff_feat",
+    "h2h_gd_last5_ewma_feat",
+    "h2h_gd_last5_simple_feat",
+    "h2h_pts_last5_ewma_feat",
+    "h2h_pts_last5_simple_feat",
+    "opp_avg_ga_last5_ewma_feat",
+    "opp_avg_gf_last5_ewma_feat",
+    "opp_gd_last10_ewma_feat",
+    "opp_gd_last5_ewma_feat",
+    "opp_pts_last10_ewma_feat",
+    "opp_pts_last10_simple_feat",
+    "opp_pts_last5_ewma_feat",
+    "opp_pts_last5_simple_feat",
+    "opp_win_rate_last10_ewma_feat",
+    "pts_last10_ewma_diff_feat",
+    "pts_last10_simple_diff_feat",
+    "pts_last5_ewma_diff_feat",
+    "pts_last5_simple_diff_feat",
+    "team_avg_ga_last5_ewma_feat",
+    "team_avg_gf_last5_ewma_feat",
+    "team_gd_last10_ewma_feat",
+    "team_gd_last5_ewma_feat",
+    "team_pts_last10_ewma_feat",
+    "team_pts_last10_simple_feat",
+    "team_pts_last5_ewma_feat",
+    "team_pts_last5_simple_feat",
+    "team_win_rate_last10_ewma_feat",
+    "travel_stress_diff_ctx",
+    "altitude_shock_team_ctx",
+    "altitude_shock_opp_ctx",
+    "temp_stress_ctx",
+    "log_gdp_diff_ctx",
+    "log_pop_diff_ctx",
+    "venue_country_te_ctx",
+    "confederation_team_te_ctx",
+    "venue_country_freq_ctx"
+  ],
+  "dropped_non_numeric_columns": [
+    "tournament_weight",
+    "abs_elo_diff_static",
+    "is_balanced_match_static",
+    "is_team_favorite_static",
+    "is_team_strong_favorite_static",
+    "is_team_underdog_static",
+    "elo_diff_x_tournament_weight_static",
+    "elo_sum_static",
+    "elo_ratio_static",
+    "year_static",
+    "month_static",
+    "is_friendly_static",
+    "is_major_tournament_static"
+  ],
+  "outcome_classifier": {
+    "model": "cat_outcome",
+    "validation_accuracy": 0.6060509891039881,
+    "validation_logloss": 0.8619565461973893,
+    "validation_class_distribution": {
+      "0": 3750,
+      "1": 1952,
+      "2": 3751
+    }
+  },
+  "validation_prediction_summary": {
+    "rows": 9453,
+    "wld_distribution": {
+      "loss": 3961,
+      "draw": 1539,
+      "win": 3953
+    },
+    "avg_pred_team_goals": 1.2341055749497514,
+    "avg_pred_opp_goals": 1.2385486089072253,
+    "pct_predictions_score_ge_5": 0.016185337987940335,
+    "top_10_common_scores": [
+      {
+        "score": "1-2",
+        "count": 2195
+      },
+      {
+        "score": "2-1",
+        "count": 1967
+      },
+      {
+        "score": "1-1",
+        "count": 1539
+      },
+      {
+        "score": "1-0",
+        "count": 991
+      },
+      {
+        "score": "0-1",
+        "count": 788
+      },
+      {
+        "score": "2-0",
+        "count": 456
+      },
+      {
+        "score": "0-2",
+        "count": 394
+      },
+      {
+        "score": "3-0",
+        "count": 241
+      },
+      {
+        "score": "0-3",
+        "count": 238
+      },
+      {
+        "score": "1-3",
+        "count": 112
+      }
+    ],
+    "outcome_accuracy": 0.5922987411403787,
+    "exact_accuracy": 0.12345287210409393,
+    "goal_diff_accuracy": 0.2463768115942029,
+    "lambda_percentiles_team": {
+      "1": 0.36273142071553804,
+      "5": 0.5077489201323503,
+      "25": 0.8280007051151488,
+      "50": 1.194125158935053,
+      "75": 1.6867434986191558,
+      "95": 2.9963187265534144,
+      "99": 4.574679399113436
+    },
+    "lambda_percentiles_opp": {
+      "1": 0.32776237805561753,
+      "5": 0.48290274811570355,
+      "25": 0.8153439058192138,
+      "50": 1.1938085731237684,
+      "75": 1.7200002113261792,
+      "95": 3.0592789257172623,
+      "99": 4.6917100287426265
+    }
+  },
+  "test_prediction_summary": {
+    "rows": 42422,
+    "wld_distribution": {
+      "loss": 18921,
+      "draw": 4813,
+      "win": 18688
+    },
+    "avg_pred_team_goals": 1.2736551789166,
+    "avg_pred_opp_goals": 1.259912309650653,
+    "pct_predictions_score_ge_5": 0.030220168780349818,
+    "top_10_common_scores": [
+      {
+        "score": "1-2",
+        "count": 8593
+      },
+      {
+        "score": "2-1",
+        "count": 8204
+      },
+      {
+        "score": "1-1",
+        "count": 4813
+      },
+      {
+        "score": "0-1",
+        "count": 4414
+      },
+      {
+        "score": "1-0",
+        "count": 4308
+      },
+      {
+        "score": "0-2",
+        "count": 2321
+      },
+      {
+        "score": "2-0",
+        "count": 2272
+      },
+      {
+        "score": "3-0",
+        "count": 1599
+      },
+      {
+        "score": "0-3",
+        "count": 1428
+      },
+      {
+        "score": "4-0",
+        "count": 819
+      }
+    ],
+    "lambda_percentiles_team": {
+      "1": 0.32021906132736694,
+      "5": 0.44530153067071215,
+      "25": 0.8016999267263045,
+      "50": 1.2080518334045052,
+      "75": 1.792675375553166,
+      "95": 3.193027619905247,
+      "99": 4.703510536558064
+    },
+    "lambda_percentiles_opp": {
+      "1": 0.29718240629799997,
+      "5": 0.42880917615531833,
+      "25": 0.7881536456022787,
+      "50": 1.2048862468706538,
+      "75": 1.8182921846597164,
+      "95": 3.28398089749384,
+      "99": 4.9730406992211345
+    }
+  },
+  "local_reporting_only": {
+    "v4": {
+      "awmae": 2.5427148790925016,
+      "outcome_accuracy": 0.5828108057140163,
+      "exact_accuracy": 0.10532270991466691,
+      "rows": 42422
+    },
+    "v5": {
+      "awmae": 2.541243654313277,
+      "outcome_accuracy": 0.5861816981754749,
+      "exact_accuracy": 0.10475696572533119,
+      "rows": 42422
+    }
+  },
+  "runtime_minutes": 2.7438156326611836
+}

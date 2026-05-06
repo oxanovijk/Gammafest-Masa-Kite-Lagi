@@ -1,0 +1,19 @@
+Temporal Robust Joint V1 Audit
+==================================
+
+L1 | CRITICAL | test GT leaks into selection | GT read only in local_submission_metrics after lock | mitigated
+L2 | CRITICAL | old submission influence | no submission reads except post-lock friend report | mitigated
+S1 | HIGH | GD hard veto repeats old failure | soft GD penalty plus explicit tradeoff allowance | mitigated
+V1 | HIGH | validation too old | recency-weighted folds and stress reporting | mitigated
+D1 | MEDIUM | gender/tournament drift | metadata features, expert priors, segment diagnostics | mitigated
+R1 | MEDIUM | runtime | vectorized matrix prediction and compact grid | mitigated
+
+Leakage checklist
+- no_model_pipeline_v5_import: True
+- no_old_submission_anchor: True
+- selection_validation_only: True
+- gt_not_read_before_candidate_lock: True
+- friend_not_used_for_selection: True
+- historical_features_fold_safe: True
+- pair_consistency_label_free: True
+- gd_is_soft_penalty_not_hard_veto: True

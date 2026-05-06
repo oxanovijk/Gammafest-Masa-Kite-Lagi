@@ -1,0 +1,6 @@
+plan,name,submission_file,exact_accuracy_pct,outcome_accuracy_pct,aw_mae,pair_inconsistent_matches
+Plan 05,Temporal Shrinkage Calibration,dataset/submission_plan05_temporal_shrinkage_calibration.csv,11.395030880203667,59.596435811607186,2.438050524652416,2801
+Plan 04,Expert Selector Stacking,dataset/submission_plan04_expert_selector_stacking.csv,11.350242798547923,59.620008486162845,2.440121055731396,2836
+Plan 03,Compact Draw Specialist,dataset/submission_plan03_compact_draw_specialist.csv,11.300740181981048,59.60822214888501,2.441487665748239,2832
+Plan 02,Women Tail Specialist,dataset/submission_plan02_women_tail_specialist.csv,11.354957333459053,59.59172127669605,2.446374588670991,3040
+Plan 01,Balanced Segment Prior + Reranker,dataset/submission_plan01_balanced_segment_prior_reranker.csv,10.907076516901608,59.14619772759417,2.4737294618721384,3001

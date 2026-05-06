@@ -1,0 +1,152 @@
+Risk V2 Static Pipeline Validation Report
+================================================
+Acceptance decision: TARGET_NOT_REACHED
+Selected stage: 08_risk_objective_v2 / risk_penalties_on
+Validation weighted AW-MAE power 1.5: 2.73364
+Validation outcome/exact/gd: 0.5967 / 0.1110 / 0.2391
+Selection score: 2.89708
+Local weighted AW-MAE power 1.5: 3.07841
+Local outcome/exact/gd: 0.5829 / 0.1051 / 0.2204
+Friend weighted AW-MAE power 1.5: 2.99883
+Delta candidate - friend power 1.5: +0.07959
+
+Leakage checklist
+  core_features_frozen: assumed_safe_from_train_final_test_final
+  test_state_update: not_used
+  v5_import: not_used
+  old_submission_anchor: not_used
+  friend_csv: reporting_only
+  test_ground_truth: final_reporting_only_if_available
+  context_target_encoding: risk_noted_existing_ctx_features_may_use_random_kfold_encoding
+
+Validation folds
+  fold_2003_2005: rows=6946, weighted15=2.88222, outcome=0.5897, exact=0.1084
+  fold_2006_2008: rows=7698, weighted15=2.80437, outcome=0.6064, exact=0.1095
+  fold_2009_2010: rows=4754, weighted15=2.82388, outcome=0.5934, exact=0.1155
+  fold_2011_latest: rows=1446, weighted15=2.59346, outcome=0.5892, exact=0.1169
+
+Ablation table
+  01_baseline_poisson_ensemble: uniform_max8_no_risk, selected=True, weighted15=2.76096, reason=initial_baseline
+  02_split_team_opp_blend: tw10_ow13, selected=True, weighted15=2.74517, reason=accepted
+  03_scale_bias_total_goals: tb-0.04_ob-0.04, selected=True, weighted15=2.74094, reason=accepted
+  04_awmae_erm_max_goals: max10, selected=True, weighted15=2.73364, reason=accepted
+  05_outcome_first_erm: alpha0.0_thr0.0_pen0.0, selected=True, weighted15=2.73364, reason=accepted
+  06_draw_low_score_prior_calibration: d1.0_ld1.0_lc1.0_cb1.0_hm1.0, selected=True, weighted15=2.73364, reason=accepted
+  07_segment_balanced_neutral_calibration: bd1.0_bs1.0_ns1.0_nd1.0_nm1.0, selected=True, weighted15=2.73364, reason=accepted
+  08_risk_objective_v2: risk_penalties_on, selected=True, weighted15=2.73364, reason=accepted
+
+Risk objective breakdown
+  fold_instability_penalty: 0.021841
+  outcome_drop_penalty: 0.000045
+  exact_drop_penalty: 0.000000
+  avg_total_goals_penalty: 0.000337
+  high_score_tail_penalty: 0.000000
+  score_collapse_penalty: 0.000001
+  balanced_elo_penalty: 0.064020
+  neutral_segment_penalty: 0.077174
+  yearly_distribution_penalty: 0.000017
+
+Final test distribution
+{
+  "rows": 42422,
+  "win_share": 0.42838621469991983,
+  "draw_share": 0.1416482014049314,
+  "loss_share": 0.4299655838951487,
+  "avg_team_goals": 1.3079298477205223,
+  "avg_opp_goals": 1.3011409174484938,
+  "avg_total_goals": 2.609070765169016,
+  "score_ge5_share": 0.02776861062656169,
+  "common_low_score_share": 0.8258215077082646,
+  "top1_score_share": 0.21684503323747112,
+  "top3_score_share": 0.5709537504125218,
+  "top5_score_share": 0.722526047805384,
+  "top_10_scores": [
+    {
+      "score": "1-2",
+      "count": 9199,
+      "share": 0.21684503323747112
+    },
+    {
+      "score": "2-1",
+      "count": 9013,
+      "share": 0.2124605157701193
+    },
+    {
+      "score": "1-1",
+      "count": 6009,
+      "share": 0.1416482014049314
+    },
+    {
+      "score": "1-0",
+      "count": 3227,
+      "share": 0.07606902079109895
+    },
+    {
+      "score": "0-1",
+      "count": 3203,
+      "share": 0.07550327660176323
+    },
+    {
+      "score": "0-2",
+      "count": 2233,
+      "share": 0.0526377822827778
+    },
+    {
+      "score": "2-0",
+      "count": 2149,
+      "share": 0.05065767762010278
+    },
+    {
+      "score": "3-0",
+      "count": 1556,
+      "share": 0.03667908160859931
+    },
+    {
+      "score": "0-3",
+      "count": 1514,
+      "share": 0.0356890292772618
+    },
+    {
+      "score": "4-0",
+      "count": 816,
+      "share": 0.01923530243741455
+    }
+  ]
+}
+
+Per-year test diagnostics 2011-2026
+  2011: rows=1532, top3=0.5705, draw=0.1880, ge5=0.0379, avg_total=2.584
+  2012: rows=2664, top3=0.5788, draw=0.1753, ge5=0.0233, avg_total=2.488
+  2013: rows=2446, top3=0.5487, draw=0.1799, ge5=0.0176, avg_total=2.392
+  2014: rows=2482, top3=0.5806, draw=0.1600, ge5=0.0201, avg_total=2.572
+  2015: rows=2914, top3=0.5429, draw=0.1482, ge5=0.0326, avg_total=2.560
+  2016: rows=2576, top3=0.5384, draw=0.1464, ge5=0.0229, avg_total=2.491
+  2017: rows=2602, top3=0.5669, draw=0.1560, ge5=0.0231, avg_total=2.512
+  2018: rows=2960, top3=0.6051, draw=0.1436, ge5=0.0297, avg_total=2.689
+  2019: rows=3452, top3=0.5539, draw=0.1260, ge5=0.0368, avg_total=2.696
+  2020: rows=1134, top3=0.5767, draw=0.1543, ge5=0.0300, avg_total=2.561
+  2021: rows=3084, top3=0.5324, draw=0.1466, ge5=0.0259, avg_total=2.516
+  2022: rows=3162, top3=0.5870, draw=0.1287, ge5=0.0297, avg_total=2.674
+  2023: rows=3576, top3=0.5954, draw=0.1149, ge5=0.0355, avg_total=2.753
+  2024: rows=3634, top3=0.5839, draw=0.1192, ge5=0.0198, avg_total=2.653
+  2025: rows=3638, top3=0.5877, draw=0.1025, ge5=0.0297, avg_total=2.764
+  2026: rows=566, top3=0.5901, draw=0.1608, ge5=0.0371, avg_total=2.694
+
+Segment diagnostics
+  major_tournament: rows=5796, weighted15=2.66507, outcome=0.6287, exact=0.1170
+  friendly: rows=6106, weighted15=2.71509, outcome=0.5136, exact=0.1204
+  qualifier: rows=8086, weighted15=2.71380, outcome=0.6475, exact=0.1127
+  neutral: rows=6596, weighted15=3.07623, outcome=0.5876, exact=0.1001
+  non_neutral: rows=14248, weighted15=2.69760, outcome=0.6009, exact=0.1161
+  balanced_elo: rows=3784, weighted15=3.23856, outcome=0.4630, exact=0.1049
+  strong_favorite: rows=4036, weighted15=2.49018, outcome=0.7505, exact=0.1184
+
+Benchmark comparison vs friend
+  candidate weighted15: 3.07841
+  friend weighted15   : 2.99883
+  candidate outcome   : 0.5829
+  friend outcome      : 0.5946
+
+WARNING: final decision is TARGET_NOT_REACHED; target power 1.5 <= 3.00 may not be reached.
+
+Done in 9.6 minutes. Wrote dataset\submission_risk_v2.csv with 42422 rows.

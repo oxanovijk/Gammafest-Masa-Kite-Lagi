@@ -1,0 +1,63 @@
+V6 Validation Report - V5-centered bounded selective correction
+========================================================================
+AW-MAE formula power: 1.5
+Fallback to V5: True
+Fallback reasons: weighted_awmae_improvement_too_small
+
+Validation anchor vs recent-only vs hybrid
+  Anchor weighted AW-MAE : 2.81995
+  Recent weighted AW-MAE : 2.81883
+  Hybrid weighted AW-MAE : 2.81970
+  Hybrid outcome accuracy: 0.5999
+  Hybrid exact accuracy  : 0.1059
+  Hybrid goal-diff acc   : 0.2351
+  Selection score        : 2.82179
+  Collapse penalty       : 0.00000
+
+Chosen correction config
+  recent weights: {'1990': 0.8, '2000': 0.2, '2002': 0.0}
+  beta: team=0.35, opp=0.35
+  cap: team=0.25, opp=0.25
+  anchor_offset=0.3, gate_threshold=0.0
+  max_goals=10, draw_boost=1.0, low_score_boost=1.0
+
+Fold summary
+  fold_2003_2005: weighted=2.86956, outcome=0.5982, exact=0.1052, gate=1.000
+  fold_2006_2008: weighted=2.80045, outcome=0.6100, exact=0.1076, gate=1.000
+  fold_2009_2011: weighted=2.78684, outcome=0.5894, exact=0.1047, gate=1.000
+
+Anti-score-collapse diagnostics
+  validation anchor: common_low=0.8464, top3=0.7184, draw=0.1333, avg_total=2.816
+  validation hybrid: common_low=0.8464, top3=0.7184, draw=0.1332, avg_total=2.816
+  final test: common_low=0.8233, top3=0.5094, draw=0.1135, avg_total=2.534
+
+Top final test scores
+  1-2: 8593 (0.2026)
+  2-1: 8204 (0.1934)
+  1-1: 4813 (0.1135)
+  0-1: 4414 (0.1040)
+  1-0: 4308 (0.1016)
+  0-2: 2321 (0.0547)
+  2-0: 2272 (0.0536)
+  3-0: 1599 (0.0377)
+  0-3: 1428 (0.0337)
+  4-0: 819 (0.0193)
+
+Segment diagnostics
+  major_tournaments: rows=5796, weighted=2.65377, outcome=0.6335, exact=0.1070
+  friendlies: rows=6106, weighted=2.74375, outcome=0.5106, exact=0.1133
+  qualifiers: rows=8086, weighted=2.72828, outcome=0.6488, exact=0.1066
+  neutral: rows=6596, weighted=3.03149, outcome=0.6026, exact=0.0972
+  non_neutral: rows=14248, weighted=2.71806, outcome=0.5987, exact=0.1100
+
+Local final reporting
+  V5 local weighted AW-MAE power 1.5: 3.07281
+  V6 local weighted AW-MAE power 1.5: 3.07281
+  Delta power 1.5               : 0.00000
+  V5 outcome/exact              : 0.5862 / 0.1048
+  V6 outcome/exact              : 0.5862 / 0.1048
+  V5 local weighted AW-MAE legacy power 1.3: 2.52887
+  V6 local weighted AW-MAE legacy power 1.3: 2.52887
+  Delta legacy power 1.3               : 0.00000
+
+Done in 170.7 minutes.

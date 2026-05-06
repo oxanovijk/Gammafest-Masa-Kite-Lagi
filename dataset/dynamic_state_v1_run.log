@@ -1,0 +1,32 @@
+[dynamic_state_v1] loading core data from C:\Users\LENOVO\Documents\Gammafest\Gammafest-Masa-Kite-Lagi\dataset
+[dynamic_state_v1] train rows=78772 test rows=42422 max_train_date=2011-08-04
+[dynamic_state_v1] pre-registered candidate registry hash=07cd2b21dd66f02a7e91dbb6c99e84e77cc75fb7ef2e7e2886053605e9bc4875
+[selection] evaluating 18 pre-registered candidates
+  static_baseline=baseline_static_s25
+  static_baseline=baseline_static_s50
+  static_baseline=baseline_static_s100
+  static_baseline=baseline_static_s200
+  candidate=slow_s25
+  candidate=slow_s50
+  candidate=slow_s100
+  candidate=slow_s200
+  candidate=medium_s25
+  candidate=medium_s50
+  candidate=medium_s100
+  candidate=medium_s200
+  candidate=medium_s50_gender_state_off
+  candidate=medium_s50_confidence_gate_off
+  candidate=medium_s50_outcome_update_off
+  candidate=medium_s50_total_state_off
+  candidate=medium_s50_pair_consistency_off
+  candidate=medium_s50_static_fallback_off
+[selection] evaluating stress veto for best static fallback
+[selection] stress veto candidate=slow_s50
+[dynamic_state_v1] selected=slow_s50 track=slow validation=w15=2.82043, u15=2.82541, w13=2.34635, out=0.5872, exact=0.1176, gd=0.2311
+[dynamic_state_v1] running sensitivity diagnostics
+[dynamic_state_v1] candidate lock written hash=ac80f274165731795f33ba20c4fc9b0cf38d357782c5b30a2fca09a75a4db850
+[dynamic_state_v1] fitting final model and writing submission
+[dynamic_state_v1] wrote C:\Users\LENOVO\Documents\Gammafest\Gammafest-Masa-Kite-Lagi\dataset\submission_dynamic_state_v1.csv
+[dynamic_state_v1] wrote C:\Users\LENOVO\Documents\Gammafest\Gammafest-Masa-Kite-Lagi\dataset\submission_dynamic_state_v1_config.json
+[dynamic_state_v1] wrote C:\Users\LENOVO\Documents\Gammafest\Gammafest-Masa-Kite-Lagi\dataset\submission_dynamic_state_v1_validation_report.txt
+[dynamic_state_v1] decision=ACCEPTED_DYNAMIC_STATE_V1

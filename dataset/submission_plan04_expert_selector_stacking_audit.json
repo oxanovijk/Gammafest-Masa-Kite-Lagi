@@ -1,0 +1,201 @@
+{
+  "strategy": "plan04_expert_selector_stacking",
+  "output_path": "dataset\\submission_plan04_expert_selector_stacking.csv",
+  "metrics": {
+    "exact_accuracy": 0.11350242798547923,
+    "outcome_accuracy": 0.5962000848616285,
+    "goal_diff_accuracy": 0.2303521757578615,
+    "awmae": 2.440121055731396
+  },
+  "pair_inconsistent_matches": 2836,
+  "selected_expert_counts": {
+    "dynamic_state_v1": 5918,
+    "risk_v2": 14236,
+    "metric_aware_joint_v1_batch": 3326,
+    "temporal_robust_joint_v1": 2926,
+    "v5": 5742,
+    "risk_v4_static_drift": 1004,
+    "v3": 3238,
+    "v4": 1642,
+    "risk_v5_outcome_experts": 1256,
+    "risk_v3": 3134
+  },
+  "transform_counts": {
+    "id": 35686,
+    "cap_med": 4380,
+    "winner+1": 550,
+    "cap_low": 1370,
+    "force3margin": 72,
+    "cap_low_draw": 364
+  },
+  "selector_levels": [
+    {
+      "keys": [
+        "gender",
+        "tournament",
+        "era"
+      ],
+      "min_n": 20,
+      "segments": 271
+    },
+    {
+      "keys": [
+        "gender",
+        "tournament"
+      ],
+      "min_n": 60,
+      "segments": 86
+    },
+    {
+      "keys": [
+        "gender",
+        "archetype"
+      ],
+      "min_n": 80,
+      "segments": 15
+    },
+    {
+      "keys": [
+        "gender"
+      ],
+      "min_n": 1,
+      "segments": 2
+    }
+  ],
+  "transform_rules": [
+    {
+      "keys": [
+        "gender",
+        "tournament",
+        "era"
+      ],
+      "n_rules": 45,
+      "rules": {
+        "W|AFC Asian Cup qualification|2011-2014": "id",
+        "W|AFC Asian Cup qualification|2015-2018": "winner+1",
+        "W|AFC Asian Cup qualification|2019-2022": "force3margin",
+        "W|AFC Asian Cup qualification|2023-2026": "id",
+        "W|AFC Olympic Qualifying Tournament|2015-2018": "id",
+        "W|AFC Olympic Qualifying Tournament|2019-2022": "id",
+        "W|AFC Olympic Qualifying Tournament|2023-2026": "id",
+        "W|AFF Championship|2011-2014": "winner+1",
+        "W|AFF Championship|2015-2018": "id",
+        "W|AFF Championship|2019-2022": "id",
+        "W|Asian Games|2011-2014": "winner+1",
+        "W|Asian Games|2015-2018": "winner+1",
+        "W|Asian Games|2023-2026": "winner+1",
+        "W|CONCACAF Championship qualification|2011-2014": "force3margin",
+        "W|CONCACAF Championship qualification|2015-2018": "id",
+        "W|CONCACAF Championship qualification|2019-2022": "winner+1",
+        "W|CONCACAF Championship qualification|2023-2026": "winner+1",
+        "W|CONCACAF Gold Cup qualification|2023-2026": "id",
+        "W|FIFA World Cup qualification|2011-2014": "id",
+        "W|FIFA World Cup qualification|2015-2018": "id",
+        "W|FIFA World Cup qualification|2019-2022": "id",
+        "W|FIFA World Cup qualification|2023-2026": "id",
+        "W|Indian Ocean Island Games|2015-2018": "id",
+        "W|Island Games|2015-2018": "id",
+        "W|Island Games|2023-2026": "id",
+        "W|Pacific Games|2011-2014": "id",
+        "W|Pacific Games|2015-2018": "id",
+        "W|Pacific Games|2019-2022": "winner+1",
+        "W|Pacific Games|2023-2026": "id",
+        "W|SAFF Championship|2011-2014": "id",
+        "W|SAFF Championship|2015-2018": "id",
+        "W|SAFF Championship|2019-2022": "id",
+        "W|SAFF Championship|2023-2026": "id",
+        "W|South Asian Games|2015-2018": "id",
+        "W|Southeast Asian Games|2011-2014": "id",
+        "W|Southeast Asian Games|2015-2018": "id",
+        "W|Southeast Asian Games|2019-2022": "id",
+        "W|Southeast Asian Games|2023-2026": "id",
+        "W|UEFA Euro qualification|2011-2014": "id",
+        "W|UEFA Euro qualification|2015-2018": "id",
+        "W|UEFA Euro qualification|2019-2022": "id",
+        "W|UEFA Euro qualification|2023-2026": "id",
+        "W|WAFF Championship|2011-2014": "winner+1",
+        "W|WAFF Championship|2019-2022": "id",
+        "W|WAFF Championship|2023-2026": "id"
+      }
+    },
+    {
+      "keys": [
+        "gender",
+        "tournament",
+        "era"
+      ],
+      "n_rules": 68,
+      "rules": {
+        "M|African Cup of Nations|2011-2014": "id",
+        "M|African Cup of Nations|2015-2018": "cap_med",
+        "M|African Cup of Nations|2019-2022": "id",
+        "M|African Cup of Nations|2023-2026": "cap_med",
+        "M|African Cup of Nations qualification|2011-2014": "id",
+        "M|African Cup of Nations qualification|2015-2018": "id",
+        "M|African Cup of Nations qualification|2019-2022": "id",
+        "M|African Cup of Nations qualification|2023-2026": "cap_low",
+        "M|CECAFA Cup|2011-2014": "id",
+        "M|CECAFA Cup|2015-2018": "cap_low_draw",
+        "M|COSAFA Cup|2011-2014": "id",
+        "M|COSAFA Cup|2015-2018": "cap_low",
+        "M|COSAFA Cup|2019-2022": "cap_low_draw",
+        "M|COSAFA Cup|2023-2026": "cap_low",
+        "M|FIFA World Cup qualification|2011-2014": "cap_med",
+        "M|FIFA World Cup qualification|2015-2018": "id",
+        "M|FIFA World Cup qualification|2019-2022": "id",
+        "M|FIFA World Cup qualification|2023-2026": "id",
+        "M|Friendly|2011-2014": "id",
+        "M|Friendly|2015-2018": "id",
+        "M|Friendly|2019-2022": "id",
+        "M|Friendly|2023-2026": "cap_med",
+        "W|Africa Cup of Nations qualification|2023-2026": "cap_med",
+        "W|African Championship|2011-2014": "id",
+        "W|African Championship qualification|2011-2014": "cap_med",
+        "W|African Cup of Nations|2015-2018": "id",
+        "W|African Cup of Nations|2019-2022": "cap_low",
+        "W|African Cup of Nations|2023-2026": "cap_low_draw",
+        "W|African Cup of Nations qualification|2015-2018": "id",
+        "W|African Cup of Nations qualification|2019-2022": "id",
+        "W|African Games|2011-2014": "id",
+        "W|African Games|2015-2018": "cap_low",
+        "W|Algarve Cup|2011-2014": "id",
+        "W|Algarve Cup|2015-2018": "id",
+        "W|Algarve Cup|2019-2022": "cap_low",
+        "W|CAF Olympic Qualifying Tournament|2015-2018": "cap_low",
+        "W|CAF Olympic Qualifying Tournament|2019-2022": "cap_med",
+        "W|CAF Olympic Qualifying Tournament|2023-2026": "id",
+        "W|CECAFA Championship|2015-2018": "id",
+        "W|CECAFA Championship|2019-2022": "id",
+        "W|CECAFA Championship|2023-2026": "id",
+        "W|CONCACAF Olympic Qualifying Tournament|2011-2014": "id",
+        "W|CONCACAF Olympic Qualifying Tournament|2015-2018": "id",
+        "W|CONCACAF Olympic Qualifying Tournament|2019-2022": "id",
+        "W|CONCACAF Olympic Qualifying Tournament qualification|2011-2014": "id",
+        "W|CONCACAF Olympic Qualifying Tournament qualification|2015-2018": "id",
+        "W|CONCACAF Olympic Qualifying Tournament qualification|2019-2022": "id",
+        "W|COSAFA Championship|2015-2018": "cap_med",
+        "W|COSAFA Championship|2019-2022": "cap_med",
+        "W|COSAFA Championship|2023-2026": "cap_low_draw",
+        "W|Cyprus Cup|2011-2014": "cap_med",
+        "W|Cyprus Cup|2015-2018": "cap_low",
+        "W|Cyprus Cup|2019-2022": "cap_med",
+        "W|FIFA World Cup|2015-2018": "id",
+        "W|FIFA World Cup|2019-2022": "id",
+        "W|FIFA World Cup|2023-2026": "cap_low",
+        "W|Friendly|2023-2026": "id",
+        "W|Olympic Games|2011-2014": "id",
+        "W|Olympic Games|2015-2018": "cap_low",
+        "W|Olympic Games|2019-2022": "cap_med",
+        "W|Olympic Games|2023-2026": "id",
+        "W|UEFA Euro|2011-2014": "cap_low",
+        "W|UEFA Euro|2015-2018": "cap_low",
+        "W|UEFA Euro|2019-2022": "cap_med",
+        "W|UEFA Euro|2023-2026": "cap_med",
+        "W|WAFU Zone A Cup|2023-2026": "cap_med",
+        "W|WAFU Zone B Cup|2015-2018": "id",
+        "W|WAFU Zone B Cup|2019-2022": "id"
+      }
+    }
+  ],
+  "pair_repair": false
+}

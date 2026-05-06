@@ -1,0 +1,3913 @@
+{
+  "pipeline_version": "temporal_robust_joint_v1",
+  "timestamp_utc": "2026-05-05T15:49:19+00:00",
+  "seed": 42,
+  "script_hash": "1f0988d6eb0d17b59edb2abdd4b24d6d0321dbdb31bd88a559096a0f2ef08775",
+  "config_hash": "e6696b36df004f4dbdec6d1b8c313c4c7f514baab3823fcf72f67e38ea2d9533",
+  "candidate_lock_hash": "86156a2454c37cb735e49b5e1cb41103bbead8b36d8d352bfd2d43a98db20540",
+  "selected": {
+    "config": {
+      "name": "joint_no_expert_prior_s50",
+      "kind": "joint",
+      "smoothing": 50,
+      "max_goals": 8,
+      "alpha": 0.5,
+      "gamma": 1.25,
+      "delta": 1.0,
+      "eta": 1.0,
+      "theta": 0.5,
+      "kappa": 0.5,
+      "beta": 0.25,
+      "use_poisson": true,
+      "use_empirical_prior": true,
+      "use_expert_prior": false,
+      "draw_correction": 1.0,
+      "tail_dampening": 0.93,
+      "pair_consistency": true,
+      "use_hist_features": true,
+      "gd_selector_weight": 0.0,
+      "outcome_selector_weight": 0.0,
+      "complexity": 0.0015
+    },
+    "metrics": {
+      "weighted_awmae_p15": 2.7809568990604734,
+      "unweighted_awmae_p15": 2.7845051795115277,
+      "weighted_awmae_p13": 2.3131423293146773,
+      "unweighted_awmae_p13": 2.316314220268173,
+      "outcome_accuracy": 0.5957305532204817,
+      "exact_accuracy": 0.13075090371296938,
+      "goal_diff_accuracy": 0.22652976902396071
+    },
+    "fold_metrics": [
+      {
+        "weighted_awmae_p15": 2.970934967039209,
+        "unweighted_awmae_p15": 2.9856535821056576,
+        "weighted_awmae_p13": 2.4542890616054813,
+        "unweighted_awmae_p13": 2.4648542343220634,
+        "outcome_accuracy": 0.5891160380074864,
+        "exact_accuracy": 0.11459832997408581,
+        "goal_diff_accuracy": 0.217967175352721,
+        "fold_name": "R1_2003_2005",
+        "fold_weight": 0.05,
+        "rows": 6946,
+        "train_rows": 57928,
+        "avg_team_goals": 1.0264900662251655,
+        "avg_opp_goals": 1.0264900662251655,
+        "avg_total_goals": 2.052980132450331,
+        "draw_share": 0.16671465591707457,
+        "team_win_share": 0.4166426720414627,
+        "score_ge5": 0.0161243881370573,
+        "score_ge6": 0.010653613590555715
+      },
+      {
+        "weighted_awmae_p15": 2.841090115022507,
+        "unweighted_awmae_p15": 2.8482916426572626,
+        "weighted_awmae_p13": 2.3534698011396262,
+        "unweighted_awmae_p13": 2.3584846061125937,
+        "outcome_accuracy": 0.6092491556248376,
+        "exact_accuracy": 0.12756560145492335,
+        "goal_diff_accuracy": 0.23824369966224992,
+        "fold_name": "R2_2006_2008",
+        "fold_weight": 0.1,
+        "rows": 7698,
+        "train_rows": 64874,
+        "avg_team_goals": 1.07222655235126,
+        "avg_opp_goals": 1.07222655235126,
+        "avg_total_goals": 2.14445310470252,
+        "draw_share": 0.15406599116653677,
+        "team_win_share": 0.42296700441673163,
+        "score_ge5": 0.010652117433099507,
+        "score_ge6": 0.00779423226812159
+      },
+      {
+        "weighted_awmae_p15": 2.796723143688209,
+        "unweighted_awmae_p15": 2.8097549488627136,
+        "weighted_awmae_p13": 2.3317017281655157,
+        "unweighted_awmae_p13": 2.343155366891808,
+        "outcome_accuracy": 0.5894454382826476,
+        "exact_accuracy": 0.11806797853309481,
+        "goal_diff_accuracy": 0.2146690518783542,
+        "fold_name": "R3_2009",
+        "fold_weight": 0.15,
+        "rows": 2236,
+        "train_rows": 72572,
+        "avg_team_goals": 1.0107334525939178,
+        "avg_opp_goals": 1.0107334525939178,
+        "avg_total_goals": 2.0214669051878356,
+        "draw_share": 0.1556350626118068,
+        "team_win_share": 0.4221824686940966,
+        "score_ge5": 0.013416815742397137,
+        "score_ge6": 0.01073345259391771
+      },
+      {
+        "weighted_awmae_p15": 2.944802647672282,
+        "unweighted_awmae_p15": 2.956053632670885,
+        "weighted_awmae_p13": 2.420009837543336,
+        "unweighted_awmae_p13": 2.4289795113099113,
+        "outcome_accuracy": 0.5996822875297856,
+        "exact_accuracy": 0.13423351866560762,
+        "goal_diff_accuracy": 0.23510722795869737,
+        "fold_name": "R4_2010",
+        "fold_weight": 0.25,
+        "rows": 2518,
+        "train_rows": 74808,
+        "avg_team_goals": 1.0643367752184274,
+        "avg_opp_goals": 1.0643367752184274,
+        "avg_total_goals": 2.128673550436855,
+        "draw_share": 0.14694201747418587,
+        "team_win_share": 0.42652899126290705,
+        "score_ge5": 0.017474185861795076,
+        "score_ge6": 0.011914217633042097
+      },
+      {
+        "weighted_awmae_p15": 2.6502044571888006,
+        "unweighted_awmae_p15": 2.6442593014297566,
+        "weighted_awmae_p13": 2.2229403944661756,
+        "unweighted_awmae_p13": 2.218899700176803,
+        "outcome_accuracy": 0.5933609958506224,
+        "exact_accuracy": 0.1355463347164592,
+        "goal_diff_accuracy": 0.22406639004149378,
+        "fold_name": "R5_2011",
+        "fold_weight": 0.45,
+        "rows": 1446,
+        "train_rows": 77326,
+        "avg_team_goals": 1.0214384508990317,
+        "avg_opp_goals": 1.0214384508990317,
+        "avg_total_goals": 2.0428769017980635,
+        "draw_share": 0.14107883817427386,
+        "team_win_share": 0.42946058091286304,
+        "score_ge5": 0.004149377593360996,
+        "score_ge6": 0.0027662517289073307
+      }
+    ],
+    "segment_metrics": {
+      "men": {
+        "rows": 16172,
+        "weighted_awmae_p15": 2.7266751818863755,
+        "unweighted_awmae_p15": 2.742100262174476,
+        "weighted_awmae_p13": 2.280720177889406,
+        "unweighted_awmae_p13": 2.2921833622682817,
+        "outcome_accuracy": 0.5681424684640118,
+        "exact_accuracy": 0.1319564679693297,
+        "goal_diff_accuracy": 0.24066287410338857
+      },
+      "women": {
+        "rows": 4672,
+        "weighted_awmae_p15": 3.3654171361452696,
+        "unweighted_awmae_p15": 3.396576941178429,
+        "weighted_awmae_p13": 2.7131458679489273,
+        "unweighted_awmae_p13": 2.7335825023881095,
+        "outcome_accuracy": 0.702054794520548,
+        "exact_accuracy": 0.09460616438356165,
+        "goal_diff_accuracy": 0.18236301369863014
+      },
+      "major": {
+        "rows": 4776,
+        "weighted_awmae_p15": 2.9848039516070584,
+        "unweighted_awmae_p15": 3.0208953669881007,
+        "weighted_awmae_p13": 2.452463415215694,
+        "unweighted_awmae_p13": 2.4755381611696157,
+        "outcome_accuracy": 0.6030150753768844,
+        "exact_accuracy": 0.11892797319932999,
+        "goal_diff_accuracy": 0.2315745393634841
+      },
+      "friendly": {
+        "rows": 6106,
+        "weighted_awmae_p15": 2.7498115058572954,
+        "unweighted_awmae_p15": 2.7498115058572963,
+        "weighted_awmae_p13": 2.304075009346524,
+        "unweighted_awmae_p13": 2.3040750093465245,
+        "outcome_accuracy": 0.512610547002948,
+        "exact_accuracy": 0.13527677694071405,
+        "goal_diff_accuracy": 0.2538486734359646
+      },
+      "qualifier": {
+        "rows": 8086,
+        "weighted_awmae_p15": 2.7743764120163648,
+        "unweighted_awmae_p15": 2.7953760685532325,
+        "weighted_awmae_p13": 2.3087708472303,
+        "unweighted_awmae_p13": 2.3234203008796324,
+        "outcome_accuracy": 0.6472916151372743,
+        "exact_accuracy": 0.12416522384368044,
+        "goal_diff_accuracy": 0.21642344793470195
+      },
+      "low_support": {
+        "rows": 190,
+        "weighted_awmae_p15": 4.340085709297297,
+        "unweighted_awmae_p15": 4.370489280711896,
+        "weighted_awmae_p13": 3.3708833888130174,
+        "unweighted_awmae_p13": 3.3924573760585246,
+        "outcome_accuracy": 0.7157894736842105,
+        "exact_accuracy": 0.05263157894736842,
+        "goal_diff_accuracy": 0.16842105263157894
+      }
+    },
+    "distribution": {
+      "rows": 20844,
+      "avg_team_goals": 1.0459124928036845,
+      "avg_opp_goals": 1.0459124928036845,
+      "avg_total_goals": 2.091824985607369,
+      "draw_share": 0.15668777585876031,
+      "team_win_share": 0.4216561120706198,
+      "score_ge5": 0.01314526962195356,
+      "score_ge6": 0.009211283822682787
+    },
+    "selection_score": 2.798628483519963,
+    "acceptance": {
+      "weighted_improvement": 0.02375150383373681,
+      "outcome_gain": 0.012458391472363939,
+      "outcome_drop": 0.0,
+      "gd_drop": 0.022965725761568245,
+      "gd_allowance": 0.006,
+      "gd_tradeoff_allowed": false,
+      "exact_drop": 0.0,
+      "fold_improvements": 4,
+      "pair_consistency_pass": true,
+      "score_ge5": 0.01314526962195356,
+      "accepted": true
+    },
+    "risk_components": {
+      "outcome_penalty": 0.0,
+      "soft_gd_penalty": 0.012724294321176185,
+      "exact_penalty": 0.0,
+      "recent_fold_penalty": 0.0,
+      "fold_instability_penalty": 0.0034472901383133985,
+      "women_penalty": 0.0,
+      "tournament_penalty": 0.0,
+      "tail_penalty": 0.0,
+      "pair_penalty": 0.0,
+      "complexity_penalty": 0.0015
+    },
+    "pair_diagnostics": {
+      "match_groups": 10422.0,
+      "two_row_matches": 10422.0,
+      "reciprocal_pairs": 10422.0,
+      "pair_consistency_applied": 10422.0,
+      "pair_conflicts_corrected": 1450.0,
+      "pair_consistency_pass": 1.0
+    },
+    "calibration_diagnostics": {
+      "folds": [
+        {
+          "backend": "hgb",
+          "matrix": {
+            "avg_selected_joint_prob": 0.26935958593219517,
+            "avg_entropy": 2.0434601845675866,
+            "rows": 6946
+          },
+          "predicted_avg_total": 2.052980132450331,
+          "predicted_draw_share": 0.16671465591707457,
+          "score_ge5": 0.0161243881370573
+        },
+        {
+          "backend": "hgb",
+          "matrix": {
+            "avg_selected_joint_prob": 0.25857865079131,
+            "avg_entropy": 2.0749186639451027,
+            "rows": 7698
+          },
+          "predicted_avg_total": 2.14445310470252,
+          "predicted_draw_share": 0.15406599116653677,
+          "score_ge5": 0.010652117433099507
+        },
+        {
+          "backend": "hgb",
+          "matrix": {
+            "avg_selected_joint_prob": 0.2701790584150983,
+            "avg_entropy": 2.028342680855628,
+            "rows": 2236
+          },
+          "predicted_avg_total": 2.0214669051878356,
+          "predicted_draw_share": 0.1556350626118068,
+          "score_ge5": 0.013416815742397137
+        },
+        {
+          "backend": "hgb",
+          "matrix": {
+            "avg_selected_joint_prob": 0.2569058120079646,
+            "avg_entropy": 2.0842656920226004,
+            "rows": 2518
+          },
+          "predicted_avg_total": 2.128673550436855,
+          "predicted_draw_share": 0.14694201747418587,
+          "score_ge5": 0.017474185861795076
+        },
+        {
+          "backend": "hgb",
+          "matrix": {
+            "avg_selected_joint_prob": 0.255014444210399,
+            "avg_entropy": 2.0762084888371493,
+            "rows": 1446
+          },
+          "predicted_avg_total": 2.0428769017980635,
+          "predicted_draw_share": 0.14107883817427386,
+          "score_ge5": 0.004149377593360996
+        }
+      ]
+    },
+    "cache_used": true
+  },
+  "baseline": {
+    "config": {
+      "name": "baseline_regression_round_s50",
+      "kind": "regression_round",
+      "smoothing": 50,
+      "max_goals": 8,
+      "alpha": 0.5,
+      "gamma": 1.25,
+      "delta": 1.0,
+      "eta": 1.0,
+      "theta": 0.5,
+      "kappa": 0.5,
+      "beta": 0.25,
+      "use_poisson": true,
+      "use_empirical_prior": true,
+      "use_expert_prior": true,
+      "draw_correction": 1.0,
+      "tail_dampening": 0.93,
+      "pair_consistency": true,
+      "use_hist_features": true,
+      "gd_selector_weight": 0.0,
+      "outcome_selector_weight": 0.0,
+      "complexity": 0.0
+    },
+    "metrics": {
+      "weighted_awmae_p15": 2.80470840289421,
+      "unweighted_awmae_p15": 2.808005358978994,
+      "weighted_awmae_p13": 2.3467214196250232,
+      "unweighted_awmae_p13": 2.3487316808789442,
+      "outcome_accuracy": 0.5832721617481178,
+      "exact_accuracy": 0.09974012278452335,
+      "goal_diff_accuracy": 0.24949549478552896
+    },
+    "fold_metrics": [
+      {
+        "weighted_awmae_p15": 2.9599557933161798,
+        "unweighted_awmae_p15": 2.9718162360973106,
+        "weighted_awmae_p13": 2.4562575989225737,
+        "unweighted_awmae_p13": 2.4644871818721117,
+        "outcome_accuracy": 0.5778865534120357,
+        "exact_accuracy": 0.09501871580765908,
+        "goal_diff_accuracy": 0.2412899510509646,
+        "fold_name": "R1_2003_2005",
+        "fold_weight": 0.05,
+        "rows": 6946,
+        "train_rows": 57928,
+        "avg_team_goals": 1.5597466167578462,
+        "avg_opp_goals": 1.5597466167578462,
+        "avg_total_goals": 3.1194932335156924,
+        "draw_share": 0.2692196947883674,
+        "team_win_share": 0.3653901526058163,
+        "score_ge5": 0.0322487762741146,
+        "score_ge6": 0.02418658220558595
+      },
+      {
+        "weighted_awmae_p15": 2.94792359694175,
+        "unweighted_awmae_p15": 2.9522679791830004,
+        "weighted_awmae_p13": 2.446055102961169,
+        "unweighted_awmae_p13": 2.4485790194986814,
+        "outcome_accuracy": 0.5876851130163678,
+        "exact_accuracy": 0.09067290205248116,
+        "goal_diff_accuracy": 0.24889581709534944,
+        "fold_name": "R2_2006_2008",
+        "fold_weight": 0.1,
+        "rows": 7698,
+        "train_rows": 64874,
+        "avg_team_goals": 1.5736554949337491,
+        "avg_opp_goals": 1.5736554949337491,
+        "avg_total_goals": 3.1473109898674982,
+        "draw_share": 0.24369966224993506,
+        "team_win_share": 0.3781501688750325,
+        "score_ge5": 0.025980774227071967,
+        "score_ge6": 0.01636788776305534
+      },
+      {
+        "weighted_awmae_p15": 2.8152362128926467,
+        "unweighted_awmae_p15": 2.8297271812722897,
+        "weighted_awmae_p13": 2.3561367832839872,
+        "unweighted_awmae_p13": 2.367358452554484,
+        "outcome_accuracy": 0.5644007155635062,
+        "exact_accuracy": 0.10107334525939177,
+        "goal_diff_accuracy": 0.25402504472271914,
+        "fold_name": "R3_2009",
+        "fold_weight": 0.15,
+        "rows": 2236,
+        "train_rows": 72572,
+        "avg_team_goals": 1.512969588550984,
+        "avg_opp_goals": 1.512969588550984,
+        "avg_total_goals": 3.025939177101968,
+        "draw_share": 0.2710196779964222,
+        "team_win_share": 0.3644901610017889,
+        "score_ge5": 0.026833631484794274,
+        "score_ge6": 0.018783542039355994
+      },
+      {
+        "weighted_awmae_p15": 2.9528089194360483,
+        "unweighted_awmae_p15": 2.9677623116456036,
+        "weighted_awmae_p13": 2.449559882322682,
+        "unweighted_awmae_p13": 2.459515748789453,
+        "outcome_accuracy": 0.5782366957903098,
+        "exact_accuracy": 0.09134233518665608,
+        "goal_diff_accuracy": 0.24463860206513105,
+        "fold_name": "R4_2010",
+        "fold_weight": 0.25,
+        "rows": 2518,
+        "train_rows": 74808,
+        "avg_team_goals": 1.5814138204924544,
+        "avg_opp_goals": 1.5814138204924544,
+        "avg_total_goals": 3.1628276409849088,
+        "draw_share": 0.2652899126290707,
+        "team_win_share": 0.3673550436854647,
+        "score_ge5": 0.035742652899126294,
+        "score_ge6": 0.020651310563939634
+      },
+      {
+        "weighted_awmae_p15": 2.6698457594251486,
+        "unweighted_awmae_p15": 2.661751320341298,
+        "weighted_awmae_p13": 2.2522056473544643,
+        "unweighted_awmae_p13": 2.2459260327887436,
+        "outcome_accuracy": 0.5919778699861687,
+        "exact_accuracy": 0.10650069156293222,
+        "goal_diff_accuracy": 0.2517289073305671,
+        "fold_name": "R5_2011",
+        "fold_weight": 0.45,
+        "rows": 1446,
+        "train_rows": 77326,
+        "avg_team_goals": 1.549792531120332,
+        "avg_opp_goals": 1.549792531120332,
+        "avg_total_goals": 3.099585062240664,
+        "draw_share": 0.26141078838174275,
+        "team_win_share": 0.36929460580912865,
+        "score_ge5": 0.019363762102351315,
+        "score_ge6": 0.015214384508990318
+      }
+    ],
+    "segment_metrics": {
+      "men": {
+        "rows": 16172,
+        "weighted_awmae_p15": 2.742001298956884,
+        "unweighted_awmae_p15": 2.7555678947592113,
+        "weighted_awmae_p13": 2.3039289048206757,
+        "unweighted_awmae_p13": 2.3135609047304055,
+        "outcome_accuracy": 0.554044026712837,
+        "exact_accuracy": 0.1045016077170418,
+        "goal_diff_accuracy": 0.2634182537719515
+      },
+      "women": {
+        "rows": 4672,
+        "weighted_awmae_p15": 3.4837888236222363,
+        "unweighted_awmae_p15": 3.521990233925232,
+        "weighted_awmae_p13": 2.8188359871182485,
+        "unweighted_awmae_p13": 2.8438924453896877,
+        "outcome_accuracy": 0.6746575342465754,
+        "exact_accuracy": 0.05950342465753425,
+        "goal_diff_accuracy": 0.18835616438356165
+      },
+      "major": {
+        "rows": 4776,
+        "weighted_awmae_p15": 3.0499363964170647,
+        "unweighted_awmae_p15": 3.096886147681137,
+        "weighted_awmae_p13": 2.514924775456034,
+        "unweighted_awmae_p13": 2.5460772984883224,
+        "outcome_accuracy": 0.5749581239530989,
+        "exact_accuracy": 0.08752093802345058,
+        "goal_diff_accuracy": 0.23408710217755443
+      },
+      "friendly": {
+        "rows": 6106,
+        "weighted_awmae_p15": 2.736945972943716,
+        "unweighted_awmae_p15": 2.7369459729437167,
+        "weighted_awmae_p13": 2.3035603295505744,
+        "unweighted_awmae_p13": 2.303560329550575,
+        "outcome_accuracy": 0.5037667867671143,
+        "exact_accuracy": 0.1136586963642319,
+        "goal_diff_accuracy": 0.27906976744186046
+      },
+      "qualifier": {
+        "rows": 8086,
+        "weighted_awmae_p15": 2.8137786220873173,
+        "unweighted_awmae_p15": 2.8357160392429908,
+        "weighted_awmae_p13": 2.351365040352568,
+        "unweighted_awmae_p13": 2.3663413760480982,
+        "outcome_accuracy": 0.6319564679693297,
+        "exact_accuracy": 0.09027949542418996,
+        "goal_diff_accuracy": 0.24091021518674252
+      },
+      "low_support": {
+        "rows": 190,
+        "weighted_awmae_p15": 4.746027749038029,
+        "unweighted_awmae_p15": 4.75988366846497,
+        "weighted_awmae_p13": 3.6695397491322437,
+        "unweighted_awmae_p13": 3.6788180621163904,
+        "outcome_accuracy": 0.6842105263157895,
+        "exact_accuracy": 0.031578947368421054,
+        "goal_diff_accuracy": 0.17894736842105263
+      }
+    },
+    "distribution": {
+      "rows": 20844,
+      "avg_team_goals": 1.561792362310497,
+      "avg_opp_goals": 1.561792362310497,
+      "avg_total_goals": 3.123584724620994,
+      "draw_share": 0.2589714066398004,
+      "team_win_share": 0.3705142966800998,
+      "score_ge5": 0.028881212819036654,
+      "score_ge6": 0.019669928996353867
+    },
+    "selection_score": 2.869464032645816,
+    "acceptance": {
+      "weighted_improvement": 0.0,
+      "outcome_gain": 0.0,
+      "outcome_drop": 0.0,
+      "gd_drop": 0.0,
+      "gd_allowance": 0.006,
+      "gd_tradeoff_allowed": false,
+      "exact_drop": 0.0,
+      "fold_improvements": 0,
+      "pair_consistency_pass": true,
+      "score_ge5": 0.028881212819036654,
+      "accepted": false
+    },
+    "risk_components": {
+      "outcome_penalty": 0.0,
+      "soft_gd_penalty": 0.0,
+      "exact_penalty": 0.0,
+      "recent_fold_penalty": 0.0,
+      "fold_instability_penalty": 0.003396197780775121,
+      "women_penalty": 0.0,
+      "tournament_penalty": 0.0,
+      "tail_penalty": 0.061359431970830935,
+      "pair_penalty": 0.0,
+      "complexity_penalty": 0.0
+    },
+    "pair_diagnostics": {
+      "match_groups": 10422.0,
+      "reciprocal_pairs": 10422.0,
+      "pair_conflicts_corrected": 1671.0,
+      "pair_consistency_pass": 1.0
+    },
+    "calibration_diagnostics": {
+      "folds": [
+        {
+          "baseline": "regression_round"
+        },
+        {
+          "baseline": "regression_round"
+        },
+        {
+          "baseline": "regression_round"
+        },
+        {
+          "baseline": "regression_round"
+        },
+        {
+          "baseline": "regression_round"
+        }
+      ]
+    },
+    "cache_used": true
+  },
+  "results": [
+    {
+      "config": {
+        "name": "baseline_static_prior_s50",
+        "kind": "static_prior",
+        "smoothing": 50,
+        "max_goals": 8,
+        "alpha": 0.5,
+        "gamma": 1.25,
+        "delta": 1.0,
+        "eta": 1.0,
+        "theta": 0.5,
+        "kappa": 0.5,
+        "beta": 0.25,
+        "use_poisson": true,
+        "use_empirical_prior": true,
+        "use_expert_prior": true,
+        "draw_correction": 1.0,
+        "tail_dampening": 0.93,
+        "pair_consistency": true,
+        "use_hist_features": false,
+        "gd_selector_weight": 0.0,
+        "outcome_selector_weight": 0.0,
+        "complexity": 0.0
+      },
+      "metrics": {
+        "weighted_awmae_p15": 5.12772283466565,
+        "unweighted_awmae_p15": 5.083831132051682,
+        "weighted_awmae_p13": 4.006632794330387,
+        "unweighted_awmae_p13": 3.9769406643328837,
+        "outcome_accuracy": 0.2125731882557947,
+        "exact_accuracy": 0.03188029596032788,
+        "goal_diff_accuracy": 0.2125731882557947
+      },
+      "fold_metrics": [
+        {
+          "weighted_awmae_p15": 5.483994163401515,
+          "unweighted_awmae_p15": 5.413075227586247,
+          "weighted_awmae_p13": 4.208918913858581,
+          "unweighted_awmae_p13": 4.161105925405714,
+          "outcome_accuracy": 0.21681543334293119,
+          "exact_accuracy": 0.04549380938669738,
+          "goal_diff_accuracy": 0.21681543334293119,
+          "fold_name": "R1_2003_2005",
+          "fold_weight": 0.05,
+          "rows": 6946,
+          "train_rows": 57928,
+          "avg_team_goals": 2.0,
+          "avg_opp_goals": 2.0,
+          "avg_total_goals": 4.0,
+          "draw_share": 1.0,
+          "team_win_share": 0.0,
+          "score_ge5": 0.0,
+          "score_ge6": 0.0
+        },
+        {
+          "weighted_awmae_p15": 5.329364128223749,
+          "unweighted_awmae_p15": 5.294723620105103,
+          "weighted_awmae_p13": 4.133965606680568,
+          "unweighted_awmae_p13": 4.108747168583345,
+          "outcome_accuracy": 0.20213042348661991,
+          "exact_accuracy": 0.034294621979735,
+          "goal_diff_accuracy": 0.20213042348661991,
+          "fold_name": "R2_2006_2008",
+          "fold_weight": 0.1,
+          "rows": 7698,
+          "train_rows": 64874,
+          "avg_team_goals": 2.0,
+          "avg_opp_goals": 2.0,
+          "avg_total_goals": 4.0,
+          "draw_share": 1.0,
+          "team_win_share": 0.0,
+          "score_ge5": 0.0,
+          "score_ge6": 0.0
+        },
+        {
+          "weighted_awmae_p15": 5.282989909478593,
+          "unweighted_awmae_p15": 5.223761354414421,
+          "weighted_awmae_p13": 4.101647830122168,
+          "unweighted_awmae_p13": 4.062210879352515,
+          "outcome_accuracy": 0.2075134168157424,
+          "exact_accuracy": 0.03309481216457961,
+          "goal_diff_accuracy": 0.2075134168157424,
+          "fold_name": "R3_2009",
+          "fold_weight": 0.15,
+          "rows": 2236,
+          "train_rows": 72572,
+          "avg_team_goals": 2.0,
+          "avg_opp_goals": 2.0,
+          "avg_total_goals": 4.0,
+          "draw_share": 1.0,
+          "team_win_share": 0.0,
+          "score_ge5": 0.0,
+          "score_ge6": 0.0
+        },
+        {
+          "weighted_awmae_p15": 5.529709779072993,
+          "unweighted_awmae_p15": 5.45228323850609,
+          "weighted_awmae_p13": 4.259477468431485,
+          "unweighted_awmae_p13": 4.208379423518703,
+          "outcome_accuracy": 0.2057188244638602,
+          "exact_accuracy": 0.03256552819698173,
+          "goal_diff_accuracy": 0.2057188244638602,
+          "fold_name": "R4_2010",
+          "fold_weight": 0.25,
+          "rows": 2518,
+          "train_rows": 74808,
+          "avg_team_goals": 2.0,
+          "avg_opp_goals": 2.0,
+          "avg_total_goals": 4.0,
+          "draw_share": 1.0,
+          "team_win_share": 0.0,
+          "score_ge5": 0.0,
+          "score_ge6": 0.0
+        },
+        {
+          "weighted_awmae_p15": 4.768246183295916,
+          "unweighted_awmae_p15": 4.749044435273719,
+          "weighted_awmae_p13": 3.783719436318233,
+          "unweighted_awmae_p13": 3.7701870298260234,
+          "outcome_accuracy": 0.21991701244813278,
+          "exact_accuracy": 0.029045643153526972,
+          "goal_diff_accuracy": 0.21991701244813278,
+          "fold_name": "R5_2011",
+          "fold_weight": 0.45,
+          "rows": 1446,
+          "train_rows": 77326,
+          "avg_team_goals": 2.0,
+          "avg_opp_goals": 2.0,
+          "avg_total_goals": 4.0,
+          "draw_share": 1.0,
+          "team_win_share": 0.0,
+          "score_ge5": 0.0,
+          "score_ge6": 0.0
+        }
+      ],
+      "segment_metrics": {
+        "men": {
+          "rows": 16172,
+          "weighted_awmae_p15": 4.759394990530323,
+          "unweighted_awmae_p15": 4.721972947184487,
+          "weighted_awmae_p13": 3.761797872743467,
+          "unweighted_awmae_p13": 3.735252274962956,
+          "outcome_accuracy": 0.23410833539450904,
+          "exact_accuracy": 0.04130596092010883,
+          "goal_diff_accuracy": 0.23410833539450904
+        },
+        "women": {
+          "rows": 4672,
+          "weighted_awmae_p15": 7.2826461899392685,
+          "unweighted_awmae_p15": 7.3353069976349285,
+          "weighted_awmae_p13": 5.373845481282009,
+          "unweighted_awmae_p13": 5.406072566503102,
+          "outcome_accuracy": 0.1232876712328767,
+          "exact_accuracy": 0.023544520547945206,
+          "goal_diff_accuracy": 0.1232876712328767
+        },
+        "major": {
+          "rows": 4776,
+          "weighted_awmae_p15": 5.4821336549166055,
+          "unweighted_awmae_p15": 5.582040207133831,
+          "weighted_awmae_p13": 4.2115354770752305,
+          "unweighted_awmae_p13": 4.273900195847926,
+          "outcome_accuracy": 0.19262981574539365,
+          "exact_accuracy": 0.032244556113902846,
+          "goal_diff_accuracy": 0.19262981574539365
+        },
+        "friendly": {
+          "rows": 6106,
+          "weighted_awmae_p15": 4.203485024614661,
+          "unweighted_awmae_p15": 4.203485024614661,
+          "weighted_awmae_p13": 3.3920224087188253,
+          "unweighted_awmae_p13": 3.3920224087188258,
+          "outcome_accuracy": 0.2679331804782181,
+          "exact_accuracy": 0.049459547985587944,
+          "goal_diff_accuracy": 0.2679331804782181
+        },
+        "qualifier": {
+          "rows": 8086,
+          "weighted_awmae_p15": 5.5844773593503225,
+          "unweighted_awmae_p15": 5.61605106957351,
+          "weighted_awmae_p13": 4.308562976828648,
+          "unweighted_awmae_p13": 4.3281357704826435,
+          "outcome_accuracy": 0.18624783576552065,
+          "exact_accuracy": 0.030670294335889192,
+          "goal_diff_accuracy": 0.18624783576552065
+        },
+        "low_support": {
+          "rows": 0,
+          "skipped": true
+        }
+      },
+      "distribution": {
+        "rows": 20844,
+        "avg_team_goals": 2.0,
+        "avg_opp_goals": 2.0,
+        "avg_total_goals": 4.0,
+        "draw_share": 1.0,
+        "team_win_share": 0.0,
+        "score_ge5": 0.0,
+        "score_ge6": 0.0
+      },
+      "selection_score": 5.135864945529828,
+      "acceptance": {
+        "weighted_improvement": 0.0,
+        "outcome_gain": 0.0,
+        "outcome_drop": 0.0,
+        "gd_drop": 0.0,
+        "gd_allowance": 0.006,
+        "gd_tradeoff_allowed": false,
+        "exact_drop": 0.0,
+        "fold_improvements": 0,
+        "pair_consistency_pass": true,
+        "score_ge5": 0.0,
+        "accepted": false
+      },
+      "risk_components": {
+        "outcome_penalty": 0.0,
+        "soft_gd_penalty": 0.0,
+        "exact_penalty": 0.0,
+        "recent_fold_penalty": 0.0,
+        "fold_instability_penalty": 0.008142110864178854,
+        "women_penalty": 0.0,
+        "tournament_penalty": 0.0,
+        "tail_penalty": 0.0,
+        "pair_penalty": 0.0,
+        "complexity_penalty": 0.0
+      },
+      "pair_diagnostics": {
+        "match_groups": 10422.0,
+        "reciprocal_pairs": 10422.0,
+        "pair_conflicts_corrected": 10422.0,
+        "pair_consistency_pass": 1.0
+      },
+      "calibration_diagnostics": {
+        "folds": [
+          {
+            "baseline": "static_prior"
+          },
+          {
+            "baseline": "static_prior"
+          },
+          {
+            "baseline": "static_prior"
+          },
+          {
+            "baseline": "static_prior"
+          },
+          {
+            "baseline": "static_prior"
+          }
+        ]
+      },
+      "cache_used": true
+    },
+    {
+      "config": {
+        "name": "baseline_regression_round_s50",
+        "kind": "regression_round",
+        "smoothing": 50,
+        "max_goals": 8,
+        "alpha": 0.5,
+        "gamma": 1.25,
+        "delta": 1.0,
+        "eta": 1.0,
+        "theta": 0.5,
+        "kappa": 0.5,
+        "beta": 0.25,
+        "use_poisson": true,
+        "use_empirical_prior": true,
+        "use_expert_prior": true,
+        "draw_correction": 1.0,
+        "tail_dampening": 0.93,
+        "pair_consistency": true,
+        "use_hist_features": true,
+        "gd_selector_weight": 0.0,
+        "outcome_selector_weight": 0.0,
+        "complexity": 0.0
+      },
+      "metrics": {
+        "weighted_awmae_p15": 2.80470840289421,
+        "unweighted_awmae_p15": 2.808005358978994,
+        "weighted_awmae_p13": 2.3467214196250232,
+        "unweighted_awmae_p13": 2.3487316808789442,
+        "outcome_accuracy": 0.5832721617481178,
+        "exact_accuracy": 0.09974012278452335,
+        "goal_diff_accuracy": 0.24949549478552896
+      },
+      "fold_metrics": [
+        {
+          "weighted_awmae_p15": 2.9599557933161798,
+          "unweighted_awmae_p15": 2.9718162360973106,
+          "weighted_awmae_p13": 2.4562575989225737,
+          "unweighted_awmae_p13": 2.4644871818721117,
+          "outcome_accuracy": 0.5778865534120357,
+          "exact_accuracy": 0.09501871580765908,
+          "goal_diff_accuracy": 0.2412899510509646,
+          "fold_name": "R1_2003_2005",
+          "fold_weight": 0.05,
+          "rows": 6946,
+          "train_rows": 57928,
+          "avg_team_goals": 1.5597466167578462,
+          "avg_opp_goals": 1.5597466167578462,
+          "avg_total_goals": 3.1194932335156924,
+          "draw_share": 0.2692196947883674,
+          "team_win_share": 0.3653901526058163,
+          "score_ge5": 0.0322487762741146,
+          "score_ge6": 0.02418658220558595
+        },
+        {
+          "weighted_awmae_p15": 2.94792359694175,
+          "unweighted_awmae_p15": 2.9522679791830004,
+          "weighted_awmae_p13": 2.446055102961169,
+          "unweighted_awmae_p13": 2.4485790194986814,
+          "outcome_accuracy": 0.5876851130163678,
+          "exact_accuracy": 0.09067290205248116,
+          "goal_diff_accuracy": 0.24889581709534944,
+          "fold_name": "R2_2006_2008",
+          "fold_weight": 0.1,
+          "rows": 7698,
+          "train_rows": 64874,
+          "avg_team_goals": 1.5736554949337491,
+          "avg_opp_goals": 1.5736554949337491,
+          "avg_total_goals": 3.1473109898674982,
+          "draw_share": 0.24369966224993506,
+          "team_win_share": 0.3781501688750325,
+          "score_ge5": 0.025980774227071967,
+          "score_ge6": 0.01636788776305534
+        },
+        {
+          "weighted_awmae_p15": 2.8152362128926467,
+          "unweighted_awmae_p15": 2.8297271812722897,
+          "weighted_awmae_p13": 2.3561367832839872,
+          "unweighted_awmae_p13": 2.367358452554484,
+          "outcome_accuracy": 0.5644007155635062,
+          "exact_accuracy": 0.10107334525939177,
+          "goal_diff_accuracy": 0.25402504472271914,
+          "fold_name": "R3_2009",
+          "fold_weight": 0.15,
+          "rows": 2236,
+          "train_rows": 72572,
+          "avg_team_goals": 1.512969588550984,
+          "avg_opp_goals": 1.512969588550984,
+          "avg_total_goals": 3.025939177101968,
+          "draw_share": 0.2710196779964222,
+          "team_win_share": 0.3644901610017889,
+          "score_ge5": 0.026833631484794274,
+          "score_ge6": 0.018783542039355994
+        },
+        {
+          "weighted_awmae_p15": 2.9528089194360483,
+          "unweighted_awmae_p15": 2.9677623116456036,
+          "weighted_awmae_p13": 2.449559882322682,
+          "unweighted_awmae_p13": 2.459515748789453,
+          "outcome_accuracy": 0.5782366957903098,
+          "exact_accuracy": 0.09134233518665608,
+          "goal_diff_accuracy": 0.24463860206513105,
+          "fold_name": "R4_2010",
+          "fold_weight": 0.25,
+          "rows": 2518,
+          "train_rows": 74808,
+          "avg_team_goals": 1.5814138204924544,
+          "avg_opp_goals": 1.5814138204924544,
+          "avg_total_goals": 3.1628276409849088,
+          "draw_share": 0.2652899126290707,
+          "team_win_share": 0.3673550436854647,
+          "score_ge5": 0.035742652899126294,
+          "score_ge6": 0.020651310563939634
+        },
+        {
+          "weighted_awmae_p15": 2.6698457594251486,
+          "unweighted_awmae_p15": 2.661751320341298,
+          "weighted_awmae_p13": 2.2522056473544643,
+          "unweighted_awmae_p13": 2.2459260327887436,
+          "outcome_accuracy": 0.5919778699861687,
+          "exact_accuracy": 0.10650069156293222,
+          "goal_diff_accuracy": 0.2517289073305671,
+          "fold_name": "R5_2011",
+          "fold_weight": 0.45,
+          "rows": 1446,
+          "train_rows": 77326,
+          "avg_team_goals": 1.549792531120332,
+          "avg_opp_goals": 1.549792531120332,
+          "avg_total_goals": 3.099585062240664,
+          "draw_share": 0.26141078838174275,
+          "team_win_share": 0.36929460580912865,
+          "score_ge5": 0.019363762102351315,
+          "score_ge6": 0.015214384508990318
+        }
+      ],
+      "segment_metrics": {
+        "men": {
+          "rows": 16172,
+          "weighted_awmae_p15": 2.742001298956884,
+          "unweighted_awmae_p15": 2.7555678947592113,
+          "weighted_awmae_p13": 2.3039289048206757,
+          "unweighted_awmae_p13": 2.3135609047304055,
+          "outcome_accuracy": 0.554044026712837,
+          "exact_accuracy": 0.1045016077170418,
+          "goal_diff_accuracy": 0.2634182537719515
+        },
+        "women": {
+          "rows": 4672,
+          "weighted_awmae_p15": 3.4837888236222363,
+          "unweighted_awmae_p15": 3.521990233925232,
+          "weighted_awmae_p13": 2.8188359871182485,
+          "unweighted_awmae_p13": 2.8438924453896877,
+          "outcome_accuracy": 0.6746575342465754,
+          "exact_accuracy": 0.05950342465753425,
+          "goal_diff_accuracy": 0.18835616438356165
+        },
+        "major": {
+          "rows": 4776,
+          "weighted_awmae_p15": 3.0499363964170647,
+          "unweighted_awmae_p15": 3.096886147681137,
+          "weighted_awmae_p13": 2.514924775456034,
+          "unweighted_awmae_p13": 2.5460772984883224,
+          "outcome_accuracy": 0.5749581239530989,
+          "exact_accuracy": 0.08752093802345058,
+          "goal_diff_accuracy": 0.23408710217755443
+        },
+        "friendly": {
+          "rows": 6106,
+          "weighted_awmae_p15": 2.736945972943716,
+          "unweighted_awmae_p15": 2.7369459729437167,
+          "weighted_awmae_p13": 2.3035603295505744,
+          "unweighted_awmae_p13": 2.303560329550575,
+          "outcome_accuracy": 0.5037667867671143,
+          "exact_accuracy": 0.1136586963642319,
+          "goal_diff_accuracy": 0.27906976744186046
+        },
+        "qualifier": {
+          "rows": 8086,
+          "weighted_awmae_p15": 2.8137786220873173,
+          "unweighted_awmae_p15": 2.8357160392429908,
+          "weighted_awmae_p13": 2.351365040352568,
+          "unweighted_awmae_p13": 2.3663413760480982,
+          "outcome_accuracy": 0.6319564679693297,
+          "exact_accuracy": 0.09027949542418996,
+          "goal_diff_accuracy": 0.24091021518674252
+        },
+        "low_support": {
+          "rows": 190,
+          "weighted_awmae_p15": 4.746027749038029,
+          "unweighted_awmae_p15": 4.75988366846497,
+          "weighted_awmae_p13": 3.6695397491322437,
+          "unweighted_awmae_p13": 3.6788180621163904,
+          "outcome_accuracy": 0.6842105263157895,
+          "exact_accuracy": 0.031578947368421054,
+          "goal_diff_accuracy": 0.17894736842105263
+        }
+      },
+      "distribution": {
+        "rows": 20844,
+        "avg_team_goals": 1.561792362310497,
+        "avg_opp_goals": 1.561792362310497,
+        "avg_total_goals": 3.123584724620994,
+        "draw_share": 0.2589714066398004,
+        "team_win_share": 0.3705142966800998,
+        "score_ge5": 0.028881212819036654,
+        "score_ge6": 0.019669928996353867
+      },
+      "selection_score": 2.869464032645816,
+      "acceptance": {
+        "weighted_improvement": 0.0,
+        "outcome_gain": 0.0,
+        "outcome_drop": 0.0,
+        "gd_drop": 0.0,
+        "gd_allowance": 0.006,
+        "gd_tradeoff_allowed": false,
+        "exact_drop": 0.0,
+        "fold_improvements": 0,
+        "pair_consistency_pass": true,
+        "score_ge5": 0.028881212819036654,
+        "accepted": false
+      },
+      "risk_components": {
+        "outcome_penalty": 0.0,
+        "soft_gd_penalty": 0.0,
+        "exact_penalty": 0.0,
+        "recent_fold_penalty": 0.0,
+        "fold_instability_penalty": 0.003396197780775121,
+        "women_penalty": 0.0,
+        "tournament_penalty": 0.0,
+        "tail_penalty": 0.061359431970830935,
+        "pair_penalty": 0.0,
+        "complexity_penalty": 0.0
+      },
+      "pair_diagnostics": {
+        "match_groups": 10422.0,
+        "reciprocal_pairs": 10422.0,
+        "pair_conflicts_corrected": 1671.0,
+        "pair_consistency_pass": 1.0
+      },
+      "calibration_diagnostics": {
+        "folds": [
+          {
+            "baseline": "regression_round"
+          },
+          {
+            "baseline": "regression_round"
+          },
+          {
+            "baseline": "regression_round"
+          },
+          {
+            "baseline": "regression_round"
+          },
+          {
+            "baseline": "regression_round"
+          }
+        ]
+      },
+      "cache_used": true
+    },
+    {
+      "config": {
+        "name": "joint_balanced_s50",
+        "kind": "joint",
+        "smoothing": 50,
+        "max_goals": 8,
+        "alpha": 0.5,
+        "gamma": 1.25,
+        "delta": 1.0,
+        "eta": 1.0,
+        "theta": 0.5,
+        "kappa": 0.5,
+        "beta": 0.25,
+        "use_poisson": true,
+        "use_empirical_prior": true,
+        "use_expert_prior": true,
+        "draw_correction": 0.98,
+        "tail_dampening": 0.93,
+        "pair_consistency": true,
+        "use_hist_features": true,
+        "gd_selector_weight": 0.0,
+        "outcome_selector_weight": 0.0,
+        "complexity": 0.0005
+      },
+      "metrics": {
+        "weighted_awmae_p15": 2.7829090552245495,
+        "unweighted_awmae_p15": 2.786699865559429,
+        "weighted_awmae_p13": 2.313947607510527,
+        "unweighted_awmae_p13": 2.3173345123364593,
+        "outcome_accuracy": 0.5954130681331973,
+        "exact_accuracy": 0.13139066150888984,
+        "goal_diff_accuracy": 0.22649916089237576
+      },
+      "fold_metrics": [
+        {
+          "weighted_awmae_p15": 2.969390916979343,
+          "unweighted_awmae_p15": 2.9845514866544534,
+          "weighted_awmae_p13": 2.4528671153191963,
+          "unweighted_awmae_p13": 2.4638137265672206,
+          "outcome_accuracy": 0.5896919090123812,
+          "exact_accuracy": 0.11575007198387562,
+          "goal_diff_accuracy": 0.21739130434782608,
+          "fold_name": "R1_2003_2005",
+          "fold_weight": 0.05,
+          "rows": 6946,
+          "train_rows": 57928,
+          "avg_team_goals": 1.0272099049812842,
+          "avg_opp_goals": 1.0272099049812842,
+          "avg_total_goals": 2.0544198099625683,
+          "draw_share": 0.16441117189749496,
+          "team_win_share": 0.4177944140512525,
+          "score_ge5": 0.016700259141952202,
+          "score_ge6": 0.011229484595450619
+        },
+        {
+          "weighted_awmae_p15": 2.8433754540209635,
+          "unweighted_awmae_p15": 2.8508895235350207,
+          "weighted_awmae_p13": 2.355077850182742,
+          "unweighted_awmae_p13": 2.3603778386863516,
+          "outcome_accuracy": 0.6084697323980255,
+          "exact_accuracy": 0.1267861782281112,
+          "goal_diff_accuracy": 0.23720446869316705,
+          "fold_name": "R2_2006_2008",
+          "fold_weight": 0.1,
+          "rows": 7698,
+          "train_rows": 64874,
+          "avg_team_goals": 1.0744349181605612,
+          "avg_opp_goals": 1.0744349181605612,
+          "avg_total_goals": 2.1488698363211225,
+          "draw_share": 0.14938945180566382,
+          "team_win_share": 0.4253052740971681,
+          "score_ge5": 0.011171732917640946,
+          "score_ge6": 0.00779423226812159
+        },
+        {
+          "weighted_awmae_p15": 2.8078951719278717,
+          "unweighted_awmae_p15": 2.8198867494895166,
+          "weighted_awmae_p13": 2.3401607442748635,
+          "unweighted_awmae_p13": 2.3509565964661365,
+          "outcome_accuracy": 0.5876565295169947,
+          "exact_accuracy": 0.11717352415026834,
+          "goal_diff_accuracy": 0.21288014311270126,
+          "fold_name": "R3_2009",
+          "fold_weight": 0.15,
+          "rows": 2236,
+          "train_rows": 72572,
+          "avg_team_goals": 1.0111806797853309,
+          "avg_opp_goals": 1.0111806797853309,
+          "avg_total_goals": 2.0223613595706618,
+          "draw_share": 0.15384615384615385,
+          "team_win_share": 0.4230769230769231,
+          "score_ge5": 0.013416815742397137,
+          "score_ge6": 0.011627906976744186
+        },
+        {
+          "weighted_awmae_p15": 2.9412341026110345,
+          "unweighted_awmae_p15": 2.953104748002627,
+          "weighted_awmae_p13": 2.4163420126952624,
+          "unweighted_awmae_p13": 2.4259273171823748,
+          "outcome_accuracy": 0.5996822875297856,
+          "exact_accuracy": 0.1374106433677522,
+          "goal_diff_accuracy": 0.2390786338363781,
+          "fold_name": "R4_2010",
+          "fold_weight": 0.25,
+          "rows": 2518,
+          "train_rows": 74808,
+          "avg_team_goals": 1.0675138999205718,
+          "avg_opp_goals": 1.0675138999205718,
+          "avg_total_goals": 2.1350277998411435,
+          "draw_share": 0.14694201747418587,
+          "team_win_share": 0.42652899126290705,
+          "score_ge5": 0.018268467037331215,
+          "score_ge6": 0.011914217633042097
+        },
+        {
+          "weighted_awmae_p15": 2.652464805625659,
+          "unweighted_awmae_p15": 2.646942532109155,
+          "weighted_awmae_p13": 2.223748559802773,
+          "unweighted_awmae_p13": 2.219957163053219,
+          "outcome_accuracy": 0.5933609958506224,
+          "exact_accuracy": 0.1355463347164592,
+          "goal_diff_accuracy": 0.22268326417704012,
+          "fold_name": "R5_2011",
+          "fold_weight": 0.45,
+          "rows": 1446,
+          "train_rows": 77326,
+          "avg_team_goals": 1.0228215767634854,
+          "avg_opp_goals": 1.0228215767634854,
+          "avg_total_goals": 2.045643153526971,
+          "draw_share": 0.14107883817427386,
+          "team_win_share": 0.42946058091286304,
+          "score_ge5": 0.005532503457814661,
+          "score_ge6": 0.0027662517289073307
+        }
+      ],
+      "segment_metrics": {
+        "men": {
+          "rows": 16172,
+          "weighted_awmae_p15": 2.728542910843821,
+          "unweighted_awmae_p15": 2.7438658811132717,
+          "weighted_awmae_p13": 2.282068149722713,
+          "unweighted_awmae_p13": 2.29350110814402,
+          "outcome_accuracy": 0.567524115755627,
+          "exact_accuracy": 0.1319564679693297,
+          "goal_diff_accuracy": 0.2396735097699728
+        },
+        "women": {
+          "rows": 4672,
+          "weighted_awmae_p15": 3.3647237821861813,
+          "unweighted_awmae_p15": 3.3971974695782556,
+          "weighted_awmae_p13": 2.7115417321943824,
+          "unweighted_awmae_p13": 2.7330095929316838,
+          "outcome_accuracy": 0.7029109589041096,
+          "exact_accuracy": 0.09631849315068493,
+          "goal_diff_accuracy": 0.1840753424657534
+        },
+        "major": {
+          "rows": 4776,
+          "weighted_awmae_p15": 2.9821214046932174,
+          "unweighted_awmae_p15": 3.0184563092482315,
+          "weighted_awmae_p13": 2.4505907368107254,
+          "unweighted_awmae_p13": 2.4739140152155596,
+          "outcome_accuracy": 0.6034338358458962,
+          "exact_accuracy": 0.11892797319932999,
+          "goal_diff_accuracy": 0.23073701842546063
+        },
+        "friendly": {
+          "rows": 6106,
+          "weighted_awmae_p15": 2.751673769942509,
+          "unweighted_awmae_p15": 2.7516737699425096,
+          "weighted_awmae_p13": 2.3057737053134586,
+          "unweighted_awmae_p13": 2.305773705313459,
+          "outcome_accuracy": 0.5116279069767442,
+          "exact_accuracy": 0.1342941369145103,
+          "goal_diff_accuracy": 0.25253848673435964
+        },
+        "qualifier": {
+          "rows": 8086,
+          "weighted_awmae_p15": 2.7779704720525324,
+          "unweighted_awmae_p15": 2.799143085434023,
+          "weighted_awmae_p13": 2.310775345907827,
+          "unweighted_awmae_p13": 2.3255202840502105,
+          "outcome_accuracy": 0.6470442740539204,
+          "exact_accuracy": 0.1251545881770962,
+          "goal_diff_accuracy": 0.21592876576799405
+        },
+        "low_support": {
+          "rows": 190,
+          "weighted_awmae_p15": 4.373096521797102,
+          "unweighted_awmae_p15": 4.402172117147485,
+          "weighted_awmae_p13": 3.3884958732835644,
+          "unweighted_awmae_p13": 3.409324405226281,
+          "outcome_accuracy": 0.7157894736842105,
+          "exact_accuracy": 0.05263157894736842,
+          "goal_diff_accuracy": 0.16842105263157894
+        }
+      },
+      "distribution": {
+        "rows": 20844,
+        "avg_team_goals": 1.0474956822107082,
+        "avg_opp_goals": 1.0474956822107082,
+        "avg_total_goals": 2.0949913644214164,
+        "draw_share": 0.15400115141047785,
+        "team_win_share": 0.42299942429476106,
+        "score_ge5": 0.013720974860871234,
+        "score_ge6": 0.009499136442141624
+      },
+      "selection_score": 2.799528088677143,
+      "acceptance": {
+        "weighted_improvement": 0.02179934766966074,
+        "outcome_gain": 0.012140906385079475,
+        "outcome_drop": 0.0,
+        "gd_drop": 0.022996333893153198,
+        "gd_allowance": 0.006,
+        "gd_tradeoff_allowed": false,
+        "exact_drop": 0.0,
+        "fold_improvements": 4,
+        "pair_consistency_pass": true,
+        "score_ge5": 0.013720974860871234,
+        "accepted": true
+      },
+      "risk_components": {
+        "outcome_penalty": 0.0,
+        "soft_gd_penalty": 0.0127472504198649,
+        "exact_penalty": 0.0,
+        "recent_fold_penalty": 0.0,
+        "fold_instability_penalty": 0.0033717830327287036,
+        "women_penalty": 0.0,
+        "tournament_penalty": 0.0,
+        "tail_penalty": 0.0,
+        "pair_penalty": 0.0,
+        "complexity_penalty": 0.0005
+      },
+      "pair_diagnostics": {
+        "match_groups": 10422.0,
+        "two_row_matches": 10422.0,
+        "reciprocal_pairs": 10422.0,
+        "pair_consistency_applied": 10422.0,
+        "pair_conflicts_corrected": 1445.0,
+        "pair_consistency_pass": 1.0
+      },
+      "calibration_diagnostics": {
+        "folds": [
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.2693866855468273,
+              "avg_entropy": 2.042446234320783,
+              "rows": 6946
+            },
+            "predicted_avg_total": 2.0544198099625683,
+            "predicted_draw_share": 0.16441117189749496,
+            "score_ge5": 0.016700259141952202
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.25842627929267625,
+              "avg_entropy": 2.0741231103501567,
+              "rows": 7698
+            },
+            "predicted_avg_total": 2.1488698363211225,
+            "predicted_draw_share": 0.14938945180566382,
+            "score_ge5": 0.011171732917640946
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.2704861365469522,
+              "avg_entropy": 2.027361464518166,
+              "rows": 2236
+            },
+            "predicted_avg_total": 2.0223613595706618,
+            "predicted_draw_share": 0.15384615384615385,
+            "score_ge5": 0.013416815742397137
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.25668264077414554,
+              "avg_entropy": 2.083322134394155,
+              "rows": 2518
+            },
+            "predicted_avg_total": 2.1350277998411435,
+            "predicted_draw_share": 0.14694201747418587,
+            "score_ge5": 0.018268467037331215
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.25441157830980854,
+              "avg_entropy": 2.0758155955670987,
+              "rows": 1446
+            },
+            "predicted_avg_total": 2.045643153526971,
+            "predicted_draw_share": 0.14107883817427386,
+            "score_ge5": 0.005532503457814661
+          }
+        ]
+      },
+      "cache_used": true
+    },
+    {
+      "config": {
+        "name": "joint_outcome_strong_s50",
+        "kind": "joint",
+        "smoothing": 50,
+        "max_goals": 8,
+        "alpha": 0.0,
+        "gamma": 1.75,
+        "delta": 1.0,
+        "eta": 1.0,
+        "theta": 0.5,
+        "kappa": 0.5,
+        "beta": 0.25,
+        "use_poisson": true,
+        "use_empirical_prior": true,
+        "use_expert_prior": true,
+        "draw_correction": 0.98,
+        "tail_dampening": 0.91,
+        "pair_consistency": true,
+        "use_hist_features": true,
+        "gd_selector_weight": 0.0,
+        "outcome_selector_weight": 0.02,
+        "complexity": 0.001
+      },
+      "metrics": {
+        "weighted_awmae_p15": 2.8057886032371133,
+        "unweighted_awmae_p15": 2.8118111315166168,
+        "weighted_awmae_p13": 2.3360383172324655,
+        "unweighted_awmae_p13": 2.34099150895333,
+        "outcome_accuracy": 0.5955473008474617,
+        "exact_accuracy": 0.11109883474437543,
+        "goal_diff_accuracy": 0.21188269088248662
+      },
+      "fold_metrics": [
+        {
+          "weighted_awmae_p15": 2.934969931779615,
+          "unweighted_awmae_p15": 2.9530021911471804,
+          "weighted_awmae_p13": 2.425708131236586,
+          "unweighted_awmae_p13": 2.4386199012285696,
+          "outcome_accuracy": 0.5986179095882522,
+          "exact_accuracy": 0.11344658796429599,
+          "goal_diff_accuracy": 0.217967175352721,
+          "fold_name": "R1_2003_2005",
+          "fold_weight": 0.05,
+          "rows": 6946,
+          "train_rows": 57928,
+          "avg_team_goals": 1.1983875611862942,
+          "avg_opp_goals": 1.1983875611862942,
+          "avg_total_goals": 2.3967751223725884,
+          "draw_share": 0.12266052404261446,
+          "team_win_share": 0.4386697379786928,
+          "score_ge5": 0.015260581629714944,
+          "score_ge6": 0.008926000575871005
+        },
+        {
+          "weighted_awmae_p15": 2.831112916559717,
+          "unweighted_awmae_p15": 2.8351465963962097,
+          "weighted_awmae_p13": 2.3509937062917046,
+          "unweighted_awmae_p13": 2.3537086509616616,
+          "outcome_accuracy": 0.6121070407898155,
+          "exact_accuracy": 0.1122369446609509,
+          "goal_diff_accuracy": 0.2312288906209405,
+          "fold_name": "R2_2006_2008",
+          "fold_weight": 0.1,
+          "rows": 7698,
+          "train_rows": 64874,
+          "avg_team_goals": 1.274746687451286,
+          "avg_opp_goals": 1.274746687451286,
+          "avg_total_goals": 2.549493374902572,
+          "draw_share": 0.10730059755780723,
+          "team_win_share": 0.4463497012210964,
+          "score_ge5": 0.010392309690828787,
+          "score_ge6": 0.006755001299038711
+        },
+        {
+          "weighted_awmae_p15": 2.8035999434186327,
+          "unweighted_awmae_p15": 2.820395690334006,
+          "weighted_awmae_p13": 2.3387679159204215,
+          "unweighted_awmae_p13": 2.3537680567375423,
+          "outcome_accuracy": 0.5876565295169947,
+          "exact_accuracy": 0.10465116279069768,
+          "goal_diff_accuracy": 0.21377459749552774,
+          "fold_name": "R3_2009",
+          "fold_weight": 0.15,
+          "rows": 2236,
+          "train_rows": 72572,
+          "avg_team_goals": 1.180679785330948,
+          "avg_opp_goals": 1.180679785330948,
+          "avg_total_goals": 2.361359570661896,
+          "draw_share": 0.11717352415026834,
+          "team_win_share": 0.4414132379248658,
+          "score_ge5": 0.012522361359570662,
+          "score_ge6": 0.01073345259391771
+        },
+        {
+          "weighted_awmae_p15": 2.9538153523905915,
+          "unweighted_awmae_p15": 2.961963335793601,
+          "weighted_awmae_p13": 2.4286815381384117,
+          "unweighted_awmae_p13": 2.435153634771532,
+          "outcome_accuracy": 0.6044479745830024,
+          "exact_accuracy": 0.12231930103256553,
+          "goal_diff_accuracy": 0.22716441620333597,
+          "fold_name": "R4_2010",
+          "fold_weight": 0.25,
+          "rows": 2518,
+          "train_rows": 74808,
+          "avg_team_goals": 1.2251787132644956,
+          "avg_opp_goals": 1.2251787132644956,
+          "avg_total_goals": 2.450357426528991,
+          "draw_share": 0.10563939634630659,
+          "team_win_share": 0.4471803018268467,
+          "score_ge5": 0.015885623510722795,
+          "score_ge6": 0.010325655281969817
+        },
+        {
+          "weighted_awmae_p15": 2.7042999675149293,
+          "unweighted_awmae_p15": 2.7046581662691898,
+          "weighted_awmae_p13": 2.270373262486221,
+          "unweighted_awmae_p13": 2.270746736871602,
+          "outcome_accuracy": 0.5892116182572614,
+          "exact_accuracy": 0.10650069156293222,
+          "goal_diff_accuracy": 0.19778699861687413,
+          "fold_name": "R5_2011",
+          "fold_weight": 0.45,
+          "rows": 1446,
+          "train_rows": 77326,
+          "avg_team_goals": 1.1832641770401107,
+          "avg_opp_goals": 1.1832641770401107,
+          "avg_total_goals": 2.3665283540802213,
+          "draw_share": 0.10096818810511757,
+          "team_win_share": 0.44951590594744123,
+          "score_ge5": 0.004149377593360996,
+          "score_ge6": 0.0027662517289073307
+        }
+      ],
+      "segment_metrics": {
+        "men": {
+          "rows": 16172,
+          "weighted_awmae_p15": 2.7117898287873032,
+          "unweighted_awmae_p15": 2.727264961305849,
+          "weighted_awmae_p13": 2.272459990245079,
+          "unweighted_awmae_p13": 2.2839972343002666,
+          "outcome_accuracy": 0.5734603017561217,
+          "exact_accuracy": 0.11872372000989365,
+          "goal_diff_accuracy": 0.23324264160277022
+        },
+        "women": {
+          "rows": 4672,
+          "weighted_awmae_p15": 3.370290245873498,
+          "unweighted_awmae_p15": 3.404697541966722,
+          "weighted_awmae_p13": 2.716800274173105,
+          "unweighted_awmae_p13": 2.739499521547259,
+          "outcome_accuracy": 0.7029109589041096,
+          "exact_accuracy": 0.0916095890410959,
+          "goal_diff_accuracy": 0.1836472602739726
+        },
+        "major": {
+          "rows": 4776,
+          "weighted_awmae_p15": 2.9804906845037986,
+          "unweighted_awmae_p15": 3.0266547723707338,
+          "weighted_awmae_p13": 2.4529883780076673,
+          "unweighted_awmae_p13": 2.4831031398810532,
+          "outcome_accuracy": 0.605108877721943,
+          "exact_accuracy": 0.10552763819095477,
+          "goal_diff_accuracy": 0.2231993299832496
+        },
+        "friendly": {
+          "rows": 6106,
+          "weighted_awmae_p15": 2.720713086835051,
+          "unweighted_awmae_p15": 2.7207130868350515,
+          "weighted_awmae_p13": 2.2865929021715687,
+          "unweighted_awmae_p13": 2.286592902171569,
+          "outcome_accuracy": 0.5152309204061579,
+          "exact_accuracy": 0.1225024566000655,
+          "goal_diff_accuracy": 0.2469701932525385
+        },
+        "qualifier": {
+          "rows": 8086,
+          "weighted_awmae_p15": 2.7702341240648565,
+          "unweighted_awmae_p15": 2.790663472215068,
+          "weighted_awmae_p13": 2.3066694101186553,
+          "unweighted_awmae_p13": 2.3209036756319485,
+          "outcome_accuracy": 0.6549591887212466,
+          "exact_accuracy": 0.11427158050952263,
+          "goal_diff_accuracy": 0.21246599060103882
+        },
+        "low_support": {
+          "rows": 190,
+          "weighted_awmae_p15": 4.329612193593794,
+          "unweighted_awmae_p15": 4.360193967387098,
+          "weighted_awmae_p13": 3.3622924051305345,
+          "unweighted_awmae_p13": 3.384478792688395,
+          "outcome_accuracy": 0.7157894736842105,
+          "exact_accuracy": 0.07368421052631578,
+          "goal_diff_accuracy": 0.15789473684210525
+        }
+      },
+      "distribution": {
+        "rows": 20844,
+        "avg_team_goals": 1.22687583957014,
+        "avg_opp_goals": 1.22687583957014,
+        "avg_total_goals": 2.45375167914028,
+        "draw_share": 0.11283822682786414,
+        "team_win_share": 0.4435808865860679,
+        "score_ge5": 0.01247361350988294,
+        "score_ge6": 0.008059873344847437
+      },
+      "selection_score": 2.833235847730069,
+      "acceptance": {
+        "weighted_improvement": -0.001080200342903126,
+        "outcome_gain": 0.012275139099343857,
+        "outcome_drop": 0.0,
+        "gd_drop": 0.037612803903042336,
+        "gd_allowance": 0.006,
+        "gd_tradeoff_allowed": false,
+        "exact_drop": 0.0,
+        "fold_improvements": 3,
+        "pair_consistency_pass": true,
+        "score_ge5": 0.01247361350988294,
+        "accepted": false
+      },
+      "risk_components": {
+        "outcome_penalty": 0.0,
+        "soft_gd_penalty": 0.023709602927281755,
+        "exact_penalty": 0.0,
+        "recent_fold_penalty": 0.0,
+        "fold_instability_penalty": 0.002737641565674103,
+        "women_penalty": 0.0,
+        "tournament_penalty": 0.0,
+        "tail_penalty": 0.0,
+        "pair_penalty": 0.0,
+        "complexity_penalty": 0.001
+      },
+      "pair_diagnostics": {
+        "match_groups": 10422.0,
+        "two_row_matches": 10422.0,
+        "reciprocal_pairs": 10422.0,
+        "pair_consistency_applied": 10422.0,
+        "pair_conflicts_corrected": 1641.0,
+        "pair_consistency_pass": 1.0
+      },
+      "calibration_diagnostics": {
+        "folds": [
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.225473356117869,
+              "avg_entropy": 2.1889902341245495,
+              "rows": 6946
+            },
+            "predicted_avg_total": 2.3967751223725884,
+            "predicted_draw_share": 0.12266052404261446,
+            "score_ge5": 0.015260581629714944
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.21907559294526058,
+              "avg_entropy": 2.217522791198495,
+              "rows": 7698
+            },
+            "predicted_avg_total": 2.549493374902572,
+            "predicted_draw_share": 0.10730059755780723,
+            "score_ge5": 0.010392309690828787
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.2290940417143851,
+              "avg_entropy": 2.1691025405154227,
+              "rows": 2236
+            },
+            "predicted_avg_total": 2.361359570661896,
+            "predicted_draw_share": 0.11717352415026834,
+            "score_ge5": 0.012522361359570662
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.21464684105156276,
+              "avg_entropy": 2.225721244436551,
+              "rows": 2518
+            },
+            "predicted_avg_total": 2.450357426528991,
+            "predicted_draw_share": 0.10563939634630659,
+            "score_ge5": 0.015885623510722795
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.21357295957939165,
+              "avg_entropy": 2.21613635946737,
+              "rows": 1446
+            },
+            "predicted_avg_total": 2.3665283540802213,
+            "predicted_draw_share": 0.10096818810511757,
+            "score_ge5": 0.004149377593360996
+          }
+        ]
+      },
+      "cache_used": true
+    },
+    {
+      "config": {
+        "name": "joint_gd_soft_s50",
+        "kind": "joint",
+        "smoothing": 50,
+        "max_goals": 8,
+        "alpha": 0.5,
+        "gamma": 1.2,
+        "delta": 0.8,
+        "eta": 1.2,
+        "theta": 0.5,
+        "kappa": 0.5,
+        "beta": 0.25,
+        "use_poisson": true,
+        "use_empirical_prior": true,
+        "use_expert_prior": true,
+        "draw_correction": 1.0,
+        "tail_dampening": 0.92,
+        "pair_consistency": true,
+        "use_hist_features": true,
+        "gd_selector_weight": 0.03,
+        "outcome_selector_weight": 0.0,
+        "complexity": 0.001
+      },
+      "metrics": {
+        "weighted_awmae_p15": 2.7903142177507005,
+        "unweighted_awmae_p15": 2.7907955810424436,
+        "weighted_awmae_p13": 2.319617109741459,
+        "unweighted_awmae_p13": 2.3207215093949274,
+        "outcome_accuracy": 0.5932556923320902,
+        "exact_accuracy": 0.13378933177687058,
+        "goal_diff_accuracy": 0.23113650850608372
+      },
+      "fold_metrics": [
+        {
+          "weighted_awmae_p15": 2.9718250461088016,
+          "unweighted_awmae_p15": 2.984332411920501,
+          "weighted_awmae_p13": 2.45540052744712,
+          "unweighted_awmae_p13": 2.4643536654590594,
+          "outcome_accuracy": 0.585084940973222,
+          "exact_accuracy": 0.11603800748632306,
+          "goal_diff_accuracy": 0.217967175352721,
+          "fold_name": "R1_2003_2005",
+          "fold_weight": 0.05,
+          "rows": 6946,
+          "train_rows": 57928,
+          "avg_team_goals": 1.0263460984739419,
+          "avg_opp_goals": 1.0263460984739419,
+          "avg_total_goals": 2.0526921969478837,
+          "draw_share": 0.18514252807371148,
+          "team_win_share": 0.4074287359631443,
+          "score_ge5": 0.01785200115174201,
+          "score_ge6": 0.012381226605240426
+        },
+        {
+          "weighted_awmae_p15": 2.8460432756532925,
+          "unweighted_awmae_p15": 2.852537474697674,
+          "weighted_awmae_p13": 2.3577712883366684,
+          "unweighted_awmae_p13": 2.362364705627131,
+          "outcome_accuracy": 0.6053520394907769,
+          "exact_accuracy": 0.12626656274356976,
+          "goal_diff_accuracy": 0.24084177708495713,
+          "fold_name": "R2_2006_2008",
+          "fold_weight": 0.1,
+          "rows": 7698,
+          "train_rows": 64874,
+          "avg_team_goals": 1.0691088594440115,
+          "avg_opp_goals": 1.0691088594440115,
+          "avg_total_goals": 2.138217718888023,
+          "draw_share": 0.17537022603273578,
+          "team_win_share": 0.4123148869836321,
+          "score_ge5": 0.011431540659911666,
+          "score_ge6": 0.009353078721745909
+        },
+        {
+          "weighted_awmae_p15": 2.797691993837784,
+          "unweighted_awmae_p15": 2.809224808866362,
+          "weighted_awmae_p13": 2.3330877171756974,
+          "unweighted_awmae_p13": 2.343815030270674,
+          "outcome_accuracy": 0.5876565295169947,
+          "exact_accuracy": 0.11717352415026834,
+          "goal_diff_accuracy": 0.22361359570661896,
+          "fold_name": "R3_2009",
+          "fold_weight": 0.15,
+          "rows": 2236,
+          "train_rows": 72572,
+          "avg_team_goals": 1.0080500894454383,
+          "avg_opp_goals": 1.0080500894454383,
+          "avg_total_goals": 2.0161001788908766,
+          "draw_share": 0.18246869409660108,
+          "team_win_share": 0.4087656529516995,
+          "score_ge5": 0.013416815742397137,
+          "score_ge6": 0.012522361359570662
+        },
+        {
+          "weighted_awmae_p15": 2.955919546803553,
+          "unweighted_awmae_p15": 2.965924675205174,
+          "weighted_awmae_p13": 2.425585152065121,
+          "unweighted_awmae_p13": 2.433753235719703,
+          "outcome_accuracy": 0.5957108816521048,
+          "exact_accuracy": 0.14217633042096903,
+          "goal_diff_accuracy": 0.24463860206513105,
+          "fold_name": "R4_2010",
+          "fold_weight": 0.25,
+          "rows": 2518,
+          "train_rows": 74808,
+          "avg_team_goals": 1.0702938840349483,
+          "avg_opp_goals": 1.0702938840349483,
+          "avg_total_goals": 2.1405877680698966,
+          "draw_share": 0.16838760921366164,
+          "team_win_share": 0.4158061953931692,
+          "score_ge5": 0.019062748212867357,
+          "score_ge6": 0.011914217633042097
+        },
+        {
+          "weighted_awmae_p15": 2.6632998935630563,
+          "unweighted_awmae_p15": 2.6521340507675624,
+          "weighted_awmae_p13": 2.232690019872892,
+          "unweighted_awmae_p13": 2.2250150935305206,
+          "outcome_accuracy": 0.5919778699861687,
+          "exact_accuracy": 0.13831258644536654,
+          "goal_diff_accuracy": 0.22544951590594745,
+          "fold_name": "R5_2011",
+          "fold_weight": 0.45,
+          "rows": 1446,
+          "train_rows": 77326,
+          "avg_team_goals": 1.0228215767634854,
+          "avg_opp_goals": 1.0228215767634854,
+          "avg_total_goals": 2.045643153526971,
+          "draw_share": 0.15767634854771784,
+          "team_win_share": 0.4211618257261411,
+          "score_ge5": 0.006915629322268326,
+          "score_ge6": 0.004149377593360996
+        }
+      ],
+      "segment_metrics": {
+        "men": {
+          "rows": 16172,
+          "weighted_awmae_p15": 2.7320447896309408,
+          "unweighted_awmae_p15": 2.7450963570278897,
+          "weighted_awmae_p13": 2.2850015590129695,
+          "unweighted_awmae_p13": 2.2948597840791485,
+          "outcome_accuracy": 0.5638139995053179,
+          "exact_accuracy": 0.13306950284442245,
+          "goal_diff_accuracy": 0.24424931981202078
+        },
+        "women": {
+          "rows": 4672,
+          "weighted_awmae_p15": 3.366960063951169,
+          "unweighted_awmae_p15": 3.3987412178444263,
+          "weighted_awmae_p13": 2.71392633578711,
+          "unweighted_awmae_p13": 2.7347483982322065,
+          "outcome_accuracy": 0.7011986301369864,
+          "exact_accuracy": 0.0954623287671233,
+          "goal_diff_accuracy": 0.1840753424657534
+        },
+        "major": {
+          "rows": 4776,
+          "weighted_awmae_p15": 2.996964300563549,
+          "unweighted_awmae_p15": 3.030157973803673,
+          "weighted_awmae_p13": 2.4613111828418295,
+          "unweighted_awmae_p13": 2.482758940792704,
+          "outcome_accuracy": 0.5938023450586265,
+          "exact_accuracy": 0.12185929648241206,
+          "goal_diff_accuracy": 0.2315745393634841
+        },
+        "friendly": {
+          "rows": 6106,
+          "weighted_awmae_p15": 2.7416409900259118,
+          "unweighted_awmae_p15": 2.7416409900259127,
+          "weighted_awmae_p13": 2.298583664973128,
+          "unweighted_awmae_p13": 2.298583664973129,
+          "outcome_accuracy": 0.5106452669505405,
+          "exact_accuracy": 0.13658696364231904,
+          "goal_diff_accuracy": 0.26007206026858826
+        },
+        "qualifier": {
+          "rows": 8086,
+          "weighted_awmae_p15": 2.7800356903715735,
+          "unweighted_awmae_p15": 2.801746200072467,
+          "weighted_awmae_p13": 2.3131541725442357,
+          "unweighted_awmae_p13": 2.3282453654081365,
+          "outcome_accuracy": 0.6453128864704427,
+          "exact_accuracy": 0.12367054167697254,
+          "goal_diff_accuracy": 0.2193915409349493
+        },
+        "low_support": {
+          "rows": 190,
+          "weighted_awmae_p15": 4.312845478422168,
+          "unweighted_awmae_p15": 4.340861848314534,
+          "weighted_awmae_p13": 3.3426488666143603,
+          "unweighted_awmae_p13": 3.362947784593442,
+          "outcome_accuracy": 0.7157894736842105,
+          "exact_accuracy": 0.06315789473684211,
+          "goal_diff_accuracy": 0.17894736842105263
+        }
+      },
+      "distribution": {
+        "rows": 20844,
+        "avg_team_goals": 1.045240836691614,
+        "avg_opp_goals": 1.045240836691614,
+        "avg_total_goals": 2.090481673383228,
+        "draw_share": 0.17731721358664365,
+        "team_win_share": 0.4113413932066782,
+        "score_ge5": 0.014392630972941854,
+        "score_ge6": 0.010650546919976972
+      },
+      "selection_score": 2.8039675498528687,
+      "acceptance": {
+        "weighted_improvement": 0.014394185143509652,
+        "outcome_gain": 0.009983530583972389,
+        "outcome_drop": 0.0,
+        "gd_drop": 0.01835898627944524,
+        "gd_allowance": 0.006,
+        "gd_tradeoff_allowed": false,
+        "exact_drop": 0.0,
+        "fold_improvements": 3,
+        "pair_consistency_pass": true,
+        "score_ge5": 0.014392630972941854,
+        "accepted": false
+      },
+      "risk_components": {
+        "outcome_penalty": 0.0,
+        "soft_gd_penalty": 0.009269239709583928,
+        "exact_penalty": 0.0,
+        "recent_fold_penalty": 0.0,
+        "fold_instability_penalty": 0.0033840923925839814,
+        "women_penalty": 0.0,
+        "tournament_penalty": 0.0,
+        "tail_penalty": 0.0,
+        "pair_penalty": 0.0,
+        "complexity_penalty": 0.001
+      },
+      "pair_diagnostics": {
+        "match_groups": 10422.0,
+        "two_row_matches": 10422.0,
+        "reciprocal_pairs": 10422.0,
+        "pair_consistency_applied": 10422.0,
+        "pair_conflicts_corrected": 1439.0,
+        "pair_consistency_pass": 1.0
+      },
+      "calibration_diagnostics": {
+        "folds": [
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.27058064170251367,
+              "avg_entropy": 2.041868469389243,
+              "rows": 6946
+            },
+            "predicted_avg_total": 2.0526921969478837,
+            "predicted_draw_share": 0.18514252807371148,
+            "score_ge5": 0.01785200115174201
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.26038634861243815,
+              "avg_entropy": 2.0716353288860607,
+              "rows": 7698
+            },
+            "predicted_avg_total": 2.138217718888023,
+            "predicted_draw_share": 0.17537022603273578,
+            "score_ge5": 0.011431540659911666
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.2724710957241652,
+              "avg_entropy": 2.0252202516914086,
+              "rows": 2236
+            },
+            "predicted_avg_total": 2.0161001788908766,
+            "predicted_draw_share": 0.18246869409660108,
+            "score_ge5": 0.013416815742397137
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.25911054996229327,
+              "avg_entropy": 2.0795388497564455,
+              "rows": 2518
+            },
+            "predicted_avg_total": 2.1405877680698966,
+            "predicted_draw_share": 0.16838760921366164,
+            "score_ge5": 0.019062748212867357
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.25615041067147726,
+              "avg_entropy": 2.074865695594465,
+              "rows": 1446
+            },
+            "predicted_avg_total": 2.045643153526971,
+            "predicted_draw_share": 0.15767634854771784,
+            "score_ge5": 0.006915629322268326
+          }
+        ]
+      },
+      "cache_used": true
+    },
+    {
+      "config": {
+        "name": "joint_draw_off_s50",
+        "kind": "joint",
+        "smoothing": 50,
+        "max_goals": 8,
+        "alpha": 0.5,
+        "gamma": 1.25,
+        "delta": 1.0,
+        "eta": 1.0,
+        "theta": 0.5,
+        "kappa": 0.5,
+        "beta": 0.25,
+        "use_poisson": true,
+        "use_empirical_prior": true,
+        "use_expert_prior": true,
+        "draw_correction": 1.0,
+        "tail_dampening": 1.0,
+        "pair_consistency": true,
+        "use_hist_features": true,
+        "gd_selector_weight": 0.0,
+        "outcome_selector_weight": 0.0,
+        "complexity": 0.001
+      },
+      "metrics": {
+        "weighted_awmae_p15": 2.782903142793254,
+        "unweighted_awmae_p15": 2.7864842090065594,
+        "weighted_awmae_p13": 2.3138675218530365,
+        "unweighted_awmae_p13": 2.3170699682714893,
+        "outcome_accuracy": 0.5956367626124072,
+        "exact_accuracy": 0.13117769443988342,
+        "goal_diff_accuracy": 0.22677920126808365
+      },
+      "fold_metrics": [
+        {
+          "weighted_awmae_p15": 2.971327447717241,
+          "unweighted_awmae_p15": 2.9865659555546777,
+          "weighted_awmae_p13": 2.4544083490019517,
+          "unweighted_awmae_p13": 2.4653886630034942,
+          "outcome_accuracy": 0.5894039735099338,
+          "exact_accuracy": 0.11546213648142815,
+          "goal_diff_accuracy": 0.217967175352721,
+          "fold_name": "R1_2003_2005",
+          "fold_weight": 0.05,
+          "rows": 6946,
+          "train_rows": 57928,
+          "avg_team_goals": 1.0279297437374029,
+          "avg_opp_goals": 1.0279297437374029,
+          "avg_total_goals": 2.0558594874748057,
+          "draw_share": 0.16613878491217968,
+          "team_win_share": 0.41693060754391015,
+          "score_ge5": 0.017276130146847105,
+          "score_ge6": 0.011229484595450619
+        },
+        {
+          "weighted_awmae_p15": 2.838262283733492,
+          "unweighted_awmae_p15": 2.845241309450566,
+          "weighted_awmae_p13": 2.351586478670734,
+          "unweighted_awmae_p13": 2.356376151613414,
+          "outcome_accuracy": 0.6095089633671084,
+          "exact_accuracy": 0.1267861782281112,
+          "goal_diff_accuracy": 0.23746427643543777,
+          "fold_name": "R2_2006_2008",
+          "fold_weight": 0.1,
+          "rows": 7698,
+          "train_rows": 64874,
+          "avg_team_goals": 1.076903091712133,
+          "avg_opp_goals": 1.076903091712133,
+          "avg_total_goals": 2.153806183424266,
+          "draw_share": 0.1543257989088075,
+          "team_win_share": 0.42283710054559626,
+          "score_ge5": 0.011431540659911666,
+          "score_ge6": 0.00805404001039231
+        },
+        {
+          "weighted_awmae_p15": 2.8034002312686246,
+          "unweighted_awmae_p15": 2.815544968323867,
+          "weighted_awmae_p13": 2.3369419537893052,
+          "unweighted_awmae_p13": 2.3478094604310815,
+          "outcome_accuracy": 0.5885509838998211,
+          "exact_accuracy": 0.11717352415026834,
+          "goal_diff_accuracy": 0.21288014311270126,
+          "fold_name": "R3_2009",
+          "fold_weight": 0.15,
+          "rows": 2236,
+          "train_rows": 72572,
+          "avg_team_goals": 1.0102862254025045,
+          "avg_opp_goals": 1.0102862254025045,
+          "avg_total_goals": 2.020572450805009,
+          "draw_share": 0.1547406082289803,
+          "team_win_share": 0.42262969588550986,
+          "score_ge5": 0.013416815742397137,
+          "score_ge6": 0.012522361359570662
+        },
+        {
+          "weighted_awmae_p15": 2.9434940009156554,
+          "unweighted_awmae_p15": 2.954940888644147,
+          "weighted_awmae_p13": 2.4178161867268684,
+          "unweighted_awmae_p13": 2.427069294608594,
+          "outcome_accuracy": 0.5996822875297856,
+          "exact_accuracy": 0.13661636219221604,
+          "goal_diff_accuracy": 0.2374900714853058,
+          "fold_name": "R4_2010",
+          "fold_weight": 0.25,
+          "rows": 2518,
+          "train_rows": 74808,
+          "avg_team_goals": 1.0722795869737887,
+          "avg_opp_goals": 1.0722795869737887,
+          "avg_total_goals": 2.1445591739475773,
+          "draw_share": 0.14932486100079428,
+          "team_win_share": 0.4253375694996029,
+          "score_ge5": 0.019062748212867357,
+          "score_ge6": 0.011914217633042097
+        },
+        {
+          "weighted_awmae_p15": 2.6536155713663,
+          "unweighted_awmae_p15": 2.647921806387004,
+          "weighted_awmae_p13": 2.2244291484127836,
+          "unweighted_awmae_p13": 2.220498171651472,
+          "outcome_accuracy": 0.5933609958506224,
+          "exact_accuracy": 0.1355463347164592,
+          "goal_diff_accuracy": 0.22406639004149378,
+          "fold_name": "R5_2011",
+          "fold_weight": 0.45,
+          "rows": 1446,
+          "train_rows": 77326,
+          "avg_team_goals": 1.024204702627939,
+          "avg_opp_goals": 1.024204702627939,
+          "avg_total_goals": 2.048409405255878,
+          "draw_share": 0.14107883817427386,
+          "team_win_share": 0.42946058091286304,
+          "score_ge5": 0.005532503457814661,
+          "score_ge6": 0.0027662517289073307
+        }
+      ],
+      "segment_metrics": {
+        "men": {
+          "rows": 16172,
+          "weighted_awmae_p15": 2.7243994163218836,
+          "unweighted_awmae_p15": 2.739578580668897,
+          "weighted_awmae_p13": 2.278959546634245,
+          "unweighted_awmae_p13": 2.2902534443028033,
+          "outcome_accuracy": 0.5683898095473658,
+          "exact_accuracy": 0.13257482067771456,
+          "goal_diff_accuracy": 0.24078654464506555
+        },
+        "women": {
+          "rows": 4672,
+          "weighted_awmae_p15": 3.372245612635315,
+          "unweighted_awmae_p15": 3.4049410444498265,
+          "weighted_awmae_p13": 2.717746859371141,
+          "unweighted_awmae_p13": 2.7392759761630496,
+          "outcome_accuracy": 0.7016267123287672,
+          "exact_accuracy": 0.09332191780821918,
+          "goal_diff_accuracy": 0.18107876712328766
+        },
+        "major": {
+          "rows": 4776,
+          "weighted_awmae_p15": 2.9828545960151107,
+          "unweighted_awmae_p15": 3.0188400977601564,
+          "weighted_awmae_p13": 2.451129910050583,
+          "unweighted_awmae_p13": 2.4742060695121766,
+          "outcome_accuracy": 0.6030150753768844,
+          "exact_accuracy": 0.11892797319932999,
+          "goal_diff_accuracy": 0.2315745393634841
+        },
+        "friendly": {
+          "rows": 6106,
+          "weighted_awmae_p15": 2.746973794067734,
+          "unweighted_awmae_p15": 2.7469737940677343,
+          "weighted_awmae_p13": 2.301965331323456,
+          "unweighted_awmae_p13": 2.3019653313234563,
+          "outcome_accuracy": 0.5132656403537504,
+          "exact_accuracy": 0.13527677694071405,
+          "goal_diff_accuracy": 0.2538486734359646
+        },
+        "qualifier": {
+          "rows": 8086,
+          "weighted_awmae_p15": 2.7756255183839946,
+          "unweighted_awmae_p15": 2.797049433196859,
+          "weighted_awmae_p13": 2.3092926772244935,
+          "unweighted_awmae_p13": 2.3242047903534844,
+          "outcome_accuracy": 0.6472916151372743,
+          "exact_accuracy": 0.12465990601038833,
+          "goal_diff_accuracy": 0.2156814246846401
+        },
+        "low_support": {
+          "rows": 190,
+          "weighted_awmae_p15": 4.397796293522254,
+          "unweighted_awmae_p15": 4.424863907430367,
+          "weighted_awmae_p13": 3.4049973842511583,
+          "unweighted_awmae_p13": 3.4244844168407202,
+          "outcome_accuracy": 0.7157894736842105,
+          "exact_accuracy": 0.05263157894736842,
+          "goal_diff_accuracy": 0.16842105263157894
+        }
+      },
+      "distribution": {
+        "rows": 20844,
+        "avg_team_goals": 1.049222797927461,
+        "avg_opp_goals": 1.049222797927461,
+        "avg_total_goals": 2.098445595854922,
+        "draw_share": 0.15678372673191326,
+        "team_win_share": 0.4216081366340434,
+        "score_ge5": 0.014104778353483017,
+        "score_ge6": 0.009691038188447515
+      },
+      "selection_score": 2.79983498521179,
+      "acceptance": {
+        "weighted_improvement": 0.021805260100956403,
+        "outcome_gain": 0.012364600864289366,
+        "outcome_drop": 0.0,
+        "gd_drop": 0.022716293517445307,
+        "gd_allowance": 0.006,
+        "gd_tradeoff_allowed": false,
+        "exact_drop": 0.0,
+        "fold_improvements": 4,
+        "pair_consistency_pass": true,
+        "score_ge5": 0.014104778353483017,
+        "accepted": true
+      },
+      "risk_components": {
+        "outcome_penalty": 0.0,
+        "soft_gd_penalty": 0.012537220138083982,
+        "exact_penalty": 0.0,
+        "recent_fold_penalty": 0.0,
+        "fold_instability_penalty": 0.003394622280452326,
+        "women_penalty": 0.0,
+        "tournament_penalty": 0.0,
+        "tail_penalty": 0.0,
+        "pair_penalty": 0.0,
+        "complexity_penalty": 0.001
+      },
+      "pair_diagnostics": {
+        "match_groups": 10422.0,
+        "two_row_matches": 10422.0,
+        "reciprocal_pairs": 10422.0,
+        "pair_consistency_applied": 10422.0,
+        "pair_conflicts_corrected": 1462.0,
+        "pair_consistency_pass": 1.0
+      },
+      "calibration_diagnostics": {
+        "folds": [
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.26961428378279256,
+              "avg_entropy": 2.044389768955291,
+              "rows": 6946
+            },
+            "predicted_avg_total": 2.0558594874748057,
+            "predicted_draw_share": 0.16613878491217968,
+            "score_ge5": 0.017276130146847105
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.2581922288470823,
+              "avg_entropy": 2.0763831165902293,
+              "rows": 7698
+            },
+            "predicted_avg_total": 2.153806183424266,
+            "predicted_draw_share": 0.1543257989088075,
+            "score_ge5": 0.011431540659911666
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.27044844844696037,
+              "avg_entropy": 2.029234487597713,
+              "rows": 2236
+            },
+            "predicted_avg_total": 2.020572450805009,
+            "predicted_draw_share": 0.1547406082289803,
+            "score_ge5": 0.013416815742397137
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.25650524584126455,
+              "avg_entropy": 2.0857701051796003,
+              "rows": 2518
+            },
+            "predicted_avg_total": 2.1445591739475773,
+            "predicted_draw_share": 0.14932486100079428,
+            "score_ge5": 0.019062748212867357
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.25446949115169204,
+              "avg_entropy": 2.0785325433811415,
+              "rows": 1446
+            },
+            "predicted_avg_total": 2.048409405255878,
+            "predicted_draw_share": 0.14107883817427386,
+            "score_ge5": 0.005532503457814661
+          }
+        ]
+      },
+      "cache_used": true
+    },
+    {
+      "config": {
+        "name": "joint_tail_safe_s50",
+        "kind": "joint",
+        "smoothing": 50,
+        "max_goals": 8,
+        "alpha": 0.5,
+        "gamma": 1.25,
+        "delta": 1.0,
+        "eta": 1.0,
+        "theta": 0.5,
+        "kappa": 0.5,
+        "beta": 0.25,
+        "use_poisson": true,
+        "use_empirical_prior": true,
+        "use_expert_prior": true,
+        "draw_correction": 1.0,
+        "tail_dampening": 0.86,
+        "pair_consistency": true,
+        "use_hist_features": true,
+        "gd_selector_weight": 0.0,
+        "outcome_selector_weight": 0.0,
+        "complexity": 0.0012
+      },
+      "metrics": {
+        "weighted_awmae_p15": 2.782045431234611,
+        "unweighted_awmae_p15": 2.7857853877488497,
+        "weighted_awmae_p13": 2.313505550054077,
+        "unweighted_awmae_p13": 2.31685882459433,
+        "outcome_accuracy": 0.5955025944549832,
+        "exact_accuracy": 0.13138699214397095,
+        "goal_diff_accuracy": 0.22718706926605522
+      },
+      "fold_metrics": [
+        {
+          "weighted_awmae_p15": 2.9726608291041456,
+          "unweighted_awmae_p15": 2.987544287811483,
+          "weighted_awmae_p13": 2.4552493999977063,
+          "unweighted_awmae_p13": 2.4659739735144917,
+          "outcome_accuracy": 0.5894039735099338,
+          "exact_accuracy": 0.11488626547653326,
+          "goal_diff_accuracy": 0.21739130434782608,
+          "fold_name": "R1_2003_2005",
+          "fold_weight": 0.05,
+          "rows": 6946,
+          "train_rows": 57928,
+          "avg_team_goals": 1.0247624532104809,
+          "avg_opp_goals": 1.0247624532104809,
+          "avg_total_goals": 2.0495249064209617,
+          "draw_share": 0.16613878491217968,
+          "team_win_share": 0.41693060754391015,
+          "score_ge5": 0.015836452634609848,
+          "score_ge6": 0.010653613590555715
+        },
+        {
+          "weighted_awmae_p15": 2.838036417332506,
+          "unweighted_awmae_p15": 2.844700839597634,
+          "weighted_awmae_p13": 2.3513246484238826,
+          "unweighted_awmae_p13": 2.355887943496267,
+          "outcome_accuracy": 0.6095089633671084,
+          "exact_accuracy": 0.12782540919719407,
+          "goal_diff_accuracy": 0.23850350740452064,
+          "fold_name": "R2_2006_2008",
+          "fold_weight": 0.1,
+          "rows": 7698,
+          "train_rows": 64874,
+          "avg_team_goals": 1.0727461678358015,
+          "avg_opp_goals": 1.0727461678358015,
+          "avg_total_goals": 2.145492335671603,
+          "draw_share": 0.1543257989088075,
+          "team_win_share": 0.42283710054559626,
+          "score_ge5": 0.010652117433099507,
+          "score_ge6": 0.00779423226812159
+        },
+        {
+          "weighted_awmae_p15": 2.8056957373468165,
+          "unweighted_awmae_p15": 2.819073648480562,
+          "weighted_awmae_p13": 2.3381957059679386,
+          "unweighted_awmae_p13": 2.349993442430607,
+          "outcome_accuracy": 0.5876565295169947,
+          "exact_accuracy": 0.11806797853309481,
+          "goal_diff_accuracy": 0.21377459749552774,
+          "fold_name": "R3_2009",
+          "fold_weight": 0.15,
+          "rows": 2236,
+          "train_rows": 72572,
+          "avg_team_goals": 1.009391771019678,
+          "avg_opp_goals": 1.009391771019678,
+          "avg_total_goals": 2.018783542039356,
+          "draw_share": 0.1556350626118068,
+          "team_win_share": 0.4221824686940966,
+          "score_ge5": 0.013416815742397137,
+          "score_ge6": 0.01073345259391771
+        },
+        {
+          "weighted_awmae_p15": 2.9406182234878346,
+          "unweighted_awmae_p15": 2.9523130253770713,
+          "weighted_awmae_p13": 2.416120535941907,
+          "unweighted_awmae_p13": 2.425602375356352,
+          "outcome_accuracy": 0.5996822875297856,
+          "exact_accuracy": 0.13661636219221604,
+          "goal_diff_accuracy": 0.23828435266084194,
+          "fold_name": "R4_2010",
+          "fold_weight": 0.25,
+          "rows": 2518,
+          "train_rows": 74808,
+          "avg_team_goals": 1.0675138999205718,
+          "avg_opp_goals": 1.0675138999205718,
+          "avg_total_goals": 2.1350277998411435,
+          "draw_share": 0.14932486100079428,
+          "team_win_share": 0.4253375694996029,
+          "score_ge5": 0.016679904686258934,
+          "score_ge6": 0.011914217633042097
+        },
+        {
+          "weighted_awmae_p15": 2.6524440701603815,
+          "unweighted_awmae_p15": 2.6466639684047992,
+          "weighted_awmae_p13": 2.224113611846969,
+          "unweighted_awmae_p13": 2.2201593808117774,
+          "outcome_accuracy": 0.5933609958506224,
+          "exact_accuracy": 0.1355463347164592,
+          "goal_diff_accuracy": 0.22406639004149378,
+          "fold_name": "R5_2011",
+          "fold_weight": 0.45,
+          "rows": 1446,
+          "train_rows": 77326,
+          "avg_team_goals": 1.0214384508990317,
+          "avg_opp_goals": 1.0214384508990317,
+          "avg_total_goals": 2.0428769017980635,
+          "draw_share": 0.14107883817427386,
+          "team_win_share": 0.42946058091286304,
+          "score_ge5": 0.005532503457814661,
+          "score_ge6": 0.0027662517289073307
+        }
+      ],
+      "segment_metrics": {
+        "men": {
+          "rows": 16172,
+          "weighted_awmae_p15": 2.7265569130465845,
+          "unweighted_awmae_p15": 2.7416897147621877,
+          "weighted_awmae_p13": 2.2805454977082866,
+          "unweighted_awmae_p13": 2.2917950562537106,
+          "outcome_accuracy": 0.5682661390056889,
+          "exact_accuracy": 0.13220380905268364,
+          "goal_diff_accuracy": 0.2405392035617116
+        },
+        "women": {
+          "rows": 4672,
+          "weighted_awmae_p15": 3.3661486013462985,
+          "unweighted_awmae_p15": 3.398080606473114,
+          "weighted_awmae_p13": 2.7130933807119924,
+          "unweighted_awmae_p13": 2.7341552958918798,
+          "outcome_accuracy": 0.7016267123287672,
+          "exact_accuracy": 0.0958904109589041,
+          "goal_diff_accuracy": 0.1836472602739726
+        },
+        "major": {
+          "rows": 4776,
+          "weighted_awmae_p15": 2.9861324857609572,
+          "unweighted_awmae_p15": 3.0225164115821985,
+          "weighted_awmae_p13": 2.4533124634296706,
+          "unweighted_awmae_p13": 2.476587125875859,
+          "outcome_accuracy": 0.6030150753768844,
+          "exact_accuracy": 0.11934673366834171,
+          "goal_diff_accuracy": 0.2319932998324958
+        },
+        "friendly": {
+          "rows": 6106,
+          "weighted_awmae_p15": 2.747105883157326,
+          "unweighted_awmae_p15": 2.7471058831573267,
+          "weighted_awmae_p13": 2.3021000178626188,
+          "unweighted_awmae_p13": 2.302100017862619,
+          "outcome_accuracy": 0.5129380936783492,
+          "exact_accuracy": 0.13527677694071405,
+          "goal_diff_accuracy": 0.2538486734359646
+        },
+        "qualifier": {
+          "rows": 8086,
+          "weighted_awmae_p15": 2.7755746677261506,
+          "unweighted_awmae_p15": 2.796662464532922,
+          "weighted_awmae_p13": 2.309312176515256,
+          "unweighted_awmae_p13": 2.3240345691675675,
+          "outcome_accuracy": 0.6472916151372743,
+          "exact_accuracy": 0.12490724709374228,
+          "goal_diff_accuracy": 0.21642344793470195
+        },
+        "low_support": {
+          "rows": 190,
+          "weighted_awmae_p15": 4.314420922104303,
+          "unweighted_awmae_p15": 4.341617596506635,
+          "weighted_awmae_p13": 3.3516524035803963,
+          "unweighted_awmae_p13": 3.3710880650583,
+          "outcome_accuracy": 0.7157894736842105,
+          "exact_accuracy": 0.05263157894736842,
+          "goal_diff_accuracy": 0.16842105263157894
+        }
+      },
+      "distribution": {
+        "rows": 20844,
+        "avg_team_goals": 1.045768566493955,
+        "avg_opp_goals": 1.045768566493955,
+        "avg_total_goals": 2.09153713298791,
+        "draw_share": 0.15687967760506621,
+        "team_win_share": 0.4215601611974669,
+        "score_ge5": 0.013049318748800614,
+        "score_ge6": 0.009211283822682787
+      },
+      "selection_score": 2.7988725305861832,
+      "acceptance": {
+        "weighted_improvement": 0.022662971659599407,
+        "outcome_gain": 0.012230432706865413,
+        "outcome_drop": 0.0,
+        "gd_drop": 0.022308425519473735,
+        "gd_allowance": 0.006,
+        "gd_tradeoff_allowed": false,
+        "exact_drop": 0.0,
+        "fold_improvements": 4,
+        "pair_consistency_pass": true,
+        "score_ge5": 0.013049318748800614,
+        "accepted": true
+      },
+      "risk_components": {
+        "outcome_penalty": 0.0,
+        "soft_gd_penalty": 0.012231319139605302,
+        "exact_penalty": 0.0,
+        "recent_fold_penalty": 0.0,
+        "fold_instability_penalty": 0.0033957802119670157,
+        "women_penalty": 0.0,
+        "tournament_penalty": 0.0,
+        "tail_penalty": 0.0,
+        "pair_penalty": 0.0,
+        "complexity_penalty": 0.0012
+      },
+      "pair_diagnostics": {
+        "match_groups": 10422.0,
+        "two_row_matches": 10422.0,
+        "reciprocal_pairs": 10422.0,
+        "pair_consistency_applied": 10422.0,
+        "pair_conflicts_corrected": 1457.0,
+        "pair_consistency_pass": 1.0
+      },
+      "calibration_diagnostics": {
+        "folds": [
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.269961312692324,
+              "avg_entropy": 2.0410033664322746,
+              "rows": 6946
+            },
+            "predicted_avg_total": 2.0495249064209617,
+            "predicted_draw_share": 0.16613878491217968,
+            "score_ge5": 0.015836452634609848
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.2588970694843135,
+              "avg_entropy": 2.0725495046641473,
+              "rows": 7698
+            },
+            "predicted_avg_total": 2.145492335671603,
+            "predicted_draw_share": 0.1543257989088075,
+            "score_ge5": 0.010652117433099507
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.2708958957833871,
+              "avg_entropy": 2.0262643840587704,
+              "rows": 2236
+            },
+            "predicted_avg_total": 2.018783542039356,
+            "predicted_draw_share": 0.1556350626118068,
+            "score_ge5": 0.013416815742397137
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.25720246197420543,
+              "avg_entropy": 2.081777490692196,
+              "rows": 2518
+            },
+            "predicted_avg_total": 2.1350277998411435,
+            "predicted_draw_share": 0.14932486100079428,
+            "score_ge5": 0.016679904686258934
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.25539998720825624,
+              "avg_entropy": 2.0743387429250637,
+              "rows": 1446
+            },
+            "predicted_avg_total": 2.0428769017980635,
+            "predicted_draw_share": 0.14107883817427386,
+            "score_ge5": 0.005532503457814661
+          }
+        ]
+      },
+      "cache_used": true
+    },
+    {
+      "config": {
+        "name": "joint_no_expert_prior_s50",
+        "kind": "joint",
+        "smoothing": 50,
+        "max_goals": 8,
+        "alpha": 0.5,
+        "gamma": 1.25,
+        "delta": 1.0,
+        "eta": 1.0,
+        "theta": 0.5,
+        "kappa": 0.5,
+        "beta": 0.25,
+        "use_poisson": true,
+        "use_empirical_prior": true,
+        "use_expert_prior": false,
+        "draw_correction": 1.0,
+        "tail_dampening": 0.93,
+        "pair_consistency": true,
+        "use_hist_features": true,
+        "gd_selector_weight": 0.0,
+        "outcome_selector_weight": 0.0,
+        "complexity": 0.0015
+      },
+      "metrics": {
+        "weighted_awmae_p15": 2.7809568990604734,
+        "unweighted_awmae_p15": 2.7845051795115277,
+        "weighted_awmae_p13": 2.3131423293146773,
+        "unweighted_awmae_p13": 2.316314220268173,
+        "outcome_accuracy": 0.5957305532204817,
+        "exact_accuracy": 0.13075090371296938,
+        "goal_diff_accuracy": 0.22652976902396071
+      },
+      "fold_metrics": [
+        {
+          "weighted_awmae_p15": 2.970934967039209,
+          "unweighted_awmae_p15": 2.9856535821056576,
+          "weighted_awmae_p13": 2.4542890616054813,
+          "unweighted_awmae_p13": 2.4648542343220634,
+          "outcome_accuracy": 0.5891160380074864,
+          "exact_accuracy": 0.11459832997408581,
+          "goal_diff_accuracy": 0.217967175352721,
+          "fold_name": "R1_2003_2005",
+          "fold_weight": 0.05,
+          "rows": 6946,
+          "train_rows": 57928,
+          "avg_team_goals": 1.0264900662251655,
+          "avg_opp_goals": 1.0264900662251655,
+          "avg_total_goals": 2.052980132450331,
+          "draw_share": 0.16671465591707457,
+          "team_win_share": 0.4166426720414627,
+          "score_ge5": 0.0161243881370573,
+          "score_ge6": 0.010653613590555715
+        },
+        {
+          "weighted_awmae_p15": 2.841090115022507,
+          "unweighted_awmae_p15": 2.8482916426572626,
+          "weighted_awmae_p13": 2.3534698011396262,
+          "unweighted_awmae_p13": 2.3584846061125937,
+          "outcome_accuracy": 0.6092491556248376,
+          "exact_accuracy": 0.12756560145492335,
+          "goal_diff_accuracy": 0.23824369966224992,
+          "fold_name": "R2_2006_2008",
+          "fold_weight": 0.1,
+          "rows": 7698,
+          "train_rows": 64874,
+          "avg_team_goals": 1.07222655235126,
+          "avg_opp_goals": 1.07222655235126,
+          "avg_total_goals": 2.14445310470252,
+          "draw_share": 0.15406599116653677,
+          "team_win_share": 0.42296700441673163,
+          "score_ge5": 0.010652117433099507,
+          "score_ge6": 0.00779423226812159
+        },
+        {
+          "weighted_awmae_p15": 2.796723143688209,
+          "unweighted_awmae_p15": 2.8097549488627136,
+          "weighted_awmae_p13": 2.3317017281655157,
+          "unweighted_awmae_p13": 2.343155366891808,
+          "outcome_accuracy": 0.5894454382826476,
+          "exact_accuracy": 0.11806797853309481,
+          "goal_diff_accuracy": 0.2146690518783542,
+          "fold_name": "R3_2009",
+          "fold_weight": 0.15,
+          "rows": 2236,
+          "train_rows": 72572,
+          "avg_team_goals": 1.0107334525939178,
+          "avg_opp_goals": 1.0107334525939178,
+          "avg_total_goals": 2.0214669051878356,
+          "draw_share": 0.1556350626118068,
+          "team_win_share": 0.4221824686940966,
+          "score_ge5": 0.013416815742397137,
+          "score_ge6": 0.01073345259391771
+        },
+        {
+          "weighted_awmae_p15": 2.944802647672282,
+          "unweighted_awmae_p15": 2.956053632670885,
+          "weighted_awmae_p13": 2.420009837543336,
+          "unweighted_awmae_p13": 2.4289795113099113,
+          "outcome_accuracy": 0.5996822875297856,
+          "exact_accuracy": 0.13423351866560762,
+          "goal_diff_accuracy": 0.23510722795869737,
+          "fold_name": "R4_2010",
+          "fold_weight": 0.25,
+          "rows": 2518,
+          "train_rows": 74808,
+          "avg_team_goals": 1.0643367752184274,
+          "avg_opp_goals": 1.0643367752184274,
+          "avg_total_goals": 2.128673550436855,
+          "draw_share": 0.14694201747418587,
+          "team_win_share": 0.42652899126290705,
+          "score_ge5": 0.017474185861795076,
+          "score_ge6": 0.011914217633042097
+        },
+        {
+          "weighted_awmae_p15": 2.6502044571888006,
+          "unweighted_awmae_p15": 2.6442593014297566,
+          "weighted_awmae_p13": 2.2229403944661756,
+          "unweighted_awmae_p13": 2.218899700176803,
+          "outcome_accuracy": 0.5933609958506224,
+          "exact_accuracy": 0.1355463347164592,
+          "goal_diff_accuracy": 0.22406639004149378,
+          "fold_name": "R5_2011",
+          "fold_weight": 0.45,
+          "rows": 1446,
+          "train_rows": 77326,
+          "avg_team_goals": 1.0214384508990317,
+          "avg_opp_goals": 1.0214384508990317,
+          "avg_total_goals": 2.0428769017980635,
+          "draw_share": 0.14107883817427386,
+          "team_win_share": 0.42946058091286304,
+          "score_ge5": 0.004149377593360996,
+          "score_ge6": 0.0027662517289073307
+        }
+      ],
+      "segment_metrics": {
+        "men": {
+          "rows": 16172,
+          "weighted_awmae_p15": 2.7266751818863755,
+          "unweighted_awmae_p15": 2.742100262174476,
+          "weighted_awmae_p13": 2.280720177889406,
+          "unweighted_awmae_p13": 2.2921833622682817,
+          "outcome_accuracy": 0.5681424684640118,
+          "exact_accuracy": 0.1319564679693297,
+          "goal_diff_accuracy": 0.24066287410338857
+        },
+        "women": {
+          "rows": 4672,
+          "weighted_awmae_p15": 3.3654171361452696,
+          "unweighted_awmae_p15": 3.396576941178429,
+          "weighted_awmae_p13": 2.7131458679489273,
+          "unweighted_awmae_p13": 2.7335825023881095,
+          "outcome_accuracy": 0.702054794520548,
+          "exact_accuracy": 0.09460616438356165,
+          "goal_diff_accuracy": 0.18236301369863014
+        },
+        "major": {
+          "rows": 4776,
+          "weighted_awmae_p15": 2.9848039516070584,
+          "unweighted_awmae_p15": 3.0208953669881007,
+          "weighted_awmae_p13": 2.452463415215694,
+          "unweighted_awmae_p13": 2.4755381611696157,
+          "outcome_accuracy": 0.6030150753768844,
+          "exact_accuracy": 0.11892797319932999,
+          "goal_diff_accuracy": 0.2315745393634841
+        },
+        "friendly": {
+          "rows": 6106,
+          "weighted_awmae_p15": 2.7498115058572954,
+          "unweighted_awmae_p15": 2.7498115058572963,
+          "weighted_awmae_p13": 2.304075009346524,
+          "unweighted_awmae_p13": 2.3040750093465245,
+          "outcome_accuracy": 0.512610547002948,
+          "exact_accuracy": 0.13527677694071405,
+          "goal_diff_accuracy": 0.2538486734359646
+        },
+        "qualifier": {
+          "rows": 8086,
+          "weighted_awmae_p15": 2.7743764120163648,
+          "unweighted_awmae_p15": 2.7953760685532325,
+          "weighted_awmae_p13": 2.3087708472303,
+          "unweighted_awmae_p13": 2.3234203008796324,
+          "outcome_accuracy": 0.6472916151372743,
+          "exact_accuracy": 0.12416522384368044,
+          "goal_diff_accuracy": 0.21642344793470195
+        },
+        "low_support": {
+          "rows": 190,
+          "weighted_awmae_p15": 4.340085709297297,
+          "unweighted_awmae_p15": 4.370489280711896,
+          "weighted_awmae_p13": 3.3708833888130174,
+          "unweighted_awmae_p13": 3.3924573760585246,
+          "outcome_accuracy": 0.7157894736842105,
+          "exact_accuracy": 0.05263157894736842,
+          "goal_diff_accuracy": 0.16842105263157894
+        }
+      },
+      "distribution": {
+        "rows": 20844,
+        "avg_team_goals": 1.0459124928036845,
+        "avg_opp_goals": 1.0459124928036845,
+        "avg_total_goals": 2.091824985607369,
+        "draw_share": 0.15668777585876031,
+        "team_win_share": 0.4216561120706198,
+        "score_ge5": 0.01314526962195356,
+        "score_ge6": 0.009211283822682787
+      },
+      "selection_score": 2.798628483519963,
+      "acceptance": {
+        "weighted_improvement": 0.02375150383373681,
+        "outcome_gain": 0.012458391472363939,
+        "outcome_drop": 0.0,
+        "gd_drop": 0.022965725761568245,
+        "gd_allowance": 0.006,
+        "gd_tradeoff_allowed": false,
+        "exact_drop": 0.0,
+        "fold_improvements": 4,
+        "pair_consistency_pass": true,
+        "score_ge5": 0.01314526962195356,
+        "accepted": true
+      },
+      "risk_components": {
+        "outcome_penalty": 0.0,
+        "soft_gd_penalty": 0.012724294321176185,
+        "exact_penalty": 0.0,
+        "recent_fold_penalty": 0.0,
+        "fold_instability_penalty": 0.0034472901383133985,
+        "women_penalty": 0.0,
+        "tournament_penalty": 0.0,
+        "tail_penalty": 0.0,
+        "pair_penalty": 0.0,
+        "complexity_penalty": 0.0015
+      },
+      "pair_diagnostics": {
+        "match_groups": 10422.0,
+        "two_row_matches": 10422.0,
+        "reciprocal_pairs": 10422.0,
+        "pair_consistency_applied": 10422.0,
+        "pair_conflicts_corrected": 1450.0,
+        "pair_consistency_pass": 1.0
+      },
+      "calibration_diagnostics": {
+        "folds": [
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.26935958593219517,
+              "avg_entropy": 2.0434601845675866,
+              "rows": 6946
+            },
+            "predicted_avg_total": 2.052980132450331,
+            "predicted_draw_share": 0.16671465591707457,
+            "score_ge5": 0.0161243881370573
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.25857865079131,
+              "avg_entropy": 2.0749186639451027,
+              "rows": 7698
+            },
+            "predicted_avg_total": 2.14445310470252,
+            "predicted_draw_share": 0.15406599116653677,
+            "score_ge5": 0.010652117433099507
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.2701790584150983,
+              "avg_entropy": 2.028342680855628,
+              "rows": 2236
+            },
+            "predicted_avg_total": 2.0214669051878356,
+            "predicted_draw_share": 0.1556350626118068,
+            "score_ge5": 0.013416815742397137
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.2569058120079646,
+              "avg_entropy": 2.0842656920226004,
+              "rows": 2518
+            },
+            "predicted_avg_total": 2.128673550436855,
+            "predicted_draw_share": 0.14694201747418587,
+            "score_ge5": 0.017474185861795076
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.255014444210399,
+              "avg_entropy": 2.0762084888371493,
+              "rows": 1446
+            },
+            "predicted_avg_total": 2.0428769017980635,
+            "predicted_draw_share": 0.14107883817427386,
+            "score_ge5": 0.004149377593360996
+          }
+        ]
+      },
+      "cache_used": true
+    },
+    {
+      "config": {
+        "name": "joint_hist_off_s50",
+        "kind": "joint",
+        "smoothing": 50,
+        "max_goals": 8,
+        "alpha": 0.5,
+        "gamma": 1.25,
+        "delta": 1.0,
+        "eta": 1.0,
+        "theta": 0.5,
+        "kappa": 0.5,
+        "beta": 0.25,
+        "use_poisson": true,
+        "use_empirical_prior": true,
+        "use_expert_prior": true,
+        "draw_correction": 1.0,
+        "tail_dampening": 0.93,
+        "pair_consistency": true,
+        "use_hist_features": false,
+        "gd_selector_weight": 0.0,
+        "outcome_selector_weight": 0.0,
+        "complexity": 0.002
+      },
+      "metrics": {
+        "weighted_awmae_p15": 2.7805659046005875,
+        "unweighted_awmae_p15": 2.784064664100776,
+        "weighted_awmae_p13": 2.315039507968896,
+        "unweighted_awmae_p13": 2.317978128871157,
+        "outcome_accuracy": 0.5981288722940151,
+        "exact_accuracy": 0.12282740394043742,
+        "goal_diff_accuracy": 0.21618178999103244
+      },
+      "fold_metrics": [
+        {
+          "weighted_awmae_p15": 2.9679913837996454,
+          "unweighted_awmae_p15": 2.9809489271959153,
+          "weighted_awmae_p13": 2.4543380108014285,
+          "unweighted_awmae_p13": 2.463824021731254,
+          "outcome_accuracy": 0.5911315865246185,
+          "exact_accuracy": 0.10855168442268932,
+          "goal_diff_accuracy": 0.21508782032824647,
+          "fold_name": "R1_2003_2005",
+          "fold_weight": 0.05,
+          "rows": 6946,
+          "train_rows": 57928,
+          "avg_team_goals": 1.0298013245033113,
+          "avg_opp_goals": 1.0298013245033113,
+          "avg_total_goals": 2.0596026490066226,
+          "draw_share": 0.16613878491217968,
+          "team_win_share": 0.41693060754391015,
+          "score_ge5": 0.017276130146847105,
+          "score_ge6": 0.01151742009789807
+        },
+        {
+          "weighted_awmae_p15": 2.8464436265220012,
+          "unweighted_awmae_p15": 2.8546574694868285,
+          "weighted_awmae_p13": 2.3592286079336646,
+          "unweighted_awmae_p13": 2.364818922817471,
+          "outcome_accuracy": 0.6089893478825669,
+          "exact_accuracy": 0.12314886983632112,
+          "goal_diff_accuracy": 0.23434658352818913,
+          "fold_name": "R2_2006_2008",
+          "fold_weight": 0.1,
+          "rows": 7698,
+          "train_rows": 64874,
+          "avg_team_goals": 1.0840478046245778,
+          "avg_opp_goals": 1.0840478046245778,
+          "avg_total_goals": 2.1680956092491557,
+          "draw_share": 0.14861002857885164,
+          "team_win_share": 0.4256949857105742,
+          "score_ge5": 0.011171732917640946,
+          "score_ge6": 0.009093270979475189
+        },
+        {
+          "weighted_awmae_p15": 2.7637769503813376,
+          "unweighted_awmae_p15": 2.775438917361957,
+          "weighted_awmae_p13": 2.304345345464758,
+          "unweighted_awmae_p13": 2.3148595015051785,
+          "outcome_accuracy": 0.5992844364937389,
+          "exact_accuracy": 0.12343470483005367,
+          "goal_diff_accuracy": 0.22003577817531306,
+          "fold_name": "R3_2009",
+          "fold_weight": 0.15,
+          "rows": 2236,
+          "train_rows": 72572,
+          "avg_team_goals": 1.0411449016100178,
+          "avg_opp_goals": 1.0411449016100178,
+          "avg_total_goals": 2.0822898032200357,
+          "draw_share": 0.16010733452593917,
+          "team_win_share": 0.4199463327370304,
+          "score_ge5": 0.014311270125223614,
+          "score_ge6": 0.011627906976744186
+        },
+        {
+          "weighted_awmae_p15": 2.9702459287744154,
+          "unweighted_awmae_p15": 2.9805888798476494,
+          "weighted_awmae_p13": 2.4419130918260863,
+          "unweighted_awmae_p13": 2.450164032978753,
+          "outcome_accuracy": 0.5980937251787133,
+          "exact_accuracy": 0.12470214455917394,
+          "goal_diff_accuracy": 0.2200158856235107,
+          "fold_name": "R4_2010",
+          "fold_weight": 0.25,
+          "rows": 2518,
+          "train_rows": 74808,
+          "avg_team_goals": 1.0726767275615567,
+          "avg_opp_goals": 1.0726767275615567,
+          "avg_total_goals": 2.1453534551231135,
+          "draw_share": 0.15091342335186655,
+          "team_win_share": 0.42454328832406674,
+          "score_ge5": 0.015885623510722795,
+          "score_ge6": 0.012708498808578236
+        },
+        {
+          "weighted_awmae_p15": 2.645319884461335,
+          "unweighted_awmae_p15": 2.6401964738357595,
+          "weighted_awmae_p13": 2.2228214930204957,
+          "unweighted_awmae_p13": 2.2189668934052937,
+          "outcome_accuracy": 0.5961272475795297,
+          "exact_accuracy": 0.12309820193637622,
+          "goal_diff_accuracy": 0.20885200553250347,
+          "fold_name": "R5_2011",
+          "fold_weight": 0.45,
+          "rows": 1446,
+          "train_rows": 77326,
+          "avg_team_goals": 1.0214384508990317,
+          "avg_opp_goals": 1.0214384508990317,
+          "avg_total_goals": 2.0428769017980635,
+          "draw_share": 0.1590594744121715,
+          "team_win_share": 0.42047026279391425,
+          "score_ge5": 0.0027662517289073307,
+          "score_ge6": 0.0
+        }
+      ],
+      "segment_metrics": {
+        "men": {
+          "rows": 16172,
+          "weighted_awmae_p15": 2.730712766443288,
+          "unweighted_awmae_p15": 2.745011166181035,
+          "weighted_awmae_p13": 2.28497668722376,
+          "unweighted_awmae_p13": 2.295581690571756,
+          "outcome_accuracy": 0.5692555033391046,
+          "exact_accuracy": 0.12725698738560476,
+          "goal_diff_accuracy": 0.23757111056146427
+        },
+        "women": {
+          "rows": 4672,
+          "weighted_awmae_p15": 3.352959916803123,
+          "unweighted_awmae_p15": 3.3855377116389036,
+          "weighted_awmae_p13": 2.707001375104658,
+          "unweighted_awmae_p13": 2.7286206402264273,
+          "outcome_accuracy": 0.7054794520547946,
+          "exact_accuracy": 0.08818493150684932,
+          "goal_diff_accuracy": 0.1720890410958904
+        },
+        "major": {
+          "rows": 4776,
+          "weighted_awmae_p15": 2.978822678906051,
+          "unweighted_awmae_p15": 3.0136671818098133,
+          "weighted_awmae_p13": 2.449589796473469,
+          "unweighted_awmae_p13": 2.471899896532252,
+          "outcome_accuracy": 0.605108877721943,
+          "exact_accuracy": 0.11767169179229481,
+          "goal_diff_accuracy": 0.22487437185929648
+        },
+        "friendly": {
+          "rows": 6106,
+          "weighted_awmae_p15": 2.75181046559803,
+          "unweighted_awmae_p15": 2.7518104655980307,
+          "weighted_awmae_p13": 2.3063584099048575,
+          "unweighted_awmae_p13": 2.3063584099048584,
+          "outcome_accuracy": 0.512610547002948,
+          "exact_accuracy": 0.1326564035375041,
+          "goal_diff_accuracy": 0.25122830003275465
+        },
+        "qualifier": {
+          "rows": 8086,
+          "weighted_awmae_p15": 2.7758051343777974,
+          "unweighted_awmae_p15": 2.795705688946215,
+          "weighted_awmae_p13": 2.3123526494755584,
+          "unweighted_awmae_p13": 2.3262498801412996,
+          "outcome_accuracy": 0.6497650259708138,
+          "exact_accuracy": 0.11427158050952263,
+          "goal_diff_accuracy": 0.21122928518426912
+        },
+        "low_support": {
+          "rows": 0,
+          "skipped": true
+        }
+      },
+      "distribution": {
+        "rows": 20844,
+        "avg_team_goals": 1.0556515064287084,
+        "avg_opp_goals": 1.0556515064287084,
+        "avg_total_goals": 2.111303012857417,
+        "draw_share": 0.15668777585876031,
+        "team_win_share": 0.4216561120706198,
+        "score_ge5": 0.013529073114565342,
+        "score_ge6": 0.009978890807906352
+      },
+      "selection_score": 2.806776257334372,
+      "acceptance": {
+        "weighted_improvement": 0.024142498293622694,
+        "outcome_gain": 0.014856710545897323,
+        "outcome_drop": 0.0,
+        "gd_drop": 0.033313704794496524,
+        "gd_allowance": 0.006,
+        "gd_tradeoff_allowed": false,
+        "exact_drop": 0.0,
+        "fold_improvements": 3,
+        "pair_consistency_pass": true,
+        "score_ge5": 0.013529073114565342,
+        "accepted": false
+      },
+      "risk_components": {
+        "outcome_penalty": 0.0,
+        "soft_gd_penalty": 0.020485278595872396,
+        "exact_penalty": 0.0,
+        "recent_fold_penalty": 0.0,
+        "fold_instability_penalty": 0.003725074137912127,
+        "women_penalty": 0.0,
+        "tournament_penalty": 0.0,
+        "tail_penalty": 0.0,
+        "pair_penalty": 0.0,
+        "complexity_penalty": 0.002
+      },
+      "pair_diagnostics": {
+        "match_groups": 10422.0,
+        "two_row_matches": 10422.0,
+        "reciprocal_pairs": 10422.0,
+        "pair_consistency_applied": 10422.0,
+        "pair_conflicts_corrected": 1580.0,
+        "pair_consistency_pass": 1.0
+      },
+      "calibration_diagnostics": {
+        "folds": [
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.2691252373259685,
+              "avg_entropy": 2.0420514448201943,
+              "rows": 6946
+            },
+            "predicted_avg_total": 2.0596026490066226,
+            "predicted_draw_share": 0.16613878491217968,
+            "score_ge5": 0.017276130146847105
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.25611187320287837,
+              "avg_entropy": 2.0718821244239582,
+              "rows": 7698
+            },
+            "predicted_avg_total": 2.1680956092491557,
+            "predicted_draw_share": 0.14861002857885164,
+            "score_ge5": 0.011171732917640946
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.2658676688751851,
+              "avg_entropy": 2.0296137324347803,
+              "rows": 2236
+            },
+            "predicted_avg_total": 2.0822898032200357,
+            "predicted_draw_share": 0.16010733452593917,
+            "score_ge5": 0.014311270125223614
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.25968214345124024,
+              "avg_entropy": 2.063426605160568,
+              "rows": 2518
+            },
+            "predicted_avg_total": 2.1453534551231135,
+            "predicted_draw_share": 0.15091342335186655,
+            "score_ge5": 0.015885623510722795
+          },
+          {
+            "backend": "hgb",
+            "matrix": {
+              "avg_selected_joint_prob": 0.25393601699764645,
+              "avg_entropy": 2.0654945083094987,
+              "rows": 1446
+            },
+            "predicted_avg_total": 2.0428769017980635,
+            "predicted_draw_share": 0.1590594744121715,
+            "score_ge5": 0.0027662517289073307
+          }
+        ]
+      },
+      "cache_used": false
+    }
+  ],
+  "stress": {
+    "config": {
+      "name": "joint_no_expert_prior_s50",
+      "kind": "joint",
+      "smoothing": 50,
+      "max_goals": 8,
+      "alpha": 0.5,
+      "gamma": 1.25,
+      "delta": 1.0,
+      "eta": 1.0,
+      "theta": 0.5,
+      "kappa": 0.5,
+      "beta": 0.25,
+      "use_poisson": true,
+      "use_empirical_prior": true,
+      "use_expert_prior": false,
+      "draw_correction": 1.0,
+      "tail_dampening": 0.93,
+      "pair_consistency": true,
+      "use_hist_features": true,
+      "gd_selector_weight": 0.0,
+      "outcome_selector_weight": 0.0,
+      "complexity": 0.0015
+    },
+    "metrics": {
+      "weighted_awmae_p15": 2.858110659399514,
+      "unweighted_awmae_p15": 2.867851677539544,
+      "weighted_awmae_p13": 2.367512457276294,
+      "unweighted_awmae_p13": 2.374998485029062,
+      "outcome_accuracy": 0.5984021483656122,
+      "exact_accuracy": 0.12618414512402554,
+      "goal_diff_accuracy": 0.2282645336767833
+    },
+    "fold_metrics": [
+      {
+        "weighted_awmae_p15": 2.8999794347222623,
+        "unweighted_awmae_p15": 2.9118945948335506,
+        "weighted_awmae_p13": 2.3984959397618426,
+        "unweighted_awmae_p13": 2.4072004638955766,
+        "outcome_accuracy": 0.597006332757628,
+        "exact_accuracy": 0.12377662636729994,
+        "goal_diff_accuracy": 0.22654001151410477,
+        "fold_name": "H1_2003_end",
+        "fold_weight": 0.3333333333333333,
+        "rows": 20844,
+        "train_rows": 57928,
+        "avg_team_goals": 1.0272020725388602,
+        "avg_opp_goals": 1.0272020725388602,
+        "avg_total_goals": 2.0544041450777204,
+        "draw_share": 0.1558242180003838,
+        "team_win_share": 0.4220878909998081,
+        "score_ge5": 0.01247361350988294,
+        "score_ge6": 0.007867971598541548
+      },
+      {
+        "weighted_awmae_p15": 2.839764374928642,
+        "unweighted_awmae_p15": 2.8472626936539744,
+        "weighted_awmae_p13": 2.3529532034317815,
+        "unweighted_awmae_p13": 2.3587594229685878,
+        "outcome_accuracy": 0.6036839833069506,
+        "exact_accuracy": 0.12735645416606706,
+        "goal_diff_accuracy": 0.23341487983882572,
+        "fold_name": "H2_2006_end",
+        "fold_weight": 0.3333333333333333,
+        "rows": 13898,
+        "train_rows": 64874,
+        "avg_team_goals": 1.0776370700820261,
+        "avg_opp_goals": 1.0776370700820261,
+        "avg_total_goals": 2.1552741401640523,
+        "draw_share": 0.1544107065764858,
+        "team_win_share": 0.4227946467117571,
+        "score_ge5": 0.011080731040437473,
+        "score_ge6": 0.007914807886026767
+      },
+      {
+        "weighted_awmae_p15": 2.8345881685476377,
+        "unweighted_awmae_p15": 2.844397744131107,
+        "weighted_awmae_p13": 2.351088228635258,
+        "unweighted_awmae_p13": 2.359035568223022,
+        "outcome_accuracy": 0.594516129032258,
+        "exact_accuracy": 0.12741935483870967,
+        "goal_diff_accuracy": 0.22483870967741937,
+        "fold_name": "H3_2009_end",
+        "fold_weight": 0.3333333333333333,
+        "rows": 6200,
+        "train_rows": 72572,
+        "avg_team_goals": 1.0461290322580645,
+        "avg_opp_goals": 1.0461290322580645,
+        "avg_total_goals": 2.092258064516129,
+        "draw_share": 0.14870967741935484,
+        "team_win_share": 0.4256451612903226,
+        "score_ge5": 0.011935483870967743,
+        "score_ge6": 0.008064516129032258
+      }
+    ],
+    "segment_metrics": {
+      "men": {
+        "rows": 31334,
+        "weighted_awmae_p15": 2.7091571463783857,
+        "unweighted_awmae_p15": 2.7238006207501324,
+        "weighted_awmae_p13": 2.267788843615039,
+        "unweighted_awmae_p13": 2.278748997050048,
+        "outcome_accuracy": 0.567243250143614,
+        "exact_accuracy": 0.1334652454203102,
+        "goal_diff_accuracy": 0.2413352907384949
+      },
+      "women": {
+        "rows": 9608,
+        "weighted_awmae_p15": 3.3508803747018474,
+        "unweighted_awmae_p15": 3.3882686525959276,
+        "weighted_awmae_p13": 2.6999527996567587,
+        "unweighted_awmae_p13": 2.724960905419792,
+        "outcome_accuracy": 0.7021232306411324,
+        "exact_accuracy": 0.09970857618651124,
+        "goal_diff_accuracy": 0.18713572023313904
+      },
+      "major": {
+        "rows": 9732,
+        "weighted_awmae_p15": 2.9687183671286426,
+        "unweighted_awmae_p15": 3.0117855804619618,
+        "weighted_awmae_p13": 2.438033181969947,
+        "unweighted_awmae_p13": 2.465824825278223,
+        "outcome_accuracy": 0.6078914919852034,
+        "exact_accuracy": 0.12289354706124127,
+        "goal_diff_accuracy": 0.2332511302918208
+      },
+      "friendly": {
+        "rows": 12118,
+        "weighted_awmae_p15": 2.73488945297796,
+        "unweighted_awmae_p15": 2.734889452977961,
+        "weighted_awmae_p13": 2.2918734741479665,
+        "unweighted_awmae_p13": 2.2918734741479665,
+        "outcome_accuracy": 0.5157616768443638,
+        "exact_accuracy": 0.13863673873576499,
+        "goal_diff_accuracy": 0.2553226605050338
+      },
+      "qualifier": {
+        "rows": 15460,
+        "weighted_awmae_p15": 2.7860600612198794,
+        "unweighted_awmae_p15": 2.807042012884357,
+        "weighted_awmae_p13": 2.315354935285596,
+        "unweighted_awmae_p13": 2.3301076409833983,
+        "outcome_accuracy": 0.6477360931435964,
+        "exact_accuracy": 0.12315653298835705,
+        "goal_diff_accuracy": 0.21461836998706338
+      },
+      "low_support": {
+        "rows": 586,
+        "weighted_awmae_p15": 3.9225059879472552,
+        "unweighted_awmae_p15": 3.9403575911624715,
+        "weighted_awmae_p13": 3.089759885754175,
+        "unweighted_awmae_p13": 3.10345797702545,
+        "outcome_accuracy": 0.6655290102389079,
+        "exact_accuracy": 0.08532423208191127,
+        "goal_diff_accuracy": 0.16382252559726962
+      }
+    },
+    "distribution": {
+      "rows": 40942,
+      "avg_team_goals": 1.047188705974305,
+      "avg_opp_goals": 1.047188705974305,
+      "avg_total_goals": 2.09437741194861,
+      "draw_share": 0.1542670118704509,
+      "team_win_share": 0.42286649406477456,
+      "score_ge5": 0.011919300473841044,
+      "score_ge6": 0.007913633921156758
+    },
+    "selection_score": 2.891804076355137,
+    "acceptance": {
+      "weighted_improvement": -0.053402256505303836,
+      "outcome_gain": 0.015129986617494429,
+      "outcome_drop": 0.0,
+      "gd_drop": 0.021230961108745672,
+      "gd_allowance": 0.006,
+      "gd_tradeoff_allowed": false,
+      "exact_drop": 0.0,
+      "fold_improvements": 2,
+      "pair_consistency_pass": true,
+      "score_ge5": 0.011919300473841044,
+      "accepted": false
+    },
+    "risk_components": {
+      "outcome_penalty": 0.0,
+      "soft_gd_penalty": 0.011423220831559253,
+      "exact_penalty": 0.0,
+      "recent_fold_penalty": 0.019879765653427535,
+      "fold_instability_penalty": 0.0008904304706358942,
+      "women_penalty": 0.0,
+      "tournament_penalty": 0.0,
+      "tail_penalty": 0.0,
+      "pair_penalty": 0.0,
+      "complexity_penalty": 0.0015
+    },
+    "pair_diagnostics": {
+      "match_groups": 20471.0,
+      "two_row_matches": 20471.0,
+      "reciprocal_pairs": 20471.0,
+      "pair_consistency_applied": 20471.0,
+      "pair_conflicts_corrected": 2864.0,
+      "pair_consistency_pass": 1.0
+    },
+    "calibration_diagnostics": {
+      "folds": [
+        {
+          "backend": "hgb",
+          "matrix": {
+            "avg_selected_joint_prob": 0.26586848571905597,
+            "avg_entropy": 2.0532950381491797,
+            "rows": 20844
+          },
+          "predicted_avg_total": 2.0544041450777204,
+          "predicted_draw_share": 0.1558242180003838,
+          "score_ge5": 0.01247361350988294
+        },
+        {
+          "backend": "hgb",
+          "matrix": {
+            "avg_selected_joint_prob": 0.25858413018958737,
+            "avg_entropy": 2.076878626127698,
+            "rows": 13898
+          },
+          "predicted_avg_total": 2.1552741401640523,
+          "predicted_draw_share": 0.1544107065764858,
+          "score_ge5": 0.011080731040437473
+        },
+        {
+          "backend": "hgb",
+          "matrix": {
+            "avg_selected_joint_prob": 0.25954781063063825,
+            "avg_entropy": 2.0640195319019816,
+            "rows": 6200
+          },
+          "predicted_avg_total": 2.092258064516129,
+          "predicted_draw_share": 0.14870967741935484,
+          "score_ge5": 0.011935483870967743
+        }
+      ]
+    },
+    "cache_used": false
+  },
+  "old_fold_comparison": {
+    "config": {
+      "name": "joint_no_expert_prior_s50",
+      "kind": "joint",
+      "smoothing": 50,
+      "max_goals": 8,
+      "alpha": 0.5,
+      "gamma": 1.25,
+      "delta": 1.0,
+      "eta": 1.0,
+      "theta": 0.5,
+      "kappa": 0.5,
+      "beta": 0.25,
+      "use_poisson": true,
+      "use_empirical_prior": true,
+      "use_expert_prior": false,
+      "draw_correction": 1.0,
+      "tail_dampening": 0.93,
+      "pair_consistency": true,
+      "use_hist_features": true,
+      "gd_selector_weight": 0.0,
+      "outcome_selector_weight": 0.0,
+      "complexity": 0.0015
+    },
+    "metrics": {
+      "weighted_awmae_p15": 2.7637886756673096,
+      "unweighted_awmae_p15": 2.7663796738021595,
+      "weighted_awmae_p13": 2.3017831611636153,
+      "unweighted_awmae_p13": 2.3040832632430863,
+      "outcome_accuracy": 0.5958577076666767,
+      "exact_accuracy": 0.13075319542561412,
+      "goal_diff_accuracy": 0.2259377763860166
+    },
+    "fold_metrics": [
+      {
+        "weighted_awmae_p15": 2.970934967039209,
+        "unweighted_awmae_p15": 2.9856535821056576,
+        "weighted_awmae_p13": 2.4542890616054813,
+        "unweighted_awmae_p13": 2.4648542343220634,
+        "outcome_accuracy": 0.5891160380074864,
+        "exact_accuracy": 0.11459832997408581,
+        "goal_diff_accuracy": 0.217967175352721,
+        "fold_name": "OLD_F1_2003_2005",
+        "fold_weight": 0.05,
+        "rows": 6946,
+        "train_rows": 57928,
+        "avg_team_goals": 1.0264900662251655,
+        "avg_opp_goals": 1.0264900662251655,
+        "avg_total_goals": 2.052980132450331,
+        "draw_share": 0.16671465591707457,
+        "team_win_share": 0.4166426720414627,
+        "score_ge5": 0.0161243881370573,
+        "score_ge6": 0.010653613590555715
+      },
+      {
+        "weighted_awmae_p15": 2.841090115022507,
+        "unweighted_awmae_p15": 2.8482916426572626,
+        "weighted_awmae_p13": 2.3534698011396262,
+        "unweighted_awmae_p13": 2.3584846061125937,
+        "outcome_accuracy": 0.6092491556248376,
+        "exact_accuracy": 0.12756560145492335,
+        "goal_diff_accuracy": 0.23824369966224992,
+        "fold_name": "OLD_F2_2006_2008",
+        "fold_weight": 0.15,
+        "rows": 7698,
+        "train_rows": 64874,
+        "avg_team_goals": 1.07222655235126,
+        "avg_opp_goals": 1.07222655235126,
+        "avg_total_goals": 2.14445310470252,
+        "draw_share": 0.15406599116653677,
+        "team_win_share": 0.42296700441673163,
+        "score_ge5": 0.010652117433099507,
+        "score_ge6": 0.00779423226812159
+      },
+      {
+        "weighted_awmae_p15": 2.8799206048919097,
+        "unweighted_awmae_p15": 2.892411991944697,
+        "weighted_awmae_p13": 2.3819268022643643,
+        "unweighted_awmae_p13": 2.392060035072309,
+        "outcome_accuracy": 0.5944467816575515,
+        "exact_accuracy": 0.12705090450147244,
+        "goal_diff_accuracy": 0.22423222549432056,
+        "fold_name": "OLD_F3_2009_2010",
+        "fold_weight": 0.3,
+        "rows": 4754,
+        "train_rows": 72572,
+        "avg_team_goals": 1.046487168700042,
+        "avg_opp_goals": 1.046487168700042,
+        "avg_total_goals": 2.092974337400084,
+        "draw_share": 0.15271350441733278,
+        "team_win_share": 0.4236432477913336,
+        "score_ge5": 0.01430374421539756,
+        "score_ge6": 0.010096760622633571
+      },
+      {
+        "weighted_awmae_p15": 2.6502044571888006,
+        "unweighted_awmae_p15": 2.6442593014297566,
+        "weighted_awmae_p13": 2.2229403944661756,
+        "unweighted_awmae_p13": 2.218899700176803,
+        "outcome_accuracy": 0.5933609958506224,
+        "exact_accuracy": 0.1355463347164592,
+        "goal_diff_accuracy": 0.22406639004149378,
+        "fold_name": "OLD_F4_2011",
+        "fold_weight": 0.5,
+        "rows": 1446,
+        "train_rows": 77326,
+        "avg_team_goals": 1.0214384508990317,
+        "avg_opp_goals": 1.0214384508990317,
+        "avg_total_goals": 2.0428769017980635,
+        "draw_share": 0.14107883817427386,
+        "team_win_share": 0.42946058091286304,
+        "score_ge5": 0.004149377593360996,
+        "score_ge6": 0.0027662517289073307
+      }
+    ],
+    "segment_metrics": {
+      "men": {
+        "rows": 16172,
+        "weighted_awmae_p15": 2.72775889911807,
+        "unweighted_awmae_p15": 2.743116613492648,
+        "weighted_awmae_p13": 2.2814447202780177,
+        "unweighted_awmae_p13": 2.292820972464731,
+        "outcome_accuracy": 0.567771456838981,
+        "exact_accuracy": 0.13232747959436061,
+        "goal_diff_accuracy": 0.2405392035617116
+      },
+      "women": {
+        "rows": 4672,
+        "weighted_awmae_p15": 3.367249819262288,
+        "unweighted_awmae_p15": 3.398318179077679,
+        "weighted_awmae_p13": 2.714566620822516,
+        "unweighted_awmae_p13": 2.7348830513582163,
+        "outcome_accuracy": 0.7029109589041096,
+        "exact_accuracy": 0.09375,
+        "goal_diff_accuracy": 0.1815068493150685
+      },
+      "major": {
+        "rows": 4776,
+        "weighted_awmae_p15": 2.988532920364383,
+        "unweighted_awmae_p15": 3.025626901914158,
+        "weighted_awmae_p13": 2.4552452928006354,
+        "unweighted_awmae_p13": 2.4788065417542264,
+        "outcome_accuracy": 0.6030150753768844,
+        "exact_accuracy": 0.11892797319932999,
+        "goal_diff_accuracy": 0.23031825795644892
+      },
+      "friendly": {
+        "rows": 6106,
+        "weighted_awmae_p15": 2.7497156110481797,
+        "unweighted_awmae_p15": 2.74971561104818,
+        "weighted_awmae_p13": 2.3042055800675234,
+        "unweighted_awmae_p13": 2.304205580067524,
+        "outcome_accuracy": 0.5116279069767442,
+        "exact_accuracy": 0.13527677694071405,
+        "goal_diff_accuracy": 0.2538486734359646
+      },
+      "qualifier": {
+        "rows": 8086,
+        "weighted_awmae_p15": 2.7773402855785214,
+        "unweighted_awmae_p15": 2.7980594069509315,
+        "weighted_awmae_p13": 2.3109626112153867,
+        "unweighted_awmae_p13": 2.3253887084632106,
+        "outcome_accuracy": 0.6475389562206283,
+        "exact_accuracy": 0.12391788276032649,
+        "goal_diff_accuracy": 0.21592876576799405
+      },
+      "low_support": {
+        "rows": 194,
+        "weighted_awmae_p15": 4.266770600689185,
+        "unweighted_awmae_p15": 4.296887415980531,
+        "weighted_awmae_p13": 3.3149344881434244,
+        "unweighted_awmae_p13": 3.336323207665327,
+        "outcome_accuracy": 0.7216494845360825,
+        "exact_accuracy": 0.061855670103092786,
+        "goal_diff_accuracy": 0.16494845360824742
+      }
+    },
+    "distribution": {
+      "rows": 20844,
+      "avg_team_goals": 1.047591633083861,
+      "avg_opp_goals": 1.047591633083861,
+      "avg_total_goals": 2.095183266167722,
+      "draw_share": 0.1570715793513721,
+      "team_win_share": 0.42146421032431397,
+      "score_ge5": 0.012857417002494723,
+      "score_ge6": 0.008923431203223949
+    },
+    "selection_score": 2.7714645759097403,
+    "acceptance": {
+      "weighted_improvement": 0.040919727226900626,
+      "outcome_gain": 0.012585545918558871,
+      "outcome_drop": 0.0,
+      "gd_drop": 0.023557718399512373,
+      "gd_allowance": 0.02,
+      "gd_tradeoff_allowed": true,
+      "exact_drop": 0.0,
+      "fold_improvements": 2,
+      "pair_consistency_pass": true,
+      "score_ge5": 0.012857417002494723,
+      "accepted": true
+    },
+    "risk_components": {
+      "outcome_penalty": 0.0,
+      "soft_gd_penalty": 0.0026682887996342794,
+      "exact_penalty": 0.0,
+      "recent_fold_penalty": 0.0,
+      "fold_instability_penalty": 0.003507611442796532,
+      "women_penalty": 0.0,
+      "tournament_penalty": 0.0,
+      "tail_penalty": 0.0,
+      "pair_penalty": 0.0,
+      "complexity_penalty": 0.0015
+    },
+    "pair_diagnostics": {
+      "match_groups": 10422.0,
+      "two_row_matches": 10422.0,
+      "reciprocal_pairs": 10422.0,
+      "pair_consistency_applied": 10422.0,
+      "pair_conflicts_corrected": 1430.0,
+      "pair_consistency_pass": 1.0
+    },
+    "calibration_diagnostics": {
+      "folds": [
+        {
+          "backend": "hgb",
+          "matrix": {
+            "avg_selected_joint_prob": 0.26935958593219517,
+            "avg_entropy": 2.0434601845675866,
+            "rows": 6946
+          },
+          "predicted_avg_total": 2.052980132450331,
+          "predicted_draw_share": 0.16671465591707457,
+          "score_ge5": 0.0161243881370573
+        },
+        {
+          "backend": "hgb",
+          "matrix": {
+            "avg_selected_joint_prob": 0.25857865079131,
+            "avg_entropy": 2.0749186639451027,
+            "rows": 7698
+          },
+          "predicted_avg_total": 2.14445310470252,
+          "predicted_draw_share": 0.15406599116653677,
+          "score_ge5": 0.010652117433099507
+        },
+        {
+          "backend": "hgb",
+          "matrix": {
+            "avg_selected_joint_prob": 0.2607743884817676,
+            "avg_entropy": 2.060508076145462,
+            "rows": 4754
+          },
+          "predicted_avg_total": 2.092974337400084,
+          "predicted_draw_share": 0.15271350441733278,
+          "score_ge5": 0.01430374421539756
+        },
+        {
+          "backend": "hgb",
+          "matrix": {
+            "avg_selected_joint_prob": 0.255014444210399,
+            "avg_entropy": 2.0762084888371493,
+            "rows": 1446
+          },
+          "predicted_avg_total": 2.0428769017980635,
+          "predicted_draw_share": 0.14107883817427386,
+          "score_ge5": 0.004149377593360996
+        }
+      ]
+    },
+    "cache_used": false
+  },
+  "skipped": [
+    {
+      "item": "FULL wide model library grid",
+      "reason": "v1 runtime control; HGB-only core with cached candidates."
+    }
+  ],
+  "metadata_diagnostics": {
+    "train_rows": 78772,
+    "test_rows": 42422,
+    "train_date_min": "1872-11-30",
+    "train_date_max": "2011-08-04",
+    "test_date_min": "2011-08-06",
+    "test_date_max": "2026-03-31",
+    "train_women_share": 0.11179099172294724,
+    "test_women_share_metadata_only": 0.32902739144783366,
+    "top_train_tournaments": {
+      "Friendly": 28006,
+      "FIFA World Cup qualification": 11934,
+      "UEFA Euro qualification": 5698,
+      "African Cup of Nations qualification": 2734,
+      "FIFA World Cup": 1904,
+      "Copa Am\u00e9rica": 1660,
+      "AFC Asian Cup qualification": 1264,
+      "Merdeka Tournament": 1190,
+      "British Home Championship": 1046,
+      "African Cup of Nations": 1018
+    },
+    "top_test_tournaments_metadata_only": {
+      "Friendly": 10940,
+      "FIFA World Cup qualification": 8148,
+      "UEFA Euro qualification": 3222,
+      "African Cup of Nations qualification": 2160,
+      "UEFA Nations League": 1952,
+      "CONCACAF Nations League": 844,
+      "African Cup of Nations": 844,
+      "AFC Asian Cup qualification": 788,
+      "FIFA World Cup": 720,
+      "UEFA Euro": 604
+    }
+  },
+  "final_diagnostics": {
+    "distribution": {
+      "rows": 42422,
+      "avg_team_goals": 1.0776955353354392,
+      "avg_opp_goals": 1.0776955353354392,
+      "avg_total_goals": 2.1553910706708783,
+      "draw_share": 0.12724529725142614,
+      "team_win_share": 0.4363773513742869,
+      "score_ge5": 0.011456319834048372,
+      "score_ge6": 0.007166093064919146
+    },
+    "pair_diagnostics": {
+      "match_groups": 21211.0,
+      "two_row_matches": 21211.0,
+      "reciprocal_pairs": 21211.0,
+      "pair_consistency_applied": 21211.0,
+      "pair_conflicts_corrected": 2263.0,
+      "pair_consistency_pass": 1.0
+    },
+    "calibration": {
+      "backend": "hgb",
+      "matrix": {
+        "avg_selected_joint_prob": 0.26020867173607937,
+        "avg_entropy": 2.064728375604661,
+        "rows": 42422
+      },
+      "predicted_avg_total": 2.1553910706708783,
+      "predicted_draw_share": 0.12724529725142614,
+      "score_ge5": 0.011456319834048372
+    }
+  },
+  "audit": {
+    "leakage_checklist": {
+      "no_model_pipeline_v5_import": true,
+      "no_old_submission_anchor": true,
+      "selection_validation_only": true,
+      "gt_not_read_before_candidate_lock": true,
+      "friend_not_used_for_selection": true,
+      "historical_features_fold_safe": true,
+      "pair_consistency_label_free": true,
+      "gd_is_soft_penalty_not_hard_veto": true
+    },
+    "audit_table": [
+      {
+        "ID": "L1",
+        "Severity": "CRITICAL",
+        "Risk": "test GT leaks into selection",
+        "Mitigation": "GT read only in local_submission_metrics after lock",
+        "Status": "mitigated"
+      },
+      {
+        "ID": "L2",
+        "Severity": "CRITICAL",
+        "Risk": "old submission influence",
+        "Mitigation": "no submission reads except post-lock friend report",
+        "Status": "mitigated"
+      },
+      {
+        "ID": "S1",
+        "Severity": "HIGH",
+        "Risk": "GD hard veto repeats old failure",
+        "Mitigation": "soft GD penalty plus explicit tradeoff allowance",
+        "Status": "mitigated"
+      },
+      {
+        "ID": "V1",
+        "Severity": "HIGH",
+        "Risk": "validation too old",
+        "Mitigation": "recency-weighted folds and stress reporting",
+        "Status": "mitigated"
+      },
+      {
+        "ID": "D1",
+        "Severity": "MEDIUM",
+        "Risk": "gender/tournament drift",
+        "Mitigation": "metadata features, expert priors, segment diagnostics",
+        "Status": "mitigated"
+      },
+      {
+        "ID": "R1",
+        "Severity": "MEDIUM",
+        "Risk": "runtime",
+        "Mitigation": "vectorized matrix prediction and compact grid",
+        "Status": "mitigated"
+      }
+    ],
+    "feasible": true
+  },
+  "post_lock_gt_p15": {
+    "available": true,
+    "rows": 42422,
+    "weighted_awmae": 3.1619611561574246,
+    "unweighted_awmae": 3.1770704495278106,
+    "outcome_accuracy": 0.5821979161755693,
+    "exact_accuracy": 0.11385601810381406,
+    "goal_diff_accuracy": 0.21253123379378625,
+    "distribution": {
+      "rows": 42422,
+      "avg_team_goals": 1.0776955353354392,
+      "avg_opp_goals": 1.0776955353354392,
+      "avg_total_goals": 2.1553910706708783,
+      "draw_share": 0.12724529725142614,
+      "team_win_share": 0.4363773513742869,
+      "score_ge5": 0.011456319834048372,
+      "score_ge6": 0.007166093064919146
+    }
+  },
+  "post_lock_gt_p13": {
+    "available": true,
+    "rows": 42422,
+    "weighted_awmae": 2.5841410886645333,
+    "unweighted_awmae": 2.595033064143136,
+    "outcome_accuracy": 0.5821979161755693,
+    "exact_accuracy": 0.11385601810381406,
+    "goal_diff_accuracy": 0.21253123379378625,
+    "distribution": {
+      "rows": 42422,
+      "avg_team_goals": 1.0776955353354392,
+      "avg_opp_goals": 1.0776955353354392,
+      "avg_total_goals": 2.1553910706708783,
+      "draw_share": 0.12724529725142614,
+      "team_win_share": 0.4363773513742869,
+      "score_ge5": 0.011456319834048372,
+      "score_ge6": 0.007166093064919146
+    }
+  },
+  "post_lock_friend_report": {
+    "path": "C:\\Users\\LENOVO\\Downloads\\submission_final_model_first_selector_v4_accepted_top200_cfg_0097_same_only_strict_all_f0.001_g0.1.csv",
+    "p15": {
+      "available": true,
+      "rows": 42422,
+      "weighted_awmae": 2.998458904819807,
+      "unweighted_awmae": 3.015737742706151,
+      "outcome_accuracy": 0.5946442883409552,
+      "exact_accuracy": 0.10310687850643534,
+      "goal_diff_accuracy": 0.22523690537928434,
+      "distribution": {
+        "rows": 42422,
+        "avg_team_goals": 1.3256093536372637,
+        "avg_opp_goals": 1.3227099146669181,
+        "avg_total_goals": 2.648319268304182,
+        "draw_share": 0.11253594832869737,
+        "team_win_share": 0.4440620432794305,
+        "score_ge5": 0.02600066003488756,
+        "score_ge6": 0.00407807269812833
+      }
+    },
+    "p13": {
+      "available": true,
+      "rows": 42422,
+      "weighted_awmae": 2.4781580705126345,
+      "unweighted_awmae": 2.4908972346923535,
+      "outcome_accuracy": 0.5946442883409552,
+      "exact_accuracy": 0.10310687850643534,
+      "goal_diff_accuracy": 0.22523690537928434,
+      "distribution": {
+        "rows": 42422,
+        "avg_team_goals": 1.3256093536372637,
+        "avg_opp_goals": 1.3227099146669181,
+        "avg_total_goals": 2.648319268304182,
+        "draw_share": 0.11253594832869737,
+        "team_win_share": 0.4440620432794305,
+        "score_ge5": 0.02600066003488756,
+        "score_ge6": 0.00407807269812833
+      }
+    }
+  },
+  "decision": "ACCEPTED_TEMPORAL_ROBUST_JOINT_V1"
+}

@@ -1,0 +1,4 @@
+name,file,exact_accuracy_pct,outcome_accuracy_pct,aw_mae_power_1_3,delta_aw_vs_plan05,delta_outcome_vs_plan05,delta_exact_vs_plan05
+Experiment A Plan05+V29,dataset/submission_experiment_a_plan05_plus_v29.csv,11.402102682570364,59.89816604591957,2.4237470340340628,-0.01430349061835301,0.3017302343123802,0.007071802366697355
+Plan 05 baseline,dataset/submission_plan05_temporal_shrinkage_calibration.csv,11.395030880203667,59.596435811607186,2.438050524652416,0.0,0.0,0.0
+V29 standalone,file-ozan/submission_v29.csv,10.610060817500354,58.71481778322568,2.525609235311921,0.08755871065950505,-0.8816180283815029,-0.7849700627033123

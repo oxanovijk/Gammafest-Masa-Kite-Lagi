@@ -1,0 +1,45 @@
+{
+  "pipeline_version": "dynamic_state_v1",
+  "timestamp_utc": "2026-05-04T23:07:40+00:00",
+  "selected_config": {
+    "name": "slow_s50",
+    "track": "slow",
+    "base_lr": 0.015,
+    "smoothing": 50.0,
+    "max_goals": 8,
+    "poisson_alpha": 1.0,
+    "outcome_gamma": 0.16,
+    "total_delta": 0.1,
+    "gd_eta": 0.12,
+    "empirical_beta": 0.22,
+    "tau_total": 1.25,
+    "tau_gd": 1.2,
+    "use_gender_state": true,
+    "use_confidence_gate": true,
+    "outcome_aware_update": true,
+    "total_goals_state": true,
+    "pair_consistency": true,
+    "static_fallback": true,
+    "ablation_group": "speed_smoothing",
+    "full_mode_only": false
+  },
+  "validation_metrics": {
+    "weighted_awmae_p15": 2.820427507380039,
+    "unweighted_awmae_p15": 2.8254134896420933,
+    "weighted_awmae_p13": 2.3463479812482673,
+    "unweighted_awmae_p13": 2.3501934984406097,
+    "outcome_accuracy": 0.5871925235732274,
+    "exact_accuracy": 0.11760814035258917,
+    "goal_diff_accuracy": 0.23111798859522728
+  },
+  "validation_payload_hash": "73a84878ff652483ef6aced920384ebc6cebc3132a3285bddde44ef1415e247e",
+  "script_hash": "976ca68e0cd14019cad83b23c6f7be534f17706535f731fb8a88ad7aa90554a3",
+  "config_hash": "6bf0cd3e35ba4eb0b4f5c038666b33f9b5a22c64a847a21b402d0edeef708f94",
+  "constraints": {
+    "selected_validation_only": true,
+    "friend_csv_read_before_lock": false,
+    "test_ground_truth_read_before_lock": false,
+    "old_submission_anchor_used": false,
+    "validation_or_test_state_updated_with_actual_results": false
+  }
+}

@@ -1,0 +1,7 @@
+[draw_off_diag] loading data
+[draw_off_diag] fitting final model and predicting test
+[draw_off_diag] computing post-lock diagnostics
+[draw_off_diag] wrote C:\Users\LENOVO\Documents\Gammafest\Gammafest-Masa-Kite-Lagi\dataset\submission_metric_aware_joint_v1_diagnostic_draw_off.csv
+[draw_off_diag] post_lock_gt_w15=3.122061 outcome=0.585168
+[draw_off_diag] post_lock_gt_w13=2.556058
+[draw_off_diag] wrote C:\Users\LENOVO\Documents\Gammafest\Gammafest-Masa-Kite-Lagi\dataset\submission_metric_aware_joint_v1_diagnostic_draw_off_report.txt

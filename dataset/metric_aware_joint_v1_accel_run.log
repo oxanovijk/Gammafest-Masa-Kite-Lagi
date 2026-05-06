@@ -1,0 +1,11 @@
+[metric_joint_accel] loading data from C:\Users\LENOVO\Documents\Gammafest\Gammafest-Masa-Kite-Lagi\dataset
+[metric_joint] evaluating 17 candidates
+  candidate=baseline_static_prior_s20
+  candidate=baseline_regression_round_s20
+  candidate=baseline_outcome_first_s20
+  candidate=baseline_static_prior_s50
+  candidate=baseline_regression_round_s50
+  candidate=baseline_outcome_first_s50
+  candidate=joint_awmae_s20_cfg0
+  candidate=joint_awmae_s20_cfg1
+  candidate=joint_awmae_s20_cfg2

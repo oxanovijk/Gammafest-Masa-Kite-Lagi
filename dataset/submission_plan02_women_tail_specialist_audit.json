@@ -1,0 +1,120 @@
+{
+  "strategy": "plan02_women_tail_specialist",
+  "output_path": "dataset\\submission_plan02_women_tail_specialist.csv",
+  "metrics": {
+    "exact_accuracy": 0.11354957333459054,
+    "outcome_accuracy": 0.5959172127669605,
+    "goal_diff_accuracy": 0.22686341992362452,
+    "awmae": 2.446374588670991
+  },
+  "pair_inconsistent_matches": 3040,
+  "selected_expert_counts": {
+    "dynamic_state_v1": 5918,
+    "risk_v2": 14236,
+    "metric_aware_joint_v1_batch": 3326,
+    "temporal_robust_joint_v1": 2926,
+    "v5": 5742,
+    "risk_v4_static_drift": 1004,
+    "v3": 3238,
+    "v4": 1642,
+    "risk_v5_outcome_experts": 1256,
+    "risk_v3": 3134
+  },
+  "transform_counts": {
+    "id": 41800,
+    "winner+1": 550,
+    "force3margin": 72
+  },
+  "selector_levels": [
+    {
+      "keys": [
+        "gender",
+        "tournament",
+        "era"
+      ],
+      "min_n": 20,
+      "segments": 271
+    },
+    {
+      "keys": [
+        "gender",
+        "tournament"
+      ],
+      "min_n": 60,
+      "segments": 86
+    },
+    {
+      "keys": [
+        "gender",
+        "archetype"
+      ],
+      "min_n": 80,
+      "segments": 15
+    },
+    {
+      "keys": [
+        "gender"
+      ],
+      "min_n": 1,
+      "segments": 2
+    }
+  ],
+  "transform_rules": [
+    {
+      "keys": [
+        "gender",
+        "tournament",
+        "era"
+      ],
+      "n_rules": 45,
+      "rules": {
+        "W|AFC Asian Cup qualification|2011-2014": "id",
+        "W|AFC Asian Cup qualification|2015-2018": "winner+1",
+        "W|AFC Asian Cup qualification|2019-2022": "force3margin",
+        "W|AFC Asian Cup qualification|2023-2026": "id",
+        "W|AFC Olympic Qualifying Tournament|2015-2018": "id",
+        "W|AFC Olympic Qualifying Tournament|2019-2022": "id",
+        "W|AFC Olympic Qualifying Tournament|2023-2026": "id",
+        "W|AFF Championship|2011-2014": "winner+1",
+        "W|AFF Championship|2015-2018": "id",
+        "W|AFF Championship|2019-2022": "id",
+        "W|Asian Games|2011-2014": "winner+1",
+        "W|Asian Games|2015-2018": "winner+1",
+        "W|Asian Games|2023-2026": "winner+1",
+        "W|CONCACAF Championship qualification|2011-2014": "force3margin",
+        "W|CONCACAF Championship qualification|2015-2018": "id",
+        "W|CONCACAF Championship qualification|2019-2022": "winner+1",
+        "W|CONCACAF Championship qualification|2023-2026": "winner+1",
+        "W|CONCACAF Gold Cup qualification|2023-2026": "id",
+        "W|FIFA World Cup qualification|2011-2014": "id",
+        "W|FIFA World Cup qualification|2015-2018": "id",
+        "W|FIFA World Cup qualification|2019-2022": "id",
+        "W|FIFA World Cup qualification|2023-2026": "id",
+        "W|Indian Ocean Island Games|2015-2018": "id",
+        "W|Island Games|2015-2018": "id",
+        "W|Island Games|2023-2026": "id",
+        "W|Pacific Games|2011-2014": "id",
+        "W|Pacific Games|2015-2018": "id",
+        "W|Pacific Games|2019-2022": "winner+1",
+        "W|Pacific Games|2023-2026": "id",
+        "W|SAFF Championship|2011-2014": "id",
+        "W|SAFF Championship|2015-2018": "id",
+        "W|SAFF Championship|2019-2022": "id",
+        "W|SAFF Championship|2023-2026": "id",
+        "W|South Asian Games|2015-2018": "id",
+        "W|Southeast Asian Games|2011-2014": "id",
+        "W|Southeast Asian Games|2015-2018": "id",
+        "W|Southeast Asian Games|2019-2022": "id",
+        "W|Southeast Asian Games|2023-2026": "id",
+        "W|UEFA Euro qualification|2011-2014": "id",
+        "W|UEFA Euro qualification|2015-2018": "id",
+        "W|UEFA Euro qualification|2019-2022": "id",
+        "W|UEFA Euro qualification|2023-2026": "id",
+        "W|WAFF Championship|2011-2014": "winner+1",
+        "W|WAFF Championship|2019-2022": "id",
+        "W|WAFF Championship|2023-2026": "id"
+      }
+    }
+  ],
+  "pair_repair": false
+}

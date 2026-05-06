@@ -1,0 +1,148 @@
+Risk V1 Static Pipeline Validation Report
+================================================
+Acceptance decision: TARGET_NOT_REACHED
+Selected stage: 08_segment_aware_calibration / not_enabled_no_stable_fold_evidence
+Validation weighted AW-MAE power 1.5: 2.79107
+Validation outcome/exact/gd: 0.6046 / 0.1084 / 0.2342
+Selection score: 2.81115
+Local weighted AW-MAE power 1.5: 3.08512
+Local outcome/exact/gd: 0.5873 / 0.0990 / 0.2139
+Friend weighted AW-MAE power 1.5: 2.99883
+Delta candidate - friend power 1.5: +0.08630
+
+Leakage checklist
+  core_features_frozen: assumed_safe_from_train_final_test_final
+  test_state_update: not_used
+  v5_import: not_used
+  old_submission_anchor: not_used
+  friend_csv: reporting_only
+  test_ground_truth: final_reporting_only_if_available
+  context_target_encoding: risk_noted_existing_ctx_features_may_use_random_kfold_encoding
+
+Validation folds
+  fold_2003_2005: rows=6946, weighted15=2.85781, outcome=0.5992, exact=0.1075
+  fold_2006_2008: rows=7698, weighted15=2.79102, outcome=0.6111, exact=0.1056
+  fold_2009_2011: rows=6200, weighted15=2.76441, outcome=0.6027, exact=0.1129
+
+Ablation table
+  01_baseline_poisson_ensemble: uniform_max8_no_risk, selected=True, weighted15=2.82067, reason=initial_baseline
+  02_split_team_opp_blend: tw2_ow2, selected=True, weighted15=2.80353, reason=accepted
+  03_awmae_erm_max_goals: max10, selected=True, weighted15=2.79641, reason=accepted
+  04_outcome_soft_reranker: alpha0.15, selected=True, weighted15=2.79224, reason=accepted
+  05_draw_low_score_calibration: d1.08_l1.08, selected=False, weighted15=2.78628, reason=outcome_drop
+  06_high_score_tail_penalty: tail0.9, selected=True, weighted15=2.79107, reason=accepted
+  07_top_score_concentration_penalty: risk_penalties_on, selected=True, weighted15=2.79107, reason=accepted
+  08_segment_aware_calibration: not_enabled_no_stable_fold_evidence, selected=True, weighted15=2.79107, reason=accepted
+
+Risk objective breakdown
+  fold_instability_penalty: 0.009822
+  outcome_drop_penalty: 0.000000
+  exact_drop_penalty: 0.000000
+  high_score_tail_penalty: 0.000001
+  score_collapse_penalty: 0.009537
+  yearly_distribution_penalty: 0.000716
+
+Final test distribution
+{
+  "rows": 42422,
+  "win_share": 0.44559426712554806,
+  "draw_share": 0.10925934656546132,
+  "loss_share": 0.4451463863089906,
+  "avg_team_goals": 1.3967516854462307,
+  "avg_opp_goals": 1.3890434208665314,
+  "avg_total_goals": 2.7857951063127624,
+  "score_ge5_share": 0.028027910046673897,
+  "common_low_score_share": 0.7997265569751544,
+  "top1_score_share": 0.2505068125029466,
+  "top3_score_share": 0.6088821837725709,
+  "top5_score_share": 0.7102682570364434,
+  "top_10_scores": [
+    {
+      "score": "1-2",
+      "count": 10627,
+      "share": 0.2505068125029466
+    },
+    {
+      "score": "2-1",
+      "count": 10568,
+      "share": 0.24911602470416294
+    },
+    {
+      "score": "1-1",
+      "count": 4635,
+      "share": 0.10925934656546132
+    },
+    {
+      "score": "0-2",
+      "count": 2187,
+      "share": 0.05155343925321767
+    },
+    {
+      "score": "2-0",
+      "count": 2114,
+      "share": 0.049832634010654846
+    },
+    {
+      "score": "0-1",
+      "count": 1907,
+      "share": 0.044953090377634244
+    },
+    {
+      "score": "1-0",
+      "count": 1888,
+      "share": 0.0445052095610768
+    },
+    {
+      "score": "3-0",
+      "count": 1800,
+      "share": 0.042430814200179155
+    },
+    {
+      "score": "0-3",
+      "count": 1777,
+      "share": 0.04188864268539909
+    },
+    {
+      "score": "4-0",
+      "count": 894,
+      "share": 0.021073971052755644
+    }
+  ]
+}
+
+Per-year test diagnostics 2011-2026
+  2011: rows=1532, top3=0.6136, draw=0.1416, ge5=0.0405, avg_total=2.771
+  2012: rows=2664, top3=0.6291, draw=0.1404, ge5=0.0236, avg_total=2.677
+  2013: rows=2446, top3=0.6067, draw=0.1402, ge5=0.0180, avg_total=2.610
+  2014: rows=2482, top3=0.6261, draw=0.1172, ge5=0.0210, avg_total=2.771
+  2015: rows=2914, top3=0.5834, draw=0.1119, ge5=0.0319, avg_total=2.742
+  2016: rows=2576, top3=0.5796, draw=0.1141, ge5=0.0245, avg_total=2.676
+  2017: rows=2602, top3=0.6099, draw=0.1287, ge5=0.0238, avg_total=2.689
+  2018: rows=2960, top3=0.6334, draw=0.1115, ge5=0.0301, avg_total=2.860
+  2019: rows=3452, top3=0.5869, draw=0.0982, ge5=0.0374, avg_total=2.859
+  2020: rows=1134, top3=0.6287, draw=0.1146, ge5=0.0282, avg_total=2.754
+  2021: rows=3084, top3=0.5785, draw=0.1148, ge5=0.0269, avg_total=2.708
+  2022: rows=3162, top3=0.6139, draw=0.0990, ge5=0.0288, avg_total=2.833
+  2023: rows=3576, top3=0.6183, draw=0.0889, ge5=0.0352, avg_total=2.905
+  2024: rows=3634, top3=0.6197, draw=0.0894, ge5=0.0209, avg_total=2.827
+  2025: rows=3638, top3=0.6176, draw=0.0783, ge5=0.0289, avg_total=2.921
+  2026: rows=566, top3=0.6131, draw=0.1078, ge5=0.0336, avg_total=2.836
+
+Segment diagnostics
+  major_tournament: rows=5796, weighted15=2.63288, outcome=0.6368, exact=0.1170
+  friendly: rows=6106, weighted15=2.72365, outcome=0.5223, exact=0.1143
+  qualifier: rows=8086, weighted15=2.68990, outcome=0.6532, exact=0.1137
+  neutral: rows=6596, weighted15=3.06180, outcome=0.5967, exact=0.0987
+  non_neutral: rows=14248, weighted15=2.68272, outcome=0.6083, exact=0.1129
+  balanced_elo: rows=3784, weighted15=3.26097, outcome=0.4693, exact=0.1020
+  strong_favorite: rows=4036, weighted15=2.46737, outcome=0.7530, exact=0.1192
+
+Benchmark comparison vs friend
+  candidate weighted15: 3.08512
+  friend weighted15   : 2.99883
+  candidate outcome   : 0.5873
+  friend outcome      : 0.5946
+
+WARNING: final decision is TARGET_NOT_REACHED; target power 1.5 <= 2.40 may not be reached.
+
+Done in 6.5 minutes. Wrote dataset\submission_risk_v1.csv with 42422 rows.

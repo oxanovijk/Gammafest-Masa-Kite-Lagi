@@ -1,0 +1,459 @@
+Temporal Robust Joint V1 Validation Report
+==============================================
+Decision: ACCEPTED_TEMPORAL_ROBUST_JOINT_V1
+
+Constraints
+- Standalone script; no model_pipeline_v5 import.
+- No old submission anchor/blend/pseudo-label/selector.
+- Candidate lock written before GT/friend reporting.
+- GD is a soft risk, not a hard acceptance veto.
+
+Candidate lock hash: 86156a2454c37cb735e49b5e1cb41103bbead8b36d8d352bfd2d43a98db20540
+Selected config
+{
+  "name": "joint_no_expert_prior_s50",
+  "kind": "joint",
+  "smoothing": 50,
+  "max_goals": 8,
+  "alpha": 0.5,
+  "gamma": 1.25,
+  "delta": 1.0,
+  "eta": 1.0,
+  "theta": 0.5,
+  "kappa": 0.5,
+  "beta": 0.25,
+  "use_poisson": true,
+  "use_empirical_prior": true,
+  "use_expert_prior": false,
+  "draw_correction": 1.0,
+  "tail_dampening": 0.93,
+  "pair_consistency": true,
+  "use_hist_features": true,
+  "gd_selector_weight": 0.0,
+  "outcome_selector_weight": 0.0,
+  "complexity": 0.0015
+}
+Selected validation metrics
+{
+  "weighted_awmae_p15": 2.7809568990604734,
+  "unweighted_awmae_p15": 2.7845051795115277,
+  "weighted_awmae_p13": 2.3131423293146773,
+  "unweighted_awmae_p13": 2.316314220268173,
+  "outcome_accuracy": 0.5957305532204817,
+  "exact_accuracy": 0.13075090371296938,
+  "goal_diff_accuracy": 0.22652976902396071
+}
+Baseline metrics
+{
+  "weighted_awmae_p15": 2.80470840289421,
+  "unweighted_awmae_p15": 2.808005358978994,
+  "weighted_awmae_p13": 2.3467214196250232,
+  "unweighted_awmae_p13": 2.3487316808789442,
+  "outcome_accuracy": 0.5832721617481178,
+  "exact_accuracy": 0.09974012278452335,
+  "goal_diff_accuracy": 0.24949549478552896
+}
+
+Candidate table
+* joint_no_expert_prior_s50: kind=joint selection=2.79863 w15=2.78096 w13=2.31314 out=0.5957 gd=0.2265 accepted=True
+  joint_tail_safe_s50: kind=joint selection=2.79887 w15=2.78205 w13=2.31351 out=0.5955 gd=0.2272 accepted=True
+  joint_balanced_s50: kind=joint selection=2.79953 w15=2.78291 w13=2.31395 out=0.5954 gd=0.2265 accepted=True
+  joint_draw_off_s50: kind=joint selection=2.79983 w15=2.78290 w13=2.31387 out=0.5956 gd=0.2268 accepted=True
+  joint_gd_soft_s50: kind=joint selection=2.80397 w15=2.79031 w13=2.31962 out=0.5933 gd=0.2311 accepted=False
+  joint_hist_off_s50: kind=joint selection=2.80678 w15=2.78057 w13=2.31504 out=0.5981 gd=0.2162 accepted=False
+  joint_outcome_strong_s50: kind=joint selection=2.83324 w15=2.80579 w13=2.33604 out=0.5955 gd=0.2119 accepted=False
+  baseline_regression_round_s50: kind=regression_round selection=2.86946 w15=2.80471 w13=2.34672 out=0.5833 gd=0.2495 accepted=False
+  baseline_static_prior_s50: kind=static_prior selection=5.13586 w15=5.12772 w13=4.00663 out=0.2126 gd=0.2126 accepted=False
+Skipped
+[
+  {
+    "item": "FULL wide model library grid",
+    "reason": "v1 runtime control; HGB-only core with cached candidates."
+  }
+]
+
+Selection fold metrics
+R1_2003_2005: rows=6946 w15=2.97093 w13=2.45429 out=0.5891 exact=0.1146 gd=0.2180 ge5=0.0161
+R2_2006_2008: rows=7698 w15=2.84109 w13=2.35347 out=0.6092 exact=0.1276 gd=0.2382 ge5=0.0107
+R3_2009: rows=2236 w15=2.79672 w13=2.33170 out=0.5894 exact=0.1181 gd=0.2147 ge5=0.0134
+R4_2010: rows=2518 w15=2.94480 w13=2.42001 out=0.5997 exact=0.1342 gd=0.2351 ge5=0.0175
+R5_2011: rows=1446 w15=2.65020 w13=2.22294 out=0.5934 exact=0.1355 gd=0.2241 ge5=0.0041
+
+Stress metrics
+{
+  "weighted_awmae_p15": 2.858110659399514,
+  "unweighted_awmae_p15": 2.867851677539544,
+  "weighted_awmae_p13": 2.367512457276294,
+  "unweighted_awmae_p13": 2.374998485029062,
+  "outcome_accuracy": 0.5984021483656122,
+  "exact_accuracy": 0.12618414512402554,
+  "goal_diff_accuracy": 0.2282645336767833
+}
+Old-fold comparability metrics
+{
+  "weighted_awmae_p15": 2.7637886756673096,
+  "unweighted_awmae_p15": 2.7663796738021595,
+  "weighted_awmae_p13": 2.3017831611636153,
+  "unweighted_awmae_p13": 2.3040832632430863,
+  "outcome_accuracy": 0.5958577076666767,
+  "exact_accuracy": 0.13075319542561412,
+  "goal_diff_accuracy": 0.2259377763860166
+}
+
+Segment diagnostics
+{
+  "men": {
+    "rows": 16172,
+    "weighted_awmae_p15": 2.7266751818863755,
+    "unweighted_awmae_p15": 2.742100262174476,
+    "weighted_awmae_p13": 2.280720177889406,
+    "unweighted_awmae_p13": 2.2921833622682817,
+    "outcome_accuracy": 0.5681424684640118,
+    "exact_accuracy": 0.1319564679693297,
+    "goal_diff_accuracy": 0.24066287410338857
+  },
+  "women": {
+    "rows": 4672,
+    "weighted_awmae_p15": 3.3654171361452696,
+    "unweighted_awmae_p15": 3.396576941178429,
+    "weighted_awmae_p13": 2.7131458679489273,
+    "unweighted_awmae_p13": 2.7335825023881095,
+    "outcome_accuracy": 0.702054794520548,
+    "exact_accuracy": 0.09460616438356165,
+    "goal_diff_accuracy": 0.18236301369863014
+  },
+  "major": {
+    "rows": 4776,
+    "weighted_awmae_p15": 2.9848039516070584,
+    "unweighted_awmae_p15": 3.0208953669881007,
+    "weighted_awmae_p13": 2.452463415215694,
+    "unweighted_awmae_p13": 2.4755381611696157,
+    "outcome_accuracy": 0.6030150753768844,
+    "exact_accuracy": 0.11892797319932999,
+    "goal_diff_accuracy": 0.2315745393634841
+  },
+  "friendly": {
+    "rows": 6106,
+    "weighted_awmae_p15": 2.7498115058572954,
+    "unweighted_awmae_p15": 2.7498115058572963,
+    "weighted_awmae_p13": 2.304075009346524,
+    "unweighted_awmae_p13": 2.3040750093465245,
+    "outcome_accuracy": 0.512610547002948,
+    "exact_accuracy": 0.13527677694071405,
+    "goal_diff_accuracy": 0.2538486734359646
+  },
+  "qualifier": {
+    "rows": 8086,
+    "weighted_awmae_p15": 2.7743764120163648,
+    "unweighted_awmae_p15": 2.7953760685532325,
+    "weighted_awmae_p13": 2.3087708472303,
+    "unweighted_awmae_p13": 2.3234203008796324,
+    "outcome_accuracy": 0.6472916151372743,
+    "exact_accuracy": 0.12416522384368044,
+    "goal_diff_accuracy": 0.21642344793470195
+  },
+  "low_support": {
+    "rows": 190,
+    "weighted_awmae_p15": 4.340085709297297,
+    "unweighted_awmae_p15": 4.370489280711896,
+    "weighted_awmae_p13": 3.3708833888130174,
+    "unweighted_awmae_p13": 3.3924573760585246,
+    "outcome_accuracy": 0.7157894736842105,
+    "exact_accuracy": 0.05263157894736842,
+    "goal_diff_accuracy": 0.16842105263157894
+  }
+}
+
+Distribution, pair, calibration
+{
+  "distribution": {
+    "rows": 20844,
+    "avg_team_goals": 1.0459124928036845,
+    "avg_opp_goals": 1.0459124928036845,
+    "avg_total_goals": 2.091824985607369,
+    "draw_share": 0.15668777585876031,
+    "team_win_share": 0.4216561120706198,
+    "score_ge5": 0.01314526962195356,
+    "score_ge6": 0.009211283822682787
+  },
+  "pair": {
+    "match_groups": 10422.0,
+    "two_row_matches": 10422.0,
+    "reciprocal_pairs": 10422.0,
+    "pair_consistency_applied": 10422.0,
+    "pair_conflicts_corrected": 1450.0,
+    "pair_consistency_pass": 1.0
+  },
+  "calibration": {
+    "folds": [
+      {
+        "backend": "hgb",
+        "matrix": {
+          "avg_selected_joint_prob": 0.26935958593219517,
+          "avg_entropy": 2.0434601845675866,
+          "rows": 6946
+        },
+        "predicted_avg_total": 2.052980132450331,
+        "predicted_draw_share": 0.16671465591707457,
+        "score_ge5": 0.0161243881370573
+      },
+      {
+        "backend": "hgb",
+        "matrix": {
+          "avg_selected_joint_prob": 0.25857865079131,
+          "avg_entropy": 2.0749186639451027,
+          "rows": 7698
+        },
+        "predicted_avg_total": 2.14445310470252,
+        "predicted_draw_share": 0.15406599116653677,
+        "score_ge5": 0.010652117433099507
+      },
+      {
+        "backend": "hgb",
+        "matrix": {
+          "avg_selected_joint_prob": 0.2701790584150983,
+          "avg_entropy": 2.028342680855628,
+          "rows": 2236
+        },
+        "predicted_avg_total": 2.0214669051878356,
+        "predicted_draw_share": 0.1556350626118068,
+        "score_ge5": 0.013416815742397137
+      },
+      {
+        "backend": "hgb",
+        "matrix": {
+          "avg_selected_joint_prob": 0.2569058120079646,
+          "avg_entropy": 2.0842656920226004,
+          "rows": 2518
+        },
+        "predicted_avg_total": 2.128673550436855,
+        "predicted_draw_share": 0.14694201747418587,
+        "score_ge5": 0.017474185861795076
+      },
+      {
+        "backend": "hgb",
+        "matrix": {
+          "avg_selected_joint_prob": 0.255014444210399,
+          "avg_entropy": 2.0762084888371493,
+          "rows": 1446
+        },
+        "predicted_avg_total": 2.0428769017980635,
+        "predicted_draw_share": 0.14107883817427386,
+        "score_ge5": 0.004149377593360996
+      }
+    ]
+  }
+}
+
+Metadata-only drift diagnostics
+{
+  "train_rows": 78772,
+  "test_rows": 42422,
+  "train_date_min": "1872-11-30",
+  "train_date_max": "2011-08-04",
+  "test_date_min": "2011-08-06",
+  "test_date_max": "2026-03-31",
+  "train_women_share": 0.11179099172294724,
+  "test_women_share_metadata_only": 0.32902739144783366,
+  "top_train_tournaments": {
+    "Friendly": 28006,
+    "FIFA World Cup qualification": 11934,
+    "UEFA Euro qualification": 5698,
+    "African Cup of Nations qualification": 2734,
+    "FIFA World Cup": 1904,
+    "Copa Am\u00e9rica": 1660,
+    "AFC Asian Cup qualification": 1264,
+    "Merdeka Tournament": 1190,
+    "British Home Championship": 1046,
+    "African Cup of Nations": 1018
+  },
+  "top_test_tournaments_metadata_only": {
+    "Friendly": 10940,
+    "FIFA World Cup qualification": 8148,
+    "UEFA Euro qualification": 3222,
+    "African Cup of Nations qualification": 2160,
+    "UEFA Nations League": 1952,
+    "CONCACAF Nations League": 844,
+    "African Cup of Nations": 844,
+    "AFC Asian Cup qualification": 788,
+    "FIFA World Cup": 720,
+    "UEFA Euro": 604
+  }
+}
+
+Final inference diagnostics
+{
+  "distribution": {
+    "rows": 42422,
+    "avg_team_goals": 1.0776955353354392,
+    "avg_opp_goals": 1.0776955353354392,
+    "avg_total_goals": 2.1553910706708783,
+    "draw_share": 0.12724529725142614,
+    "team_win_share": 0.4363773513742869,
+    "score_ge5": 0.011456319834048372,
+    "score_ge6": 0.007166093064919146
+  },
+  "pair_diagnostics": {
+    "match_groups": 21211.0,
+    "two_row_matches": 21211.0,
+    "reciprocal_pairs": 21211.0,
+    "pair_consistency_applied": 21211.0,
+    "pair_conflicts_corrected": 2263.0,
+    "pair_consistency_pass": 1.0
+  },
+  "calibration": {
+    "backend": "hgb",
+    "matrix": {
+      "avg_selected_joint_prob": 0.26020867173607937,
+      "avg_entropy": 2.064728375604661,
+      "rows": 42422
+    },
+    "predicted_avg_total": 2.1553910706708783,
+    "predicted_draw_share": 0.12724529725142614,
+    "score_ge5": 0.011456319834048372
+  }
+}
+
+Audit
+{
+  "leakage_checklist": {
+    "no_model_pipeline_v5_import": true,
+    "no_old_submission_anchor": true,
+    "selection_validation_only": true,
+    "gt_not_read_before_candidate_lock": true,
+    "friend_not_used_for_selection": true,
+    "historical_features_fold_safe": true,
+    "pair_consistency_label_free": true,
+    "gd_is_soft_penalty_not_hard_veto": true
+  },
+  "audit_table": [
+    {
+      "ID": "L1",
+      "Severity": "CRITICAL",
+      "Risk": "test GT leaks into selection",
+      "Mitigation": "GT read only in local_submission_metrics after lock",
+      "Status": "mitigated"
+    },
+    {
+      "ID": "L2",
+      "Severity": "CRITICAL",
+      "Risk": "old submission influence",
+      "Mitigation": "no submission reads except post-lock friend report",
+      "Status": "mitigated"
+    },
+    {
+      "ID": "S1",
+      "Severity": "HIGH",
+      "Risk": "GD hard veto repeats old failure",
+      "Mitigation": "soft GD penalty plus explicit tradeoff allowance",
+      "Status": "mitigated"
+    },
+    {
+      "ID": "V1",
+      "Severity": "HIGH",
+      "Risk": "validation too old",
+      "Mitigation": "recency-weighted folds and stress reporting",
+      "Status": "mitigated"
+    },
+    {
+      "ID": "D1",
+      "Severity": "MEDIUM",
+      "Risk": "gender/tournament drift",
+      "Mitigation": "metadata features, expert priors, segment diagnostics",
+      "Status": "mitigated"
+    },
+    {
+      "ID": "R1",
+      "Severity": "MEDIUM",
+      "Risk": "runtime",
+      "Mitigation": "vectorized matrix prediction and compact grid",
+      "Status": "mitigated"
+    }
+  ],
+  "feasible": true
+}
+
+Post-lock GT/friend report
+{
+  "p15": {
+    "available": true,
+    "rows": 42422,
+    "weighted_awmae": 3.1619611561574246,
+    "unweighted_awmae": 3.1770704495278106,
+    "outcome_accuracy": 0.5821979161755693,
+    "exact_accuracy": 0.11385601810381406,
+    "goal_diff_accuracy": 0.21253123379378625,
+    "distribution": {
+      "rows": 42422,
+      "avg_team_goals": 1.0776955353354392,
+      "avg_opp_goals": 1.0776955353354392,
+      "avg_total_goals": 2.1553910706708783,
+      "draw_share": 0.12724529725142614,
+      "team_win_share": 0.4363773513742869,
+      "score_ge5": 0.011456319834048372,
+      "score_ge6": 0.007166093064919146
+    }
+  },
+  "p13": {
+    "available": true,
+    "rows": 42422,
+    "weighted_awmae": 2.5841410886645333,
+    "unweighted_awmae": 2.595033064143136,
+    "outcome_accuracy": 0.5821979161755693,
+    "exact_accuracy": 0.11385601810381406,
+    "goal_diff_accuracy": 0.21253123379378625,
+    "distribution": {
+      "rows": 42422,
+      "avg_team_goals": 1.0776955353354392,
+      "avg_opp_goals": 1.0776955353354392,
+      "avg_total_goals": 2.1553910706708783,
+      "draw_share": 0.12724529725142614,
+      "team_win_share": 0.4363773513742869,
+      "score_ge5": 0.011456319834048372,
+      "score_ge6": 0.007166093064919146
+    }
+  },
+  "friend": {
+    "path": "C:\\Users\\LENOVO\\Downloads\\submission_final_model_first_selector_v4_accepted_top200_cfg_0097_same_only_strict_all_f0.001_g0.1.csv",
+    "p15": {
+      "available": true,
+      "rows": 42422,
+      "weighted_awmae": 2.998458904819807,
+      "unweighted_awmae": 3.015737742706151,
+      "outcome_accuracy": 0.5946442883409552,
+      "exact_accuracy": 0.10310687850643534,
+      "goal_diff_accuracy": 0.22523690537928434,
+      "distribution": {
+        "rows": 42422,
+        "avg_team_goals": 1.3256093536372637,
+        "avg_opp_goals": 1.3227099146669181,
+        "avg_total_goals": 2.648319268304182,
+        "draw_share": 0.11253594832869737,
+        "team_win_share": 0.4440620432794305,
+        "score_ge5": 0.02600066003488756,
+        "score_ge6": 0.00407807269812833
+      }
+    },
+    "p13": {
+      "available": true,
+      "rows": 42422,
+      "weighted_awmae": 2.4781580705126345,
+      "unweighted_awmae": 2.4908972346923535,
+      "outcome_accuracy": 0.5946442883409552,
+      "exact_accuracy": 0.10310687850643534,
+      "goal_diff_accuracy": 0.22523690537928434,
+      "distribution": {
+        "rows": 42422,
+        "avg_team_goals": 1.3256093536372637,
+        "avg_opp_goals": 1.3227099146669181,
+        "avg_total_goals": 2.648319268304182,
+        "draw_share": 0.11253594832869737,
+        "team_win_share": 0.4440620432794305,
+        "score_ge5": 0.02600066003488756,
+        "score_ge6": 0.00407807269812833
+      }
+    }
+  }
+}
+
+ACCEPTED_TEMPORAL_ROBUST_JOINT_V1

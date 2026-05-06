@@ -1,0 +1,148 @@
+{
+  "diagnostic_only": true,
+  "leakage_note": "Generated after official candidate lock and after post-lock GT reporting; not valid for selection or accepted-candidate replacement.",
+  "config": {
+    "name": "ablation_draw_correction_off_diagnostic_only",
+    "kind": "joint_awmae",
+    "smoothing": 50.0,
+    "max_goals": 8,
+    "alpha": 0.5,
+    "gamma": 1.25,
+    "delta": 1.0,
+    "eta": 1.0,
+    "theta": 0.5,
+    "kappa": 0.5,
+    "beta": 0.25,
+    "use_poisson": true,
+    "use_empirical_prior": true,
+    "draw_correction": 1.0,
+    "tail_dampening": 1.0,
+    "pair_consistency": true,
+    "use_hist_features": true,
+    "use_gender_interactions": true,
+    "backend": "hgb",
+    "overcomplexity": 0.001
+  },
+  "final_diagnostics": {
+    "distribution": {
+      "rows": 42422,
+      "avg_team_goals": 1.0867474423648107,
+      "avg_opp_goals": 1.0867474423648107,
+      "avg_total_goals": 2.1734948847296214,
+      "draw_share": 0.11819339022205459,
+      "team_win_share": 0.4409033048889727,
+      "score_ge5": 0.014850784970062703,
+      "score_ge6": 0.008910470982037622,
+      "top1_score_share": 0.14598557352317193,
+      "top3_score_share": 0.41393616519730325
+    },
+    "pair_diagnostics": {
+      "match_groups": 21211.0,
+      "two_row_matches": 21211.0,
+      "reciprocal_pairs": 21211.0,
+      "pair_consistency_applied": 21211.0,
+      "pair_conflicts_corrected": 3324.0,
+      "pair_correction_abs": 2098.0,
+      "pair_consistency_pass": 1.0,
+      "avg_pair_correction_abs": 0.6311672683513839
+    },
+    "calibration": {
+      "matrix": {
+        "avg_selected_joint_prob": 0.26329234165009097,
+        "avg_entropy": 2.057383079913591,
+        "rows": 42422
+      },
+      "predicted_avg_total": 2.1734948847296214,
+      "predicted_draw_share": 0.11819339022205459,
+      "score_ge5": 0.014850784970062703,
+      "backend": "hgb"
+    }
+  },
+  "post_lock_gt_p15": {
+    "available": true,
+    "rows": 42422,
+    "weighted_awmae": 3.122060675041271,
+    "unweighted_awmae": 3.1346603787598792,
+    "outcome_accuracy": 0.5851680731695819,
+    "exact_accuracy": 0.11508179718070813,
+    "goal_diff_accuracy": 0.2114468907642261,
+    "distribution": {
+      "rows": 42422,
+      "avg_team_goals": 1.0867474423648107,
+      "avg_opp_goals": 1.0867474423648107,
+      "avg_total_goals": 2.1734948847296214,
+      "draw_share": 0.11819339022205459,
+      "team_win_share": 0.4409033048889727,
+      "score_ge5": 0.014850784970062703,
+      "score_ge6": 0.008910470982037622,
+      "top1_score_share": 0.14598557352317193,
+      "top3_score_share": 0.41393616519730325
+    }
+  },
+  "post_lock_gt_p13": {
+    "available": true,
+    "rows": 42422,
+    "weighted_awmae": 2.556057806150429,
+    "unweighted_awmae": 2.5653373389075624,
+    "outcome_accuracy": 0.5851680731695819,
+    "exact_accuracy": 0.11508179718070813,
+    "goal_diff_accuracy": 0.2114468907642261,
+    "distribution": {
+      "rows": 42422,
+      "avg_team_goals": 1.0867474423648107,
+      "avg_opp_goals": 1.0867474423648107,
+      "avg_total_goals": 2.1734948847296214,
+      "draw_share": 0.11819339022205459,
+      "team_win_share": 0.4409033048889727,
+      "score_ge5": 0.014850784970062703,
+      "score_ge6": 0.008910470982037622,
+      "top1_score_share": 0.14598557352317193,
+      "top3_score_share": 0.41393616519730325
+    }
+  },
+  "post_lock_friend_report": {
+    "path": "C:\\Users\\LENOVO\\Downloads\\submission_final_model_first_selector_v4_accepted_top200_cfg_0097_same_only_strict_all_f0.001_g0.1.csv",
+    "p15": {
+      "available": true,
+      "rows": 42422,
+      "weighted_awmae": 2.998825007631143,
+      "unweighted_awmae": 3.015737742706151,
+      "outcome_accuracy": 0.5946442883409552,
+      "exact_accuracy": 0.10310687850643534,
+      "goal_diff_accuracy": 0.22523690537928434,
+      "distribution": {
+        "rows": 42422,
+        "avg_team_goals": 1.3256093536372637,
+        "avg_opp_goals": 1.3227099146669181,
+        "avg_total_goals": 2.648319268304182,
+        "draw_share": 0.11253594832869737,
+        "team_win_share": 0.4440620432794305,
+        "score_ge5": 0.02600066003488756,
+        "score_ge6": 0.00407807269812833,
+        "top1_score_share": 0.2686106265616897,
+        "top3_score_share": 0.6447833671208336
+      }
+    },
+    "p13": {
+      "available": true,
+      "rows": 42422,
+      "weighted_awmae": 2.4783810038457994,
+      "unweighted_awmae": 2.4908972346923535,
+      "outcome_accuracy": 0.5946442883409552,
+      "exact_accuracy": 0.10310687850643534,
+      "goal_diff_accuracy": 0.22523690537928434,
+      "distribution": {
+        "rows": 42422,
+        "avg_team_goals": 1.3256093536372637,
+        "avg_opp_goals": 1.3227099146669181,
+        "avg_total_goals": 2.648319268304182,
+        "draw_share": 0.11253594832869737,
+        "team_win_share": 0.4440620432794305,
+        "score_ge5": 0.02600066003488756,
+        "score_ge6": 0.00407807269812833,
+        "top1_score_share": 0.2686106265616897,
+        "top3_score_share": 0.6447833671208336
+      }
+    }
+  }
+}

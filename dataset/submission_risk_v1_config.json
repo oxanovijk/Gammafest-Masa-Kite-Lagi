@@ -1,0 +1,7092 @@
+{
+  "timestamp": "2026-05-01T19:55:12",
+  "seed": 42,
+  "pipeline": "model_pipeline_risk_v1",
+  "primary_metric_power": 1.5,
+  "secondary_metric_power": 1.3,
+  "target_weighted_awmae_power_1_5": 2.4,
+  "static_no_test_update": true,
+  "no_v5_import_declaration": true,
+  "no_old_submission_anchor_declaration": true,
+  "friend_csv_reporting_only": "C:\\Users\\LENOVO\\Downloads\\submission_final_model_first_selector_v4_accepted_top200_cfg_0097_same_only_strict_all_f0.001_g0.1.csv",
+  "train_rows": 78772,
+  "test_rows": 42422,
+  "feature_count": 72,
+  "feature_columns": [
+    "days_since_last_opp_feat",
+    "days_since_last_team_feat",
+    "elo_diff_feat",
+    "elo_opponent_feat",
+    "elo_team_feat",
+    "form_diff_feat",
+    "form_opp_feat",
+    "form_team_feat",
+    "gd_last5_ewma_diff_feat",
+    "h2h_gd_last5_ewma_feat",
+    "h2h_gd_last5_simple_feat",
+    "h2h_pts_last5_ewma_feat",
+    "h2h_pts_last5_simple_feat",
+    "opp_avg_ga_last5_ewma_feat",
+    "opp_avg_gf_last5_ewma_feat",
+    "opp_gd_last10_ewma_feat",
+    "opp_gd_last5_ewma_feat",
+    "opp_pts_last10_ewma_feat",
+    "opp_pts_last10_simple_feat",
+    "opp_pts_last5_ewma_feat",
+    "opp_pts_last5_simple_feat",
+    "opp_win_rate_last10_ewma_feat",
+    "pts_last10_ewma_diff_feat",
+    "pts_last10_simple_diff_feat",
+    "pts_last5_ewma_diff_feat",
+    "pts_last5_simple_diff_feat",
+    "team_avg_ga_last5_ewma_feat",
+    "team_avg_gf_last5_ewma_feat",
+    "team_gd_last10_ewma_feat",
+    "team_gd_last5_ewma_feat",
+    "team_pts_last10_ewma_feat",
+    "team_pts_last10_simple_feat",
+    "team_pts_last5_ewma_feat",
+    "team_pts_last5_simple_feat",
+    "team_win_rate_last10_ewma_feat",
+    "travel_stress_diff_ctx",
+    "altitude_shock_team_ctx",
+    "altitude_shock_opp_ctx",
+    "temp_stress_ctx",
+    "log_gdp_diff_ctx",
+    "log_pop_diff_ctx",
+    "venue_country_te_ctx",
+    "confederation_team_te_ctx",
+    "venue_country_freq_ctx",
+    "is_home",
+    "neutral",
+    "population_team",
+    "population_opp",
+    "gdp_per_capita_team",
+    "gdp_per_capita_opp",
+    "altitude_venue",
+    "distance_travel_team",
+    "distance_travel_opp",
+    "temperature_venue",
+    "tournament_weight",
+    "elo_diff_risk",
+    "abs_elo_diff_risk",
+    "balanced_match_risk",
+    "favorite_risk",
+    "underdog_risk",
+    "strong_favorite_risk",
+    "elo_x_tournament_weight_risk",
+    "expected_total_goals_proxy_risk",
+    "form_uncertainty_proxy_risk",
+    "neutral_x_elo_risk",
+    "home_x_elo_risk",
+    "year_risk",
+    "month_risk",
+    "is_friendly_risk",
+    "is_qualifier_risk",
+    "is_major_tournament_risk",
+    "high_importance_tournament_risk"
+  ],
+  "feature_groups": {
+    "core_historical": [
+      "days_since_last_opp_feat",
+      "days_since_last_team_feat",
+      "elo_diff_feat",
+      "elo_opponent_feat",
+      "elo_team_feat",
+      "form_diff_feat",
+      "form_opp_feat",
+      "form_team_feat",
+      "gd_last5_ewma_diff_feat",
+      "h2h_gd_last5_ewma_feat",
+      "h2h_gd_last5_simple_feat",
+      "h2h_pts_last5_ewma_feat",
+      "h2h_pts_last5_simple_feat",
+      "opp_avg_ga_last5_ewma_feat",
+      "opp_avg_gf_last5_ewma_feat",
+      "opp_gd_last10_ewma_feat",
+      "opp_gd_last5_ewma_feat",
+      "opp_pts_last10_ewma_feat",
+      "opp_pts_last10_simple_feat",
+      "opp_pts_last5_ewma_feat",
+      "opp_pts_last5_simple_feat",
+      "opp_win_rate_last10_ewma_feat",
+      "pts_last10_ewma_diff_feat",
+      "pts_last10_simple_diff_feat",
+      "pts_last5_ewma_diff_feat",
+      "pts_last5_simple_diff_feat",
+      "team_avg_ga_last5_ewma_feat",
+      "team_avg_gf_last5_ewma_feat",
+      "team_gd_last10_ewma_feat",
+      "team_gd_last5_ewma_feat",
+      "team_pts_last10_ewma_feat",
+      "team_pts_last10_simple_feat",
+      "team_pts_last5_ewma_feat",
+      "team_pts_last5_simple_feat",
+      "team_win_rate_last10_ewma_feat"
+    ],
+    "context": [
+      "travel_stress_diff_ctx",
+      "altitude_shock_team_ctx",
+      "altitude_shock_opp_ctx",
+      "temp_stress_ctx",
+      "log_gdp_diff_ctx",
+      "log_pop_diff_ctx",
+      "venue_country_te_ctx",
+      "confederation_team_te_ctx",
+      "venue_country_freq_ctx"
+    ],
+    "match_metadata": [
+      "is_home",
+      "neutral",
+      "tournament_weight",
+      "year_risk",
+      "month_risk",
+      "is_friendly_risk",
+      "is_qualifier_risk",
+      "is_major_tournament_risk"
+    ],
+    "risk_features": [
+      "elo_diff_risk",
+      "abs_elo_diff_risk",
+      "balanced_match_risk",
+      "favorite_risk",
+      "underdog_risk",
+      "strong_favorite_risk",
+      "elo_x_tournament_weight_risk",
+      "expected_total_goals_proxy_risk",
+      "form_uncertainty_proxy_risk",
+      "neutral_x_elo_risk",
+      "home_x_elo_risk",
+      "is_friendly_risk",
+      "is_qualifier_risk",
+      "is_major_tournament_risk",
+      "high_importance_tournament_risk"
+    ]
+  },
+  "dropped_columns": [],
+  "fold_definitions": [
+    {
+      "name": "fold_2003_2005",
+      "train_end": "2002-12-31",
+      "valid_start": "2003-01-01",
+      "valid_end": "2005-12-31",
+      "weight": 0.2
+    },
+    {
+      "name": "fold_2006_2008",
+      "train_end": "2005-12-31",
+      "valid_start": "2006-01-01",
+      "valid_end": "2008-12-31",
+      "weight": 0.3
+    },
+    {
+      "name": "fold_2009_2011",
+      "train_end": "2008-12-31",
+      "valid_start": "2009-01-01",
+      "valid_end": "2011-08-04",
+      "weight": 0.5
+    }
+  ],
+  "base_model_names": [
+    "xgb_poisson",
+    "hgb_poisson",
+    "lgb_poisson",
+    "cat_poisson"
+  ],
+  "base_model_availability": {
+    "xgb": true,
+    "hgb": true,
+    "lgb": true,
+    "catboost": true
+  },
+  "selected_config": {
+    "stage": "08_segment_aware_calibration",
+    "name": "not_enabled_no_stable_fold_evidence",
+    "team_weights": [
+      0.03333333333333333,
+      0.9,
+      0.03333333333333333,
+      0.03333333333333333
+    ],
+    "opp_weights": [
+      0.03333333333333333,
+      0.9,
+      0.03333333333333333,
+      0.03333333333333333
+    ],
+    "max_goals": 10,
+    "draw_boost": 1.0,
+    "low_score_boost": 1.0,
+    "tail_dampener": 0.9,
+    "outcome_alpha": 0.15,
+    "risk_penalties_enabled": true
+  },
+  "selected_validation_metrics": {
+    "weighted_awmae_power_1_5": 2.7910736520070896,
+    "unweighted_awmae_power_1_5": 2.8191482956977567,
+    "weighted_awmae_power_1_3": 2.3290057954987953,
+    "unweighted_awmae_power_1_3": 2.3496454545483427,
+    "outcome_accuracy": 0.6046344271732873,
+    "exact_accuracy": 0.10842448666282863,
+    "goal_diff_accuracy": 0.23416810592976395
+  },
+  "selected_fold_metrics": [
+    {
+      "fold_name": "fold_2003_2005",
+      "fold_weight": 0.2,
+      "rows": 6946,
+      "weighted_awmae": 2.8578101931935813,
+      "unweighted_awmae": 2.872669613238314,
+      "outcome_accuracy": 0.5991937805931471,
+      "exact_accuracy": 0.10754391016412324,
+      "goal_diff_accuracy": 0.2302044342067377,
+      "weighted_awmae_power_1_3": 2.3780019351756034,
+      "unweighted_awmae_power_1_3": 2.3889844329583383
+    },
+    {
+      "fold_name": "fold_2006_2008",
+      "fold_weight": 0.3,
+      "rows": 7698,
+      "weighted_awmae": 2.791016090465144,
+      "unweighted_awmae": 2.8038259942631325,
+      "outcome_accuracy": 0.6110678098207326,
+      "exact_accuracy": 0.10561184723304755,
+      "goal_diff_accuracy": 0.23590542998181346,
+      "weighted_awmae_power_1_3": 2.327406235445678,
+      "unweighted_awmae_power_1_3": 2.3369035890871697
+    },
+    {
+      "fold_name": "fold_2009_2011",
+      "fold_weight": 0.5,
+      "rows": 6200,
+      "weighted_awmae": 2.76441357245766,
+      "unweighted_awmae": 2.778211522279535,
+      "outcome_accuracy": 0.602741935483871,
+      "exact_accuracy": 0.11290322580645161,
+      "goal_diff_accuracy": 0.2364516129032258,
+      "weighted_awmae_power_1_3": 2.3103670756599426,
+      "unweighted_awmae_power_1_3": 2.3213935733038715
+    }
+  ],
+  "selected_distribution": {
+    "rows": 20844,
+    "win_share": 0.43628862022644405,
+    "draw_share": 0.12161773172135866,
+    "loss_share": 0.44209364805219725,
+    "avg_team_goals": 1.4220399155632317,
+    "avg_opp_goals": 1.4296680099788908,
+    "avg_total_goals": 2.8517079255421223,
+    "score_ge5_share": 0.03113605833813088,
+    "common_low_score_share": 0.8263768950297448,
+    "top1_score_share": 0.2815198618307427,
+    "top3_score_share": 0.6832181922855498,
+    "top5_score_share": 0.7674150834772596,
+    "top_10_scores": [
+      {
+        "score": "1-2",
+        "count": 5868,
+        "share": 0.2815198618307427
+      },
+      {
+        "score": "2-1",
+        "count": 5838,
+        "share": 0.2800805987334485
+      },
+      {
+        "score": "1-1",
+        "count": 2535,
+        "share": 0.12161773172135866
+      },
+      {
+        "score": "2-0",
+        "count": 898,
+        "share": 0.04308194204567262
+      },
+      {
+        "score": "0-2",
+        "count": 857,
+        "share": 0.04111494914603723
+      },
+      {
+        "score": "0-3",
+        "count": 719,
+        "share": 0.034494338898483974
+      },
+      {
+        "score": "3-0",
+        "count": 712,
+        "share": 0.03415851084244867
+      },
+      {
+        "score": "0-1",
+        "count": 661,
+        "share": 0.03171176357704855
+      },
+      {
+        "score": "1-0",
+        "count": 568,
+        "share": 0.027250047975436578
+      },
+      {
+        "score": "0-4",
+        "count": 377,
+        "share": 0.018086739589330263
+      }
+    ]
+  },
+  "selected_risk_components": {
+    "fold_instability_penalty": 0.009822053872863034,
+    "outcome_drop_penalty": 0.0,
+    "exact_drop_penalty": 0.0,
+    "high_score_tail_penalty": 1.2906285476366963e-06,
+    "score_collapse_penalty": 0.00953711741867956,
+    "yearly_distribution_penalty": 0.0007158961331990986
+  },
+  "selected_selection_score": 2.811150010060379,
+  "ablation_table": [
+    {
+      "stage": "01_baseline_poisson_ensemble",
+      "candidate": "uniform_max8_no_risk",
+      "selected": true,
+      "accepted_by_ablation": true,
+      "ablation_reason": "initial_baseline",
+      "selection_score": 2.831870758466869,
+      "weighted_awmae_power_1_5": 2.8206671044431837,
+      "unweighted_awmae_power_1_5": 2.8499966510174395,
+      "weighted_awmae_power_1_3": 2.3526020398739718,
+      "unweighted_awmae_power_1_3": 2.373364766684626,
+      "outcome_accuracy": 0.5981577432354634,
+      "exact_accuracy": 0.10573786221454615,
+      "goal_diff_accuracy": 0.24112454423335253,
+      "distribution": {
+        "score_ge5_share": 0.019957781615812704,
+        "top1_score_share": 0.32767223181730953,
+        "top3_score_share": 0.7926021876799079,
+        "draw_share": 0.14315870274419498
+      },
+      "risk_components": {
+        "fold_instability_penalty": 0.011203654023685337,
+        "outcome_drop_penalty": 0.0,
+        "exact_drop_penalty": 0.0,
+        "high_score_tail_penalty": 0.0,
+        "score_collapse_penalty": 0.0,
+        "yearly_distribution_penalty": 0.0
+      },
+      "config": {
+        "stage": "01_baseline_poisson_ensemble",
+        "name": "uniform_max8_no_risk",
+        "team_weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "opp_weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "max_goals": 8,
+        "draw_boost": 1.0,
+        "low_score_boost": 1.0,
+        "tail_dampener": 1.0,
+        "outcome_alpha": 0.0,
+        "risk_penalties_enabled": false
+      }
+    },
+    {
+      "stage": "02_split_team_opp_blend",
+      "candidate": "tw2_ow2",
+      "selected": true,
+      "accepted_by_ablation": true,
+      "ablation_reason": "accepted",
+      "selection_score": 2.829810518841719,
+      "weighted_awmae_power_1_5": 2.803525789110007,
+      "unweighted_awmae_power_1_5": 2.8317635706047692,
+      "weighted_awmae_power_1_3": 2.339180647092487,
+      "unweighted_awmae_power_1_3": 2.3594674096597226,
+      "outcome_accuracy": 0.5995970063327576,
+      "exact_accuracy": 0.1072251007484168,
+      "goal_diff_accuracy": 0.23690270581462292,
+      "distribution": {
+        "score_ge5_share": 0.024995202456342354,
+        "top1_score_share": 0.28559777393974284,
+        "top3_score_share": 0.7114757244290923,
+        "draw_share": 0.14104778353483016
+      },
+      "risk_components": {
+        "fold_instability_penalty": 0.011223161229739317,
+        "outcome_drop_penalty": 0.0,
+        "exact_drop_penalty": 0.0,
+        "high_score_tail_penalty": 0.0,
+        "score_collapse_penalty": 0.013809982906713767,
+        "yearly_distribution_penalty": 0.0012515855952587496
+      },
+      "config": {
+        "stage": "02_split_team_opp_blend",
+        "name": "tw2_ow2",
+        "team_weights": [
+          0.03333333333333333,
+          0.9,
+          0.03333333333333333,
+          0.03333333333333333
+        ],
+        "opp_weights": [
+          0.03333333333333333,
+          0.9,
+          0.03333333333333333,
+          0.03333333333333333
+        ],
+        "max_goals": 8,
+        "draw_boost": 1.0,
+        "low_score_boost": 1.0,
+        "tail_dampener": 1.0,
+        "outcome_alpha": 0.0,
+        "risk_penalties_enabled": true
+      }
+    },
+    {
+      "stage": "03_awmae_erm_max_goals",
+      "candidate": "max10",
+      "selected": true,
+      "accepted_by_ablation": true,
+      "ablation_reason": "accepted",
+      "selection_score": 2.821224108905141,
+      "weighted_awmae_power_1_5": 2.7964072037500527,
+      "unweighted_awmae_power_1_5": 2.823998312761559,
+      "weighted_awmae_power_1_3": 2.3345027357945276,
+      "unweighted_awmae_power_1_3": 2.354489907735145,
+      "outcome_accuracy": 0.5996449817693341,
+      "exact_accuracy": 0.10736902705814623,
+      "goal_diff_accuracy": 0.2367587795048935,
+      "distribution": {
+        "score_ge5_share": 0.0328631740548839,
+        "top1_score_share": 0.28492611782767224,
+        "top3_score_share": 0.710228363078104,
+        "draw_share": 0.14080790635194781
+      },
+      "risk_components": {
+        "fold_instability_penalty": 0.009990459348845425,
+        "outcome_drop_penalty": 0.0,
+        "exact_drop_penalty": 0.0,
+        "high_score_tail_penalty": 8.197765668560309e-06,
+        "score_collapse_penalty": 0.013590783772249187,
+        "yearly_distribution_penalty": 0.0012274642683248451
+      },
+      "config": {
+        "stage": "03_awmae_erm_max_goals",
+        "name": "max10",
+        "team_weights": [
+          0.03333333333333333,
+          0.9,
+          0.03333333333333333,
+          0.03333333333333333
+        ],
+        "opp_weights": [
+          0.03333333333333333,
+          0.9,
+          0.03333333333333333,
+          0.03333333333333333
+        ],
+        "max_goals": 10,
+        "draw_boost": 1.0,
+        "low_score_boost": 1.0,
+        "tail_dampener": 1.0,
+        "outcome_alpha": 0.0,
+        "risk_penalties_enabled": true
+      }
+    },
+    {
+      "stage": "04_outcome_soft_reranker",
+      "candidate": "alpha0.15",
+      "selected": true,
+      "accepted_by_ablation": true,
+      "ablation_reason": "accepted",
+      "selection_score": 2.812214890809361,
+      "weighted_awmae_power_1_5": 2.792237487372531,
+      "unweighted_awmae_power_1_5": 2.819407311026428,
+      "weighted_awmae_power_1_3": 2.3303321985286445,
+      "unweighted_awmae_power_1_3": 2.3501652492689753,
+      "outcome_accuracy": 0.6048743043561696,
+      "exact_accuracy": 0.1074170024947227,
+      "goal_diff_accuracy": 0.2328727691421992,
+      "distribution": {
+        "score_ge5_share": 0.034350412588754556,
+        "top1_score_share": 0.28262329687200155,
+        "top3_score_share": 0.6828823642295145,
+        "draw_share": 0.11921895989253502
+      },
+      "risk_components": {
+        "fold_instability_penalty": 0.00972046045754129,
+        "outcome_drop_penalty": 0.0,
+        "exact_drop_penalty": 0.0,
+        "high_score_tail_penalty": 1.8926089692394125e-05,
+        "score_collapse_penalty": 0.009521164205032379,
+        "yearly_distribution_penalty": 0.0007168526845639222
+      },
+      "config": {
+        "stage": "04_outcome_soft_reranker",
+        "name": "alpha0.15",
+        "team_weights": [
+          0.03333333333333333,
+          0.9,
+          0.03333333333333333,
+          0.03333333333333333
+        ],
+        "opp_weights": [
+          0.03333333333333333,
+          0.9,
+          0.03333333333333333,
+          0.03333333333333333
+        ],
+        "max_goals": 10,
+        "draw_boost": 1.0,
+        "low_score_boost": 1.0,
+        "tail_dampener": 1.0,
+        "outcome_alpha": 0.15,
+        "risk_penalties_enabled": true
+      }
+    },
+    {
+      "stage": "05_draw_low_score_calibration",
+      "candidate": "d1.08_l1.08",
+      "selected": false,
+      "accepted_by_ablation": false,
+      "ablation_reason": "outcome_drop",
+      "selection_score": 2.8040363005977986,
+      "weighted_awmae_power_1_5": 2.7862793006515125,
+      "unweighted_awmae_power_1_5": 2.8138134415328295,
+      "weighted_awmae_power_1_3": 2.32592533999555,
+      "unweighted_awmae_power_1_3": 2.346070197758186,
+      "outcome_accuracy": 0.5996449817693341,
+      "exact_accuracy": 0.10967184801381692,
+      "goal_diff_accuracy": 0.23455190942237575,
+      "distribution": {
+        "score_ge5_share": 0.0333909038572251,
+        "top1_score_share": 0.25647668393782386,
+        "top3_score_share": 0.6587986950681252,
+        "draw_share": 0.147524467472654
+      },
+      "risk_components": {
+        "fold_instability_penalty": 0.011280613305486582,
+        "outcome_drop_penalty": 0.0,
+        "exact_drop_penalty": 0.0,
+        "high_score_tail_penalty": 1.149822896894409e-05,
+        "score_collapse_penalty": 0.006093831722349292,
+        "yearly_distribution_penalty": 0.00037105668948133935
+      },
+      "config": {
+        "stage": "05_draw_low_score_calibration",
+        "name": "d1.08_l1.08",
+        "team_weights": [
+          0.03333333333333333,
+          0.9,
+          0.03333333333333333,
+          0.03333333333333333
+        ],
+        "opp_weights": [
+          0.03333333333333333,
+          0.9,
+          0.03333333333333333,
+          0.03333333333333333
+        ],
+        "max_goals": 10,
+        "draw_boost": 1.08,
+        "low_score_boost": 1.08,
+        "tail_dampener": 1.0,
+        "outcome_alpha": 0.15,
+        "risk_penalties_enabled": true
+      }
+    },
+    {
+      "stage": "06_high_score_tail_penalty",
+      "candidate": "tail0.9",
+      "selected": true,
+      "accepted_by_ablation": true,
+      "ablation_reason": "accepted",
+      "selection_score": 2.811150010060379,
+      "weighted_awmae_power_1_5": 2.7910736520070896,
+      "unweighted_awmae_power_1_5": 2.8191482956977567,
+      "weighted_awmae_power_1_3": 2.3290057954987953,
+      "unweighted_awmae_power_1_3": 2.3496454545483427,
+      "outcome_accuracy": 0.6046344271732873,
+      "exact_accuracy": 0.10842448666282863,
+      "goal_diff_accuracy": 0.23416810592976395,
+      "distribution": {
+        "score_ge5_share": 0.03113605833813088,
+        "top1_score_share": 0.2815198618307427,
+        "top3_score_share": 0.6832181922855498,
+        "draw_share": 0.12161773172135866
+      },
+      "risk_components": {
+        "fold_instability_penalty": 0.009822053872863034,
+        "outcome_drop_penalty": 0.0,
+        "exact_drop_penalty": 0.0,
+        "high_score_tail_penalty": 1.2906285476366963e-06,
+        "score_collapse_penalty": 0.00953711741867956,
+        "yearly_distribution_penalty": 0.0007158961331990986
+      },
+      "config": {
+        "stage": "06_high_score_tail_penalty",
+        "name": "tail0.9",
+        "team_weights": [
+          0.03333333333333333,
+          0.9,
+          0.03333333333333333,
+          0.03333333333333333
+        ],
+        "opp_weights": [
+          0.03333333333333333,
+          0.9,
+          0.03333333333333333,
+          0.03333333333333333
+        ],
+        "max_goals": 10,
+        "draw_boost": 1.0,
+        "low_score_boost": 1.0,
+        "tail_dampener": 0.9,
+        "outcome_alpha": 0.15,
+        "risk_penalties_enabled": true
+      }
+    },
+    {
+      "stage": "07_top_score_concentration_penalty",
+      "candidate": "risk_penalties_on",
+      "selected": true,
+      "accepted_by_ablation": true,
+      "ablation_reason": "accepted",
+      "selection_score": 2.811150010060379,
+      "weighted_awmae_power_1_5": 2.7910736520070896,
+      "unweighted_awmae_power_1_5": 2.8191482956977567,
+      "weighted_awmae_power_1_3": 2.3290057954987953,
+      "unweighted_awmae_power_1_3": 2.3496454545483427,
+      "outcome_accuracy": 0.6046344271732873,
+      "exact_accuracy": 0.10842448666282863,
+      "goal_diff_accuracy": 0.23416810592976395,
+      "distribution": {
+        "score_ge5_share": 0.03113605833813088,
+        "top1_score_share": 0.2815198618307427,
+        "top3_score_share": 0.6832181922855498,
+        "draw_share": 0.12161773172135866
+      },
+      "risk_components": {
+        "fold_instability_penalty": 0.009822053872863034,
+        "outcome_drop_penalty": 0.0,
+        "exact_drop_penalty": 0.0,
+        "high_score_tail_penalty": 1.2906285476366963e-06,
+        "score_collapse_penalty": 0.00953711741867956,
+        "yearly_distribution_penalty": 0.0007158961331990986
+      },
+      "config": {
+        "stage": "07_top_score_concentration_penalty",
+        "name": "risk_penalties_on",
+        "team_weights": [
+          0.03333333333333333,
+          0.9,
+          0.03333333333333333,
+          0.03333333333333333
+        ],
+        "opp_weights": [
+          0.03333333333333333,
+          0.9,
+          0.03333333333333333,
+          0.03333333333333333
+        ],
+        "max_goals": 10,
+        "draw_boost": 1.0,
+        "low_score_boost": 1.0,
+        "tail_dampener": 0.9,
+        "outcome_alpha": 0.15,
+        "risk_penalties_enabled": true
+      }
+    },
+    {
+      "stage": "08_segment_aware_calibration",
+      "candidate": "not_enabled_no_stable_fold_evidence",
+      "selected": true,
+      "accepted_by_ablation": true,
+      "ablation_reason": "accepted",
+      "selection_score": 2.811150010060379,
+      "weighted_awmae_power_1_5": 2.7910736520070896,
+      "unweighted_awmae_power_1_5": 2.8191482956977567,
+      "weighted_awmae_power_1_3": 2.3290057954987953,
+      "unweighted_awmae_power_1_3": 2.3496454545483427,
+      "outcome_accuracy": 0.6046344271732873,
+      "exact_accuracy": 0.10842448666282863,
+      "goal_diff_accuracy": 0.23416810592976395,
+      "distribution": {
+        "score_ge5_share": 0.03113605833813088,
+        "top1_score_share": 0.2815198618307427,
+        "top3_score_share": 0.6832181922855498,
+        "draw_share": 0.12161773172135866
+      },
+      "risk_components": {
+        "fold_instability_penalty": 0.009822053872863034,
+        "outcome_drop_penalty": 0.0,
+        "exact_drop_penalty": 0.0,
+        "high_score_tail_penalty": 1.2906285476366963e-06,
+        "score_collapse_penalty": 0.00953711741867956,
+        "yearly_distribution_penalty": 0.0007158961331990986
+      },
+      "config": {
+        "stage": "08_segment_aware_calibration",
+        "name": "not_enabled_no_stable_fold_evidence",
+        "team_weights": [
+          0.03333333333333333,
+          0.9,
+          0.03333333333333333,
+          0.03333333333333333
+        ],
+        "opp_weights": [
+          0.03333333333333333,
+          0.9,
+          0.03333333333333333,
+          0.03333333333333333
+        ],
+        "max_goals": 10,
+        "draw_boost": 1.0,
+        "low_score_boost": 1.0,
+        "tail_dampener": 0.9,
+        "outcome_alpha": 0.15,
+        "risk_penalties_enabled": true
+      }
+    }
+  ],
+  "thresholds": {
+    "tail_threshold": 0.03,
+    "top3_threshold": 0.55,
+    "top1_threshold": 0.23
+  },
+  "friend_distribution_from_predictions_only": null,
+  "segment_metrics": {
+    "major_tournament": {
+      "rows": 5796,
+      "weighted_awmae": 2.632878093938554,
+      "unweighted_awmae": 2.6272251644154605,
+      "outcome_accuracy": 0.6368184955141477,
+      "exact_accuracy": 0.11697722567287784,
+      "goal_diff_accuracy": 0.24465148378191856
+    },
+    "friendly": {
+      "rows": 6106,
+      "weighted_awmae": 2.7236500521369242,
+      "unweighted_awmae": 2.723650052136925,
+      "outcome_accuracy": 0.5222731739272847,
+      "exact_accuracy": 0.11431378971503439,
+      "goal_diff_accuracy": 0.26269243367179823
+    },
+    "qualifier": {
+      "rows": 8086,
+      "weighted_awmae": 2.6898955389136936,
+      "unweighted_awmae": 2.707578638920466,
+      "outcome_accuracy": 0.653227801137769,
+      "exact_accuracy": 0.11365322780113776,
+      "goal_diff_accuracy": 0.220751916893396
+    },
+    "neutral": {
+      "rows": 6596,
+      "weighted_awmae": 3.0618021549710046,
+      "unweighted_awmae": 3.084367240788092,
+      "outcome_accuracy": 0.5967252880533657,
+      "exact_accuracy": 0.09869617950272892,
+      "goal_diff_accuracy": 0.22210430563978167
+    },
+    "non_neutral": {
+      "rows": 14248,
+      "weighted_awmae": 2.6827166560726936,
+      "unweighted_awmae": 2.696367262442854,
+      "outcome_accuracy": 0.6082959011791128,
+      "exact_accuracy": 0.11292813026389668,
+      "goal_diff_accuracy": 0.23975294778214487
+    },
+    "balanced_elo": {
+      "rows": 3784,
+      "weighted_awmae": 3.2609743817120855,
+      "unweighted_awmae": 3.24853081679765,
+      "outcome_accuracy": 0.4693446088794926,
+      "exact_accuracy": 0.10200845665961945,
+      "goal_diff_accuracy": 0.23837209302325582
+    },
+    "strong_favorite": {
+      "rows": 4036,
+      "weighted_awmae": 2.4673738150183704,
+      "unweighted_awmae": 2.4856745336091626,
+      "outcome_accuracy": 0.7529732408325074,
+      "exact_accuracy": 0.11917740336967295,
+      "goal_diff_accuracy": 0.21778989098116946
+    }
+  },
+  "per_year_validation_diagnostics": {
+    "2003": {
+      "rows": 2428,
+      "win_share": 0.43533772652388797,
+      "draw_share": 0.12191103789126853,
+      "loss_share": 0.44275123558484347,
+      "avg_team_goals": 1.4802306425041185,
+      "avg_opp_goals": 1.4806425041186162,
+      "avg_total_goals": 2.9608731466227347,
+      "score_ge5_share": 0.051482701812191105,
+      "common_low_score_share": 0.7953047775947282,
+      "top1_score_share": 0.27471169686985175,
+      "top3_score_share": 0.6581548599670511,
+      "top5_score_share": 0.7372322899505767,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 667,
+          "share": 0.27471169686985175
+        },
+        {
+          "score": "2-1",
+          "count": 635,
+          "share": 0.26153212520593083
+        },
+        {
+          "score": "1-1",
+          "count": 296,
+          "share": 0.12191103789126853
+        },
+        {
+          "score": "2-0",
+          "count": 103,
+          "share": 0.04242174629324547
+        },
+        {
+          "score": "0-2",
+          "count": 89,
+          "share": 0.036655683690280064
+        },
+        {
+          "score": "3-0",
+          "count": 77,
+          "share": 0.03171334431630972
+        },
+        {
+          "score": "0-1",
+          "count": 74,
+          "share": 0.030477759472817133
+        },
+        {
+          "score": "0-3",
+          "count": 71,
+          "share": 0.029242174629324547
+        },
+        {
+          "score": "1-0",
+          "count": 67,
+          "share": 0.02759472817133443
+        },
+        {
+          "score": "0-4",
+          "count": 52,
+          "share": 0.0214168039538715
+        }
+      ]
+    },
+    "2004": {
+      "rows": 2592,
+      "win_share": 0.43132716049382713,
+      "draw_share": 0.12885802469135801,
+      "loss_share": 0.4398148148148148,
+      "avg_team_goals": 1.402391975308642,
+      "avg_opp_goals": 1.4124228395061729,
+      "avg_total_goals": 2.814814814814815,
+      "score_ge5_share": 0.02854938271604938,
+      "common_low_score_share": 0.8213734567901234,
+      "top1_score_share": 0.27469135802469136,
+      "top3_score_share": 0.6716820987654321,
+      "top5_score_share": 0.7527006172839505,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 712,
+          "share": 0.27469135802469136
+        },
+        {
+          "score": "2-1",
+          "count": 695,
+          "share": 0.2681327160493827
+        },
+        {
+          "score": "1-1",
+          "count": 334,
+          "share": 0.12885802469135801
+        },
+        {
+          "score": "2-0",
+          "count": 109,
+          "share": 0.04205246913580247
+        },
+        {
+          "score": "0-3",
+          "count": 101,
+          "share": 0.03896604938271605
+        },
+        {
+          "score": "0-2",
+          "count": 96,
+          "share": 0.037037037037037035
+        },
+        {
+          "score": "0-1",
+          "count": 95,
+          "share": 0.03665123456790124
+        },
+        {
+          "score": "1-0",
+          "count": 88,
+          "share": 0.033950617283950615
+        },
+        {
+          "score": "3-0",
+          "count": 87,
+          "share": 0.03356481481481482
+        },
+        {
+          "score": "4-0",
+          "count": 59,
+          "share": 0.022762345679012346
+        }
+      ]
+    },
+    "2005": {
+      "rows": 1926,
+      "win_share": 0.416926272066459,
+      "draw_share": 0.15109034267912771,
+      "loss_share": 0.43198338525441327,
+      "avg_team_goals": 1.3686396677050883,
+      "avg_opp_goals": 1.3862928348909658,
+      "avg_total_goals": 2.754932502596054,
+      "score_ge5_share": 0.02284527518172378,
+      "common_low_score_share": 0.8364485981308412,
+      "top1_score_share": 0.26583592938733125,
+      "top3_score_share": 0.670301142263759,
+      "top5_score_share": 0.7632398753894081,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 512,
+          "share": 0.26583592938733125
+        },
+        {
+          "score": "2-1",
+          "count": 488,
+          "share": 0.2533748701973001
+        },
+        {
+          "score": "1-1",
+          "count": 291,
+          "share": 0.15109034267912771
+        },
+        {
+          "score": "2-0",
+          "count": 95,
+          "share": 0.04932502596053998
+        },
+        {
+          "score": "0-2",
+          "count": 84,
+          "share": 0.04361370716510903
+        },
+        {
+          "score": "0-1",
+          "count": 75,
+          "share": 0.03894080996884735
+        },
+        {
+          "score": "0-3",
+          "count": 68,
+          "share": 0.035306334371754934
+        },
+        {
+          "score": "3-0",
+          "count": 67,
+          "share": 0.0347871235721703
+        },
+        {
+          "score": "1-0",
+          "count": 66,
+          "share": 0.03426791277258567
+        },
+        {
+          "score": "0-4",
+          "count": 39,
+          "share": 0.020249221183800622
+        }
+      ]
+    },
+    "2006": {
+      "rows": 2348,
+      "win_share": 0.4488926746166951,
+      "draw_share": 0.09625212947189098,
+      "loss_share": 0.454855195911414,
+      "avg_team_goals": 1.461243611584327,
+      "avg_opp_goals": 1.4770017035775127,
+      "avg_total_goals": 2.93824531516184,
+      "score_ge5_share": 0.031090289608177172,
+      "common_low_score_share": 0.8164395229982965,
+      "top1_score_share": 0.30664395229982966,
+      "top3_score_share": 0.7001703577512777,
+      "top5_score_share": 0.7695911413969336,
+      "top_10_scores": [
+        {
+          "score": "2-1",
+          "count": 720,
+          "share": 0.30664395229982966
+        },
+        {
+          "score": "1-2",
+          "count": 698,
+          "share": 0.2972742759795571
+        },
+        {
+          "score": "1-1",
+          "count": 226,
+          "share": 0.09625212947189098
+        },
+        {
+          "score": "0-2",
+          "count": 83,
+          "share": 0.03534923339011925
+        },
+        {
+          "score": "3-0",
+          "count": 80,
+          "share": 0.034071550255536626
+        },
+        {
+          "score": "2-0",
+          "count": 77,
+          "share": 0.032793867120954
+        },
+        {
+          "score": "0-3",
+          "count": 68,
+          "share": 0.028960817717206135
+        },
+        {
+          "score": "0-1",
+          "count": 67,
+          "share": 0.028534923339011926
+        },
+        {
+          "score": "1-0",
+          "count": 46,
+          "share": 0.019591141396933562
+        },
+        {
+          "score": "0-4",
+          "count": 45,
+          "share": 0.019165247018739354
+        }
+      ]
+    },
+    "2007": {
+      "rows": 2620,
+      "win_share": 0.4400763358778626,
+      "draw_share": 0.12022900763358779,
+      "loss_share": 0.4396946564885496,
+      "avg_team_goals": 1.452671755725191,
+      "avg_opp_goals": 1.451908396946565,
+      "avg_total_goals": 2.904580152671756,
+      "score_ge5_share": 0.03778625954198473,
+      "common_low_score_share": 0.8038167938931298,
+      "top1_score_share": 0.2774809160305344,
+      "top3_score_share": 0.6729007633587787,
+      "top5_score_share": 0.7603053435114504,
+      "top_10_scores": [
+        {
+          "score": "2-1",
+          "count": 727,
+          "share": 0.2774809160305344
+        },
+        {
+          "score": "1-2",
+          "count": 721,
+          "share": 0.27519083969465646
+        },
+        {
+          "score": "1-1",
+          "count": 315,
+          "share": 0.12022900763358779
+        },
+        {
+          "score": "2-0",
+          "count": 116,
+          "share": 0.044274809160305344
+        },
+        {
+          "score": "0-3",
+          "count": 113,
+          "share": 0.04312977099236641
+        },
+        {
+          "score": "3-0",
+          "count": 112,
+          "share": 0.042748091603053436
+        },
+        {
+          "score": "0-2",
+          "count": 105,
+          "share": 0.04007633587786259
+        },
+        {
+          "score": "0-1",
+          "count": 65,
+          "share": 0.02480916030534351
+        },
+        {
+          "score": "1-0",
+          "count": 57,
+          "share": 0.021755725190839695
+        },
+        {
+          "score": "0-4",
+          "count": 46,
+          "share": 0.017557251908396947
+        }
+      ]
+    },
+    "2008": {
+      "rows": 2730,
+      "win_share": 0.441025641025641,
+      "draw_share": 0.11208791208791209,
+      "loss_share": 0.4468864468864469,
+      "avg_team_goals": 1.4,
+      "avg_opp_goals": 1.408791208791209,
+      "avg_total_goals": 2.8087912087912086,
+      "score_ge5_share": 0.020146520146520148,
+      "common_low_score_share": 0.8516483516483516,
+      "top1_score_share": 0.30512820512820515,
+      "top3_score_share": 0.7208791208791209,
+      "top5_score_share": 0.7974358974358975,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 833,
+          "share": 0.30512820512820515
+        },
+        {
+          "score": "2-1",
+          "count": 829,
+          "share": 0.30366300366300364
+        },
+        {
+          "score": "1-1",
+          "count": 306,
+          "share": 0.11208791208791209
+        },
+        {
+          "score": "2-0",
+          "count": 106,
+          "share": 0.03882783882783883
+        },
+        {
+          "score": "0-3",
+          "count": 103,
+          "share": 0.03772893772893773
+        },
+        {
+          "score": "0-2",
+          "count": 100,
+          "share": 0.03663003663003663
+        },
+        {
+          "score": "3-0",
+          "count": 96,
+          "share": 0.035164835164835165
+        },
+        {
+          "score": "0-1",
+          "count": 81,
+          "share": 0.02967032967032967
+        },
+        {
+          "score": "1-0",
+          "count": 70,
+          "share": 0.02564102564102564
+        },
+        {
+          "score": "0-4",
+          "count": 42,
+          "share": 0.015384615384615385
+        }
+      ]
+    },
+    "2009": {
+      "rows": 2236,
+      "win_share": 0.436046511627907,
+      "draw_share": 0.12388193202146691,
+      "loss_share": 0.4400715563506261,
+      "avg_team_goals": 1.3810375670840787,
+      "avg_opp_goals": 1.387298747763864,
+      "avg_total_goals": 2.768336314847943,
+      "score_ge5_share": 0.03041144901610018,
+      "common_low_score_share": 0.860912343470483,
+      "top1_score_share": 0.2768336314847943,
+      "top3_score_share": 0.676654740608229,
+      "top5_score_share": 0.789355992844365,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 619,
+          "share": 0.2768336314847943
+        },
+        {
+          "score": "2-1",
+          "count": 617,
+          "share": 0.2759391771019678
+        },
+        {
+          "score": "1-1",
+          "count": 277,
+          "share": 0.12388193202146691
+        },
+        {
+          "score": "0-2",
+          "count": 129,
+          "share": 0.057692307692307696
+        },
+        {
+          "score": "2-0",
+          "count": 123,
+          "share": 0.055008944543828264
+        },
+        {
+          "score": "0-1",
+          "count": 82,
+          "share": 0.03667262969588551
+        },
+        {
+          "score": "1-0",
+          "count": 78,
+          "share": 0.03488372093023256
+        },
+        {
+          "score": "0-3",
+          "count": 65,
+          "share": 0.029069767441860465
+        },
+        {
+          "score": "3-0",
+          "count": 62,
+          "share": 0.027728085867620753
+        },
+        {
+          "score": "4-0",
+          "count": 34,
+          "share": 0.01520572450805009
+        }
+      ]
+    },
+    "2010": {
+      "rows": 2518,
+      "win_share": 0.4396346306592534,
+      "draw_share": 0.11437648927720413,
+      "loss_share": 0.4459888800635425,
+      "avg_team_goals": 1.4451945988880064,
+      "avg_opp_goals": 1.4543288324066719,
+      "avg_total_goals": 2.8995234312946785,
+      "score_ge5_share": 0.0329626687847498,
+      "common_low_score_share": 0.8193010325655282,
+      "top1_score_share": 0.28991262907069104,
+      "top3_score_share": 0.6878474980142971,
+      "top5_score_share": 0.7720413026211279,
+      "top_10_scores": [
+        {
+          "score": "2-1",
+          "count": 730,
+          "share": 0.28991262907069104
+        },
+        {
+          "score": "1-2",
+          "count": 714,
+          "share": 0.2835583796664019
+        },
+        {
+          "score": "1-1",
+          "count": 288,
+          "share": 0.11437648927720413
+        },
+        {
+          "score": "0-2",
+          "count": 109,
+          "share": 0.04328832406671962
+        },
+        {
+          "score": "2-0",
+          "count": 103,
+          "share": 0.0409054805401112
+        },
+        {
+          "score": "3-0",
+          "count": 81,
+          "share": 0.03216838760921366
+        },
+        {
+          "score": "0-1",
+          "count": 73,
+          "share": 0.028991262907069104
+        },
+        {
+          "score": "0-3",
+          "count": 71,
+          "share": 0.028196981731532962
+        },
+        {
+          "score": "3-1",
+          "count": 51,
+          "share": 0.020254169976171566
+        },
+        {
+          "score": "4-0",
+          "count": 50,
+          "share": 0.019857029388403495
+        }
+      ]
+    },
+    "2011": {
+      "rows": 1446,
+      "win_share": 0.43084370677731676,
+      "draw_share": 0.1396957123098202,
+      "loss_share": 0.42946058091286304,
+      "avg_team_goals": 1.376210235131397,
+      "avg_opp_goals": 1.3775933609958506,
+      "avg_total_goals": 2.7538035961272476,
+      "score_ge5_share": 0.019363762102351315,
+      "common_low_score_share": 0.8423236514522822,
+      "top1_score_share": 0.2745504840940526,
+      "top3_score_share": 0.6853388658367912,
+      "top5_score_share": 0.7738589211618258,
+      "top_10_scores": [
+        {
+          "score": "2-1",
+          "count": 397,
+          "share": 0.2745504840940526
+        },
+        {
+          "score": "1-2",
+          "count": 392,
+          "share": 0.2710926694329184
+        },
+        {
+          "score": "1-1",
+          "count": 202,
+          "share": 0.1396957123098202
+        },
+        {
+          "score": "2-0",
+          "count": 66,
+          "share": 0.04564315352697095
+        },
+        {
+          "score": "0-2",
+          "count": 62,
+          "share": 0.042876901798063624
+        },
+        {
+          "score": "0-3",
+          "count": 59,
+          "share": 0.04080221300138313
+        },
+        {
+          "score": "3-0",
+          "count": 50,
+          "share": 0.034578146611341634
+        },
+        {
+          "score": "1-0",
+          "count": 50,
+          "share": 0.034578146611341634
+        },
+        {
+          "score": "0-1",
+          "count": 49,
+          "share": 0.0338865836791148
+        },
+        {
+          "score": "4-0",
+          "count": 21,
+          "share": 0.014522821576763486
+        }
+      ]
+    }
+  },
+  "per_year_test_diagnostics": {
+    "2011": {
+      "rows": 1532,
+      "win_share": 0.4236292428198433,
+      "draw_share": 0.141644908616188,
+      "loss_share": 0.4347258485639687,
+      "avg_team_goals": 1.385117493472585,
+      "avg_opp_goals": 1.3857702349869452,
+      "avg_total_goals": 2.77088772845953,
+      "score_ge5_share": 0.04046997389033943,
+      "common_low_score_share": 0.8028720626631853,
+      "top1_score_share": 0.24608355091383813,
+      "top3_score_share": 0.6135770234986946,
+      "top5_score_share": 0.7114882506527416,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 377,
+          "share": 0.24608355091383813
+        },
+        {
+          "score": "2-1",
+          "count": 346,
+          "share": 0.2258485639686684
+        },
+        {
+          "score": "1-1",
+          "count": 217,
+          "share": 0.141644908616188
+        },
+        {
+          "score": "1-0",
+          "count": 78,
+          "share": 0.050913838120104436
+        },
+        {
+          "score": "0-1",
+          "count": 72,
+          "share": 0.04699738903394256
+        },
+        {
+          "score": "0-2",
+          "count": 70,
+          "share": 0.04569190600522193
+        },
+        {
+          "score": "2-0",
+          "count": 70,
+          "share": 0.04569190600522193
+        },
+        {
+          "score": "3-0",
+          "count": 67,
+          "share": 0.043733681462140996
+        },
+        {
+          "score": "0-3",
+          "count": 60,
+          "share": 0.0391644908616188
+        },
+        {
+          "score": "0-4",
+          "count": 34,
+          "share": 0.022193211488250653
+        }
+      ]
+    },
+    "2012": {
+      "rows": 2664,
+      "win_share": 0.4241741741741742,
+      "draw_share": 0.1403903903903904,
+      "loss_share": 0.43543543543543545,
+      "avg_team_goals": 1.3295795795795795,
+      "avg_opp_goals": 1.3475975975975976,
+      "avg_total_goals": 2.6771771771771773,
+      "score_ge5_share": 0.02364864864864865,
+      "common_low_score_share": 0.8374624624624625,
+      "top1_score_share": 0.25037537537537535,
+      "top3_score_share": 0.6291291291291291,
+      "top5_score_share": 0.7383633633633634,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 667,
+          "share": 0.25037537537537535
+        },
+        {
+          "score": "2-1",
+          "count": 635,
+          "share": 0.23836336336336336
+        },
+        {
+          "score": "1-1",
+          "count": 374,
+          "share": 0.1403903903903904
+        },
+        {
+          "score": "1-0",
+          "count": 147,
+          "share": 0.05518018018018018
+        },
+        {
+          "score": "0-1",
+          "count": 144,
+          "share": 0.05405405405405406
+        },
+        {
+          "score": "2-0",
+          "count": 137,
+          "share": 0.051426426426426426
+        },
+        {
+          "score": "0-2",
+          "count": 127,
+          "share": 0.047672672672672674
+        },
+        {
+          "score": "0-3",
+          "count": 115,
+          "share": 0.04316816816816817
+        },
+        {
+          "score": "3-0",
+          "count": 102,
+          "share": 0.038288288288288286
+        },
+        {
+          "score": "4-0",
+          "count": 50,
+          "share": 0.01876876876876877
+        }
+      ]
+    },
+    "2013": {
+      "rows": 2446,
+      "win_share": 0.428454619787408,
+      "draw_share": 0.1402289452166803,
+      "loss_share": 0.4313164349959117,
+      "avg_team_goals": 1.3058053965658218,
+      "avg_opp_goals": 1.3041700735895339,
+      "avg_total_goals": 2.6099754701553555,
+      "score_ge5_share": 0.017988552739165987,
+      "common_low_score_share": 0.8491414554374489,
+      "top1_score_share": 0.2367130008176615,
+      "top3_score_share": 0.60670482420278,
+      "top5_score_share": 0.7305805396565822,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 579,
+          "share": 0.2367130008176615
+        },
+        {
+          "score": "2-1",
+          "count": 562,
+          "share": 0.22976287816843827
+        },
+        {
+          "score": "1-1",
+          "count": 343,
+          "share": 0.1402289452166803
+        },
+        {
+          "score": "1-0",
+          "count": 154,
+          "share": 0.06295993458708095
+        },
+        {
+          "score": "0-2",
+          "count": 149,
+          "share": 0.06091578086672118
+        },
+        {
+          "score": "2-0",
+          "count": 147,
+          "share": 0.06009811937857727
+        },
+        {
+          "score": "0-1",
+          "count": 143,
+          "share": 0.05846279640228945
+        },
+        {
+          "score": "3-0",
+          "count": 91,
+          "share": 0.037203597710547834
+        },
+        {
+          "score": "0-3",
+          "count": 91,
+          "share": 0.037203597710547834
+        },
+        {
+          "score": "4-0",
+          "count": 43,
+          "share": 0.01757972199509403
+        }
+      ]
+    },
+    "2014": {
+      "rows": 2482,
+      "win_share": 0.44077356970185333,
+      "draw_share": 0.11724415793714746,
+      "loss_share": 0.4419822723609992,
+      "avg_team_goals": 1.3839645447219984,
+      "avg_opp_goals": 1.386784850926672,
+      "avg_total_goals": 2.7707493956486706,
+      "score_ge5_share": 0.020950846091861403,
+      "common_low_score_share": 0.8074133763094279,
+      "top1_score_share": 0.25624496373892025,
+      "top3_score_share": 0.6261079774375504,
+      "top5_score_share": 0.7276390008058018,
+      "top_10_scores": [
+        {
+          "score": "2-1",
+          "count": 636,
+          "share": 0.25624496373892025
+        },
+        {
+          "score": "1-2",
+          "count": 627,
+          "share": 0.2526188557614827
+        },
+        {
+          "score": "1-1",
+          "count": 291,
+          "share": 0.11724415793714746
+        },
+        {
+          "score": "0-2",
+          "count": 130,
+          "share": 0.052377115229653506
+        },
+        {
+          "score": "2-0",
+          "count": 122,
+          "share": 0.04915390813859791
+        },
+        {
+          "score": "0-3",
+          "count": 113,
+          "share": 0.045527800161160356
+        },
+        {
+          "score": "3-0",
+          "count": 109,
+          "share": 0.043916196615632556
+        },
+        {
+          "score": "0-1",
+          "count": 102,
+          "share": 0.0410958904109589
+        },
+        {
+          "score": "1-0",
+          "count": 96,
+          "share": 0.038678485092667206
+        },
+        {
+          "score": "4-0",
+          "count": 46,
+          "share": 0.018533440773569703
+        }
+      ]
+    },
+    "2015": {
+      "rows": 2914,
+      "win_share": 0.44371997254632806,
+      "draw_share": 0.11187371310912834,
+      "loss_share": 0.4444063143445436,
+      "avg_team_goals": 1.3716540837336995,
+      "avg_opp_goals": 1.370624571036376,
+      "avg_total_goals": 2.7422786547700757,
+      "score_ge5_share": 0.031914893617021274,
+      "common_low_score_share": 0.7971859986273164,
+      "top1_score_share": 0.23747426218256693,
+      "top3_score_share": 0.5833905284831846,
+      "top5_score_share": 0.693891557995882,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 692,
+          "share": 0.23747426218256693
+        },
+        {
+          "score": "2-1",
+          "count": 682,
+          "share": 0.23404255319148937
+        },
+        {
+          "score": "1-1",
+          "count": 326,
+          "share": 0.11187371310912834
+        },
+        {
+          "score": "1-0",
+          "count": 163,
+          "share": 0.05593685655456417
+        },
+        {
+          "score": "0-2",
+          "count": 159,
+          "share": 0.05456417295813315
+        },
+        {
+          "score": "0-1",
+          "count": 151,
+          "share": 0.051818805765271106
+        },
+        {
+          "score": "2-0",
+          "count": 150,
+          "share": 0.05147563486616335
+        },
+        {
+          "score": "3-0",
+          "count": 134,
+          "share": 0.04598490048043926
+        },
+        {
+          "score": "0-3",
+          "count": 130,
+          "share": 0.04461221688400824
+        },
+        {
+          "score": "4-0",
+          "count": 63,
+          "share": 0.021619766643788608
+        }
+      ]
+    },
+    "2016": {
+      "rows": 2576,
+      "win_share": 0.4437111801242236,
+      "draw_share": 0.11413043478260869,
+      "loss_share": 0.4421583850931677,
+      "avg_team_goals": 1.3416149068322982,
+      "avg_opp_goals": 1.3346273291925466,
+      "avg_total_goals": 2.676242236024845,
+      "score_ge5_share": 0.024456521739130436,
+      "common_low_score_share": 0.8206521739130435,
+      "top1_score_share": 0.234472049689441,
+      "top3_score_share": 0.5795807453416149,
+      "top5_score_share": 0.7038043478260869,
+      "top_10_scores": [
+        {
+          "score": "2-1",
+          "count": 604,
+          "share": 0.234472049689441
+        },
+        {
+          "score": "1-2",
+          "count": 595,
+          "share": 0.23097826086956522
+        },
+        {
+          "score": "1-1",
+          "count": 294,
+          "share": 0.11413043478260869
+        },
+        {
+          "score": "0-2",
+          "count": 161,
+          "share": 0.0625
+        },
+        {
+          "score": "2-0",
+          "count": 159,
+          "share": 0.06172360248447205
+        },
+        {
+          "score": "0-1",
+          "count": 154,
+          "share": 0.059782608695652176
+        },
+        {
+          "score": "1-0",
+          "count": 147,
+          "share": 0.057065217391304345
+        },
+        {
+          "score": "3-0",
+          "count": 105,
+          "share": 0.04076086956521739
+        },
+        {
+          "score": "0-3",
+          "count": 98,
+          "share": 0.03804347826086957
+        },
+        {
+          "score": "4-0",
+          "count": 45,
+          "share": 0.01746894409937888
+        }
+      ]
+    },
+    "2017": {
+      "rows": 2602,
+      "win_share": 0.4350499615680246,
+      "draw_share": 0.12874711760184473,
+      "loss_share": 0.4362029208301307,
+      "avg_team_goals": 1.3443504996156803,
+      "avg_opp_goals": 1.3443504996156803,
+      "avg_total_goals": 2.6887009992313606,
+      "score_ge5_share": 0.02382782475019216,
+      "common_low_score_share": 0.8285933897002306,
+      "top1_score_share": 0.24135280553420446,
+      "top3_score_share": 0.6099154496541123,
+      "top5_score_share": 0.7248270561106841,
+      "top_10_scores": [
+        {
+          "score": "2-1",
+          "count": 628,
+          "share": 0.24135280553420446
+        },
+        {
+          "score": "1-2",
+          "count": 624,
+          "share": 0.23981552651806304
+        },
+        {
+          "score": "1-1",
+          "count": 335,
+          "share": 0.12874711760184473
+        },
+        {
+          "score": "0-2",
+          "count": 158,
+          "share": 0.06072252113758647
+        },
+        {
+          "score": "2-0",
+          "count": 141,
+          "share": 0.0541890853189854
+        },
+        {
+          "score": "1-0",
+          "count": 139,
+          "share": 0.05342044581091468
+        },
+        {
+          "score": "0-1",
+          "count": 131,
+          "share": 0.050345887778631825
+        },
+        {
+          "score": "3-0",
+          "count": 105,
+          "share": 0.04035357417371253
+        },
+        {
+          "score": "0-3",
+          "count": 96,
+          "share": 0.03689469638739431
+        },
+        {
+          "score": "4-0",
+          "count": 45,
+          "share": 0.017294388931591083
+        }
+      ]
+    },
+    "2018": {
+      "rows": 2960,
+      "win_share": 0.44425675675675674,
+      "draw_share": 0.11148648648648649,
+      "loss_share": 0.44425675675675674,
+      "avg_team_goals": 1.4317567567567568,
+      "avg_opp_goals": 1.4287162162162161,
+      "avg_total_goals": 2.860472972972973,
+      "score_ge5_share": 0.03006756756756757,
+      "common_low_score_share": 0.7959459459459459,
+      "top1_score_share": 0.2652027027027027,
+      "top3_score_share": 0.6334459459459459,
+      "top5_score_share": 0.7202702702702702,
+      "top_10_scores": [
+        {
+          "score": "2-1",
+          "count": 785,
+          "share": 0.2652027027027027
+        },
+        {
+          "score": "1-2",
+          "count": 760,
+          "share": 0.25675675675675674
+        },
+        {
+          "score": "1-1",
+          "count": 330,
+          "share": 0.11148648648648649
+        },
+        {
+          "score": "0-1",
+          "count": 138,
+          "share": 0.046621621621621624
+        },
+        {
+          "score": "1-0",
+          "count": 119,
+          "share": 0.0402027027027027
+        },
+        {
+          "score": "0-2",
+          "count": 114,
+          "share": 0.038513513513513516
+        },
+        {
+          "score": "2-0",
+          "count": 110,
+          "share": 0.037162162162162164
+        },
+        {
+          "score": "0-3",
+          "count": 104,
+          "share": 0.03513513513513514
+        },
+        {
+          "score": "3-0",
+          "count": 92,
+          "share": 0.031081081081081083
+        },
+        {
+          "score": "3-1",
+          "count": 65,
+          "share": 0.02195945945945946
+        }
+      ]
+    },
+    "2019": {
+      "rows": 3452,
+      "win_share": 0.45162224797219,
+      "draw_share": 0.09820393974507532,
+      "loss_share": 0.4501738122827346,
+      "avg_team_goals": 1.4304750869061413,
+      "avg_opp_goals": 1.4281575898030128,
+      "avg_total_goals": 2.858632676709154,
+      "score_ge5_share": 0.037369640787949014,
+      "common_low_score_share": 0.7668018539976825,
+      "top1_score_share": 0.24536500579374276,
+      "top3_score_share": 0.5869061413673233,
+      "top5_score_share": 0.6900347624565469,
+      "top_10_scores": [
+        {
+          "score": "2-1",
+          "count": 847,
+          "share": 0.24536500579374276
+        },
+        {
+          "score": "1-2",
+          "count": 840,
+          "share": 0.24333719582850522
+        },
+        {
+          "score": "1-1",
+          "count": 339,
+          "share": 0.09820393974507532
+        },
+        {
+          "score": "0-2",
+          "count": 179,
+          "share": 0.0518539976825029
+        },
+        {
+          "score": "0-3",
+          "count": 177,
+          "share": 0.05127462340672074
+        },
+        {
+          "score": "2-0",
+          "count": 173,
+          "share": 0.05011587485515643
+        },
+        {
+          "score": "3-0",
+          "count": 160,
+          "share": 0.046349942062572425
+        },
+        {
+          "score": "0-1",
+          "count": 135,
+          "share": 0.03910776361529548
+        },
+        {
+          "score": "1-0",
+          "count": 134,
+          "share": 0.0388180764774044
+        },
+        {
+          "score": "4-0",
+          "count": 86,
+          "share": 0.024913093858632676
+        }
+      ]
+    },
+    "2020": {
+      "rows": 1134,
+      "win_share": 0.4462081128747795,
+      "draw_share": 0.1146384479717813,
+      "loss_share": 0.43915343915343913,
+      "avg_team_goals": 1.3977072310405643,
+      "avg_opp_goals": 1.3562610229276897,
+      "avg_total_goals": 2.753968253968254,
+      "score_ge5_share": 0.02821869488536155,
+      "common_low_score_share": 0.818342151675485,
+      "top1_score_share": 0.26455026455026454,
+      "top3_score_share": 0.628747795414462,
+      "top5_score_share": 0.7292768959435626,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 300,
+          "share": 0.26455026455026454
+        },
+        {
+          "score": "2-1",
+          "count": 283,
+          "share": 0.2495590828924162
+        },
+        {
+          "score": "1-1",
+          "count": 130,
+          "share": 0.1146384479717813
+        },
+        {
+          "score": "1-0",
+          "count": 58,
+          "share": 0.05114638447971781
+        },
+        {
+          "score": "2-0",
+          "count": 56,
+          "share": 0.04938271604938271
+        },
+        {
+          "score": "0-1",
+          "count": 52,
+          "share": 0.04585537918871252
+        },
+        {
+          "score": "0-2",
+          "count": 49,
+          "share": 0.043209876543209874
+        },
+        {
+          "score": "0-3",
+          "count": 46,
+          "share": 0.04056437389770723
+        },
+        {
+          "score": "3-0",
+          "count": 44,
+          "share": 0.03880070546737213
+        },
+        {
+          "score": "4-0",
+          "count": 26,
+          "share": 0.02292768959435626
+        }
+      ]
+    },
+    "2021": {
+      "rows": 3084,
+      "win_share": 0.44422827496757455,
+      "draw_share": 0.11478599221789883,
+      "loss_share": 0.4409857328145266,
+      "avg_team_goals": 1.361219195849546,
+      "avg_opp_goals": 1.3466277561608302,
+      "avg_total_goals": 2.7078469520103763,
+      "score_ge5_share": 0.026913099870298315,
+      "common_low_score_share": 0.8044747081712063,
+      "top1_score_share": 0.23216601815823606,
+      "top3_score_share": 0.5784695201037614,
+      "top5_score_share": 0.6990920881971465,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 716,
+          "share": 0.23216601815823606
+        },
+        {
+          "score": "2-1",
+          "count": 714,
+          "share": 0.23151750972762647
+        },
+        {
+          "score": "1-1",
+          "count": 354,
+          "share": 0.11478599221789883
+        },
+        {
+          "score": "0-2",
+          "count": 189,
+          "share": 0.061284046692607
+        },
+        {
+          "score": "2-0",
+          "count": 183,
+          "share": 0.05933852140077821
+        },
+        {
+          "score": "1-0",
+          "count": 164,
+          "share": 0.05317769130998703
+        },
+        {
+          "score": "0-1",
+          "count": 161,
+          "share": 0.052204928664072635
+        },
+        {
+          "score": "3-0",
+          "count": 139,
+          "share": 0.045071335927367055
+        },
+        {
+          "score": "0-3",
+          "count": 136,
+          "share": 0.04409857328145266
+        },
+        {
+          "score": "0-4",
+          "count": 73,
+          "share": 0.023670557717250323
+        }
+      ]
+    },
+    "2022": {
+      "rows": 3162,
+      "win_share": 0.45351043643263755,
+      "draw_share": 0.09898798228969007,
+      "loss_share": 0.44750158127767237,
+      "avg_team_goals": 1.4240986717267552,
+      "avg_opp_goals": 1.4089184060721063,
+      "avg_total_goals": 2.8330170777988615,
+      "score_ge5_share": 0.028779253636938645,
+      "common_low_score_share": 0.797280202403542,
+      "top1_score_share": 0.2596457938013915,
+      "top3_score_share": 0.6138519924098671,
+      "top5_score_share": 0.7134724857685009,
+      "top_10_scores": [
+        {
+          "score": "2-1",
+          "count": 821,
+          "share": 0.2596457938013915
+        },
+        {
+          "score": "1-2",
+          "count": 807,
+          "share": 0.25521821631878555
+        },
+        {
+          "score": "1-1",
+          "count": 313,
+          "share": 0.09898798228969007
+        },
+        {
+          "score": "0-2",
+          "count": 162,
+          "share": 0.051233396584440226
+        },
+        {
+          "score": "2-0",
+          "count": 153,
+          "share": 0.04838709677419355
+        },
+        {
+          "score": "0-1",
+          "count": 141,
+          "share": 0.04459203036053131
+        },
+        {
+          "score": "3-0",
+          "count": 126,
+          "share": 0.03984819734345351
+        },
+        {
+          "score": "1-0",
+          "count": 124,
+          "share": 0.0392156862745098
+        },
+        {
+          "score": "0-3",
+          "count": 110,
+          "share": 0.03478810879190386
+        },
+        {
+          "score": "4-0",
+          "count": 71,
+          "share": 0.02245414294750158
+        }
+      ]
+    },
+    "2023": {
+      "rows": 3576,
+      "win_share": 0.4569351230425056,
+      "draw_share": 0.08892617449664429,
+      "loss_share": 0.4541387024608501,
+      "avg_team_goals": 1.4580536912751678,
+      "avg_opp_goals": 1.4471476510067114,
+      "avg_total_goals": 2.905201342281879,
+      "score_ge5_share": 0.03523489932885906,
+      "common_low_score_share": 0.7720917225950783,
+      "top1_score_share": 0.26649888143176736,
+      "top3_score_share": 0.6182885906040269,
+      "top5_score_share": 0.7041387024608502,
+      "top_10_scores": [
+        {
+          "score": "2-1",
+          "count": 953,
+          "share": 0.26649888143176736
+        },
+        {
+          "score": "1-2",
+          "count": 940,
+          "share": 0.26286353467561524
+        },
+        {
+          "score": "1-1",
+          "count": 318,
+          "share": 0.08892617449664429
+        },
+        {
+          "score": "0-2",
+          "count": 158,
+          "share": 0.0441834451901566
+        },
+        {
+          "score": "2-0",
+          "count": 149,
+          "share": 0.041666666666666664
+        },
+        {
+          "score": "3-0",
+          "count": 149,
+          "share": 0.041666666666666664
+        },
+        {
+          "score": "0-3",
+          "count": 144,
+          "share": 0.040268456375838924
+        },
+        {
+          "score": "0-1",
+          "count": 127,
+          "share": 0.03551454138702461
+        },
+        {
+          "score": "1-0",
+          "count": 116,
+          "share": 0.03243847874720358
+        },
+        {
+          "score": "4-0",
+          "count": 90,
+          "share": 0.025167785234899327
+        }
+      ]
+    },
+    "2024": {
+      "rows": 3634,
+      "win_share": 0.45597138139790866,
+      "draw_share": 0.08943313153549808,
+      "loss_share": 0.4545954870665933,
+      "avg_team_goals": 1.4240506329113924,
+      "avg_opp_goals": 1.4028618602091358,
+      "avg_total_goals": 2.8269124931205285,
+      "score_ge5_share": 0.020913593835993397,
+      "common_low_score_share": 0.7908640616400661,
+      "top1_score_share": 0.26884975233902036,
+      "top3_score_share": 0.6197028068244359,
+      "top5_score_share": 0.7226197028068244,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 977,
+          "share": 0.26884975233902036
+        },
+        {
+          "score": "2-1",
+          "count": 950,
+          "share": 0.26141992294991745
+        },
+        {
+          "score": "1-1",
+          "count": 325,
+          "share": 0.08943313153549808
+        },
+        {
+          "score": "3-0",
+          "count": 187,
+          "share": 0.05145844799119428
+        },
+        {
+          "score": "0-2",
+          "count": 187,
+          "share": 0.05145844799119428
+        },
+        {
+          "score": "2-0",
+          "count": 184,
+          "share": 0.05063291139240506
+        },
+        {
+          "score": "0-3",
+          "count": 174,
+          "share": 0.04788112272977435
+        },
+        {
+          "score": "0-1",
+          "count": 128,
+          "share": 0.035222894881673086
+        },
+        {
+          "score": "1-0",
+          "count": 123,
+          "share": 0.033847000550357734
+        },
+        {
+          "score": "3-1",
+          "count": 75,
+          "share": 0.020638414969730325
+        }
+      ]
+    },
+    "2025": {
+      "rows": 3638,
+      "win_share": 0.46234194612424406,
+      "draw_share": 0.07833974711379879,
+      "loss_share": 0.4593183067619571,
+      "avg_team_goals": 1.4700384826827928,
+      "avg_opp_goals": 1.4507971412864211,
+      "avg_total_goals": 2.920835623969214,
+      "score_ge5_share": 0.028862012094557448,
+      "common_low_score_share": 0.7638812534359538,
+      "top1_score_share": 0.27047828477185265,
+      "top3_score_share": 0.6176470588235294,
+      "top5_score_share": 0.708631115997801,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 984,
+          "share": 0.27047828477185265
+        },
+        {
+          "score": "2-1",
+          "count": 978,
+          "share": 0.26882902693787797
+        },
+        {
+          "score": "1-1",
+          "count": 285,
+          "share": 0.07833974711379879
+        },
+        {
+          "score": "0-2",
+          "count": 169,
+          "share": 0.046454095656954374
+        },
+        {
+          "score": "3-0",
+          "count": 162,
+          "share": 0.04452996151731721
+        },
+        {
+          "score": "0-3",
+          "count": 159,
+          "share": 0.043705332600329855
+        },
+        {
+          "score": "2-0",
+          "count": 152,
+          "share": 0.04178119846069269
+        },
+        {
+          "score": "0-1",
+          "count": 108,
+          "share": 0.029686641011544807
+        },
+        {
+          "score": "1-0",
+          "count": 103,
+          "share": 0.028312259483232547
+        },
+        {
+          "score": "3-1",
+          "count": 101,
+          "share": 0.027762506871907643
+        }
+      ]
+    },
+    "2026": {
+      "rows": 566,
+      "win_share": 0.4540636042402827,
+      "draw_share": 0.10777385159010601,
+      "loss_share": 0.4381625441696113,
+      "avg_team_goals": 1.431095406360424,
+      "avg_opp_goals": 1.4045936395759717,
+      "avg_total_goals": 2.835689045936396,
+      "score_ge5_share": 0.03356890459363958,
+      "common_low_score_share": 0.784452296819788,
+      "top1_score_share": 0.254416961130742,
+      "top3_score_share": 0.6130742049469965,
+      "top5_score_share": 0.7120141342756183,
+      "top_10_scores": [
+        {
+          "score": "2-1",
+          "count": 144,
+          "share": 0.254416961130742
+        },
+        {
+          "score": "1-2",
+          "count": 142,
+          "share": 0.2508833922261484
+        },
+        {
+          "score": "1-1",
+          "count": 61,
+          "share": 0.10777385159010601
+        },
+        {
+          "score": "2-0",
+          "count": 28,
+          "share": 0.04946996466431095
+        },
+        {
+          "score": "3-0",
+          "count": 28,
+          "share": 0.04946996466431095
+        },
+        {
+          "score": "0-2",
+          "count": 26,
+          "share": 0.045936395759717315
+        },
+        {
+          "score": "0-3",
+          "count": 24,
+          "share": 0.04240282685512368
+        },
+        {
+          "score": "1-0",
+          "count": 23,
+          "share": 0.04063604240282685
+        },
+        {
+          "score": "0-1",
+          "count": 20,
+          "share": 0.0353356890459364
+        },
+        {
+          "score": "4-0",
+          "count": 15,
+          "share": 0.026501766784452298
+        }
+      ]
+    }
+  },
+  "final_test_distribution": {
+    "rows": 42422,
+    "win_share": 0.44559426712554806,
+    "draw_share": 0.10925934656546132,
+    "loss_share": 0.4451463863089906,
+    "avg_team_goals": 1.3967516854462307,
+    "avg_opp_goals": 1.3890434208665314,
+    "avg_total_goals": 2.7857951063127624,
+    "score_ge5_share": 0.028027910046673897,
+    "common_low_score_share": 0.7997265569751544,
+    "top1_score_share": 0.2505068125029466,
+    "top3_score_share": 0.6088821837725709,
+    "top5_score_share": 0.7102682570364434,
+    "top_10_scores": [
+      {
+        "score": "1-2",
+        "count": 10627,
+        "share": 0.2505068125029466
+      },
+      {
+        "score": "2-1",
+        "count": 10568,
+        "share": 0.24911602470416294
+      },
+      {
+        "score": "1-1",
+        "count": 4635,
+        "share": 0.10925934656546132
+      },
+      {
+        "score": "0-2",
+        "count": 2187,
+        "share": 0.05155343925321767
+      },
+      {
+        "score": "2-0",
+        "count": 2114,
+        "share": 0.049832634010654846
+      },
+      {
+        "score": "0-1",
+        "count": 1907,
+        "share": 0.044953090377634244
+      },
+      {
+        "score": "1-0",
+        "count": 1888,
+        "share": 0.0445052095610768
+      },
+      {
+        "score": "3-0",
+        "count": 1800,
+        "share": 0.042430814200179155
+      },
+      {
+        "score": "0-3",
+        "count": 1777,
+        "share": 0.04188864268539909
+      },
+      {
+        "score": "4-0",
+        "count": 894,
+        "share": 0.021073971052755644
+      }
+    ]
+  },
+  "local_metrics_power_1_5": {
+    "weighted_awmae": 3.0851224958706642,
+    "unweighted_awmae": 3.0967191741602553,
+    "outcome_accuracy": 0.5872896138795908,
+    "exact_accuracy": 0.0989816604591957,
+    "goal_diff_accuracy": 0.21387487624345858,
+    "rows": 42422,
+    "distribution": {
+      "rows": 42422,
+      "win_share": 0.44559426712554806,
+      "draw_share": 0.10925934656546132,
+      "loss_share": 0.4451463863089906,
+      "avg_team_goals": 1.3967516854462307,
+      "avg_opp_goals": 1.3890434208665314,
+      "avg_total_goals": 2.7857951063127624,
+      "score_ge5_share": 0.028027910046673897,
+      "common_low_score_share": 0.7997265569751544,
+      "top1_score_share": 0.2505068125029466,
+      "top3_score_share": 0.6088821837725709,
+      "top5_score_share": 0.7102682570364434,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 10627,
+          "share": 0.2505068125029466
+        },
+        {
+          "score": "2-1",
+          "count": 10568,
+          "share": 0.24911602470416294
+        },
+        {
+          "score": "1-1",
+          "count": 4635,
+          "share": 0.10925934656546132
+        },
+        {
+          "score": "0-2",
+          "count": 2187,
+          "share": 0.05155343925321767
+        },
+        {
+          "score": "2-0",
+          "count": 2114,
+          "share": 0.049832634010654846
+        },
+        {
+          "score": "0-1",
+          "count": 1907,
+          "share": 0.044953090377634244
+        },
+        {
+          "score": "1-0",
+          "count": 1888,
+          "share": 0.0445052095610768
+        },
+        {
+          "score": "3-0",
+          "count": 1800,
+          "share": 0.042430814200179155
+        },
+        {
+          "score": "0-3",
+          "count": 1777,
+          "share": 0.04188864268539909
+        },
+        {
+          "score": "4-0",
+          "count": 894,
+          "share": 0.021073971052755644
+        }
+      ]
+    },
+    "per_year_distribution": {
+      "2011": {
+        "rows": 1532,
+        "win_share": 0.4236292428198433,
+        "draw_share": 0.141644908616188,
+        "loss_share": 0.4347258485639687,
+        "avg_team_goals": 1.385117493472585,
+        "avg_opp_goals": 1.3857702349869452,
+        "avg_total_goals": 2.77088772845953,
+        "score_ge5_share": 0.04046997389033943,
+        "common_low_score_share": 0.8028720626631853,
+        "top1_score_share": 0.24608355091383813,
+        "top3_score_share": 0.6135770234986946,
+        "top5_score_share": 0.7114882506527416,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 377,
+            "share": 0.24608355091383813
+          },
+          {
+            "score": "2-1",
+            "count": 346,
+            "share": 0.2258485639686684
+          },
+          {
+            "score": "1-1",
+            "count": 217,
+            "share": 0.141644908616188
+          },
+          {
+            "score": "1-0",
+            "count": 78,
+            "share": 0.050913838120104436
+          },
+          {
+            "score": "0-1",
+            "count": 72,
+            "share": 0.04699738903394256
+          },
+          {
+            "score": "0-2",
+            "count": 70,
+            "share": 0.04569190600522193
+          },
+          {
+            "score": "2-0",
+            "count": 70,
+            "share": 0.04569190600522193
+          },
+          {
+            "score": "3-0",
+            "count": 67,
+            "share": 0.043733681462140996
+          },
+          {
+            "score": "0-3",
+            "count": 60,
+            "share": 0.0391644908616188
+          },
+          {
+            "score": "0-4",
+            "count": 34,
+            "share": 0.022193211488250653
+          }
+        ]
+      },
+      "2012": {
+        "rows": 2664,
+        "win_share": 0.4241741741741742,
+        "draw_share": 0.1403903903903904,
+        "loss_share": 0.43543543543543545,
+        "avg_team_goals": 1.3295795795795795,
+        "avg_opp_goals": 1.3475975975975976,
+        "avg_total_goals": 2.6771771771771773,
+        "score_ge5_share": 0.02364864864864865,
+        "common_low_score_share": 0.8374624624624625,
+        "top1_score_share": 0.25037537537537535,
+        "top3_score_share": 0.6291291291291291,
+        "top5_score_share": 0.7383633633633634,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 667,
+            "share": 0.25037537537537535
+          },
+          {
+            "score": "2-1",
+            "count": 635,
+            "share": 0.23836336336336336
+          },
+          {
+            "score": "1-1",
+            "count": 374,
+            "share": 0.1403903903903904
+          },
+          {
+            "score": "1-0",
+            "count": 147,
+            "share": 0.05518018018018018
+          },
+          {
+            "score": "0-1",
+            "count": 144,
+            "share": 0.05405405405405406
+          },
+          {
+            "score": "2-0",
+            "count": 137,
+            "share": 0.051426426426426426
+          },
+          {
+            "score": "0-2",
+            "count": 127,
+            "share": 0.047672672672672674
+          },
+          {
+            "score": "0-3",
+            "count": 115,
+            "share": 0.04316816816816817
+          },
+          {
+            "score": "3-0",
+            "count": 102,
+            "share": 0.038288288288288286
+          },
+          {
+            "score": "4-0",
+            "count": 50,
+            "share": 0.01876876876876877
+          }
+        ]
+      },
+      "2013": {
+        "rows": 2446,
+        "win_share": 0.428454619787408,
+        "draw_share": 0.1402289452166803,
+        "loss_share": 0.4313164349959117,
+        "avg_team_goals": 1.3058053965658218,
+        "avg_opp_goals": 1.3041700735895339,
+        "avg_total_goals": 2.6099754701553555,
+        "score_ge5_share": 0.017988552739165987,
+        "common_low_score_share": 0.8491414554374489,
+        "top1_score_share": 0.2367130008176615,
+        "top3_score_share": 0.60670482420278,
+        "top5_score_share": 0.7305805396565822,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 579,
+            "share": 0.2367130008176615
+          },
+          {
+            "score": "2-1",
+            "count": 562,
+            "share": 0.22976287816843827
+          },
+          {
+            "score": "1-1",
+            "count": 343,
+            "share": 0.1402289452166803
+          },
+          {
+            "score": "1-0",
+            "count": 154,
+            "share": 0.06295993458708095
+          },
+          {
+            "score": "0-2",
+            "count": 149,
+            "share": 0.06091578086672118
+          },
+          {
+            "score": "2-0",
+            "count": 147,
+            "share": 0.06009811937857727
+          },
+          {
+            "score": "0-1",
+            "count": 143,
+            "share": 0.05846279640228945
+          },
+          {
+            "score": "3-0",
+            "count": 91,
+            "share": 0.037203597710547834
+          },
+          {
+            "score": "0-3",
+            "count": 91,
+            "share": 0.037203597710547834
+          },
+          {
+            "score": "4-0",
+            "count": 43,
+            "share": 0.01757972199509403
+          }
+        ]
+      },
+      "2014": {
+        "rows": 2482,
+        "win_share": 0.44077356970185333,
+        "draw_share": 0.11724415793714746,
+        "loss_share": 0.4419822723609992,
+        "avg_team_goals": 1.3839645447219984,
+        "avg_opp_goals": 1.386784850926672,
+        "avg_total_goals": 2.7707493956486706,
+        "score_ge5_share": 0.020950846091861403,
+        "common_low_score_share": 0.8074133763094279,
+        "top1_score_share": 0.25624496373892025,
+        "top3_score_share": 0.6261079774375504,
+        "top5_score_share": 0.7276390008058018,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 636,
+            "share": 0.25624496373892025
+          },
+          {
+            "score": "1-2",
+            "count": 627,
+            "share": 0.2526188557614827
+          },
+          {
+            "score": "1-1",
+            "count": 291,
+            "share": 0.11724415793714746
+          },
+          {
+            "score": "0-2",
+            "count": 130,
+            "share": 0.052377115229653506
+          },
+          {
+            "score": "2-0",
+            "count": 122,
+            "share": 0.04915390813859791
+          },
+          {
+            "score": "0-3",
+            "count": 113,
+            "share": 0.045527800161160356
+          },
+          {
+            "score": "3-0",
+            "count": 109,
+            "share": 0.043916196615632556
+          },
+          {
+            "score": "0-1",
+            "count": 102,
+            "share": 0.0410958904109589
+          },
+          {
+            "score": "1-0",
+            "count": 96,
+            "share": 0.038678485092667206
+          },
+          {
+            "score": "4-0",
+            "count": 46,
+            "share": 0.018533440773569703
+          }
+        ]
+      },
+      "2015": {
+        "rows": 2914,
+        "win_share": 0.44371997254632806,
+        "draw_share": 0.11187371310912834,
+        "loss_share": 0.4444063143445436,
+        "avg_team_goals": 1.3716540837336995,
+        "avg_opp_goals": 1.370624571036376,
+        "avg_total_goals": 2.7422786547700757,
+        "score_ge5_share": 0.031914893617021274,
+        "common_low_score_share": 0.7971859986273164,
+        "top1_score_share": 0.23747426218256693,
+        "top3_score_share": 0.5833905284831846,
+        "top5_score_share": 0.693891557995882,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 692,
+            "share": 0.23747426218256693
+          },
+          {
+            "score": "2-1",
+            "count": 682,
+            "share": 0.23404255319148937
+          },
+          {
+            "score": "1-1",
+            "count": 326,
+            "share": 0.11187371310912834
+          },
+          {
+            "score": "1-0",
+            "count": 163,
+            "share": 0.05593685655456417
+          },
+          {
+            "score": "0-2",
+            "count": 159,
+            "share": 0.05456417295813315
+          },
+          {
+            "score": "0-1",
+            "count": 151,
+            "share": 0.051818805765271106
+          },
+          {
+            "score": "2-0",
+            "count": 150,
+            "share": 0.05147563486616335
+          },
+          {
+            "score": "3-0",
+            "count": 134,
+            "share": 0.04598490048043926
+          },
+          {
+            "score": "0-3",
+            "count": 130,
+            "share": 0.04461221688400824
+          },
+          {
+            "score": "4-0",
+            "count": 63,
+            "share": 0.021619766643788608
+          }
+        ]
+      },
+      "2016": {
+        "rows": 2576,
+        "win_share": 0.4437111801242236,
+        "draw_share": 0.11413043478260869,
+        "loss_share": 0.4421583850931677,
+        "avg_team_goals": 1.3416149068322982,
+        "avg_opp_goals": 1.3346273291925466,
+        "avg_total_goals": 2.676242236024845,
+        "score_ge5_share": 0.024456521739130436,
+        "common_low_score_share": 0.8206521739130435,
+        "top1_score_share": 0.234472049689441,
+        "top3_score_share": 0.5795807453416149,
+        "top5_score_share": 0.7038043478260869,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 604,
+            "share": 0.234472049689441
+          },
+          {
+            "score": "1-2",
+            "count": 595,
+            "share": 0.23097826086956522
+          },
+          {
+            "score": "1-1",
+            "count": 294,
+            "share": 0.11413043478260869
+          },
+          {
+            "score": "0-2",
+            "count": 161,
+            "share": 0.0625
+          },
+          {
+            "score": "2-0",
+            "count": 159,
+            "share": 0.06172360248447205
+          },
+          {
+            "score": "0-1",
+            "count": 154,
+            "share": 0.059782608695652176
+          },
+          {
+            "score": "1-0",
+            "count": 147,
+            "share": 0.057065217391304345
+          },
+          {
+            "score": "3-0",
+            "count": 105,
+            "share": 0.04076086956521739
+          },
+          {
+            "score": "0-3",
+            "count": 98,
+            "share": 0.03804347826086957
+          },
+          {
+            "score": "4-0",
+            "count": 45,
+            "share": 0.01746894409937888
+          }
+        ]
+      },
+      "2017": {
+        "rows": 2602,
+        "win_share": 0.4350499615680246,
+        "draw_share": 0.12874711760184473,
+        "loss_share": 0.4362029208301307,
+        "avg_team_goals": 1.3443504996156803,
+        "avg_opp_goals": 1.3443504996156803,
+        "avg_total_goals": 2.6887009992313606,
+        "score_ge5_share": 0.02382782475019216,
+        "common_low_score_share": 0.8285933897002306,
+        "top1_score_share": 0.24135280553420446,
+        "top3_score_share": 0.6099154496541123,
+        "top5_score_share": 0.7248270561106841,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 628,
+            "share": 0.24135280553420446
+          },
+          {
+            "score": "1-2",
+            "count": 624,
+            "share": 0.23981552651806304
+          },
+          {
+            "score": "1-1",
+            "count": 335,
+            "share": 0.12874711760184473
+          },
+          {
+            "score": "0-2",
+            "count": 158,
+            "share": 0.06072252113758647
+          },
+          {
+            "score": "2-0",
+            "count": 141,
+            "share": 0.0541890853189854
+          },
+          {
+            "score": "1-0",
+            "count": 139,
+            "share": 0.05342044581091468
+          },
+          {
+            "score": "0-1",
+            "count": 131,
+            "share": 0.050345887778631825
+          },
+          {
+            "score": "3-0",
+            "count": 105,
+            "share": 0.04035357417371253
+          },
+          {
+            "score": "0-3",
+            "count": 96,
+            "share": 0.03689469638739431
+          },
+          {
+            "score": "4-0",
+            "count": 45,
+            "share": 0.017294388931591083
+          }
+        ]
+      },
+      "2018": {
+        "rows": 2960,
+        "win_share": 0.44425675675675674,
+        "draw_share": 0.11148648648648649,
+        "loss_share": 0.44425675675675674,
+        "avg_team_goals": 1.4317567567567568,
+        "avg_opp_goals": 1.4287162162162161,
+        "avg_total_goals": 2.860472972972973,
+        "score_ge5_share": 0.03006756756756757,
+        "common_low_score_share": 0.7959459459459459,
+        "top1_score_share": 0.2652027027027027,
+        "top3_score_share": 0.6334459459459459,
+        "top5_score_share": 0.7202702702702702,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 785,
+            "share": 0.2652027027027027
+          },
+          {
+            "score": "1-2",
+            "count": 760,
+            "share": 0.25675675675675674
+          },
+          {
+            "score": "1-1",
+            "count": 330,
+            "share": 0.11148648648648649
+          },
+          {
+            "score": "0-1",
+            "count": 138,
+            "share": 0.046621621621621624
+          },
+          {
+            "score": "1-0",
+            "count": 119,
+            "share": 0.0402027027027027
+          },
+          {
+            "score": "0-2",
+            "count": 114,
+            "share": 0.038513513513513516
+          },
+          {
+            "score": "2-0",
+            "count": 110,
+            "share": 0.037162162162162164
+          },
+          {
+            "score": "0-3",
+            "count": 104,
+            "share": 0.03513513513513514
+          },
+          {
+            "score": "3-0",
+            "count": 92,
+            "share": 0.031081081081081083
+          },
+          {
+            "score": "3-1",
+            "count": 65,
+            "share": 0.02195945945945946
+          }
+        ]
+      },
+      "2019": {
+        "rows": 3452,
+        "win_share": 0.45162224797219,
+        "draw_share": 0.09820393974507532,
+        "loss_share": 0.4501738122827346,
+        "avg_team_goals": 1.4304750869061413,
+        "avg_opp_goals": 1.4281575898030128,
+        "avg_total_goals": 2.858632676709154,
+        "score_ge5_share": 0.037369640787949014,
+        "common_low_score_share": 0.7668018539976825,
+        "top1_score_share": 0.24536500579374276,
+        "top3_score_share": 0.5869061413673233,
+        "top5_score_share": 0.6900347624565469,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 847,
+            "share": 0.24536500579374276
+          },
+          {
+            "score": "1-2",
+            "count": 840,
+            "share": 0.24333719582850522
+          },
+          {
+            "score": "1-1",
+            "count": 339,
+            "share": 0.09820393974507532
+          },
+          {
+            "score": "0-2",
+            "count": 179,
+            "share": 0.0518539976825029
+          },
+          {
+            "score": "0-3",
+            "count": 177,
+            "share": 0.05127462340672074
+          },
+          {
+            "score": "2-0",
+            "count": 173,
+            "share": 0.05011587485515643
+          },
+          {
+            "score": "3-0",
+            "count": 160,
+            "share": 0.046349942062572425
+          },
+          {
+            "score": "0-1",
+            "count": 135,
+            "share": 0.03910776361529548
+          },
+          {
+            "score": "1-0",
+            "count": 134,
+            "share": 0.0388180764774044
+          },
+          {
+            "score": "4-0",
+            "count": 86,
+            "share": 0.024913093858632676
+          }
+        ]
+      },
+      "2020": {
+        "rows": 1134,
+        "win_share": 0.4462081128747795,
+        "draw_share": 0.1146384479717813,
+        "loss_share": 0.43915343915343913,
+        "avg_team_goals": 1.3977072310405643,
+        "avg_opp_goals": 1.3562610229276897,
+        "avg_total_goals": 2.753968253968254,
+        "score_ge5_share": 0.02821869488536155,
+        "common_low_score_share": 0.818342151675485,
+        "top1_score_share": 0.26455026455026454,
+        "top3_score_share": 0.628747795414462,
+        "top5_score_share": 0.7292768959435626,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 300,
+            "share": 0.26455026455026454
+          },
+          {
+            "score": "2-1",
+            "count": 283,
+            "share": 0.2495590828924162
+          },
+          {
+            "score": "1-1",
+            "count": 130,
+            "share": 0.1146384479717813
+          },
+          {
+            "score": "1-0",
+            "count": 58,
+            "share": 0.05114638447971781
+          },
+          {
+            "score": "2-0",
+            "count": 56,
+            "share": 0.04938271604938271
+          },
+          {
+            "score": "0-1",
+            "count": 52,
+            "share": 0.04585537918871252
+          },
+          {
+            "score": "0-2",
+            "count": 49,
+            "share": 0.043209876543209874
+          },
+          {
+            "score": "0-3",
+            "count": 46,
+            "share": 0.04056437389770723
+          },
+          {
+            "score": "3-0",
+            "count": 44,
+            "share": 0.03880070546737213
+          },
+          {
+            "score": "4-0",
+            "count": 26,
+            "share": 0.02292768959435626
+          }
+        ]
+      },
+      "2021": {
+        "rows": 3084,
+        "win_share": 0.44422827496757455,
+        "draw_share": 0.11478599221789883,
+        "loss_share": 0.4409857328145266,
+        "avg_team_goals": 1.361219195849546,
+        "avg_opp_goals": 1.3466277561608302,
+        "avg_total_goals": 2.7078469520103763,
+        "score_ge5_share": 0.026913099870298315,
+        "common_low_score_share": 0.8044747081712063,
+        "top1_score_share": 0.23216601815823606,
+        "top3_score_share": 0.5784695201037614,
+        "top5_score_share": 0.6990920881971465,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 716,
+            "share": 0.23216601815823606
+          },
+          {
+            "score": "2-1",
+            "count": 714,
+            "share": 0.23151750972762647
+          },
+          {
+            "score": "1-1",
+            "count": 354,
+            "share": 0.11478599221789883
+          },
+          {
+            "score": "0-2",
+            "count": 189,
+            "share": 0.061284046692607
+          },
+          {
+            "score": "2-0",
+            "count": 183,
+            "share": 0.05933852140077821
+          },
+          {
+            "score": "1-0",
+            "count": 164,
+            "share": 0.05317769130998703
+          },
+          {
+            "score": "0-1",
+            "count": 161,
+            "share": 0.052204928664072635
+          },
+          {
+            "score": "3-0",
+            "count": 139,
+            "share": 0.045071335927367055
+          },
+          {
+            "score": "0-3",
+            "count": 136,
+            "share": 0.04409857328145266
+          },
+          {
+            "score": "0-4",
+            "count": 73,
+            "share": 0.023670557717250323
+          }
+        ]
+      },
+      "2022": {
+        "rows": 3162,
+        "win_share": 0.45351043643263755,
+        "draw_share": 0.09898798228969007,
+        "loss_share": 0.44750158127767237,
+        "avg_team_goals": 1.4240986717267552,
+        "avg_opp_goals": 1.4089184060721063,
+        "avg_total_goals": 2.8330170777988615,
+        "score_ge5_share": 0.028779253636938645,
+        "common_low_score_share": 0.797280202403542,
+        "top1_score_share": 0.2596457938013915,
+        "top3_score_share": 0.6138519924098671,
+        "top5_score_share": 0.7134724857685009,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 821,
+            "share": 0.2596457938013915
+          },
+          {
+            "score": "1-2",
+            "count": 807,
+            "share": 0.25521821631878555
+          },
+          {
+            "score": "1-1",
+            "count": 313,
+            "share": 0.09898798228969007
+          },
+          {
+            "score": "0-2",
+            "count": 162,
+            "share": 0.051233396584440226
+          },
+          {
+            "score": "2-0",
+            "count": 153,
+            "share": 0.04838709677419355
+          },
+          {
+            "score": "0-1",
+            "count": 141,
+            "share": 0.04459203036053131
+          },
+          {
+            "score": "3-0",
+            "count": 126,
+            "share": 0.03984819734345351
+          },
+          {
+            "score": "1-0",
+            "count": 124,
+            "share": 0.0392156862745098
+          },
+          {
+            "score": "0-3",
+            "count": 110,
+            "share": 0.03478810879190386
+          },
+          {
+            "score": "4-0",
+            "count": 71,
+            "share": 0.02245414294750158
+          }
+        ]
+      },
+      "2023": {
+        "rows": 3576,
+        "win_share": 0.4569351230425056,
+        "draw_share": 0.08892617449664429,
+        "loss_share": 0.4541387024608501,
+        "avg_team_goals": 1.4580536912751678,
+        "avg_opp_goals": 1.4471476510067114,
+        "avg_total_goals": 2.905201342281879,
+        "score_ge5_share": 0.03523489932885906,
+        "common_low_score_share": 0.7720917225950783,
+        "top1_score_share": 0.26649888143176736,
+        "top3_score_share": 0.6182885906040269,
+        "top5_score_share": 0.7041387024608502,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 953,
+            "share": 0.26649888143176736
+          },
+          {
+            "score": "1-2",
+            "count": 940,
+            "share": 0.26286353467561524
+          },
+          {
+            "score": "1-1",
+            "count": 318,
+            "share": 0.08892617449664429
+          },
+          {
+            "score": "0-2",
+            "count": 158,
+            "share": 0.0441834451901566
+          },
+          {
+            "score": "2-0",
+            "count": 149,
+            "share": 0.041666666666666664
+          },
+          {
+            "score": "3-0",
+            "count": 149,
+            "share": 0.041666666666666664
+          },
+          {
+            "score": "0-3",
+            "count": 144,
+            "share": 0.040268456375838924
+          },
+          {
+            "score": "0-1",
+            "count": 127,
+            "share": 0.03551454138702461
+          },
+          {
+            "score": "1-0",
+            "count": 116,
+            "share": 0.03243847874720358
+          },
+          {
+            "score": "4-0",
+            "count": 90,
+            "share": 0.025167785234899327
+          }
+        ]
+      },
+      "2024": {
+        "rows": 3634,
+        "win_share": 0.45597138139790866,
+        "draw_share": 0.08943313153549808,
+        "loss_share": 0.4545954870665933,
+        "avg_team_goals": 1.4240506329113924,
+        "avg_opp_goals": 1.4028618602091358,
+        "avg_total_goals": 2.8269124931205285,
+        "score_ge5_share": 0.020913593835993397,
+        "common_low_score_share": 0.7908640616400661,
+        "top1_score_share": 0.26884975233902036,
+        "top3_score_share": 0.6197028068244359,
+        "top5_score_share": 0.7226197028068244,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 977,
+            "share": 0.26884975233902036
+          },
+          {
+            "score": "2-1",
+            "count": 950,
+            "share": 0.26141992294991745
+          },
+          {
+            "score": "1-1",
+            "count": 325,
+            "share": 0.08943313153549808
+          },
+          {
+            "score": "3-0",
+            "count": 187,
+            "share": 0.05145844799119428
+          },
+          {
+            "score": "0-2",
+            "count": 187,
+            "share": 0.05145844799119428
+          },
+          {
+            "score": "2-0",
+            "count": 184,
+            "share": 0.05063291139240506
+          },
+          {
+            "score": "0-3",
+            "count": 174,
+            "share": 0.04788112272977435
+          },
+          {
+            "score": "0-1",
+            "count": 128,
+            "share": 0.035222894881673086
+          },
+          {
+            "score": "1-0",
+            "count": 123,
+            "share": 0.033847000550357734
+          },
+          {
+            "score": "3-1",
+            "count": 75,
+            "share": 0.020638414969730325
+          }
+        ]
+      },
+      "2025": {
+        "rows": 3638,
+        "win_share": 0.46234194612424406,
+        "draw_share": 0.07833974711379879,
+        "loss_share": 0.4593183067619571,
+        "avg_team_goals": 1.4700384826827928,
+        "avg_opp_goals": 1.4507971412864211,
+        "avg_total_goals": 2.920835623969214,
+        "score_ge5_share": 0.028862012094557448,
+        "common_low_score_share": 0.7638812534359538,
+        "top1_score_share": 0.27047828477185265,
+        "top3_score_share": 0.6176470588235294,
+        "top5_score_share": 0.708631115997801,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 984,
+            "share": 0.27047828477185265
+          },
+          {
+            "score": "2-1",
+            "count": 978,
+            "share": 0.26882902693787797
+          },
+          {
+            "score": "1-1",
+            "count": 285,
+            "share": 0.07833974711379879
+          },
+          {
+            "score": "0-2",
+            "count": 169,
+            "share": 0.046454095656954374
+          },
+          {
+            "score": "3-0",
+            "count": 162,
+            "share": 0.04452996151731721
+          },
+          {
+            "score": "0-3",
+            "count": 159,
+            "share": 0.043705332600329855
+          },
+          {
+            "score": "2-0",
+            "count": 152,
+            "share": 0.04178119846069269
+          },
+          {
+            "score": "0-1",
+            "count": 108,
+            "share": 0.029686641011544807
+          },
+          {
+            "score": "1-0",
+            "count": 103,
+            "share": 0.028312259483232547
+          },
+          {
+            "score": "3-1",
+            "count": 101,
+            "share": 0.027762506871907643
+          }
+        ]
+      },
+      "2026": {
+        "rows": 566,
+        "win_share": 0.4540636042402827,
+        "draw_share": 0.10777385159010601,
+        "loss_share": 0.4381625441696113,
+        "avg_team_goals": 1.431095406360424,
+        "avg_opp_goals": 1.4045936395759717,
+        "avg_total_goals": 2.835689045936396,
+        "score_ge5_share": 0.03356890459363958,
+        "common_low_score_share": 0.784452296819788,
+        "top1_score_share": 0.254416961130742,
+        "top3_score_share": 0.6130742049469965,
+        "top5_score_share": 0.7120141342756183,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 144,
+            "share": 0.254416961130742
+          },
+          {
+            "score": "1-2",
+            "count": 142,
+            "share": 0.2508833922261484
+          },
+          {
+            "score": "1-1",
+            "count": 61,
+            "share": 0.10777385159010601
+          },
+          {
+            "score": "2-0",
+            "count": 28,
+            "share": 0.04946996466431095
+          },
+          {
+            "score": "3-0",
+            "count": 28,
+            "share": 0.04946996466431095
+          },
+          {
+            "score": "0-2",
+            "count": 26,
+            "share": 0.045936395759717315
+          },
+          {
+            "score": "0-3",
+            "count": 24,
+            "share": 0.04240282685512368
+          },
+          {
+            "score": "1-0",
+            "count": 23,
+            "share": 0.04063604240282685
+          },
+          {
+            "score": "0-1",
+            "count": 20,
+            "share": 0.0353356890459364
+          },
+          {
+            "score": "4-0",
+            "count": 15,
+            "share": 0.026501766784452298
+          }
+        ]
+      }
+    }
+  },
+  "local_metrics_power_1_3": {
+    "weighted_awmae": 2.537718900981192,
+    "unweighted_awmae": 2.5465407560689273,
+    "outcome_accuracy": 0.5872896138795908,
+    "exact_accuracy": 0.0989816604591957,
+    "goal_diff_accuracy": 0.21387487624345858,
+    "rows": 42422,
+    "distribution": {
+      "rows": 42422,
+      "win_share": 0.44559426712554806,
+      "draw_share": 0.10925934656546132,
+      "loss_share": 0.4451463863089906,
+      "avg_team_goals": 1.3967516854462307,
+      "avg_opp_goals": 1.3890434208665314,
+      "avg_total_goals": 2.7857951063127624,
+      "score_ge5_share": 0.028027910046673897,
+      "common_low_score_share": 0.7997265569751544,
+      "top1_score_share": 0.2505068125029466,
+      "top3_score_share": 0.6088821837725709,
+      "top5_score_share": 0.7102682570364434,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 10627,
+          "share": 0.2505068125029466
+        },
+        {
+          "score": "2-1",
+          "count": 10568,
+          "share": 0.24911602470416294
+        },
+        {
+          "score": "1-1",
+          "count": 4635,
+          "share": 0.10925934656546132
+        },
+        {
+          "score": "0-2",
+          "count": 2187,
+          "share": 0.05155343925321767
+        },
+        {
+          "score": "2-0",
+          "count": 2114,
+          "share": 0.049832634010654846
+        },
+        {
+          "score": "0-1",
+          "count": 1907,
+          "share": 0.044953090377634244
+        },
+        {
+          "score": "1-0",
+          "count": 1888,
+          "share": 0.0445052095610768
+        },
+        {
+          "score": "3-0",
+          "count": 1800,
+          "share": 0.042430814200179155
+        },
+        {
+          "score": "0-3",
+          "count": 1777,
+          "share": 0.04188864268539909
+        },
+        {
+          "score": "4-0",
+          "count": 894,
+          "share": 0.021073971052755644
+        }
+      ]
+    },
+    "per_year_distribution": {
+      "2011": {
+        "rows": 1532,
+        "win_share": 0.4236292428198433,
+        "draw_share": 0.141644908616188,
+        "loss_share": 0.4347258485639687,
+        "avg_team_goals": 1.385117493472585,
+        "avg_opp_goals": 1.3857702349869452,
+        "avg_total_goals": 2.77088772845953,
+        "score_ge5_share": 0.04046997389033943,
+        "common_low_score_share": 0.8028720626631853,
+        "top1_score_share": 0.24608355091383813,
+        "top3_score_share": 0.6135770234986946,
+        "top5_score_share": 0.7114882506527416,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 377,
+            "share": 0.24608355091383813
+          },
+          {
+            "score": "2-1",
+            "count": 346,
+            "share": 0.2258485639686684
+          },
+          {
+            "score": "1-1",
+            "count": 217,
+            "share": 0.141644908616188
+          },
+          {
+            "score": "1-0",
+            "count": 78,
+            "share": 0.050913838120104436
+          },
+          {
+            "score": "0-1",
+            "count": 72,
+            "share": 0.04699738903394256
+          },
+          {
+            "score": "0-2",
+            "count": 70,
+            "share": 0.04569190600522193
+          },
+          {
+            "score": "2-0",
+            "count": 70,
+            "share": 0.04569190600522193
+          },
+          {
+            "score": "3-0",
+            "count": 67,
+            "share": 0.043733681462140996
+          },
+          {
+            "score": "0-3",
+            "count": 60,
+            "share": 0.0391644908616188
+          },
+          {
+            "score": "0-4",
+            "count": 34,
+            "share": 0.022193211488250653
+          }
+        ]
+      },
+      "2012": {
+        "rows": 2664,
+        "win_share": 0.4241741741741742,
+        "draw_share": 0.1403903903903904,
+        "loss_share": 0.43543543543543545,
+        "avg_team_goals": 1.3295795795795795,
+        "avg_opp_goals": 1.3475975975975976,
+        "avg_total_goals": 2.6771771771771773,
+        "score_ge5_share": 0.02364864864864865,
+        "common_low_score_share": 0.8374624624624625,
+        "top1_score_share": 0.25037537537537535,
+        "top3_score_share": 0.6291291291291291,
+        "top5_score_share": 0.7383633633633634,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 667,
+            "share": 0.25037537537537535
+          },
+          {
+            "score": "2-1",
+            "count": 635,
+            "share": 0.23836336336336336
+          },
+          {
+            "score": "1-1",
+            "count": 374,
+            "share": 0.1403903903903904
+          },
+          {
+            "score": "1-0",
+            "count": 147,
+            "share": 0.05518018018018018
+          },
+          {
+            "score": "0-1",
+            "count": 144,
+            "share": 0.05405405405405406
+          },
+          {
+            "score": "2-0",
+            "count": 137,
+            "share": 0.051426426426426426
+          },
+          {
+            "score": "0-2",
+            "count": 127,
+            "share": 0.047672672672672674
+          },
+          {
+            "score": "0-3",
+            "count": 115,
+            "share": 0.04316816816816817
+          },
+          {
+            "score": "3-0",
+            "count": 102,
+            "share": 0.038288288288288286
+          },
+          {
+            "score": "4-0",
+            "count": 50,
+            "share": 0.01876876876876877
+          }
+        ]
+      },
+      "2013": {
+        "rows": 2446,
+        "win_share": 0.428454619787408,
+        "draw_share": 0.1402289452166803,
+        "loss_share": 0.4313164349959117,
+        "avg_team_goals": 1.3058053965658218,
+        "avg_opp_goals": 1.3041700735895339,
+        "avg_total_goals": 2.6099754701553555,
+        "score_ge5_share": 0.017988552739165987,
+        "common_low_score_share": 0.8491414554374489,
+        "top1_score_share": 0.2367130008176615,
+        "top3_score_share": 0.60670482420278,
+        "top5_score_share": 0.7305805396565822,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 579,
+            "share": 0.2367130008176615
+          },
+          {
+            "score": "2-1",
+            "count": 562,
+            "share": 0.22976287816843827
+          },
+          {
+            "score": "1-1",
+            "count": 343,
+            "share": 0.1402289452166803
+          },
+          {
+            "score": "1-0",
+            "count": 154,
+            "share": 0.06295993458708095
+          },
+          {
+            "score": "0-2",
+            "count": 149,
+            "share": 0.06091578086672118
+          },
+          {
+            "score": "2-0",
+            "count": 147,
+            "share": 0.06009811937857727
+          },
+          {
+            "score": "0-1",
+            "count": 143,
+            "share": 0.05846279640228945
+          },
+          {
+            "score": "3-0",
+            "count": 91,
+            "share": 0.037203597710547834
+          },
+          {
+            "score": "0-3",
+            "count": 91,
+            "share": 0.037203597710547834
+          },
+          {
+            "score": "4-0",
+            "count": 43,
+            "share": 0.01757972199509403
+          }
+        ]
+      },
+      "2014": {
+        "rows": 2482,
+        "win_share": 0.44077356970185333,
+        "draw_share": 0.11724415793714746,
+        "loss_share": 0.4419822723609992,
+        "avg_team_goals": 1.3839645447219984,
+        "avg_opp_goals": 1.386784850926672,
+        "avg_total_goals": 2.7707493956486706,
+        "score_ge5_share": 0.020950846091861403,
+        "common_low_score_share": 0.8074133763094279,
+        "top1_score_share": 0.25624496373892025,
+        "top3_score_share": 0.6261079774375504,
+        "top5_score_share": 0.7276390008058018,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 636,
+            "share": 0.25624496373892025
+          },
+          {
+            "score": "1-2",
+            "count": 627,
+            "share": 0.2526188557614827
+          },
+          {
+            "score": "1-1",
+            "count": 291,
+            "share": 0.11724415793714746
+          },
+          {
+            "score": "0-2",
+            "count": 130,
+            "share": 0.052377115229653506
+          },
+          {
+            "score": "2-0",
+            "count": 122,
+            "share": 0.04915390813859791
+          },
+          {
+            "score": "0-3",
+            "count": 113,
+            "share": 0.045527800161160356
+          },
+          {
+            "score": "3-0",
+            "count": 109,
+            "share": 0.043916196615632556
+          },
+          {
+            "score": "0-1",
+            "count": 102,
+            "share": 0.0410958904109589
+          },
+          {
+            "score": "1-0",
+            "count": 96,
+            "share": 0.038678485092667206
+          },
+          {
+            "score": "4-0",
+            "count": 46,
+            "share": 0.018533440773569703
+          }
+        ]
+      },
+      "2015": {
+        "rows": 2914,
+        "win_share": 0.44371997254632806,
+        "draw_share": 0.11187371310912834,
+        "loss_share": 0.4444063143445436,
+        "avg_team_goals": 1.3716540837336995,
+        "avg_opp_goals": 1.370624571036376,
+        "avg_total_goals": 2.7422786547700757,
+        "score_ge5_share": 0.031914893617021274,
+        "common_low_score_share": 0.7971859986273164,
+        "top1_score_share": 0.23747426218256693,
+        "top3_score_share": 0.5833905284831846,
+        "top5_score_share": 0.693891557995882,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 692,
+            "share": 0.23747426218256693
+          },
+          {
+            "score": "2-1",
+            "count": 682,
+            "share": 0.23404255319148937
+          },
+          {
+            "score": "1-1",
+            "count": 326,
+            "share": 0.11187371310912834
+          },
+          {
+            "score": "1-0",
+            "count": 163,
+            "share": 0.05593685655456417
+          },
+          {
+            "score": "0-2",
+            "count": 159,
+            "share": 0.05456417295813315
+          },
+          {
+            "score": "0-1",
+            "count": 151,
+            "share": 0.051818805765271106
+          },
+          {
+            "score": "2-0",
+            "count": 150,
+            "share": 0.05147563486616335
+          },
+          {
+            "score": "3-0",
+            "count": 134,
+            "share": 0.04598490048043926
+          },
+          {
+            "score": "0-3",
+            "count": 130,
+            "share": 0.04461221688400824
+          },
+          {
+            "score": "4-0",
+            "count": 63,
+            "share": 0.021619766643788608
+          }
+        ]
+      },
+      "2016": {
+        "rows": 2576,
+        "win_share": 0.4437111801242236,
+        "draw_share": 0.11413043478260869,
+        "loss_share": 0.4421583850931677,
+        "avg_team_goals": 1.3416149068322982,
+        "avg_opp_goals": 1.3346273291925466,
+        "avg_total_goals": 2.676242236024845,
+        "score_ge5_share": 0.024456521739130436,
+        "common_low_score_share": 0.8206521739130435,
+        "top1_score_share": 0.234472049689441,
+        "top3_score_share": 0.5795807453416149,
+        "top5_score_share": 0.7038043478260869,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 604,
+            "share": 0.234472049689441
+          },
+          {
+            "score": "1-2",
+            "count": 595,
+            "share": 0.23097826086956522
+          },
+          {
+            "score": "1-1",
+            "count": 294,
+            "share": 0.11413043478260869
+          },
+          {
+            "score": "0-2",
+            "count": 161,
+            "share": 0.0625
+          },
+          {
+            "score": "2-0",
+            "count": 159,
+            "share": 0.06172360248447205
+          },
+          {
+            "score": "0-1",
+            "count": 154,
+            "share": 0.059782608695652176
+          },
+          {
+            "score": "1-0",
+            "count": 147,
+            "share": 0.057065217391304345
+          },
+          {
+            "score": "3-0",
+            "count": 105,
+            "share": 0.04076086956521739
+          },
+          {
+            "score": "0-3",
+            "count": 98,
+            "share": 0.03804347826086957
+          },
+          {
+            "score": "4-0",
+            "count": 45,
+            "share": 0.01746894409937888
+          }
+        ]
+      },
+      "2017": {
+        "rows": 2602,
+        "win_share": 0.4350499615680246,
+        "draw_share": 0.12874711760184473,
+        "loss_share": 0.4362029208301307,
+        "avg_team_goals": 1.3443504996156803,
+        "avg_opp_goals": 1.3443504996156803,
+        "avg_total_goals": 2.6887009992313606,
+        "score_ge5_share": 0.02382782475019216,
+        "common_low_score_share": 0.8285933897002306,
+        "top1_score_share": 0.24135280553420446,
+        "top3_score_share": 0.6099154496541123,
+        "top5_score_share": 0.7248270561106841,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 628,
+            "share": 0.24135280553420446
+          },
+          {
+            "score": "1-2",
+            "count": 624,
+            "share": 0.23981552651806304
+          },
+          {
+            "score": "1-1",
+            "count": 335,
+            "share": 0.12874711760184473
+          },
+          {
+            "score": "0-2",
+            "count": 158,
+            "share": 0.06072252113758647
+          },
+          {
+            "score": "2-0",
+            "count": 141,
+            "share": 0.0541890853189854
+          },
+          {
+            "score": "1-0",
+            "count": 139,
+            "share": 0.05342044581091468
+          },
+          {
+            "score": "0-1",
+            "count": 131,
+            "share": 0.050345887778631825
+          },
+          {
+            "score": "3-0",
+            "count": 105,
+            "share": 0.04035357417371253
+          },
+          {
+            "score": "0-3",
+            "count": 96,
+            "share": 0.03689469638739431
+          },
+          {
+            "score": "4-0",
+            "count": 45,
+            "share": 0.017294388931591083
+          }
+        ]
+      },
+      "2018": {
+        "rows": 2960,
+        "win_share": 0.44425675675675674,
+        "draw_share": 0.11148648648648649,
+        "loss_share": 0.44425675675675674,
+        "avg_team_goals": 1.4317567567567568,
+        "avg_opp_goals": 1.4287162162162161,
+        "avg_total_goals": 2.860472972972973,
+        "score_ge5_share": 0.03006756756756757,
+        "common_low_score_share": 0.7959459459459459,
+        "top1_score_share": 0.2652027027027027,
+        "top3_score_share": 0.6334459459459459,
+        "top5_score_share": 0.7202702702702702,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 785,
+            "share": 0.2652027027027027
+          },
+          {
+            "score": "1-2",
+            "count": 760,
+            "share": 0.25675675675675674
+          },
+          {
+            "score": "1-1",
+            "count": 330,
+            "share": 0.11148648648648649
+          },
+          {
+            "score": "0-1",
+            "count": 138,
+            "share": 0.046621621621621624
+          },
+          {
+            "score": "1-0",
+            "count": 119,
+            "share": 0.0402027027027027
+          },
+          {
+            "score": "0-2",
+            "count": 114,
+            "share": 0.038513513513513516
+          },
+          {
+            "score": "2-0",
+            "count": 110,
+            "share": 0.037162162162162164
+          },
+          {
+            "score": "0-3",
+            "count": 104,
+            "share": 0.03513513513513514
+          },
+          {
+            "score": "3-0",
+            "count": 92,
+            "share": 0.031081081081081083
+          },
+          {
+            "score": "3-1",
+            "count": 65,
+            "share": 0.02195945945945946
+          }
+        ]
+      },
+      "2019": {
+        "rows": 3452,
+        "win_share": 0.45162224797219,
+        "draw_share": 0.09820393974507532,
+        "loss_share": 0.4501738122827346,
+        "avg_team_goals": 1.4304750869061413,
+        "avg_opp_goals": 1.4281575898030128,
+        "avg_total_goals": 2.858632676709154,
+        "score_ge5_share": 0.037369640787949014,
+        "common_low_score_share": 0.7668018539976825,
+        "top1_score_share": 0.24536500579374276,
+        "top3_score_share": 0.5869061413673233,
+        "top5_score_share": 0.6900347624565469,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 847,
+            "share": 0.24536500579374276
+          },
+          {
+            "score": "1-2",
+            "count": 840,
+            "share": 0.24333719582850522
+          },
+          {
+            "score": "1-1",
+            "count": 339,
+            "share": 0.09820393974507532
+          },
+          {
+            "score": "0-2",
+            "count": 179,
+            "share": 0.0518539976825029
+          },
+          {
+            "score": "0-3",
+            "count": 177,
+            "share": 0.05127462340672074
+          },
+          {
+            "score": "2-0",
+            "count": 173,
+            "share": 0.05011587485515643
+          },
+          {
+            "score": "3-0",
+            "count": 160,
+            "share": 0.046349942062572425
+          },
+          {
+            "score": "0-1",
+            "count": 135,
+            "share": 0.03910776361529548
+          },
+          {
+            "score": "1-0",
+            "count": 134,
+            "share": 0.0388180764774044
+          },
+          {
+            "score": "4-0",
+            "count": 86,
+            "share": 0.024913093858632676
+          }
+        ]
+      },
+      "2020": {
+        "rows": 1134,
+        "win_share": 0.4462081128747795,
+        "draw_share": 0.1146384479717813,
+        "loss_share": 0.43915343915343913,
+        "avg_team_goals": 1.3977072310405643,
+        "avg_opp_goals": 1.3562610229276897,
+        "avg_total_goals": 2.753968253968254,
+        "score_ge5_share": 0.02821869488536155,
+        "common_low_score_share": 0.818342151675485,
+        "top1_score_share": 0.26455026455026454,
+        "top3_score_share": 0.628747795414462,
+        "top5_score_share": 0.7292768959435626,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 300,
+            "share": 0.26455026455026454
+          },
+          {
+            "score": "2-1",
+            "count": 283,
+            "share": 0.2495590828924162
+          },
+          {
+            "score": "1-1",
+            "count": 130,
+            "share": 0.1146384479717813
+          },
+          {
+            "score": "1-0",
+            "count": 58,
+            "share": 0.05114638447971781
+          },
+          {
+            "score": "2-0",
+            "count": 56,
+            "share": 0.04938271604938271
+          },
+          {
+            "score": "0-1",
+            "count": 52,
+            "share": 0.04585537918871252
+          },
+          {
+            "score": "0-2",
+            "count": 49,
+            "share": 0.043209876543209874
+          },
+          {
+            "score": "0-3",
+            "count": 46,
+            "share": 0.04056437389770723
+          },
+          {
+            "score": "3-0",
+            "count": 44,
+            "share": 0.03880070546737213
+          },
+          {
+            "score": "4-0",
+            "count": 26,
+            "share": 0.02292768959435626
+          }
+        ]
+      },
+      "2021": {
+        "rows": 3084,
+        "win_share": 0.44422827496757455,
+        "draw_share": 0.11478599221789883,
+        "loss_share": 0.4409857328145266,
+        "avg_team_goals": 1.361219195849546,
+        "avg_opp_goals": 1.3466277561608302,
+        "avg_total_goals": 2.7078469520103763,
+        "score_ge5_share": 0.026913099870298315,
+        "common_low_score_share": 0.8044747081712063,
+        "top1_score_share": 0.23216601815823606,
+        "top3_score_share": 0.5784695201037614,
+        "top5_score_share": 0.6990920881971465,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 716,
+            "share": 0.23216601815823606
+          },
+          {
+            "score": "2-1",
+            "count": 714,
+            "share": 0.23151750972762647
+          },
+          {
+            "score": "1-1",
+            "count": 354,
+            "share": 0.11478599221789883
+          },
+          {
+            "score": "0-2",
+            "count": 189,
+            "share": 0.061284046692607
+          },
+          {
+            "score": "2-0",
+            "count": 183,
+            "share": 0.05933852140077821
+          },
+          {
+            "score": "1-0",
+            "count": 164,
+            "share": 0.05317769130998703
+          },
+          {
+            "score": "0-1",
+            "count": 161,
+            "share": 0.052204928664072635
+          },
+          {
+            "score": "3-0",
+            "count": 139,
+            "share": 0.045071335927367055
+          },
+          {
+            "score": "0-3",
+            "count": 136,
+            "share": 0.04409857328145266
+          },
+          {
+            "score": "0-4",
+            "count": 73,
+            "share": 0.023670557717250323
+          }
+        ]
+      },
+      "2022": {
+        "rows": 3162,
+        "win_share": 0.45351043643263755,
+        "draw_share": 0.09898798228969007,
+        "loss_share": 0.44750158127767237,
+        "avg_team_goals": 1.4240986717267552,
+        "avg_opp_goals": 1.4089184060721063,
+        "avg_total_goals": 2.8330170777988615,
+        "score_ge5_share": 0.028779253636938645,
+        "common_low_score_share": 0.797280202403542,
+        "top1_score_share": 0.2596457938013915,
+        "top3_score_share": 0.6138519924098671,
+        "top5_score_share": 0.7134724857685009,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 821,
+            "share": 0.2596457938013915
+          },
+          {
+            "score": "1-2",
+            "count": 807,
+            "share": 0.25521821631878555
+          },
+          {
+            "score": "1-1",
+            "count": 313,
+            "share": 0.09898798228969007
+          },
+          {
+            "score": "0-2",
+            "count": 162,
+            "share": 0.051233396584440226
+          },
+          {
+            "score": "2-0",
+            "count": 153,
+            "share": 0.04838709677419355
+          },
+          {
+            "score": "0-1",
+            "count": 141,
+            "share": 0.04459203036053131
+          },
+          {
+            "score": "3-0",
+            "count": 126,
+            "share": 0.03984819734345351
+          },
+          {
+            "score": "1-0",
+            "count": 124,
+            "share": 0.0392156862745098
+          },
+          {
+            "score": "0-3",
+            "count": 110,
+            "share": 0.03478810879190386
+          },
+          {
+            "score": "4-0",
+            "count": 71,
+            "share": 0.02245414294750158
+          }
+        ]
+      },
+      "2023": {
+        "rows": 3576,
+        "win_share": 0.4569351230425056,
+        "draw_share": 0.08892617449664429,
+        "loss_share": 0.4541387024608501,
+        "avg_team_goals": 1.4580536912751678,
+        "avg_opp_goals": 1.4471476510067114,
+        "avg_total_goals": 2.905201342281879,
+        "score_ge5_share": 0.03523489932885906,
+        "common_low_score_share": 0.7720917225950783,
+        "top1_score_share": 0.26649888143176736,
+        "top3_score_share": 0.6182885906040269,
+        "top5_score_share": 0.7041387024608502,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 953,
+            "share": 0.26649888143176736
+          },
+          {
+            "score": "1-2",
+            "count": 940,
+            "share": 0.26286353467561524
+          },
+          {
+            "score": "1-1",
+            "count": 318,
+            "share": 0.08892617449664429
+          },
+          {
+            "score": "0-2",
+            "count": 158,
+            "share": 0.0441834451901566
+          },
+          {
+            "score": "2-0",
+            "count": 149,
+            "share": 0.041666666666666664
+          },
+          {
+            "score": "3-0",
+            "count": 149,
+            "share": 0.041666666666666664
+          },
+          {
+            "score": "0-3",
+            "count": 144,
+            "share": 0.040268456375838924
+          },
+          {
+            "score": "0-1",
+            "count": 127,
+            "share": 0.03551454138702461
+          },
+          {
+            "score": "1-0",
+            "count": 116,
+            "share": 0.03243847874720358
+          },
+          {
+            "score": "4-0",
+            "count": 90,
+            "share": 0.025167785234899327
+          }
+        ]
+      },
+      "2024": {
+        "rows": 3634,
+        "win_share": 0.45597138139790866,
+        "draw_share": 0.08943313153549808,
+        "loss_share": 0.4545954870665933,
+        "avg_team_goals": 1.4240506329113924,
+        "avg_opp_goals": 1.4028618602091358,
+        "avg_total_goals": 2.8269124931205285,
+        "score_ge5_share": 0.020913593835993397,
+        "common_low_score_share": 0.7908640616400661,
+        "top1_score_share": 0.26884975233902036,
+        "top3_score_share": 0.6197028068244359,
+        "top5_score_share": 0.7226197028068244,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 977,
+            "share": 0.26884975233902036
+          },
+          {
+            "score": "2-1",
+            "count": 950,
+            "share": 0.26141992294991745
+          },
+          {
+            "score": "1-1",
+            "count": 325,
+            "share": 0.08943313153549808
+          },
+          {
+            "score": "3-0",
+            "count": 187,
+            "share": 0.05145844799119428
+          },
+          {
+            "score": "0-2",
+            "count": 187,
+            "share": 0.05145844799119428
+          },
+          {
+            "score": "2-0",
+            "count": 184,
+            "share": 0.05063291139240506
+          },
+          {
+            "score": "0-3",
+            "count": 174,
+            "share": 0.04788112272977435
+          },
+          {
+            "score": "0-1",
+            "count": 128,
+            "share": 0.035222894881673086
+          },
+          {
+            "score": "1-0",
+            "count": 123,
+            "share": 0.033847000550357734
+          },
+          {
+            "score": "3-1",
+            "count": 75,
+            "share": 0.020638414969730325
+          }
+        ]
+      },
+      "2025": {
+        "rows": 3638,
+        "win_share": 0.46234194612424406,
+        "draw_share": 0.07833974711379879,
+        "loss_share": 0.4593183067619571,
+        "avg_team_goals": 1.4700384826827928,
+        "avg_opp_goals": 1.4507971412864211,
+        "avg_total_goals": 2.920835623969214,
+        "score_ge5_share": 0.028862012094557448,
+        "common_low_score_share": 0.7638812534359538,
+        "top1_score_share": 0.27047828477185265,
+        "top3_score_share": 0.6176470588235294,
+        "top5_score_share": 0.708631115997801,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 984,
+            "share": 0.27047828477185265
+          },
+          {
+            "score": "2-1",
+            "count": 978,
+            "share": 0.26882902693787797
+          },
+          {
+            "score": "1-1",
+            "count": 285,
+            "share": 0.07833974711379879
+          },
+          {
+            "score": "0-2",
+            "count": 169,
+            "share": 0.046454095656954374
+          },
+          {
+            "score": "3-0",
+            "count": 162,
+            "share": 0.04452996151731721
+          },
+          {
+            "score": "0-3",
+            "count": 159,
+            "share": 0.043705332600329855
+          },
+          {
+            "score": "2-0",
+            "count": 152,
+            "share": 0.04178119846069269
+          },
+          {
+            "score": "0-1",
+            "count": 108,
+            "share": 0.029686641011544807
+          },
+          {
+            "score": "1-0",
+            "count": 103,
+            "share": 0.028312259483232547
+          },
+          {
+            "score": "3-1",
+            "count": 101,
+            "share": 0.027762506871907643
+          }
+        ]
+      },
+      "2026": {
+        "rows": 566,
+        "win_share": 0.4540636042402827,
+        "draw_share": 0.10777385159010601,
+        "loss_share": 0.4381625441696113,
+        "avg_team_goals": 1.431095406360424,
+        "avg_opp_goals": 1.4045936395759717,
+        "avg_total_goals": 2.835689045936396,
+        "score_ge5_share": 0.03356890459363958,
+        "common_low_score_share": 0.784452296819788,
+        "top1_score_share": 0.254416961130742,
+        "top3_score_share": 0.6130742049469965,
+        "top5_score_share": 0.7120141342756183,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 144,
+            "share": 0.254416961130742
+          },
+          {
+            "score": "1-2",
+            "count": 142,
+            "share": 0.2508833922261484
+          },
+          {
+            "score": "1-1",
+            "count": 61,
+            "share": 0.10777385159010601
+          },
+          {
+            "score": "2-0",
+            "count": 28,
+            "share": 0.04946996466431095
+          },
+          {
+            "score": "3-0",
+            "count": 28,
+            "share": 0.04946996466431095
+          },
+          {
+            "score": "0-2",
+            "count": 26,
+            "share": 0.045936395759717315
+          },
+          {
+            "score": "0-3",
+            "count": 24,
+            "share": 0.04240282685512368
+          },
+          {
+            "score": "1-0",
+            "count": 23,
+            "share": 0.04063604240282685
+          },
+          {
+            "score": "0-1",
+            "count": 20,
+            "share": 0.0353356890459364
+          },
+          {
+            "score": "4-0",
+            "count": 15,
+            "share": 0.026501766784452298
+          }
+        ]
+      }
+    }
+  },
+  "friend_metrics_power_1_5": {
+    "weighted_awmae": 2.9988250076311433,
+    "unweighted_awmae": 3.015737742706151,
+    "outcome_accuracy": 0.5946442883409552,
+    "exact_accuracy": 0.10310687850643534,
+    "goal_diff_accuracy": 0.22523690537928434,
+    "rows": 42422,
+    "distribution": {
+      "rows": 42422,
+      "win_share": 0.4440620432794305,
+      "draw_share": 0.11253594832869737,
+      "loss_share": 0.44340200839187216,
+      "avg_team_goals": 1.3256093536372637,
+      "avg_opp_goals": 1.3227099146669181,
+      "avg_total_goals": 2.648319268304182,
+      "score_ge5_share": 0.02600066003488756,
+      "common_low_score_share": 0.8588232520861817,
+      "top1_score_share": 0.2686106265616897,
+      "top3_score_share": 0.6447833671208336,
+      "top5_score_share": 0.788340955164773,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 11395,
+          "share": 0.2686106265616897
+        },
+        {
+          "score": "2-1",
+          "count": 11188,
+          "share": 0.2637310829286691
+        },
+        {
+          "score": "1-1",
+          "count": 4770,
+          "share": 0.11244165763047476
+        },
+        {
+          "score": "1-0",
+          "count": 3162,
+          "share": 0.07453679694498137
+        },
+        {
+          "score": "0-1",
+          "count": 2928,
+          "share": 0.06902079109895809
+        },
+        {
+          "score": "0-2",
+          "count": 1495,
+          "share": 0.03524114846070435
+        },
+        {
+          "score": "2-0",
+          "count": 1491,
+          "share": 0.035146857762481734
+        },
+        {
+          "score": "0-3",
+          "count": 1276,
+          "share": 0.030078732733015888
+        },
+        {
+          "score": "3-0",
+          "count": 1246,
+          "share": 0.029371552496346237
+        },
+        {
+          "score": "0-4",
+          "count": 601,
+          "share": 0.014167177407948706
+        }
+      ]
+    },
+    "per_year_distribution": {
+      "2011": {
+        "rows": 1532,
+        "win_share": 0.44451697127937334,
+        "draw_share": 0.11096605744125326,
+        "loss_share": 0.44451697127937334,
+        "avg_team_goals": 1.3426892950391645,
+        "avg_opp_goals": 1.345953002610966,
+        "avg_total_goals": 2.6886422976501305,
+        "score_ge5_share": 0.02741514360313316,
+        "common_low_score_share": 0.8498694516971279,
+        "top1_score_share": 0.27088772845953,
+        "top3_score_share": 0.6488250652741514,
+        "top5_score_share": 0.7819843342036553,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 415,
+            "share": 0.27088772845953
+          },
+          {
+            "score": "2-1",
+            "count": 409,
+            "share": 0.2669712793733681
+          },
+          {
+            "score": "1-1",
+            "count": 170,
+            "share": 0.11096605744125326
+          },
+          {
+            "score": "1-0",
+            "count": 105,
+            "share": 0.0685378590078329
+          },
+          {
+            "score": "0-1",
+            "count": 99,
+            "share": 0.06462140992167102
+          },
+          {
+            "score": "2-0",
+            "count": 52,
+            "share": 0.033942558746736295
+          },
+          {
+            "score": "0-2",
+            "count": 52,
+            "share": 0.033942558746736295
+          },
+          {
+            "score": "3-0",
+            "count": 44,
+            "share": 0.028720626631853787
+          },
+          {
+            "score": "0-3",
+            "count": 43,
+            "share": 0.028067885117493474
+          },
+          {
+            "score": "0-4",
+            "count": 24,
+            "share": 0.015665796344647518
+          }
+        ]
+      },
+      "2012": {
+        "rows": 2664,
+        "win_share": 0.4373123123123123,
+        "draw_share": 0.12312312312312312,
+        "loss_share": 0.43956456456456455,
+        "avg_team_goals": 1.3168168168168168,
+        "avg_opp_goals": 1.3190690690690692,
+        "avg_total_goals": 2.635885885885886,
+        "score_ge5_share": 0.027777777777777776,
+        "common_low_score_share": 0.868993993993994,
+        "top1_score_share": 0.26914414414414417,
+        "top3_score_share": 0.6542792792792793,
+        "top5_score_share": 0.7976726726726727,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 717,
+            "share": 0.26914414414414417
+          },
+          {
+            "score": "2-1",
+            "count": 698,
+            "share": 0.262012012012012
+          },
+          {
+            "score": "1-1",
+            "count": 328,
+            "share": 0.12312312312312312
+          },
+          {
+            "score": "1-0",
+            "count": 199,
+            "share": 0.0746996996996997
+          },
+          {
+            "score": "0-1",
+            "count": 183,
+            "share": 0.0686936936936937
+          },
+          {
+            "score": "2-0",
+            "count": 98,
+            "share": 0.03678678678678678
+          },
+          {
+            "score": "0-2",
+            "count": 92,
+            "share": 0.03453453453453453
+          },
+          {
+            "score": "0-3",
+            "count": 76,
+            "share": 0.028528528528528527
+          },
+          {
+            "score": "3-0",
+            "count": 69,
+            "share": 0.0259009009009009
+          },
+          {
+            "score": "0-4",
+            "count": 35,
+            "share": 0.013138138138138139
+          }
+        ]
+      },
+      "2013": {
+        "rows": 2446,
+        "win_share": 0.43417825020441536,
+        "draw_share": 0.1357318070318888,
+        "loss_share": 0.43008994276369583,
+        "avg_team_goals": 1.2710547833197057,
+        "avg_opp_goals": 1.2608340147179067,
+        "avg_total_goals": 2.5318887980376124,
+        "score_ge5_share": 0.024938675388389207,
+        "common_low_score_share": 0.8789860997547015,
+        "top1_score_share": 0.24448078495502862,
+        "top3_score_share": 0.6214227309893704,
+        "top5_score_share": 0.8004905968928864,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 598,
+            "share": 0.24448078495502862
+          },
+          {
+            "score": "2-1",
+            "count": 590,
+            "share": 0.24121013900245297
+          },
+          {
+            "score": "1-1",
+            "count": 332,
+            "share": 0.1357318070318888
+          },
+          {
+            "score": "1-0",
+            "count": 227,
+            "share": 0.0928045789043336
+          },
+          {
+            "score": "0-1",
+            "count": 211,
+            "share": 0.08626328699918234
+          },
+          {
+            "score": "0-2",
+            "count": 98,
+            "share": 0.04006541291905151
+          },
+          {
+            "score": "2-0",
+            "count": 94,
+            "share": 0.038430089942763694
+          },
+          {
+            "score": "3-0",
+            "count": 65,
+            "share": 0.026573998364677023
+          },
+          {
+            "score": "0-3",
+            "count": 60,
+            "share": 0.024529844644317254
+          },
+          {
+            "score": "4-0",
+            "count": 32,
+            "share": 0.013082583810302535
+          }
+        ]
+      },
+      "2014": {
+        "rows": 2482,
+        "win_share": 0.4391619661563255,
+        "draw_share": 0.12127316680096696,
+        "loss_share": 0.4395648670427075,
+        "avg_team_goals": 1.3283642224012893,
+        "avg_opp_goals": 1.3287671232876712,
+        "avg_total_goals": 2.6571313456889607,
+        "score_ge5_share": 0.033037872683319904,
+        "common_low_score_share": 0.8460918614020951,
+        "top1_score_share": 0.2602739726027397,
+        "top3_score_share": 0.6353746978243352,
+        "top5_score_share": 0.7804190169218372,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 646,
+            "share": 0.2602739726027397
+          },
+          {
+            "score": "2-1",
+            "count": 630,
+            "share": 0.25382755842062854
+          },
+          {
+            "score": "1-1",
+            "count": 301,
+            "share": 0.12127316680096696
+          },
+          {
+            "score": "1-0",
+            "count": 187,
+            "share": 0.07534246575342465
+          },
+          {
+            "score": "0-1",
+            "count": 173,
+            "share": 0.06970185334407736
+          },
+          {
+            "score": "2-0",
+            "count": 86,
+            "share": 0.0346494762288477
+          },
+          {
+            "score": "0-3",
+            "count": 81,
+            "share": 0.03263497179693795
+          },
+          {
+            "score": "0-2",
+            "count": 77,
+            "share": 0.031023368251410152
+          },
+          {
+            "score": "3-0",
+            "count": 73,
+            "share": 0.029411764705882353
+          },
+          {
+            "score": "1-3",
+            "count": 37,
+            "share": 0.014907332796132152
+          }
+        ]
+      },
+      "2015": {
+        "rows": 2914,
+        "win_share": 0.44406314344543585,
+        "draw_share": 0.11496225120109815,
+        "loss_share": 0.44097460535346605,
+        "avg_team_goals": 1.3208647906657516,
+        "avg_opp_goals": 1.3153740562800273,
+        "avg_total_goals": 2.636238846945779,
+        "score_ge5_share": 0.027453671928620454,
+        "common_low_score_share": 0.8452299245024022,
+        "top1_score_share": 0.2539464653397392,
+        "top3_score_share": 0.6197666437886067,
+        "top5_score_share": 0.7721345229924502,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 740,
+            "share": 0.2539464653397392
+          },
+          {
+            "score": "1-2",
+            "count": 731,
+            "share": 0.2508579272477694
+          },
+          {
+            "score": "1-1",
+            "count": 335,
+            "share": 0.11496225120109815
+          },
+          {
+            "score": "1-0",
+            "count": 225,
+            "share": 0.07721345229924502
+          },
+          {
+            "score": "0-1",
+            "count": 219,
+            "share": 0.07515442690459849
+          },
+          {
+            "score": "0-2",
+            "count": 111,
+            "share": 0.03809196980096088
+          },
+          {
+            "score": "2-0",
+            "count": 102,
+            "share": 0.035003431708991076
+          },
+          {
+            "score": "3-0",
+            "count": 99,
+            "share": 0.03397391901166781
+          },
+          {
+            "score": "0-3",
+            "count": 99,
+            "share": 0.03397391901166781
+          },
+          {
+            "score": "0-4",
+            "count": 39,
+            "share": 0.013383665065202471
+          }
+        ]
+      },
+      "2016": {
+        "rows": 2576,
+        "win_share": 0.4468167701863354,
+        "draw_share": 0.10869565217391304,
+        "loss_share": 0.44448757763975155,
+        "avg_team_goals": 1.3101708074534162,
+        "avg_opp_goals": 1.299689440993789,
+        "avg_total_goals": 2.609860248447205,
+        "score_ge5_share": 0.023680124223602484,
+        "common_low_score_share": 0.8637422360248447,
+        "top1_score_share": 0.2643633540372671,
+        "top3_score_share": 0.6323757763975155,
+        "top5_score_share": 0.7876552795031055,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 681,
+            "share": 0.2643633540372671
+          },
+          {
+            "score": "2-1",
+            "count": 668,
+            "share": 0.2593167701863354
+          },
+          {
+            "score": "1-1",
+            "count": 280,
+            "share": 0.10869565217391304
+          },
+          {
+            "score": "1-0",
+            "count": 209,
+            "share": 0.0811335403726708
+          },
+          {
+            "score": "0-1",
+            "count": 191,
+            "share": 0.07414596273291925
+          },
+          {
+            "score": "0-2",
+            "count": 99,
+            "share": 0.038431677018633544
+          },
+          {
+            "score": "2-0",
+            "count": 97,
+            "share": 0.03765527950310559
+          },
+          {
+            "score": "3-0",
+            "count": 86,
+            "share": 0.033385093167701864
+          },
+          {
+            "score": "0-3",
+            "count": 82,
+            "share": 0.03183229813664596
+          },
+          {
+            "score": "0-4",
+            "count": 42,
+            "share": 0.016304347826086956
+          }
+        ]
+      },
+      "2017": {
+        "rows": 2602,
+        "win_share": 0.4369715603382014,
+        "draw_share": 0.12836279784780938,
+        "loss_share": 0.43466564181398926,
+        "avg_team_goals": 1.29554189085319,
+        "avg_opp_goals": 1.2920830130668717,
+        "avg_total_goals": 2.5876249039200614,
+        "score_ge5_share": 0.017294388931591083,
+        "common_low_score_share": 0.8750960799385088,
+        "top1_score_share": 0.25864719446579554,
+        "top3_score_share": 0.6406610299769409,
+        "top5_score_share": 0.8039969254419678,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 673,
+            "share": 0.25864719446579554
+          },
+          {
+            "score": "2-1",
+            "count": 660,
+            "share": 0.2536510376633359
+          },
+          {
+            "score": "1-1",
+            "count": 334,
+            "share": 0.12836279784780938
+          },
+          {
+            "score": "1-0",
+            "count": 221,
+            "share": 0.08493466564181398
+          },
+          {
+            "score": "0-1",
+            "count": 204,
+            "share": 0.07840122982321292
+          },
+          {
+            "score": "0-2",
+            "count": 94,
+            "share": 0.0361260568793236
+          },
+          {
+            "score": "2-0",
+            "count": 91,
+            "share": 0.03497309761721752
+          },
+          {
+            "score": "3-0",
+            "count": 58,
+            "share": 0.022290545734050732
+          },
+          {
+            "score": "0-3",
+            "count": 54,
+            "share": 0.0207532667179093
+          },
+          {
+            "score": "1-3",
+            "count": 40,
+            "share": 0.015372790161414296
+          }
+        ]
+      },
+      "2018": {
+        "rows": 2960,
+        "win_share": 0.4449324324324324,
+        "draw_share": 0.11486486486486487,
+        "loss_share": 0.4402027027027027,
+        "avg_team_goals": 1.345945945945946,
+        "avg_opp_goals": 1.335472972972973,
+        "avg_total_goals": 2.681418918918919,
+        "score_ge5_share": 0.03513513513513514,
+        "common_low_score_share": 0.8611486486486486,
+        "top1_score_share": 0.27635135135135136,
+        "top3_score_share": 0.6668918918918919,
+        "top5_score_share": 0.8131756756756757,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 818,
+            "share": 0.27635135135135136
+          },
+          {
+            "score": "2-1",
+            "count": 816,
+            "share": 0.2756756756756757
+          },
+          {
+            "score": "1-1",
+            "count": 340,
+            "share": 0.11486486486486487
+          },
+          {
+            "score": "1-0",
+            "count": 226,
+            "share": 0.07635135135135135
+          },
+          {
+            "score": "0-1",
+            "count": 207,
+            "share": 0.06993243243243243
+          },
+          {
+            "score": "0-3",
+            "count": 76,
+            "share": 0.025675675675675677
+          },
+          {
+            "score": "0-2",
+            "count": 75,
+            "share": 0.02533783783783784
+          },
+          {
+            "score": "2-0",
+            "count": 67,
+            "share": 0.022635135135135136
+          },
+          {
+            "score": "3-0",
+            "count": 64,
+            "share": 0.021621621621621623
+          },
+          {
+            "score": "5-0",
+            "count": 48,
+            "share": 0.016216216216216217
+          }
+        ]
+      },
+      "2019": {
+        "rows": 3452,
+        "win_share": 0.4536500579374276,
+        "draw_share": 0.093279258400927,
+        "loss_share": 0.45307068366164543,
+        "avg_team_goals": 1.3592120509849364,
+        "avg_opp_goals": 1.3566048667439166,
+        "avg_total_goals": 2.7158169177288527,
+        "score_ge5_share": 0.028968713789107765,
+        "common_low_score_share": 0.8296639629200464,
+        "top1_score_share": 0.26506373117033605,
+        "top3_score_share": 0.6225376593279258,
+        "top5_score_share": 0.7497103128621089,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 915,
+            "share": 0.26506373117033605
+          },
+          {
+            "score": "2-1",
+            "count": 912,
+            "share": 0.2641946697566628
+          },
+          {
+            "score": "1-1",
+            "count": 322,
+            "share": 0.093279258400927
+          },
+          {
+            "score": "1-0",
+            "count": 222,
+            "share": 0.06431054461181923
+          },
+          {
+            "score": "0-1",
+            "count": 217,
+            "share": 0.06286210892236385
+          },
+          {
+            "score": "0-2",
+            "count": 140,
+            "share": 0.04055619930475087
+          },
+          {
+            "score": "2-0",
+            "count": 136,
+            "share": 0.039397450753186555
+          },
+          {
+            "score": "3-0",
+            "count": 122,
+            "share": 0.03534183082271147
+          },
+          {
+            "score": "0-3",
+            "count": 120,
+            "share": 0.03476245654692932
+          },
+          {
+            "score": "0-4",
+            "count": 60,
+            "share": 0.01738122827346466
+          }
+        ]
+      },
+      "2020": {
+        "rows": 1134,
+        "win_share": 0.43209876543209874,
+        "draw_share": 0.13139329805996472,
+        "loss_share": 0.4365079365079365,
+        "avg_team_goals": 1.2821869488536155,
+        "avg_opp_goals": 1.2760141093474426,
+        "avg_total_goals": 2.558201058201058,
+        "score_ge5_share": 0.03350970017636684,
+        "common_low_score_share": 0.8659611992945326,
+        "top1_score_share": 0.25308641975308643,
+        "top3_score_share": 0.6181657848324515,
+        "top5_score_share": 0.7901234567901234,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 287,
+            "share": 0.25308641975308643
+          },
+          {
+            "score": "2-1",
+            "count": 265,
+            "share": 0.23368606701940034
+          },
+          {
+            "score": "1-1",
+            "count": 149,
+            "share": 0.13139329805996472
+          },
+          {
+            "score": "1-0",
+            "count": 104,
+            "share": 0.09171075837742504
+          },
+          {
+            "score": "0-1",
+            "count": 91,
+            "share": 0.08024691358024691
+          },
+          {
+            "score": "2-0",
+            "count": 45,
+            "share": 0.03968253968253968
+          },
+          {
+            "score": "0-2",
+            "count": 41,
+            "share": 0.036155202821869487
+          },
+          {
+            "score": "0-3",
+            "count": 38,
+            "share": 0.03350970017636684
+          },
+          {
+            "score": "3-0",
+            "count": 36,
+            "share": 0.031746031746031744
+          },
+          {
+            "score": "5-0",
+            "count": 18,
+            "share": 0.015873015873015872
+          }
+        ]
+      },
+      "2021": {
+        "rows": 3084,
+        "win_share": 0.4390402075226978,
+        "draw_share": 0.1219195849546044,
+        "loss_share": 0.4390402075226978,
+        "avg_team_goals": 1.2863164721141376,
+        "avg_opp_goals": 1.2791828793774318,
+        "avg_total_goals": 2.5654993514915696,
+        "score_ge5_share": 0.02756160830090791,
+        "common_low_score_share": 0.8628404669260701,
+        "top1_score_share": 0.2490272373540856,
+        "top3_score_share": 0.6053826199740596,
+        "top5_score_share": 0.7678339818417639,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 768,
+            "share": 0.2490272373540856
+          },
+          {
+            "score": "2-1",
+            "count": 725,
+            "share": 0.23508430609597925
+          },
+          {
+            "score": "1-1",
+            "count": 374,
+            "share": 0.12127107652399481
+          },
+          {
+            "score": "1-0",
+            "count": 267,
+            "share": 0.08657587548638132
+          },
+          {
+            "score": "0-1",
+            "count": 234,
+            "share": 0.07587548638132295
+          },
+          {
+            "score": "2-0",
+            "count": 151,
+            "share": 0.04896238651102464
+          },
+          {
+            "score": "0-2",
+            "count": 140,
+            "share": 0.04539559014267185
+          },
+          {
+            "score": "0-3",
+            "count": 102,
+            "share": 0.033073929961089495
+          },
+          {
+            "score": "3-0",
+            "count": 94,
+            "share": 0.0304798962386511
+          },
+          {
+            "score": "0-4",
+            "count": 49,
+            "share": 0.015888456549935148
+          }
+        ]
+      },
+      "2022": {
+        "rows": 3162,
+        "win_share": 0.44370651486401014,
+        "draw_share": 0.11385199240986717,
+        "loss_share": 0.4424414927261227,
+        "avg_team_goals": 1.329854522454143,
+        "avg_opp_goals": 1.3333333333333333,
+        "avg_total_goals": 2.663187855787476,
+        "score_ge5_share": 0.030360531309297913,
+        "common_low_score_share": 0.8617963314358001,
+        "top1_score_share": 0.2754585705249842,
+        "top3_score_share": 0.6574952561669829,
+        "top5_score_share": 0.8029728020240354,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 871,
+            "share": 0.2754585705249842
+          },
+          {
+            "score": "2-1",
+            "count": 848,
+            "share": 0.26818469323213157
+          },
+          {
+            "score": "1-1",
+            "count": 360,
+            "share": 0.11385199240986717
+          },
+          {
+            "score": "1-0",
+            "count": 245,
+            "share": 0.07748260594560405
+          },
+          {
+            "score": "0-1",
+            "count": 215,
+            "share": 0.06799493991144845
+          },
+          {
+            "score": "2-0",
+            "count": 94,
+            "share": 0.029728020240354206
+          },
+          {
+            "score": "0-2",
+            "count": 92,
+            "share": 0.0290955091714105
+          },
+          {
+            "score": "0-3",
+            "count": 85,
+            "share": 0.026881720430107527
+          },
+          {
+            "score": "3-0",
+            "count": 78,
+            "share": 0.024667931688804556
+          },
+          {
+            "score": "0-4",
+            "count": 51,
+            "share": 0.016129032258064516
+          }
+        ]
+      },
+      "2023": {
+        "rows": 3576,
+        "win_share": 0.45553691275167785,
+        "draw_share": 0.08920581655480984,
+        "loss_share": 0.4552572706935123,
+        "avg_team_goals": 1.3610178970917226,
+        "avg_opp_goals": 1.354586129753915,
+        "avg_total_goals": 2.7156040268456376,
+        "score_ge5_share": 0.024608501118568233,
+        "common_low_score_share": 0.8386465324384788,
+        "top1_score_share": 0.2765659955257271,
+        "top3_score_share": 0.6378635346756152,
+        "top5_score_share": 0.7676174496644296,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 989,
+            "share": 0.2765659955257271
+          },
+          {
+            "score": "2-1",
+            "count": 973,
+            "share": 0.2720917225950783
+          },
+          {
+            "score": "1-1",
+            "count": 319,
+            "share": 0.08920581655480984
+          },
+          {
+            "score": "1-0",
+            "count": 239,
+            "share": 0.06683445190156599
+          },
+          {
+            "score": "0-1",
+            "count": 225,
+            "share": 0.06291946308724833
+          },
+          {
+            "score": "0-2",
+            "count": 130,
+            "share": 0.036353467561521254
+          },
+          {
+            "score": "2-0",
+            "count": 124,
+            "share": 0.03467561521252797
+          },
+          {
+            "score": "3-0",
+            "count": 121,
+            "share": 0.03383668903803132
+          },
+          {
+            "score": "0-3",
+            "count": 118,
+            "share": 0.032997762863534674
+          },
+          {
+            "score": "3-1",
+            "count": 59,
+            "share": 0.016498881431767337
+          }
+        ]
+      },
+      "2024": {
+        "rows": 3634,
+        "win_share": 0.44111172261970283,
+        "draw_share": 0.1147495872317006,
+        "loss_share": 0.4441386901485966,
+        "avg_team_goals": 1.3236103467253715,
+        "avg_opp_goals": 1.3271876719867914,
+        "avg_total_goals": 2.650798018712163,
+        "score_ge5_share": 0.016235553109521187,
+        "common_low_score_share": 0.8824986241056687,
+        "top1_score_share": 0.2903137039075399,
+        "top3_score_share": 0.689873417721519,
+        "top5_score_share": 0.8115024766097964,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 1055,
+            "share": 0.2903137039075399
+          },
+          {
+            "score": "2-1",
+            "count": 1035,
+            "share": 0.2848101265822785
+          },
+          {
+            "score": "1-1",
+            "count": 417,
+            "share": 0.1147495872317006
+          },
+          {
+            "score": "1-0",
+            "count": 226,
+            "share": 0.06219042377545404
+          },
+          {
+            "score": "0-1",
+            "count": 216,
+            "share": 0.05943863511282334
+          },
+          {
+            "score": "2-0",
+            "count": 130,
+            "share": 0.03577325261419923
+          },
+          {
+            "score": "0-2",
+            "count": 128,
+            "share": 0.035222894881673086
+          },
+          {
+            "score": "3-0",
+            "count": 111,
+            "share": 0.03054485415520088
+          },
+          {
+            "score": "0-3",
+            "count": 111,
+            "share": 0.03054485415520088
+          },
+          {
+            "score": "0-4",
+            "count": 35,
+            "share": 0.009631260319207484
+          }
+        ]
+      },
+      "2025": {
+        "rows": 3638,
+        "win_share": 0.4571192963166575,
+        "draw_share": 0.08548653106102254,
+        "loss_share": 0.45739417262231996,
+        "avg_team_goals": 1.3666849917537107,
+        "avg_opp_goals": 1.3677844969763606,
+        "avg_total_goals": 2.7344694887300713,
+        "score_ge5_share": 0.020065970313358987,
+        "common_low_score_share": 0.8573391973611875,
+        "top1_score_share": 0.3004398020890599,
+        "top3_score_share": 0.6822429906542056,
+        "top5_score_share": 0.797416162726773,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 1093,
+            "share": 0.3004398020890599
+          },
+          {
+            "score": "2-1",
+            "count": 1078,
+            "share": 0.29631665750412317
+          },
+          {
+            "score": "1-1",
+            "count": 311,
+            "share": 0.08548653106102254
+          },
+          {
+            "score": "1-0",
+            "count": 217,
+            "share": 0.05964815832875206
+          },
+          {
+            "score": "0-1",
+            "count": 202,
+            "share": 0.055525013743815285
+          },
+          {
+            "score": "2-0",
+            "count": 109,
+            "share": 0.029961517317207257
+          },
+          {
+            "score": "0-2",
+            "count": 109,
+            "share": 0.029961517317207257
+          },
+          {
+            "score": "0-3",
+            "count": 109,
+            "share": 0.029961517317207257
+          },
+          {
+            "score": "3-0",
+            "count": 106,
+            "share": 0.029136888400219902
+          },
+          {
+            "score": "0-4",
+            "count": 58,
+            "share": 0.01594282572842221
+          }
+        ]
+      },
+      "2026": {
+        "rows": 566,
+        "win_share": 0.411660777385159,
+        "draw_share": 0.17667844522968199,
+        "loss_share": 0.411660777385159,
+        "avg_team_goals": 1.2685512367491165,
+        "avg_opp_goals": 1.2791519434628975,
+        "avg_total_goals": 2.547703180212014,
+        "score_ge5_share": 0.026501766784452298,
+        "common_low_score_share": 0.8745583038869258,
+        "top1_score_share": 0.24911660777385158,
+        "top3_score_share": 0.6660777385159011,
+        "top5_score_share": 0.8144876325088339,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 141,
+            "share": 0.24911660777385158
+          },
+          {
+            "score": "1-2",
+            "count": 138,
+            "share": 0.24381625441696114
+          },
+          {
+            "score": "1-1",
+            "count": 98,
+            "share": 0.17314487632508835
+          },
+          {
+            "score": "1-0",
+            "count": 43,
+            "share": 0.07597173144876325
+          },
+          {
+            "score": "0-1",
+            "count": 41,
+            "share": 0.07243816254416961
+          },
+          {
+            "score": "0-3",
+            "count": 22,
+            "share": 0.038869257950530034
+          },
+          {
+            "score": "3-0",
+            "count": 20,
+            "share": 0.0353356890459364
+          },
+          {
+            "score": "0-2",
+            "count": 17,
+            "share": 0.030035335689045935
+          },
+          {
+            "score": "2-0",
+            "count": 15,
+            "share": 0.026501766784452298
+          },
+          {
+            "score": "5-0",
+            "count": 7,
+            "share": 0.012367491166077738
+          }
+        ]
+      }
+    },
+    "ground_truth_available": true
+  },
+  "friend_metrics_power_1_3": {
+    "weighted_awmae": 2.4783810038458,
+    "unweighted_awmae": 2.490897234692354,
+    "outcome_accuracy": 0.5946442883409552,
+    "exact_accuracy": 0.10310687850643534,
+    "goal_diff_accuracy": 0.22523690537928434,
+    "rows": 42422,
+    "distribution": {
+      "rows": 42422,
+      "win_share": 0.4440620432794305,
+      "draw_share": 0.11253594832869737,
+      "loss_share": 0.44340200839187216,
+      "avg_team_goals": 1.3256093536372637,
+      "avg_opp_goals": 1.3227099146669181,
+      "avg_total_goals": 2.648319268304182,
+      "score_ge5_share": 0.02600066003488756,
+      "common_low_score_share": 0.8588232520861817,
+      "top1_score_share": 0.2686106265616897,
+      "top3_score_share": 0.6447833671208336,
+      "top5_score_share": 0.788340955164773,
+      "top_10_scores": [
+        {
+          "score": "1-2",
+          "count": 11395,
+          "share": 0.2686106265616897
+        },
+        {
+          "score": "2-1",
+          "count": 11188,
+          "share": 0.2637310829286691
+        },
+        {
+          "score": "1-1",
+          "count": 4770,
+          "share": 0.11244165763047476
+        },
+        {
+          "score": "1-0",
+          "count": 3162,
+          "share": 0.07453679694498137
+        },
+        {
+          "score": "0-1",
+          "count": 2928,
+          "share": 0.06902079109895809
+        },
+        {
+          "score": "0-2",
+          "count": 1495,
+          "share": 0.03524114846070435
+        },
+        {
+          "score": "2-0",
+          "count": 1491,
+          "share": 0.035146857762481734
+        },
+        {
+          "score": "0-3",
+          "count": 1276,
+          "share": 0.030078732733015888
+        },
+        {
+          "score": "3-0",
+          "count": 1246,
+          "share": 0.029371552496346237
+        },
+        {
+          "score": "0-4",
+          "count": 601,
+          "share": 0.014167177407948706
+        }
+      ]
+    },
+    "per_year_distribution": {
+      "2011": {
+        "rows": 1532,
+        "win_share": 0.44451697127937334,
+        "draw_share": 0.11096605744125326,
+        "loss_share": 0.44451697127937334,
+        "avg_team_goals": 1.3426892950391645,
+        "avg_opp_goals": 1.345953002610966,
+        "avg_total_goals": 2.6886422976501305,
+        "score_ge5_share": 0.02741514360313316,
+        "common_low_score_share": 0.8498694516971279,
+        "top1_score_share": 0.27088772845953,
+        "top3_score_share": 0.6488250652741514,
+        "top5_score_share": 0.7819843342036553,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 415,
+            "share": 0.27088772845953
+          },
+          {
+            "score": "2-1",
+            "count": 409,
+            "share": 0.2669712793733681
+          },
+          {
+            "score": "1-1",
+            "count": 170,
+            "share": 0.11096605744125326
+          },
+          {
+            "score": "1-0",
+            "count": 105,
+            "share": 0.0685378590078329
+          },
+          {
+            "score": "0-1",
+            "count": 99,
+            "share": 0.06462140992167102
+          },
+          {
+            "score": "2-0",
+            "count": 52,
+            "share": 0.033942558746736295
+          },
+          {
+            "score": "0-2",
+            "count": 52,
+            "share": 0.033942558746736295
+          },
+          {
+            "score": "3-0",
+            "count": 44,
+            "share": 0.028720626631853787
+          },
+          {
+            "score": "0-3",
+            "count": 43,
+            "share": 0.028067885117493474
+          },
+          {
+            "score": "0-4",
+            "count": 24,
+            "share": 0.015665796344647518
+          }
+        ]
+      },
+      "2012": {
+        "rows": 2664,
+        "win_share": 0.4373123123123123,
+        "draw_share": 0.12312312312312312,
+        "loss_share": 0.43956456456456455,
+        "avg_team_goals": 1.3168168168168168,
+        "avg_opp_goals": 1.3190690690690692,
+        "avg_total_goals": 2.635885885885886,
+        "score_ge5_share": 0.027777777777777776,
+        "common_low_score_share": 0.868993993993994,
+        "top1_score_share": 0.26914414414414417,
+        "top3_score_share": 0.6542792792792793,
+        "top5_score_share": 0.7976726726726727,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 717,
+            "share": 0.26914414414414417
+          },
+          {
+            "score": "2-1",
+            "count": 698,
+            "share": 0.262012012012012
+          },
+          {
+            "score": "1-1",
+            "count": 328,
+            "share": 0.12312312312312312
+          },
+          {
+            "score": "1-0",
+            "count": 199,
+            "share": 0.0746996996996997
+          },
+          {
+            "score": "0-1",
+            "count": 183,
+            "share": 0.0686936936936937
+          },
+          {
+            "score": "2-0",
+            "count": 98,
+            "share": 0.03678678678678678
+          },
+          {
+            "score": "0-2",
+            "count": 92,
+            "share": 0.03453453453453453
+          },
+          {
+            "score": "0-3",
+            "count": 76,
+            "share": 0.028528528528528527
+          },
+          {
+            "score": "3-0",
+            "count": 69,
+            "share": 0.0259009009009009
+          },
+          {
+            "score": "0-4",
+            "count": 35,
+            "share": 0.013138138138138139
+          }
+        ]
+      },
+      "2013": {
+        "rows": 2446,
+        "win_share": 0.43417825020441536,
+        "draw_share": 0.1357318070318888,
+        "loss_share": 0.43008994276369583,
+        "avg_team_goals": 1.2710547833197057,
+        "avg_opp_goals": 1.2608340147179067,
+        "avg_total_goals": 2.5318887980376124,
+        "score_ge5_share": 0.024938675388389207,
+        "common_low_score_share": 0.8789860997547015,
+        "top1_score_share": 0.24448078495502862,
+        "top3_score_share": 0.6214227309893704,
+        "top5_score_share": 0.8004905968928864,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 598,
+            "share": 0.24448078495502862
+          },
+          {
+            "score": "2-1",
+            "count": 590,
+            "share": 0.24121013900245297
+          },
+          {
+            "score": "1-1",
+            "count": 332,
+            "share": 0.1357318070318888
+          },
+          {
+            "score": "1-0",
+            "count": 227,
+            "share": 0.0928045789043336
+          },
+          {
+            "score": "0-1",
+            "count": 211,
+            "share": 0.08626328699918234
+          },
+          {
+            "score": "0-2",
+            "count": 98,
+            "share": 0.04006541291905151
+          },
+          {
+            "score": "2-0",
+            "count": 94,
+            "share": 0.038430089942763694
+          },
+          {
+            "score": "3-0",
+            "count": 65,
+            "share": 0.026573998364677023
+          },
+          {
+            "score": "0-3",
+            "count": 60,
+            "share": 0.024529844644317254
+          },
+          {
+            "score": "4-0",
+            "count": 32,
+            "share": 0.013082583810302535
+          }
+        ]
+      },
+      "2014": {
+        "rows": 2482,
+        "win_share": 0.4391619661563255,
+        "draw_share": 0.12127316680096696,
+        "loss_share": 0.4395648670427075,
+        "avg_team_goals": 1.3283642224012893,
+        "avg_opp_goals": 1.3287671232876712,
+        "avg_total_goals": 2.6571313456889607,
+        "score_ge5_share": 0.033037872683319904,
+        "common_low_score_share": 0.8460918614020951,
+        "top1_score_share": 0.2602739726027397,
+        "top3_score_share": 0.6353746978243352,
+        "top5_score_share": 0.7804190169218372,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 646,
+            "share": 0.2602739726027397
+          },
+          {
+            "score": "2-1",
+            "count": 630,
+            "share": 0.25382755842062854
+          },
+          {
+            "score": "1-1",
+            "count": 301,
+            "share": 0.12127316680096696
+          },
+          {
+            "score": "1-0",
+            "count": 187,
+            "share": 0.07534246575342465
+          },
+          {
+            "score": "0-1",
+            "count": 173,
+            "share": 0.06970185334407736
+          },
+          {
+            "score": "2-0",
+            "count": 86,
+            "share": 0.0346494762288477
+          },
+          {
+            "score": "0-3",
+            "count": 81,
+            "share": 0.03263497179693795
+          },
+          {
+            "score": "0-2",
+            "count": 77,
+            "share": 0.031023368251410152
+          },
+          {
+            "score": "3-0",
+            "count": 73,
+            "share": 0.029411764705882353
+          },
+          {
+            "score": "1-3",
+            "count": 37,
+            "share": 0.014907332796132152
+          }
+        ]
+      },
+      "2015": {
+        "rows": 2914,
+        "win_share": 0.44406314344543585,
+        "draw_share": 0.11496225120109815,
+        "loss_share": 0.44097460535346605,
+        "avg_team_goals": 1.3208647906657516,
+        "avg_opp_goals": 1.3153740562800273,
+        "avg_total_goals": 2.636238846945779,
+        "score_ge5_share": 0.027453671928620454,
+        "common_low_score_share": 0.8452299245024022,
+        "top1_score_share": 0.2539464653397392,
+        "top3_score_share": 0.6197666437886067,
+        "top5_score_share": 0.7721345229924502,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 740,
+            "share": 0.2539464653397392
+          },
+          {
+            "score": "1-2",
+            "count": 731,
+            "share": 0.2508579272477694
+          },
+          {
+            "score": "1-1",
+            "count": 335,
+            "share": 0.11496225120109815
+          },
+          {
+            "score": "1-0",
+            "count": 225,
+            "share": 0.07721345229924502
+          },
+          {
+            "score": "0-1",
+            "count": 219,
+            "share": 0.07515442690459849
+          },
+          {
+            "score": "0-2",
+            "count": 111,
+            "share": 0.03809196980096088
+          },
+          {
+            "score": "2-0",
+            "count": 102,
+            "share": 0.035003431708991076
+          },
+          {
+            "score": "3-0",
+            "count": 99,
+            "share": 0.03397391901166781
+          },
+          {
+            "score": "0-3",
+            "count": 99,
+            "share": 0.03397391901166781
+          },
+          {
+            "score": "0-4",
+            "count": 39,
+            "share": 0.013383665065202471
+          }
+        ]
+      },
+      "2016": {
+        "rows": 2576,
+        "win_share": 0.4468167701863354,
+        "draw_share": 0.10869565217391304,
+        "loss_share": 0.44448757763975155,
+        "avg_team_goals": 1.3101708074534162,
+        "avg_opp_goals": 1.299689440993789,
+        "avg_total_goals": 2.609860248447205,
+        "score_ge5_share": 0.023680124223602484,
+        "common_low_score_share": 0.8637422360248447,
+        "top1_score_share": 0.2643633540372671,
+        "top3_score_share": 0.6323757763975155,
+        "top5_score_share": 0.7876552795031055,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 681,
+            "share": 0.2643633540372671
+          },
+          {
+            "score": "2-1",
+            "count": 668,
+            "share": 0.2593167701863354
+          },
+          {
+            "score": "1-1",
+            "count": 280,
+            "share": 0.10869565217391304
+          },
+          {
+            "score": "1-0",
+            "count": 209,
+            "share": 0.0811335403726708
+          },
+          {
+            "score": "0-1",
+            "count": 191,
+            "share": 0.07414596273291925
+          },
+          {
+            "score": "0-2",
+            "count": 99,
+            "share": 0.038431677018633544
+          },
+          {
+            "score": "2-0",
+            "count": 97,
+            "share": 0.03765527950310559
+          },
+          {
+            "score": "3-0",
+            "count": 86,
+            "share": 0.033385093167701864
+          },
+          {
+            "score": "0-3",
+            "count": 82,
+            "share": 0.03183229813664596
+          },
+          {
+            "score": "0-4",
+            "count": 42,
+            "share": 0.016304347826086956
+          }
+        ]
+      },
+      "2017": {
+        "rows": 2602,
+        "win_share": 0.4369715603382014,
+        "draw_share": 0.12836279784780938,
+        "loss_share": 0.43466564181398926,
+        "avg_team_goals": 1.29554189085319,
+        "avg_opp_goals": 1.2920830130668717,
+        "avg_total_goals": 2.5876249039200614,
+        "score_ge5_share": 0.017294388931591083,
+        "common_low_score_share": 0.8750960799385088,
+        "top1_score_share": 0.25864719446579554,
+        "top3_score_share": 0.6406610299769409,
+        "top5_score_share": 0.8039969254419678,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 673,
+            "share": 0.25864719446579554
+          },
+          {
+            "score": "2-1",
+            "count": 660,
+            "share": 0.2536510376633359
+          },
+          {
+            "score": "1-1",
+            "count": 334,
+            "share": 0.12836279784780938
+          },
+          {
+            "score": "1-0",
+            "count": 221,
+            "share": 0.08493466564181398
+          },
+          {
+            "score": "0-1",
+            "count": 204,
+            "share": 0.07840122982321292
+          },
+          {
+            "score": "0-2",
+            "count": 94,
+            "share": 0.0361260568793236
+          },
+          {
+            "score": "2-0",
+            "count": 91,
+            "share": 0.03497309761721752
+          },
+          {
+            "score": "3-0",
+            "count": 58,
+            "share": 0.022290545734050732
+          },
+          {
+            "score": "0-3",
+            "count": 54,
+            "share": 0.0207532667179093
+          },
+          {
+            "score": "1-3",
+            "count": 40,
+            "share": 0.015372790161414296
+          }
+        ]
+      },
+      "2018": {
+        "rows": 2960,
+        "win_share": 0.4449324324324324,
+        "draw_share": 0.11486486486486487,
+        "loss_share": 0.4402027027027027,
+        "avg_team_goals": 1.345945945945946,
+        "avg_opp_goals": 1.335472972972973,
+        "avg_total_goals": 2.681418918918919,
+        "score_ge5_share": 0.03513513513513514,
+        "common_low_score_share": 0.8611486486486486,
+        "top1_score_share": 0.27635135135135136,
+        "top3_score_share": 0.6668918918918919,
+        "top5_score_share": 0.8131756756756757,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 818,
+            "share": 0.27635135135135136
+          },
+          {
+            "score": "2-1",
+            "count": 816,
+            "share": 0.2756756756756757
+          },
+          {
+            "score": "1-1",
+            "count": 340,
+            "share": 0.11486486486486487
+          },
+          {
+            "score": "1-0",
+            "count": 226,
+            "share": 0.07635135135135135
+          },
+          {
+            "score": "0-1",
+            "count": 207,
+            "share": 0.06993243243243243
+          },
+          {
+            "score": "0-3",
+            "count": 76,
+            "share": 0.025675675675675677
+          },
+          {
+            "score": "0-2",
+            "count": 75,
+            "share": 0.02533783783783784
+          },
+          {
+            "score": "2-0",
+            "count": 67,
+            "share": 0.022635135135135136
+          },
+          {
+            "score": "3-0",
+            "count": 64,
+            "share": 0.021621621621621623
+          },
+          {
+            "score": "5-0",
+            "count": 48,
+            "share": 0.016216216216216217
+          }
+        ]
+      },
+      "2019": {
+        "rows": 3452,
+        "win_share": 0.4536500579374276,
+        "draw_share": 0.093279258400927,
+        "loss_share": 0.45307068366164543,
+        "avg_team_goals": 1.3592120509849364,
+        "avg_opp_goals": 1.3566048667439166,
+        "avg_total_goals": 2.7158169177288527,
+        "score_ge5_share": 0.028968713789107765,
+        "common_low_score_share": 0.8296639629200464,
+        "top1_score_share": 0.26506373117033605,
+        "top3_score_share": 0.6225376593279258,
+        "top5_score_share": 0.7497103128621089,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 915,
+            "share": 0.26506373117033605
+          },
+          {
+            "score": "2-1",
+            "count": 912,
+            "share": 0.2641946697566628
+          },
+          {
+            "score": "1-1",
+            "count": 322,
+            "share": 0.093279258400927
+          },
+          {
+            "score": "1-0",
+            "count": 222,
+            "share": 0.06431054461181923
+          },
+          {
+            "score": "0-1",
+            "count": 217,
+            "share": 0.06286210892236385
+          },
+          {
+            "score": "0-2",
+            "count": 140,
+            "share": 0.04055619930475087
+          },
+          {
+            "score": "2-0",
+            "count": 136,
+            "share": 0.039397450753186555
+          },
+          {
+            "score": "3-0",
+            "count": 122,
+            "share": 0.03534183082271147
+          },
+          {
+            "score": "0-3",
+            "count": 120,
+            "share": 0.03476245654692932
+          },
+          {
+            "score": "0-4",
+            "count": 60,
+            "share": 0.01738122827346466
+          }
+        ]
+      },
+      "2020": {
+        "rows": 1134,
+        "win_share": 0.43209876543209874,
+        "draw_share": 0.13139329805996472,
+        "loss_share": 0.4365079365079365,
+        "avg_team_goals": 1.2821869488536155,
+        "avg_opp_goals": 1.2760141093474426,
+        "avg_total_goals": 2.558201058201058,
+        "score_ge5_share": 0.03350970017636684,
+        "common_low_score_share": 0.8659611992945326,
+        "top1_score_share": 0.25308641975308643,
+        "top3_score_share": 0.6181657848324515,
+        "top5_score_share": 0.7901234567901234,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 287,
+            "share": 0.25308641975308643
+          },
+          {
+            "score": "2-1",
+            "count": 265,
+            "share": 0.23368606701940034
+          },
+          {
+            "score": "1-1",
+            "count": 149,
+            "share": 0.13139329805996472
+          },
+          {
+            "score": "1-0",
+            "count": 104,
+            "share": 0.09171075837742504
+          },
+          {
+            "score": "0-1",
+            "count": 91,
+            "share": 0.08024691358024691
+          },
+          {
+            "score": "2-0",
+            "count": 45,
+            "share": 0.03968253968253968
+          },
+          {
+            "score": "0-2",
+            "count": 41,
+            "share": 0.036155202821869487
+          },
+          {
+            "score": "0-3",
+            "count": 38,
+            "share": 0.03350970017636684
+          },
+          {
+            "score": "3-0",
+            "count": 36,
+            "share": 0.031746031746031744
+          },
+          {
+            "score": "5-0",
+            "count": 18,
+            "share": 0.015873015873015872
+          }
+        ]
+      },
+      "2021": {
+        "rows": 3084,
+        "win_share": 0.4390402075226978,
+        "draw_share": 0.1219195849546044,
+        "loss_share": 0.4390402075226978,
+        "avg_team_goals": 1.2863164721141376,
+        "avg_opp_goals": 1.2791828793774318,
+        "avg_total_goals": 2.5654993514915696,
+        "score_ge5_share": 0.02756160830090791,
+        "common_low_score_share": 0.8628404669260701,
+        "top1_score_share": 0.2490272373540856,
+        "top3_score_share": 0.6053826199740596,
+        "top5_score_share": 0.7678339818417639,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 768,
+            "share": 0.2490272373540856
+          },
+          {
+            "score": "2-1",
+            "count": 725,
+            "share": 0.23508430609597925
+          },
+          {
+            "score": "1-1",
+            "count": 374,
+            "share": 0.12127107652399481
+          },
+          {
+            "score": "1-0",
+            "count": 267,
+            "share": 0.08657587548638132
+          },
+          {
+            "score": "0-1",
+            "count": 234,
+            "share": 0.07587548638132295
+          },
+          {
+            "score": "2-0",
+            "count": 151,
+            "share": 0.04896238651102464
+          },
+          {
+            "score": "0-2",
+            "count": 140,
+            "share": 0.04539559014267185
+          },
+          {
+            "score": "0-3",
+            "count": 102,
+            "share": 0.033073929961089495
+          },
+          {
+            "score": "3-0",
+            "count": 94,
+            "share": 0.0304798962386511
+          },
+          {
+            "score": "0-4",
+            "count": 49,
+            "share": 0.015888456549935148
+          }
+        ]
+      },
+      "2022": {
+        "rows": 3162,
+        "win_share": 0.44370651486401014,
+        "draw_share": 0.11385199240986717,
+        "loss_share": 0.4424414927261227,
+        "avg_team_goals": 1.329854522454143,
+        "avg_opp_goals": 1.3333333333333333,
+        "avg_total_goals": 2.663187855787476,
+        "score_ge5_share": 0.030360531309297913,
+        "common_low_score_share": 0.8617963314358001,
+        "top1_score_share": 0.2754585705249842,
+        "top3_score_share": 0.6574952561669829,
+        "top5_score_share": 0.8029728020240354,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 871,
+            "share": 0.2754585705249842
+          },
+          {
+            "score": "2-1",
+            "count": 848,
+            "share": 0.26818469323213157
+          },
+          {
+            "score": "1-1",
+            "count": 360,
+            "share": 0.11385199240986717
+          },
+          {
+            "score": "1-0",
+            "count": 245,
+            "share": 0.07748260594560405
+          },
+          {
+            "score": "0-1",
+            "count": 215,
+            "share": 0.06799493991144845
+          },
+          {
+            "score": "2-0",
+            "count": 94,
+            "share": 0.029728020240354206
+          },
+          {
+            "score": "0-2",
+            "count": 92,
+            "share": 0.0290955091714105
+          },
+          {
+            "score": "0-3",
+            "count": 85,
+            "share": 0.026881720430107527
+          },
+          {
+            "score": "3-0",
+            "count": 78,
+            "share": 0.024667931688804556
+          },
+          {
+            "score": "0-4",
+            "count": 51,
+            "share": 0.016129032258064516
+          }
+        ]
+      },
+      "2023": {
+        "rows": 3576,
+        "win_share": 0.45553691275167785,
+        "draw_share": 0.08920581655480984,
+        "loss_share": 0.4552572706935123,
+        "avg_team_goals": 1.3610178970917226,
+        "avg_opp_goals": 1.354586129753915,
+        "avg_total_goals": 2.7156040268456376,
+        "score_ge5_share": 0.024608501118568233,
+        "common_low_score_share": 0.8386465324384788,
+        "top1_score_share": 0.2765659955257271,
+        "top3_score_share": 0.6378635346756152,
+        "top5_score_share": 0.7676174496644296,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 989,
+            "share": 0.2765659955257271
+          },
+          {
+            "score": "2-1",
+            "count": 973,
+            "share": 0.2720917225950783
+          },
+          {
+            "score": "1-1",
+            "count": 319,
+            "share": 0.08920581655480984
+          },
+          {
+            "score": "1-0",
+            "count": 239,
+            "share": 0.06683445190156599
+          },
+          {
+            "score": "0-1",
+            "count": 225,
+            "share": 0.06291946308724833
+          },
+          {
+            "score": "0-2",
+            "count": 130,
+            "share": 0.036353467561521254
+          },
+          {
+            "score": "2-0",
+            "count": 124,
+            "share": 0.03467561521252797
+          },
+          {
+            "score": "3-0",
+            "count": 121,
+            "share": 0.03383668903803132
+          },
+          {
+            "score": "0-3",
+            "count": 118,
+            "share": 0.032997762863534674
+          },
+          {
+            "score": "3-1",
+            "count": 59,
+            "share": 0.016498881431767337
+          }
+        ]
+      },
+      "2024": {
+        "rows": 3634,
+        "win_share": 0.44111172261970283,
+        "draw_share": 0.1147495872317006,
+        "loss_share": 0.4441386901485966,
+        "avg_team_goals": 1.3236103467253715,
+        "avg_opp_goals": 1.3271876719867914,
+        "avg_total_goals": 2.650798018712163,
+        "score_ge5_share": 0.016235553109521187,
+        "common_low_score_share": 0.8824986241056687,
+        "top1_score_share": 0.2903137039075399,
+        "top3_score_share": 0.689873417721519,
+        "top5_score_share": 0.8115024766097964,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 1055,
+            "share": 0.2903137039075399
+          },
+          {
+            "score": "2-1",
+            "count": 1035,
+            "share": 0.2848101265822785
+          },
+          {
+            "score": "1-1",
+            "count": 417,
+            "share": 0.1147495872317006
+          },
+          {
+            "score": "1-0",
+            "count": 226,
+            "share": 0.06219042377545404
+          },
+          {
+            "score": "0-1",
+            "count": 216,
+            "share": 0.05943863511282334
+          },
+          {
+            "score": "2-0",
+            "count": 130,
+            "share": 0.03577325261419923
+          },
+          {
+            "score": "0-2",
+            "count": 128,
+            "share": 0.035222894881673086
+          },
+          {
+            "score": "3-0",
+            "count": 111,
+            "share": 0.03054485415520088
+          },
+          {
+            "score": "0-3",
+            "count": 111,
+            "share": 0.03054485415520088
+          },
+          {
+            "score": "0-4",
+            "count": 35,
+            "share": 0.009631260319207484
+          }
+        ]
+      },
+      "2025": {
+        "rows": 3638,
+        "win_share": 0.4571192963166575,
+        "draw_share": 0.08548653106102254,
+        "loss_share": 0.45739417262231996,
+        "avg_team_goals": 1.3666849917537107,
+        "avg_opp_goals": 1.3677844969763606,
+        "avg_total_goals": 2.7344694887300713,
+        "score_ge5_share": 0.020065970313358987,
+        "common_low_score_share": 0.8573391973611875,
+        "top1_score_share": 0.3004398020890599,
+        "top3_score_share": 0.6822429906542056,
+        "top5_score_share": 0.797416162726773,
+        "top_10_scores": [
+          {
+            "score": "1-2",
+            "count": 1093,
+            "share": 0.3004398020890599
+          },
+          {
+            "score": "2-1",
+            "count": 1078,
+            "share": 0.29631665750412317
+          },
+          {
+            "score": "1-1",
+            "count": 311,
+            "share": 0.08548653106102254
+          },
+          {
+            "score": "1-0",
+            "count": 217,
+            "share": 0.05964815832875206
+          },
+          {
+            "score": "0-1",
+            "count": 202,
+            "share": 0.055525013743815285
+          },
+          {
+            "score": "2-0",
+            "count": 109,
+            "share": 0.029961517317207257
+          },
+          {
+            "score": "0-2",
+            "count": 109,
+            "share": 0.029961517317207257
+          },
+          {
+            "score": "0-3",
+            "count": 109,
+            "share": 0.029961517317207257
+          },
+          {
+            "score": "3-0",
+            "count": 106,
+            "share": 0.029136888400219902
+          },
+          {
+            "score": "0-4",
+            "count": 58,
+            "share": 0.01594282572842221
+          }
+        ]
+      },
+      "2026": {
+        "rows": 566,
+        "win_share": 0.411660777385159,
+        "draw_share": 0.17667844522968199,
+        "loss_share": 0.411660777385159,
+        "avg_team_goals": 1.2685512367491165,
+        "avg_opp_goals": 1.2791519434628975,
+        "avg_total_goals": 2.547703180212014,
+        "score_ge5_share": 0.026501766784452298,
+        "common_low_score_share": 0.8745583038869258,
+        "top1_score_share": 0.24911660777385158,
+        "top3_score_share": 0.6660777385159011,
+        "top5_score_share": 0.8144876325088339,
+        "top_10_scores": [
+          {
+            "score": "2-1",
+            "count": 141,
+            "share": 0.24911660777385158
+          },
+          {
+            "score": "1-2",
+            "count": 138,
+            "share": 0.24381625441696114
+          },
+          {
+            "score": "1-1",
+            "count": 98,
+            "share": 0.17314487632508835
+          },
+          {
+            "score": "1-0",
+            "count": 43,
+            "share": 0.07597173144876325
+          },
+          {
+            "score": "0-1",
+            "count": 41,
+            "share": 0.07243816254416961
+          },
+          {
+            "score": "0-3",
+            "count": 22,
+            "share": 0.038869257950530034
+          },
+          {
+            "score": "3-0",
+            "count": 20,
+            "share": 0.0353356890459364
+          },
+          {
+            "score": "0-2",
+            "count": 17,
+            "share": 0.030035335689045935
+          },
+          {
+            "score": "2-0",
+            "count": 15,
+            "share": 0.026501766784452298
+          },
+          {
+            "score": "5-0",
+            "count": 7,
+            "share": 0.012367491166077738
+          }
+        ]
+      }
+    },
+    "ground_truth_available": true
+  },
+  "acceptance_decision": "TARGET_NOT_REACHED",
+  "acceptance_checks": {
+    "selected_purely_from_train_folds": true,
+    "no_test_feature_update": true,
+    "no_v5_import_output_anchor": true,
+    "target_power_1_5_available": true,
+    "target_power_1_5_reached": false,
+    "beats_friend_power_1_5": false,
+    "outcome_not_below_friend": false,
+    "tail_guard": true,
+    "top3_guard": false
+  },
+  "leakage_checklist": {
+    "core_features_frozen": "assumed_safe_from_train_final_test_final",
+    "test_state_update": "not_used",
+    "v5_import": "not_used",
+    "old_submission_anchor": "not_used",
+    "friend_csv": "reporting_only",
+    "test_ground_truth": "final_reporting_only_if_available",
+    "context_target_encoding": "risk_noted_existing_ctx_features_may_use_random_kfold_encoding"
+  },
+  "elapsed_minutes": 6.508063069979349
+}

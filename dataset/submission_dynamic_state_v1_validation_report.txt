@@ -1,0 +1,765 @@
+Dynamic State V1 Validation Report
+========================================
+Decision: ACCEPTED_DYNAMIC_STATE_V1
+
+Constraints declaration
+- Standalone script; no import from model_pipeline_v5.py.
+- No V3/V4/V5/V8 submission anchor/input/blend/selector is read or used.
+- Friend CSV and test_ground_truth.csv are final-reporting-only.
+- Candidate lock was written before post-lock test diagnostics and before GT/friend reads.
+- Validation/test state updates use predicted signals only; train history uses train truth only.
+- Gender drift uses metadata/state keys only, never friend/GT/test labels.
+
+Dependency availability
+{
+  "python": "3.13.2",
+  "numpy": "2.2.2",
+  "pandas": "2.2.3",
+  "sklearn": "1.6.1",
+  "xgboost_available": true,
+  "lightgbm_available": true,
+  "catboost_available": true
+}
+
+Seed and mode: seed=42, mode=FAST_MODE
+Max train date: 2011-08-04
+Script hash: 976ca68e0cd14019cad83b23c6f7be534f17706535f731fb8a88ad7aa90554a3
+Selected config hash: 6bf0cd3e35ba4eb0b4f5c038666b33f9b5a22c64a847a21b402d0edeef708f94
+Candidate lock hash: ac80f274165731795f33ba20c4fc9b0cf38d357782c5b30a2fca09a75a4db850
+
+Fold definitions
+{
+  "primary": [
+    {
+      "name": "F1_2003_2005",
+      "train_end_year": 2002,
+      "valid_start_year": 2003,
+      "valid_end_year": 2005,
+      "weight": 0.05
+    },
+    {
+      "name": "F2_2006_2008",
+      "train_end_year": 2005,
+      "valid_start_year": 2006,
+      "valid_end_year": 2008,
+      "weight": 0.15
+    },
+    {
+      "name": "F3_2009_2010",
+      "train_end_year": 2008,
+      "valid_start_year": 2009,
+      "valid_end_year": 2010,
+      "weight": 0.3
+    },
+    {
+      "name": "F4_2011",
+      "train_end_year": 2010,
+      "valid_start_year": 2011,
+      "valid_end_year": 2011,
+      "weight": 0.5
+    }
+  ],
+  "stress": [
+    {
+      "name": "H1_2003_end",
+      "train_end_year": 2002,
+      "valid_start_year": 2003,
+      "valid_end_year": null,
+      "weight": 0.3333333333333333
+    },
+    {
+      "name": "H2_2006_end",
+      "train_end_year": 2005,
+      "valid_start_year": 2006,
+      "valid_end_year": null,
+      "weight": 0.3333333333333333
+    },
+    {
+      "name": "H3_2009_end",
+      "train_end_year": 2008,
+      "valid_start_year": 2009,
+      "valid_end_year": null,
+      "weight": 0.3333333333333333
+    }
+  ]
+}
+
+Selected config
+{
+  "name": "slow_s50",
+  "track": "slow",
+  "base_lr": 0.015,
+  "smoothing": 50.0,
+  "max_goals": 8,
+  "poisson_alpha": 1.0,
+  "outcome_gamma": 0.16,
+  "total_delta": 0.1,
+  "gd_eta": 0.12,
+  "empirical_beta": 0.22,
+  "tau_total": 1.25,
+  "tau_gd": 1.2,
+  "use_gender_state": true,
+  "use_confidence_gate": true,
+  "outcome_aware_update": true,
+  "total_goals_state": true,
+  "pair_consistency": true,
+  "static_fallback": true,
+  "ablation_group": "speed_smoothing",
+  "full_mode_only": false
+}
+
+Static vs dynamic comparison
+  baseline_static: w15=2.83895, u15=2.84221, w13=2.36144, out=0.5862, exact=0.1131, gd=0.2313
+  selected       : w15=2.82043, u15=2.82541, w13=2.34635, out=0.5872, exact=0.1176, gd=0.2311
+  delta weighted p1.5 selected-static: -0.01852
+
+Ablation table
+  medium_s50_confidence_gate_off         group=confidence_gate_off      selection=3.19611 w15=2.85189, u15=2.85497, w13=2.36839, out=0.5863, exact=0.1166, gd=0.2296 primary_accept=False
+  medium_s50_gender_state_off            group=gender_state_off         selection=2.77077 w15=2.74260, u15=2.76042, w13=2.29703, out=0.5885, exact=0.1098, gd=0.2264 primary_accept=False
+  medium_s50_outcome_update_off          group=outcome_aware_update_off selection=2.89824 w15=2.83919, u15=2.84270, w13=2.36053, out=0.5850, exact=0.1130, gd=0.2247 primary_accept=False
+  medium_s50_pair_consistency_off        group=pair_consistency_off     selection=3.47833 w15=2.83737, u15=2.84180, w13=2.35884, out=0.5865, exact=0.1137, gd=0.2265 primary_accept=False
+  medium_s200                            group=speed_smoothing          selection=2.83226 w15=2.77187, u15=2.77664, w13=2.31559, out=0.5961, exact=0.1131, gd=0.2271 primary_accept=False
+  slow_s200                              group=speed_smoothing          selection=2.86281 w15=2.79723, u15=2.80169, w13=2.33251, out=0.5844, exact=0.1145, gd=0.2234 primary_accept=False
+* slow_s50                               group=speed_smoothing          selection=2.87255 w15=2.82043, u15=2.82541, w13=2.34635, out=0.5872, exact=0.1176, gd=0.2311 primary_accept=True
+  medium_s25                             group=speed_smoothing          selection=3.28985 w15=2.84562, u15=2.85077, w13=2.36480, out=0.5867, exact=0.1123, gd=0.2238 primary_accept=True
+  slow_s25                               group=speed_smoothing          selection=3.30358 w15=2.86679, u15=2.87159, w13=2.37806, out=0.5798, exact=0.1136, gd=0.2248 primary_accept=True
+  medium_s100                            group=speed_smoothing          selection=3.31966 w15=2.81414, u15=2.81847, w13=2.34500, out=0.5879, exact=0.1125, gd=0.2252 primary_accept=False
+  medium_s50                             group=speed_smoothing          selection=3.34624 w15=2.84035, u15=2.84316, w13=2.36088, out=0.5834, exact=0.1158, gd=0.2241 primary_accept=False
+  slow_s100                              group=speed_smoothing          selection=3.37567 w15=2.78716, u15=2.79339, w13=2.32442, out=0.5891, exact=0.1170, gd=0.2323 primary_accept=True
+  baseline_static_s200                   group=static                   selection=2.84051 w15=2.77851, u15=2.78593, w13=2.31732, out=0.5883, exact=0.1185, gd=0.2293 primary_accept=False
+  baseline_static_s100                   group=static                   selection=2.86306 w15=2.80558, u15=2.81391, w13=2.33735, out=0.5862, exact=0.1174, gd=0.2311 primary_accept=False
+  baseline_static_s50                    group=static                   selection=2.90008 w15=2.83895, u15=2.84221, w13=2.36144, out=0.5862, exact=0.1131, gd=0.2313 primary_accept=False
+  baseline_static_s25                    group=static                   selection=2.94923 w15=2.88449, u15=2.88740, w13=2.39032, out=0.5772, exact=0.1159, gd=0.2196 primary_accept=False
+  medium_s50_static_fallback_off         group=static_fallback_off      selection=3.34624 w15=2.84035, u15=2.84316, w13=2.36088, out=0.5834, exact=0.1158, gd=0.2241 primary_accept=False
+  medium_s50_total_state_off             group=total_goals_state_off    selection=3.28138 w15=2.83887, u15=2.84265, w13=2.36061, out=0.5869, exact=0.1134, gd=0.2255 primary_accept=False
+Skipped ablations/items
+  - fast/aggressive tracks: FULL_MODE optional; FAST_MODE default evaluates static/slow/medium only.
+  - multi-speed ensemble: Skipped in FAST_MODE runtime budget; single-speed candidates remain apples-to-apples with baseline.
+  - LGB/CatBoost heads: FULL_MODE optional; HGB backend used.
+
+Primary fold metrics
+  F1_2003_2005: rows=6946, w15=2.90168, u15=2.92084, w13=2.40519, out=0.5865, exact=0.1137, gd=0.2301, score_ge5=0.0282
+  F2_2006_2008: rows=7698, w15=2.86781, u15=2.87967, w13=2.37658, out=0.5934, exact=0.1141, gd=0.2351, score_ge5=0.0236
+  F3_2009_2010: rows=4754, w15=2.85111, u15=2.86377, w13=2.36604, out=0.5970, exact=0.1178, gd=0.2364, score_ge5=0.0282
+  F4_2011: rows=1446, w15=2.77968, u15=2.77658, w13=2.31958, out=0.5795, exact=0.1189, gd=0.2268, score_ge5=0.0124
+
+Stress metrics
+{
+  "weighted_awmae_p15": 2.889337991903262,
+  "unweighted_awmae_p15": 2.8979896013550484,
+  "weighted_awmae_p13": 2.3939229208025,
+  "unweighted_awmae_p13": 2.4002766097409207,
+  "outcome_accuracy": 0.5889814808601275,
+  "exact_accuracy": 0.11445026365302463,
+  "goal_diff_accuracy": 0.2328325448338564,
+  "detail": {
+    "aggregate_awmae_delta": 0.003626773821009621,
+    "outcome_drop": -0.0018125704842840706,
+    "fold_deltas": [
+      {
+        "fold": "H1_2003_end",
+        "delta": -0.009635774650140316
+      },
+      {
+        "fold": "H2_2006_end",
+        "delta": 0.012004594988407113
+      },
+      {
+        "fold": "H3_2009_end",
+        "delta": 0.008511501124762066
+      }
+    ],
+    "passed": true
+  },
+  "fold_metrics": [
+    {
+      "weighted_awmae_p15": 2.9325468170890043,
+      "unweighted_awmae_p15": 2.9413636136021384,
+      "weighted_awmae_p13": 2.4242682374515683,
+      "unweighted_awmae_p13": 2.4305325329891714,
+      "outcome_accuracy": 0.5869314910765688,
+      "exact_accuracy": 0.11389368643254653,
+      "goal_diff_accuracy": 0.23210516215697563,
+      "fold_name": "H1_2003_end",
+      "fold_weight": 0.3333333333333333,
+      "rows": 20844,
+      "train_rows": 57928,
+      "valid_year_min": 2003,
+      "valid_year_max": 2011,
+      "score_ge5": 0.022548455190942236
+    },
+    {
+      "weighted_awmae_p15": 2.885099155659047,
+      "unweighted_awmae_p15": 2.894772579584617,
+      "weighted_awmae_p13": 2.3897179728065345,
+      "unweighted_awmae_p13": 2.3966247369937874,
+      "outcome_accuracy": 0.5900129515038135,
+      "exact_accuracy": 0.11397323355878544,
+      "goal_diff_accuracy": 0.23413440782846454,
+      "fold_name": "H2_2006_end",
+      "fold_weight": 0.3333333333333333,
+      "rows": 13898,
+      "train_rows": 64874,
+      "valid_year_min": 2006,
+      "valid_year_max": 2011,
+      "score_ge5": 0.023312706864297022
+    },
+    {
+      "weighted_awmae_p15": 2.850368002961735,
+      "unweighted_awmae_p15": 2.85783261087839,
+      "weighted_awmae_p13": 2.367782552149397,
+      "unweighted_awmae_p13": 2.373672559239804,
+      "outcome_accuracy": 0.59,
+      "exact_accuracy": 0.11548387096774193,
+      "goal_diff_accuracy": 0.23225806451612904,
+      "fold_name": "H3_2009_end",
+      "fold_weight": 0.3333333333333333,
+      "rows": 6200,
+      "train_rows": 72572,
+      "valid_year_min": 2009,
+      "valid_year_max": 2011,
+      "score_ge5": 0.026451612903225806
+    }
+  ]
+}
+Stress veto records
+[
+  {
+    "candidate": "slow_s50",
+    "baseline": "baseline_static_s50",
+    "aggregate_awmae_delta": 0.003626773821009621,
+    "outcome_drop": -0.0018125704842840706,
+    "fold_deltas": [
+      {
+        "fold": "H1_2003_end",
+        "delta": -0.009635774650140316
+      },
+      {
+        "fold": "H2_2006_end",
+        "delta": 0.012004594988407113
+      },
+      {
+        "fold": "H3_2009_end",
+        "delta": 0.008511501124762066
+      }
+    ],
+    "passed": true
+  }
+]
+
+Sensitivity diagnostics
+[
+  {
+    "shift": 1,
+    "rows": 18416,
+    "skipped": false,
+    "metrics": {
+      "weighted_awmae_p15": 2.8799754243240745,
+      "unweighted_awmae_p15": 2.887998251656728,
+      "weighted_awmae_p13": 2.388838381969185,
+      "unweighted_awmae_p13": 2.3945405830585185,
+      "outcome_accuracy": 0.5869962555865281,
+      "exact_accuracy": 0.11388418087080035,
+      "goal_diff_accuracy": 0.23376404775277487
+    },
+    "fold_metrics": [
+      {
+        "weighted_awmae_p15": 2.9089733103068256,
+        "unweighted_awmae_p15": 2.9214111327241286,
+        "weighted_awmae_p13": 2.407793800956912,
+        "unweighted_awmae_p13": 2.4162585903133618,
+        "outcome_accuracy": 0.5843285755898631,
+        "exact_accuracy": 0.11272939120302942,
+        "goal_diff_accuracy": 0.2341974949024177,
+        "fold_name": "F1_2003_2005_shift_+1",
+        "fold_weight": 0.05,
+        "rows": 6866,
+        "train_rows": 57928,
+        "valid_year_min": 2004,
+        "valid_year_max": 2006,
+        "score_ge5": 0.019807748325080105
+      },
+      {
+        "weighted_awmae_p15": 2.8011795240436066,
+        "unweighted_awmae_p15": 2.819830024273296,
+        "weighted_awmae_p13": 2.3354875188729682,
+        "unweighted_awmae_p13": 2.3490719324918223,
+        "outcome_accuracy": 0.585288689691537,
+        "exact_accuracy": 0.11600316372264698,
+        "goal_diff_accuracy": 0.23596098075402056,
+        "fold_name": "F2_2006_2008_shift_+1",
+        "fold_weight": 0.15,
+        "rows": 7586,
+        "train_rows": 64874,
+        "valid_year_min": 2007,
+        "valid_year_max": 2009,
+        "score_ge5": 0.02293698919061429
+      },
+      {
+        "weighted_awmae_p15": 2.9145403934671834,
+        "unweighted_awmae_p15": 2.9165135518372103,
+        "weighted_awmae_p13": 2.4123545770193386,
+        "unweighted_awmae_p13": 2.4136552404660594,
+        "outcome_accuracy": 0.5882946518668012,
+        "exact_accuracy": 0.11301715438950555,
+        "goal_diff_accuracy": 0.2325933400605449,
+        "fold_name": "F3_2009_2010_shift_+1",
+        "fold_weight": 0.3,
+        "rows": 3964,
+        "train_rows": 72572,
+        "valid_year_min": 2010,
+        "valid_year_max": 2011,
+        "score_ge5": 0.02674066599394551
+      }
+    ]
+  }
+]
+
+Men/women diagnostics
+{
+  "men": {
+    "rows": 16172,
+    "weighted_awmae_p15": 2.6787612958851827,
+    "unweighted_awmae_p15": 2.6963659519339616,
+    "weighted_awmae_p13": 2.2500259894354673,
+    "unweighted_awmae_p13": 2.2629581326225807,
+    "outcome_accuracy": 0.5638139995053179,
+    "exact_accuracy": 0.12379421221864952,
+    "goal_diff_accuracy": 0.2487014593123918
+  },
+  "women": {
+    "rows": 4672,
+    "weighted_awmae_p15": 3.4832298024896446,
+    "unweighted_awmae_p15": 3.527291821834854,
+    "weighted_awmae_p13": 2.7981987632981378,
+    "unweighted_awmae_p13": 2.8274537990713577,
+    "outcome_accuracy": 0.684931506849315,
+    "exact_accuracy": 0.08518835616438356,
+    "goal_diff_accuracy": 0.1793664383561644
+  }
+}
+
+State update diagnostics
+{
+  "avg_abs_delta_per_update": 0.06343421947817654,
+  "confidence_gate_avg": 0.9736616294069856,
+  "confidence_gate_sum": 71510.52960639444,
+  "decay_applications": 2795.25,
+  "feature_rows": 73386.0,
+  "gender_support_factor_avg": 0.9958063884030163,
+  "gender_support_factor_sum": 73076.99062500003,
+  "high_staleness_feature_rate": 0.006860207398828476,
+  "high_staleness_feature_rows": 502.0,
+  "low_support_feature_rate": 0.0032225525607779944,
+  "low_support_feature_rows": 234.0,
+  "lr_eff_avg": 0.00976191763230394,
+  "lr_eff_sum": 717.0629871972867,
+  "max_abs_delta": 0.11067025263532249,
+  "minor_team_safety_factor_avg": 0.9979103336391568,
+  "minor_team_safety_factor_sum": 73233.64999999983,
+  "prediction_updates": 5211.0,
+  "staleness_factor_avg": 0.9879176312381613,
+  "staleness_factor_sum": 72500.32777777978,
+  "total_abs_delta": 4662.538276376907,
+  "tournament_factor_avg": 0.6799511070786157,
+  "tournament_factor_sum": 49904.37583335953,
+  "truth_updates": 68175.0,
+  "updates": 73386.0,
+  "prior_sources": {
+    "team_gender": 1767,
+    "confed_gender": 27,
+    "team_global": 59
+  }
+}
+
+Pair diagnostics
+{
+  "match_groups": 10422,
+  "two_row_matches": 10422,
+  "single_row_matches": 0,
+  "duplicate_or_multirow_matches": 0,
+  "reciprocal_pairs": 10422,
+  "inconsistent_pairs": 0,
+  "pair_consistency_applied": 10422,
+  "pair_consistency_disabled": 0,
+  "independent_rows": 0,
+  "pair_consistency_pass": true,
+  "inconsistent_pair_rate": 0.0
+}
+
+Final inference diagnostics
+{
+  "model_backend": "sklearn_hgb",
+  "feature_count": 116,
+  "numeric_feature_count": 109,
+  "categorical_feature_count": 7,
+  "state_diagnostics": {
+    "updates": 121194,
+    "truth_updates": 78772,
+    "prediction_updates": 42422,
+    "decay_applications": 4269,
+    "total_abs_delta": 6373.222227733917,
+    "max_abs_delta": 0.1119080628674749,
+    "lr_eff_sum": 1087.372168287658,
+    "confidence_gate_sum": 107054.85065962982,
+    "tournament_factor_sum": 83643.92499998688,
+    "gender_support_factor_sum": 120617.65000000027,
+    "staleness_factor_sum": 119834.05555552519,
+    "minor_team_safety_factor_sum": 121010.68000000005,
+    "feature_rows": 121194,
+    "high_staleness_feature_rows": 760,
+    "low_support_feature_rows": 264,
+    "prior_sources": {
+      "team_gender": 483,
+      "team_global": 43,
+      "confed_gender": 54
+    },
+    "lr_eff_avg": 0.008972161726551298,
+    "confidence_gate_avg": 0.883334576461127,
+    "tournament_factor_avg": 0.6901655610012615,
+    "gender_support_factor_avg": 0.9952444015380322,
+    "staleness_factor_avg": 0.9887787807608066,
+    "minor_team_safety_factor_avg": 0.998487383863888,
+    "avg_abs_delta_per_update": 0.05258694512710132,
+    "high_staleness_feature_rate": 0.006270937505157021,
+    "low_support_feature_rate": 0.002178325659686123
+  },
+  "pair_diagnostics": {
+    "match_groups": 21211,
+    "two_row_matches": 21211,
+    "single_row_matches": 0,
+    "duplicate_or_multirow_matches": 0,
+    "reciprocal_pairs": 21211,
+    "inconsistent_pairs": 0,
+    "pair_consistency_applied": 21211,
+    "pair_consistency_disabled": 0,
+    "independent_rows": 0
+  },
+  "distribution": {
+    "rows": 42422,
+    "avg_team_goals": 1.2385318938286738,
+    "avg_opp_goals": 1.2385318938286738,
+    "avg_total_goals": 2.4770637876573476,
+    "draw_share": 0.1520908962330866,
+    "home_or_team_win_share": 0.4239545518834567,
+    "score_ge5": 0.029418697845457545,
+    "score_ge6": 0.011314883786714441,
+    "top1_score_share": 0.18928857668191032,
+    "top3_score_share": 0.5306680495969073
+  }
+}
+score_ge5 rate: 0.02942
+
+Post-lock per-year test metadata distribution
+{
+  "rows": 42422,
+  "date_min": "2011-08-06",
+  "date_max": "2026-03-31",
+  "gender_counts": {
+    "M": 28464,
+    "W": 13958
+  },
+  "top_tournaments": {
+    "Friendly": 10940,
+    "FIFA World Cup qualification": 8148,
+    "UEFA Euro qualification": 3222,
+    "African Cup of Nations qualification": 2160,
+    "UEFA Nations League": 1952,
+    "CONCACAF Nations League": 844,
+    "African Cup of Nations": 844,
+    "AFC Asian Cup qualification": 788,
+    "FIFA World Cup": 720,
+    "UEFA Euro": 604,
+    "AFF Championship": 516,
+    "AFC Asian Cup": 440
+  },
+  "submission_distribution": {
+    "rows": 42422,
+    "avg_team_goals": 1.2385318938286738,
+    "avg_opp_goals": 1.2385318938286738,
+    "avg_total_goals": 2.4770637876573476,
+    "draw_share": 0.1520908962330866,
+    "home_or_team_win_share": 0.4239545518834567,
+    "score_ge5": 0.029418697845457545,
+    "score_ge6": 0.011314883786714441,
+    "top1_score_share": 0.18928857668191032,
+    "top3_score_share": 0.5306680495969073
+  },
+  "per_year": {
+    "2011": {
+      "rows": 1532,
+      "women_share": 0.24934725848563968,
+      "avg_tournament_weight": 1.2621409921671018,
+      "avg_team_goals": 1.2030026109660574,
+      "avg_opp_goals": 1.2030026109660574,
+      "avg_total_goals": 2.406005221932115,
+      "draw_share": 0.20234986945169714,
+      "home_or_team_win_share": 0.39882506527415146,
+      "score_ge5": 0.04308093994778068,
+      "score_ge6": 0.02610966057441253,
+      "top1_score_share": 0.20234986945169714,
+      "top3_score_share": 0.49216710182767626
+    },
+    "2012": {
+      "rows": 2664,
+      "women_share": 0.234984984984985,
+      "avg_tournament_weight": 1.2401651651651653,
+      "avg_team_goals": 1.201951951951952,
+      "avg_opp_goals": 1.201951951951952,
+      "avg_total_goals": 2.403903903903904,
+      "draw_share": 0.17417417417417416,
+      "home_or_team_win_share": 0.41291291291291293,
+      "score_ge5": 0.03078078078078078,
+      "score_ge6": 0.014264264264264264,
+      "top1_score_share": 0.1768018018018018,
+      "top3_score_share": 0.5277777777777778
+    },
+    "2013": {
+      "rows": 2446,
+      "women_share": 0.21995094031071136,
+      "avg_tournament_weight": 1.2954538021259199,
+      "avg_team_goals": 1.1766148814390842,
+      "avg_opp_goals": 1.1766148814390842,
+      "avg_total_goals": 2.3532297628781684,
+      "draw_share": 0.17906786590351595,
+      "home_or_team_win_share": 0.410466067048242,
+      "score_ge5": 0.018806214227309895,
+      "score_ge6": 0.008176614881439084,
+      "top1_score_share": 0.17906786590351595,
+      "top3_score_share": 0.517579721995094
+    },
+    "2014": {
+      "rows": 2482,
+      "women_share": 0.3158742949234488,
+      "avg_tournament_weight": 1.2519097502014505,
+      "avg_team_goals": 1.2788074133763094,
+      "avg_opp_goals": 1.2788074133763094,
+      "avg_total_goals": 2.557614826752619,
+      "draw_share": 0.1563255439161966,
+      "home_or_team_win_share": 0.4218372280419017,
+      "score_ge5": 0.03384367445608381,
+      "score_ge6": 0.0128928283642224,
+      "top1_score_share": 0.20829975825946817,
+      "top3_score_share": 0.5729250604351329
+    },
+    "2015": {
+      "rows": 2914,
+      "women_share": 0.2868908716540837,
+      "avg_tournament_weight": 1.310006863417982,
+      "avg_team_goals": 1.2481125600549074,
+      "avg_opp_goals": 1.2481125600549074,
+      "avg_total_goals": 2.496225120109815,
+      "draw_share": 0.14962251201098148,
+      "home_or_team_win_share": 0.4251887439945093,
+      "score_ge5": 0.03568977350720659,
+      "score_ge6": 0.008236101578586136,
+      "top1_score_share": 0.1873713109128346,
+      "top3_score_share": 0.5243651338366506
+    },
+    "2016": {
+      "rows": 2576,
+      "women_share": 0.2857142857142857,
+      "avg_tournament_weight": 1.277329192546584,
+      "avg_team_goals": 1.2294254658385093,
+      "avg_opp_goals": 1.2294254658385093,
+      "avg_total_goals": 2.4588509316770186,
+      "draw_share": 0.14285714285714285,
+      "home_or_team_win_share": 0.42857142857142855,
+      "score_ge5": 0.03493788819875776,
+      "score_ge6": 0.006987577639751553,
+      "top1_score_share": 0.18788819875776397,
+      "top3_score_share": 0.5186335403726707
+    },
+    "2017": {
+      "rows": 2602,
+      "women_share": 0.2897770945426595,
+      "avg_tournament_weight": 1.2897617217524981,
+      "avg_team_goals": 1.2106072252113758,
+      "avg_opp_goals": 1.2106072252113758,
+      "avg_total_goals": 2.4212144504227515,
+      "draw_share": 0.1606456571867794,
+      "home_or_team_win_share": 0.4196771714066103,
+      "score_ge5": 0.021521906225980016,
+      "score_ge6": 0.007686395080707148,
+      "top1_score_share": 0.18255188316679477,
+      "top3_score_share": 0.5257494235203689
+    },
+    "2018": {
+      "rows": 2960,
+      "women_share": 0.3722972972972973,
+      "avg_tournament_weight": 1.241689189189189,
+      "avg_team_goals": 1.275337837837838,
+      "avg_opp_goals": 1.275337837837838,
+      "avg_total_goals": 2.550675675675676,
+      "draw_share": 0.14121621621621622,
+      "home_or_team_win_share": 0.4293918918918919,
+      "score_ge5": 0.03310810810810811,
+      "score_ge6": 0.011486486486486487,
+      "top1_score_share": 0.21283783783783783,
+      "top3_score_share": 0.5668918918918919
+    },
+    "2019": {
+      "rows": 3452,
+      "women_share": 0.3354577056778679,
+      "avg_tournament_weight": 1.3069640787949013,
+      "avg_team_goals": 1.2592699884125145,
+      "avg_opp_goals": 1.2592699884125145,
+      "avg_total_goals": 2.518539976825029,
+      "draw_share": 0.12920046349942063,
+      "home_or_team_win_share": 0.4353997682502897,
+      "score_ge5": 0.03070683661645423,
+      "score_ge6": 0.013904982618771726,
+      "top1_score_share": 0.186558516801854,
+      "top3_score_share": 0.5023174971031287
+    },
+    "2020": {
+      "rows": 1134,
+      "women_share": 0.3880070546737213,
+      "avg_tournament_weight": 1.3078306878306878,
+      "avg_team_goals": 1.1710758377425043,
+      "avg_opp_goals": 1.1710758377425043,
+      "avg_total_goals": 2.3421516754850087,
+      "draw_share": 0.1657848324514991,
+      "home_or_team_win_share": 0.41710758377425045,
+      "score_ge5": 0.03527336860670194,
+      "score_ge6": 0.015873015873015872,
+      "top1_score_share": 0.16666666666666666,
+      "top3_score_share": 0.4991181657848324
+    },
+    "2021": {
+      "rows": 3084,
+      "women_share": 0.27691309987029833,
+      "avg_tournament_weight": 1.3443839169909209,
+      "avg_team_goals": 1.1861219195849546,
+      "avg_opp_goals": 1.1861219195849546,
+      "avg_total_goals": 2.372243839169909,
+      "draw_share": 0.1582360570687419,
+      "home_or_team_win_share": 0.42088197146562906,
+      "score_ge5": 0.023994811932555125,
+      "score_ge6": 0.010376134889753566,
+      "top1_score_share": 0.16439688715953307,
+      "top3_score_share": 0.48702983138780803
+    },
+    "2022": {
+      "rows": 3162,
+      "women_share": 0.3870967741935484,
+      "avg_tournament_weight": 1.3090955091714107,
+      "avg_team_goals": 1.2574320050600885,
+      "avg_opp_goals": 1.2574320050600885,
+      "avg_total_goals": 2.514864010120177,
+      "draw_share": 0.16129032258064516,
+      "home_or_team_win_share": 0.41935483870967744,
+      "score_ge5": 0.03225806451612903,
+      "score_ge6": 0.013915243516761544,
+      "top1_score_share": 0.19924098671726756,
+      "top3_score_share": 0.5597722960151803
+    },
+    "2023": {
+      "rows": 3576,
+      "women_share": 0.4105145413870246,
+      "avg_tournament_weight": 1.291979865771812,
+      "avg_team_goals": 1.3092841163310962,
+      "avg_opp_goals": 1.3092841163310962,
+      "avg_total_goals": 2.6185682326621924,
+      "draw_share": 0.12304250559284116,
+      "home_or_team_win_share": 0.43847874720357943,
+      "score_ge5": 0.03411633109619687,
+      "score_ge6": 0.013422818791946308,
+      "top1_score_share": 0.22063758389261745,
+      "top3_score_share": 0.564317673378076
+    },
+    "2024": {
+      "rows": 3634,
+      "women_share": 0.3236103467253715,
+      "avg_tournament_weight": 1.3206384149697306,
+      "avg_team_goals": 1.209135938359934,
+      "avg_opp_goals": 1.209135938359934,
+      "avg_total_goals": 2.418271876719868,
+      "draw_share": 0.14749587231700606,
+      "home_or_team_win_share": 0.426252063841497,
+      "score_ge5": 0.01981287837094111,
+      "score_ge6": 0.00550357732526142,
+      "top1_score_share": 0.18712162905888827,
+      "top3_score_share": 0.5217391304347826
+    },
+    "2025": {
+      "rows": 3638,
+      "women_share": 0.4518966465090709,
+      "avg_tournament_weight": 1.3032875206157228,
+      "avg_team_goals": 1.2594832325453547,
+      "avg_opp_goals": 1.2594832325453547,
+      "avg_total_goals": 2.5189664650907093,
+      "draw_share": 0.13523914238592633,
+      "home_or_team_win_share": 0.4323804288070368,
+      "score_ge5": 0.02308960967564596,
+      "score_ge6": 0.008796041781198461,
+      "top1_score_share": 0.19488730071467839,
+      "top3_score_share": 0.5250137438152831
+    },
+    "2026": {
+      "rows": 566,
+      "women_
+
+Final read-only GT/friend reporting
+  candidate GT p1.5: {
+  "available": true,
+  "rows": 42422,
+  "weighted_awmae": 3.1466440495441157,
+  "unweighted_awmae": 3.161607855358809,
+  "outcome_accuracy": 0.5732402998444204,
+  "exact_accuracy": 0.10546414596200085,
+  "goal_diff_accuracy": 0.2160671349771345,
+  "distribution": {
+    "rows": 42422,
+    "avg_team_goals": 1.2385318938286738,
+    "avg_opp_goals": 1.2385318938286738,
+    "avg_total_goals": 2.4770637876573476,
+    "draw_share": 0.1520908962330866,
+    "home_or_team_win_share": 0.4239545518834567,
+    "score_ge5": 0.029418697845457545,
+    "score_ge6": 0.011314883786714441,
+    "top1_score_share": 0.18928857668191032,
+    "top3_score_share": 0.5306680495969073
+  }
+}
+  candidate GT p1.3: {
+  "available": true,
+  "rows": 42422,
+  "weighted_awmae": 2.576367408816629,
+  "unweighted_awmae": 2.5872448102651573,
+  "outcome_accuracy": 0.5732402998444204,
+  "exact_accuracy": 0.10546414596200085,
+  "goal_diff_accuracy": 0.2160671349771345,
+  "distribution": {
+    "rows": 42422,
+    "avg_team_goals": 1.2385318938286738,
+    "avg_opp_goals": 1.2385318938286738,
+    "avg_total_goals": 2.4770637876573476,
+    "draw_share": 0.1520908962330866,
+    "home_or_team_win_share": 0.4239545518834567,
+    "score_ge5": 0.029418697845457545,
+    "score_ge6": 0.011314883786714441,
+    "top1_score_share": 0.18928857668191032,
+    "top3_score_share": 0.5306680495969073
+  }
+}
+  friend CSV not found.
+
+Leakage checklist
+  selected_validation_only: True
+  candidate_lock_exists_before_gt_friend_read: True
+  no_old_anchor: True
+  no_friend_influence: True
+  no_gt_influence: True
+  no_actual_test_update: True
+  dynamic_selected: True
+  validation_improved_vs_static: True
+  validation_gd_guard: True
+  score_ge5_guard: True
+  stress_veto_pass: True
+  gt_available: True
+  gt_score_ge5_guard: True
+  friend_available: False
+
+Acceptance decision
+ACCEPTED_DYNAMIC_STATE_V1

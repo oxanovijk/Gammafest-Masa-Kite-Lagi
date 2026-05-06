@@ -1,0 +1,6 @@
+name,file,exact_pct,outcome_pct,aw_mae,pair_inconsistent_matches,extra_counts,delta_aw_vs_exp_a,delta_aw_vs_plan05
+Experiment C Archetype Tensor,dataset/submission_experiment_c_archetype_loss_tensor.csv,11.543538729904295,59.89816604591957,2.4214731348567713,2475,"{'id': 29206, 'penalty_21_small': 3900, 'compact_medium': 1340, 'draw_to_11': 7976}",-0.002273899177291483,-0.016577389795644493
+Experiment B Segment Override,dataset/submission_experiment_b_segment_aware_override.csv,11.684974777238226,59.9028805808307,2.421663851943905,2392,"{'id': 35294, 'narrow_21': 4788, 'winner_plus1': 50, 'draw_11': 1336, 'draw_00': 430, 'force3': 254, 'medium_any': 270}",-0.002083182090157898,-0.016386672708510908
+Experiment D Soft Decoupled,dataset/submission_experiment_d_soft_decoupled_candidates.csv,11.453962566592805,59.85337796426382,2.421750883165682,2536,"{'id': 41958, 'draw_11': 394, 'win_21': 70}",-0.001996150868380564,-0.016299641486733574
+Experiment A Plan05+V29,dataset/submission_experiment_a_plan05_plus_v29.csv,11.402102682570364,59.89816604591957,2.4237470340340628,2528,"{'id': 30672, 'cap_med': 8498, 'winner+1': 680, 'cap_low': 2144, 'force3margin': 72, 'cap_low_draw': 356}",0.0,-0.01430349061835301
+Plan05 baseline,dataset/submission_plan05_temporal_shrinkage_calibration.csv,11.395030880203667,59.596435811607186,2.438050524652416,,,0.01430349061835301,0.0

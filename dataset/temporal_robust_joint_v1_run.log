@@ -1,0 +1,27 @@
+[temporal_robust] loading data from C:\Users\LENOVO\Documents\Gammafest\Gammafest-Masa-Kite-Lagi\dataset
+[temporal_robust] evaluating 9 candidates
+  candidate=baseline_static_prior_s50
+    w15=5.127723 w13=4.006633 out=0.212573 gd=0.212573 accepted=False
+  candidate=baseline_regression_round_s50
+    w15=2.804708 w13=2.346721 out=0.583272 gd=0.249495 accepted=False
+  candidate=joint_balanced_s50
+    w15=2.782909 w13=2.313948 out=0.595413 gd=0.226499 accepted=True
+  candidate=joint_outcome_strong_s50
+    w15=2.805789 w13=2.336038 out=0.595547 gd=0.211883 accepted=False
+  candidate=joint_gd_soft_s50
+    w15=2.790314 w13=2.319617 out=0.593256 gd=0.231137 accepted=False
+  candidate=joint_draw_off_s50
+    w15=2.782903 w13=2.313868 out=0.595637 gd=0.226779 accepted=True
+  candidate=joint_tail_safe_s50
+    w15=2.782045 w13=2.313506 out=0.595503 gd=0.227187 accepted=True
+  candidate=joint_no_expert_prior_s50
+    w15=2.780957 w13=2.313142 out=0.595731 gd=0.226530 accepted=True
+  candidate=joint_hist_off_s50
+    w15=2.780566 w13=2.315040 out=0.598129 gd=0.216182 accepted=False
+[temporal_robust] candidate lock written hash=86156a2454c37cb735e49b5e1cb41103bbead8b36d8d352bfd2d43a98db20540
+[temporal_robust] selected=joint_no_expert_prior_s50 decision=ACCEPTED_TEMPORAL_ROBUST_JOINT_V1
+[temporal_robust] validation_w15=2.780957 validation_w13=2.313142 outcome=0.595731
+[temporal_robust] wrote C:\Users\LENOVO\Documents\Gammafest\Gammafest-Masa-Kite-Lagi\dataset\submission_temporal_robust_joint_v1.csv
+[temporal_robust] wrote C:\Users\LENOVO\Documents\Gammafest\Gammafest-Masa-Kite-Lagi\dataset\submission_temporal_robust_joint_v1_config.json
+[temporal_robust] wrote C:\Users\LENOVO\Documents\Gammafest\Gammafest-Masa-Kite-Lagi\dataset\submission_temporal_robust_joint_v1_validation_report.txt
+[temporal_robust] wrote C:\Users\LENOVO\Documents\Gammafest\Gammafest-Masa-Kite-Lagi\dataset\submission_temporal_robust_joint_v1_audit.txt

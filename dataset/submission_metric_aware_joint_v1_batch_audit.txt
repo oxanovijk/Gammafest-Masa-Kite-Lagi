@@ -1,0 +1,22 @@
+Metric-Aware Joint V1 Audit
+================================
+
+L1 | CRITICAL | test labels used | invalidates validation | GT path is only called after lock | mitigated
+L2 | CRITICAL | friend or old submission influence | selection leakage | friend search only post-lock | mitigated
+M1 | HIGH | score matrix miscalibration | ERM can choose wrong score | calibration diagnostics and validation exponent grid | mitigated
+M2 | HIGH | outcome head dominates | exact/GD may drop | exact/GD penalties and matrix components | mitigated
+V1 | MEDIUM | women segment drift | test gender mix differs | gender priors/interactions and women validation penalty | mitigated
+V2 | MEDIUM | rare team over-smoothing | cold-start scores collapse | hierarchical fallback plus support features | mitigated
+F1 | LOW | runtime | large grid expensive | FAST/FULL modes and cache | mitigated
+
+Leakage checklist
+- no_test_labels_used_for_selection: True
+- friend_not_used_for_selection: True
+- gt_not_read_before_candidate_lock: True
+- historical_features_fold_safe: True
+- pair_consistency_label_free: True
+- calibration_internal_train_only: True
+- priors_train_only: True
+- no_old_submission_anchor: True
+
+FEASIBLE_DESIGN_READY

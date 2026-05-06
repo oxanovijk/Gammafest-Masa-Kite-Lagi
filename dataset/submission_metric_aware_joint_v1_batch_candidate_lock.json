@@ -1,0 +1,56 @@
+{
+  "pipeline_version": "metric_aware_joint_v1",
+  "timestamp_utc": "2026-05-05T11:14:10+00:00",
+  "selected_config": {
+    "name": "baseline_regression_round_s50",
+    "kind": "regression_round",
+    "smoothing": 50.0,
+    "max_goals": 8,
+    "alpha": 0.5,
+    "gamma": 1.25,
+    "delta": 1.0,
+    "eta": 1.0,
+    "theta": 0.5,
+    "kappa": 0.5,
+    "beta": 0.25,
+    "use_poisson": true,
+    "use_empirical_prior": true,
+    "draw_correction": 1.0,
+    "tail_dampening": 1.0,
+    "pair_consistency": true,
+    "use_hist_features": true,
+    "use_gender_interactions": true,
+    "backend": "hgb",
+    "overcomplexity": 0.0
+  },
+  "validation_metrics": {
+    "weighted_awmae_p15": 2.7740558025483795,
+    "unweighted_awmae_p15": 2.786829827450555,
+    "weighted_awmae_p13": 2.3218107274243405,
+    "unweighted_awmae_p13": 2.331353462023407,
+    "outcome_accuracy": 0.574863651731061,
+    "exact_accuracy": 0.10872696670956401,
+    "goal_diff_accuracy": 0.24398478721036493
+  },
+  "baseline_metrics": {
+    "weighted_awmae_p15": 2.7740558025483795,
+    "unweighted_awmae_p15": 2.786829827450555,
+    "weighted_awmae_p13": 2.3218107274243405,
+    "unweighted_awmae_p13": 2.331353462023407,
+    "outcome_accuracy": 0.574863651731061,
+    "exact_accuracy": 0.10872696670956401,
+    "goal_diff_accuracy": 0.24398478721036493
+  },
+  "script_hash": "33025499330401bb0c3a01833ad681ccb7e388292896169d5128844e200b175d",
+  "config_hash": "96448cf049813570d347d05a0d101d8b07338344c28ff3c99665702ff27df04b",
+  "leakage_checklist": {
+    "no_test_labels_used_for_selection": true,
+    "friend_not_used_for_selection": true,
+    "gt_not_read_before_candidate_lock": true,
+    "historical_features_fold_safe": true,
+    "pair_consistency_label_free": true,
+    "calibration_internal_train_only": true,
+    "priors_train_only": true,
+    "no_old_submission_anchor": true
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "strategy": "experiment_c_archetype_loss_tensor",
+  "base_submission": "dataset\\submission_experiment_a_plan05_plus_v29.csv",
+  "output_path": "dataset\\submission_experiment_c_archetype_loss_tensor.csv",
+  "metrics": {
+    "exact_accuracy": 0.11543538729904294,
+    "outcome_accuracy": 0.5989816604591957,
+    "goal_diff_accuracy": 0.23525529206543774,
+    "awmae": 2.4214731348567713
+  },
+  "pair_inconsistent_matches": 2475,
+  "min_n": 100,
+  "n_rules": 15,
+  "transform_counts": {
+    "id": 29206,
+    "penalty_21_small": 3900,
+    "compact_medium": 1340,
+    "draw_to_11": 7976
+  },
+  "rules": {
+    "M|men_compact_draw": "penalty_21_small",
+    "M|men_concacaf_ofc_high_tail": "compact_medium",
+    "M|men_default": "id",
+    "M|men_friendly_low": "id",
+    "M|men_low_score_qualifier": "id",
+    "M|men_qualifier_mismatch": "id",
+    "M|men_regional_volatile": "id",
+    "W|women_africa_compact": "id",
+    "W|women_default": "draw_to_11",
+    "W|women_elite_compact": "id",
+    "W|women_friendly_conservative": "id",
+    "W|women_qualifier_blowout": "draw_to_11",
+    "W|women_qualifier_strong": "draw_to_11",
+    "W|women_regional_volatile": "id",
+    "W|women_uefa_qualifier_era": "draw_to_11"
+  }
+}

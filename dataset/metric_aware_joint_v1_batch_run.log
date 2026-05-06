@@ -1,0 +1,42 @@
+[metric_joint_batch] loading data from C:\Users\LENOVO\Documents\Gammafest\Gammafest-Masa-Kite-Lagi\dataset
+[metric_joint_batch] evaluating 17 candidates
+  candidate=baseline_static_prior_s20
+    w15=4.298525 w13=3.391755 out=0.393456 accepted=False
+  candidate=baseline_regression_round_s20
+    w15=2.782141 w13=2.328009 out=0.573685 accepted=False
+  candidate=baseline_outcome_first_s20
+    w15=3.251170 w13=2.674565 out=0.612202 accepted=False
+  candidate=baseline_static_prior_s50
+    w15=4.298525 w13=3.391755 out=0.393456 accepted=False
+  candidate=baseline_regression_round_s50
+    w15=2.774056 w13=2.321811 out=0.574864 accepted=False
+  candidate=baseline_outcome_first_s50
+    w15=3.249273 w13=2.674557 out=0.611435 accepted=False
+  candidate=joint_awmae_s20_cfg0
+    w15=2.733070 w13=2.280081 out=0.600613 accepted=False
+  candidate=joint_awmae_s20_cfg1
+    w15=2.755435 w13=2.298462 out=0.599345 accepted=False
+  candidate=joint_awmae_s20_cfg2
+    w15=2.749860 w13=2.289327 out=0.598666 accepted=False
+  candidate=joint_awmae_s50_cfg0
+    w15=2.716650 w13=2.267981 out=0.603749 accepted=False
+  candidate=joint_awmae_s50_cfg1
+    w15=2.775511 w13=2.314893 out=0.597989 accepted=False
+  candidate=joint_awmae_s50_cfg2
+    w15=2.748652 w13=2.288067 out=0.598796 accepted=False
+  candidate=ablation_no_empirical_prior
+    w15=2.716842 w13=2.268373 out=0.603790 accepted=False
+  candidate=ablation_no_poisson
+    w15=2.739357 w13=2.287885 out=0.603133 accepted=False
+  candidate=ablation_pair_consistency_off
+    w15=2.747662 w13=2.291463 out=0.599983 accepted=False
+  candidate=ablation_draw_correction_off
+    w15=2.715084 w13=2.266784 out=0.603875 accepted=False
+  candidate=ablation_hist_features_off
+    w15=2.744490 w13=2.289315 out=0.599672 accepted=False
+[metric_joint_batch] candidate lock written hash=941e3b13b816afeee1ad1f7a897c8c77b6f6946756a91b3ad923031f3f6cf8a9
+[metric_joint_batch] selected=baseline_regression_round_s50 decision=TARGET_NOT_REACHED
+[metric_joint_batch] validation_w15=2.774056 validation_w13=2.321811 outcome=0.574864
+[metric_joint_batch] wrote C:\Users\LENOVO\Documents\Gammafest\Gammafest-Masa-Kite-Lagi\dataset\submission_metric_aware_joint_v1_batch.csv
+[metric_joint_batch] post_lock_gt_w15=3.193285 outcome=0.559592
+[metric_joint_batch] post_lock_gt_w13=2.616001

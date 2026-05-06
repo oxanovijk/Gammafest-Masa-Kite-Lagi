@@ -1,0 +1,328 @@
+Risk V4 Static Drift Pipeline Validation Report
+================================================
+Acceptance decision: TARGET_NOT_REACHED
+Selected stage: 09_risk_objective_v4 / risk_penalties_on
+Selected feature profile: static_drift
+Gender W share train/test: 0.1118 / 0.3290
+Validation weighted AW-MAE power 1.5: 2.74155
+Validation outcome/exact/gd: 0.5981 / 0.1053 / 0.2481
+Selection score: 2.00522
+Local weighted AW-MAE power 1.5: 3.15935
+Local outcome/exact/gd: 0.5754 / 0.1056 / 0.2154
+Friend weighted AW-MAE power 1.5: 2.99883
+Delta candidate - friend power 1.5: +0.16053
+
+Gender diagnostics
+{
+  "train": {
+    "rows": 78772,
+    "unique_gender_values": [
+      "M",
+      "W"
+    ],
+    "women_rows": 8806,
+    "women_share": 0.11179099172294724,
+    "missing_gender_rows": 0,
+    "women_share_by_year": {
+      "1872": 0.0,
+      "1873": 0.0,
+      "1874": 0.0,
+      "1875": 0.0,
+      "1876": 0.0,
+      "1877": 0.0,
+      "1878": 0.0,
+      "1879": 0.0,
+      "1880": 0.0,
+      "1881": 0.0,
+      "1882": 0.0,
+      "1883": 0.0,
+      "1884": 0.0,
+      "1885": 0.0,
+      "1886": 0.0,
+      "1887": 0.0,
+      "1888": 0.0,
+      "1889": 0.0,
+      "1890": 0.0,
+      "1891": 0.0,
+      "1892": 0.0,
+      "1893": 0.0,
+      "1894": 0.0,
+      "1895": 0.0,
+      "1896": 0.0,
+      "1897": 0.0,
+      "1898": 0.0,
+      "1899": 0.0,
+      "1900": 0.0,
+      "1901": 0.0,
+      "1902": 0.0,
+      "1903": 0.0,
+      "1904": 0.0,
+      "1905": 0.0,
+      "1906": 0.0,
+      "1907": 0.0,
+      "1908": 0.0,
+      "1909": 0.0,
+      "1910": 0.0,
+      "1911": 0.0,
+      "1912": 0.0,
+      "1913": 0.0,
+      "1914": 0.0,
+      "1915": 0.0,
+      "1916": 0.0,
+      "1917": 0.0,
+      "1918": 0.0,
+      "1919": 0.0,
+      "1920": 0.0,
+      "1921": 0.0,
+      "1922": 0.0,
+      "1923": 0.0,
+      "1924": 0.0,
+      "1925": 0.0,
+      "1926": 0.0,
+      "1927": 0.0,
+      "1928": 0.0,
+      "1929": 0.0,
+      "1930": 0.0,
+      "1931": 0.0,
+      "1932": 0.0,
+      "1933": 0.0,
+      "1934": 0.0,
+      "1935": 0.0,
+      "1936": 0.0,
+      "1937": 0.0,
+      "1938": 0.0,
+      "1939": 0.0,
+      "1940": 0.0,
+      "1941": 0.0,
+      "1942": 0.0,
+      "1943": 0.0,
+      "1944": 0.0,
+      "1945": 0.0,
+      "1946": 0.0,
+      "1947": 0.0,
+      "1948": 0.0,
+      "1949": 0.0,
+      "1950": 0.0,
+      "1951": 0.0,
+      "1952": 0.0,
+      "1953": 0.0,
+      "1954": 0.0,
+      "1955": 0.0,
+      "1956": 0.005076142131979695,
+      "1957": 0.017777777777777778,
+      "1958": 0.0,
+      "1959": 0.0,
+      "1960": 0.0,
+      "1961": 0.0,
+      "1962": 0.0,
+      "1963": 0.0,
+      "1964": 0.0,
+      "1965": 0.0,
+      "1966": 0.0,
+      "1967": 0.0,
+      "1968": 0.0,
+      "1969": 0.010416666666666666,
+      "1970": 0.022408963585434174,
+      "1971": 0.026252983293556086,
+      "1972": 0.002380952380952381,
+      "1973": 0.0,
+      "1974": 0.007792207792207792,
+      "1975": 0.03170731707317073,
+      "1976": 0.007444168734491315,
+      "1977": 0.027777777777777776,
+      "1978": 0.017587939698492462,
+      "1979": 0.04516129032258064,
+      "1980": 0.017374517374517374,
+      "1981": 0.06015037593984962,
+      "1982": 0.05405405405405406,
+      "1983": 0.10404624277456648,
+      "1984": 0.03558718861209965,
+      "1985": 0.055031446540880505,
+      "1986": 0.10062893081761007,
+      "1987": 0.08352668213457076,
+      "1988": 0.1260096930533118,
+      "1989": 0.06315789473684211,
+      "1990": 0.10740740740740741,
+      "1991": 0.15333333333333332,
+      "1992": 0.0625,
+      "1993": 0.0636042402826855,
+      "1994": 0.13617021276595745,
+      "1995": 0.17407407407407408,
+      "1996": 0.12447698744769875,
+      "1997": 0.11078431372549019,
+      "1998": 0.2154639175257732,
+      "1999": 0.17005347593582887,
+      "2000": 0.1318864774624374,
+      "2001": 0.1343408900083963,
+      "2002": 0.20743034055727555,
+      "2003": 0.21993410214168038,
+      "2004": 0.16743827160493827,
+      "2005": 0.16510903426791276,
+      "2006": 0.282793867120954,
+      "2007": 0.24580152671755726,
+      "2008": 0.1934065934065934,
+      "2009": 0.17262969588550983,
+      "2010": 0.3169181890389198,
+      "2011": 0.25311203319502074
+    },
+    "top_women_tournaments": {
+      "UEFA Euro qualification": 1784,
+      "FIFA World Cup qualification": 1124,
+      "Algarve Cup": 714,
+      "AFC Championship": 506,
+      "FIFA World Cup": 360,
+      "African Championship qualification": 266,
+      "African Championship": 250,
+      "CONCACAF Gold Cup qualification": 238,
+      "Copa Am\u00e9rica": 210,
+      "UEFA Euro": 194,
+      "Island Games": 170,
+      "Asian
+
+Feature profile comparison
+  stable_core: selected=False, features=35, selection=2.05961, weighted15=2.85342, outcome=0.5882, latest=2.76147
+  static_drift: selected=True, features=97, selection=2.00522, weighted15=2.74155, outcome=0.5981, latest=2.63138
+  static_priors: selected=False, features=132, selection=2.00969, weighted15=2.76918, outcome=0.5932, latest=2.66423
+
+Leakage checklist
+  core_features_frozen: assumed_safe_from_train_final_test_final
+  test_state_update: not_used
+  v5_import: not_used
+  old_submission_anchor: not_used
+  friend_csv: reporting_only
+  test_ground_truth: final_reporting_only_if_available
+  context_target_encoding: risk_noted_existing_ctx_features_may_use_random_kfold_encoding
+
+Validation folds
+  fold_2003_2005: rows=6946, weighted15=3.09064, outcome=0.5895, exact=0.0978
+  fold_2006_2008: rows=7698, weighted15=2.83648, outcome=0.6030, exact=0.1052
+  fold_2009_2010: rows=4754, weighted15=2.81951, outcome=0.6037, exact=0.1132
+  fold_2011_latest: rows=1446, weighted15=2.63138, outcome=0.5947, exact=0.1155
+
+Ablation table
+  01_baseline_poisson_ensemble: uniform_max8_no_risk, selected=True, weighted15=2.76790, reason=initial_baseline
+  02_oof_blend_selection: convex_tw12_ow7, selected=False, weighted15=2.75036, reason=exact_drop
+  03_scale_bias_total_goals: total1.02, selected=True, weighted15=2.76626, reason=accepted
+  04_awmae_erm_max_goals: max10, selected=True, weighted15=2.76067, reason=accepted
+  05_outcome_first_erm: alpha0.1_thr0.42_pen0.1, selected=True, weighted15=2.75944, reason=accepted
+  06_draw_low_score_prior_calibration: d1.0_ld1.0_lc1.0_cb1.0_hm1.0, selected=True, weighted15=2.75944, reason=accepted
+  07_segment_balanced_neutral_calibration: bd1.16_bs1.0_ns1.0_nd1.0_nm1.0, selected=True, weighted15=2.74472, reason=accepted
+  08_hybrid_matrix_static_prior: beta0.0_td0.2_gd0.0_tt1.2_tg1.2, selected=True, weighted15=2.74155, reason=accepted
+  09_risk_objective_v4: risk_penalties_on, selected=True, weighted15=2.74155, reason=accepted
+  10_conditional_score_reranker: oof_loss_reranker, selected=False, weighted15=2.74741, reason=awmae_regression
+
+Risk objective breakdown
+  fold_instability_penalty: 0.024498
+  outcome_gap_penalty: 0.000000
+  exact_drop_penalty: 0.000000
+  distribution_guard_penalty: 0.000000
+  high_score_tail_penalty: 0.000000
+  score_collapse_penalty: 0.000000
+  balanced_elo_penalty: 0.313954
+  neutral_segment_penalty: 0.145508
+  yearly_distribution_penalty: 0.000945
+
+Final test distribution
+{
+  "rows": 42422,
+  "win_share": 0.43185139785960114,
+  "draw_share": 0.13379850077789826,
+  "loss_share": 0.4343501013625006,
+  "avg_team_goals": 1.2510489840177266,
+  "avg_opp_goals": 1.252321908443732,
+  "avg_total_goals": 2.503370892461459,
+  "score_ge5_share": 0.023501956531988118,
+  "common_low_score_share": 0.834543397293857,
+  "top1_score_share": 0.20055631511951347,
+  "top3_score_share": 0.5342746688039225,
+  "top5_score_share": 0.7279713356277403,
+  "top_10_scores": [
+    {
+      "score": "1-2",
+      "count": 8508,
+      "share": 0.20055631511951347
+    },
+    {
+      "score": "2-1",
+      "count": 8481,
+      "share": 0.19991985290651076
+    },
+    {
+      "score": "1-1",
+      "count": 5676,
+      "share": 0.13379850077789826
+    },
+    {
+      "score": "0-1",
+      "count": 4184,
+      "share": 0.09862807034086088
+    },
+    {
+      "score": "1-0",
+      "count": 4033,
+      "share": 0.09506859648295696
+    },
+    {
+      "score": "2-0",
+      "count": 2285,
+      "share": 0.053863561359671866
+    },
+    {
+      "score": "0-2",
+      "count": 2236,
+      "share": 0.05270850030644477
+    },
+    {
+      "score": "3-0",
+      "count": 1721,
+      "share": 0.0405685729102824
+    },
+    {
+      "score": "0-3",
+      "count": 1707,
+      "share": 0.04023855546650323
+    },
+    {
+      "score": "0-4",
+      "count": 745,
+      "share": 0.017561642543963037
+    }
+  ]
+}
+
+Per-year test diagnostics 2011-2026
+  2011: rows=1532, top3=0.5346, draw=0.1691, ge5=0.0366, avg_total=2.520
+  2012: rows=2664, top3=0.5383, draw=0.1607, ge5=0.0184, avg_total=2.394
+  2013: rows=2446, top3=0.4828, draw=0.1729, ge5=0.0184, avg_total=2.265
+  2014: rows=2482, top3=0.5508, draw=0.1491, ge5=0.0193, avg_total=2.489
+  2015: rows=2914, top3=0.5213, draw=0.1421, ge5=0.0233, avg_total=2.456
+  2016: rows=2576, top3=0.5101, draw=0.1343, ge5=0.0206, avg_total=2.418
+  2017: rows=2602, top3=0.5265, draw=0.1507, ge5=0.0234, avg_total=2.445
+  2018: rows=2960, top3=0.5632, draw=0.1301, ge5=0.0294, avg_total=2.569
+  2019: rows=3452, top3=0.5255, draw=0.1196, ge5=0.0307, avg_total=2.584
+  2020: rows=1134, top3=0.4894, draw=0.1349, ge5=0.0335, avg_total=2.453
+  2021: rows=3084, top3=0.4938, draw=0.1423, ge5=0.0204, avg_total=2.422
+  2022: rows=3162, top3=0.5620, draw=0.1281, ge5=0.0237, avg_total=2.577
+  2023: rows=3576, top3=0.5688, draw=0.1046, ge5=0.0266, avg_total=2.652
+  2024: rows=3634, top3=0.5289, draw=0.1103, ge5=0.0162, avg_total=2.502
+  2025: rows=3638, top3=0.5635, draw=0.1053, ge5=0.0209, avg_total=2.623
+  2026: rows=566, top3=0.5636, draw=0.1608, ge5=0.0318, avg_total=2.567
+
+Segment diagnostics
+  major_tournament: rows=5796, weighted15=2.68114, outcome=0.6334, exact=0.1099
+  friendly: rows=6106, weighted15=2.71312, outcome=0.5092, exact=0.1140
+  qualifier: rows=8086, weighted15=2.76297, outcome=0.6484, exact=0.1036
+  neutral: rows=6596, weighted15=3.14426, outcome=0.5905, exact=0.0958
+  non_neutral: rows=14248, weighted15=2.72576, outcome=0.6016, exact=0.1096
+  balanced_elo: rows=3784, weighted15=3.28679, outcome=0.4596, exact=0.1105
+  strong_favorite: rows=4036, weighted15=2.54121, outcome=0.7527, exact=0.1083
+
+Benchmark comparison vs friend
+  candidate weighted15: 3.15935
+  friend weighted15   : 2.99883
+  candidate outcome   : 0.5754
+  friend outcome      : 0.5946
+
+WARNING: final decision is TARGET_NOT_REACHED; target power 1.5 <= 3.00 may not be reached.
+
+Done in 12.2 minutes. Wrote dataset\submission_risk_v4_static_drift.csv with 42422 rows.

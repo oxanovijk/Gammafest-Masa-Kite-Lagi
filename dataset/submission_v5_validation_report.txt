@@ -1,0 +1,180 @@
+V5 Static Pipeline Validation Report
+========================================
+Mode: weighted_blend
+Models: xgb_poisson, sk_hgb_poisson, cat_poisson, lgb_poisson
+Validation weighted AW-MAE: 2.29494
+Outcome accuracy: 59.23%
+Exact score accuracy: 12.35%
+Goal-difference accuracy: 24.64%
+Max goals candidates selected: 0-9
+Draw boost: 1.0392410632924793
+Low-score boost: 0.9557106294169351
+Outcome blend alpha: 0.07378533145996943
+Static submission consensus applied: True
+Consensus rule: 40577 rows from V4, 1845 rows from V3
+
+Validation Prediction Distribution
+{
+  "rows": 9453,
+  "wld_distribution": {
+    "loss": 3961,
+    "draw": 1539,
+    "win": 3953
+  },
+  "avg_pred_team_goals": 1.2341055749497514,
+  "avg_pred_opp_goals": 1.2385486089072253,
+  "pct_predictions_score_ge_5": 0.016185337987940335,
+  "top_10_common_scores": [
+    {
+      "score": "1-2",
+      "count": 2195
+    },
+    {
+      "score": "2-1",
+      "count": 1967
+    },
+    {
+      "score": "1-1",
+      "count": 1539
+    },
+    {
+      "score": "1-0",
+      "count": 991
+    },
+    {
+      "score": "0-1",
+      "count": 788
+    },
+    {
+      "score": "2-0",
+      "count": 456
+    },
+    {
+      "score": "0-2",
+      "count": 394
+    },
+    {
+      "score": "3-0",
+      "count": 241
+    },
+    {
+      "score": "0-3",
+      "count": 238
+    },
+    {
+      "score": "1-3",
+      "count": 112
+    }
+  ],
+  "outcome_accuracy": 0.5922987411403787,
+  "exact_accuracy": 0.12345287210409393,
+  "goal_diff_accuracy": 0.2463768115942029,
+  "lambda_percentiles_team": {
+    "1": 0.36273142071553804,
+    "5": 0.5077489201323503,
+    "25": 0.8280007051151488,
+    "50": 1.194125158935053,
+    "75": 1.6867434986191558,
+    "95": 2.9963187265534144,
+    "99": 4.574679399113436
+  },
+  "lambda_percentiles_opp": {
+    "1": 0.32776237805561753,
+    "5": 0.48290274811570355,
+    "25": 0.8153439058192138,
+    "50": 1.1938085731237684,
+    "75": 1.7200002113261792,
+    "95": 3.0592789257172623,
+    "99": 4.6917100287426265
+  }
+}
+
+Final Test Prediction Distribution
+{
+  "rows": 42422,
+  "wld_distribution": {
+    "loss": 18921,
+    "draw": 4813,
+    "win": 18688
+  },
+  "avg_pred_team_goals": 1.2736551789166,
+  "avg_pred_opp_goals": 1.259912309650653,
+  "pct_predictions_score_ge_5": 0.030220168780349818,
+  "top_10_common_scores": [
+    {
+      "score": "1-2",
+      "count": 8593
+    },
+    {
+      "score": "2-1",
+      "count": 8204
+    },
+    {
+      "score": "1-1",
+      "count": 4813
+    },
+    {
+      "score": "0-1",
+      "count": 4414
+    },
+    {
+      "score": "1-0",
+      "count": 4308
+    },
+    {
+      "score": "0-2",
+      "count": 2321
+    },
+    {
+      "score": "2-0",
+      "count": 2272
+    },
+    {
+      "score": "3-0",
+      "count": 1599
+    },
+    {
+      "score": "0-3",
+      "count": 1428
+    },
+    {
+      "score": "4-0",
+      "count": 819
+    }
+  ],
+  "lambda_percentiles_team": {
+    "1": 0.32021906132736694,
+    "5": 0.44530153067071215,
+    "25": 0.8016999267263045,
+    "50": 1.2080518334045052,
+    "75": 1.792675375553166,
+    "95": 3.193027619905247,
+    "99": 4.703510536558064
+  },
+  "lambda_percentiles_opp": {
+    "1": 0.29718240629799997,
+    "5": 0.42880917615531833,
+    "25": 0.7881536456022787,
+    "50": 1.2048862468706538,
+    "75": 1.8182921846597164,
+    "95": 3.28398089749384,
+    "99": 4.9730406992211345
+  }
+}
+WARNING: More than 3% of final predictions have at least one side >= 5.
+
+Local Reporting Only
+V4 local AW-MAE: 2.54271
+V5 local AW-MAE: 2.54124
+V5 local outcome accuracy: 58.62%
+Delta V5 - V4: -0.00147
+
+Experiment Table
+V4 baseline: static XGB/HGB blend result available as submission_v4.csv.
+V5 CatBoost added: active.
+V5 split team/opp blend: implemented and evaluated.
+V5 Optuna AW-MAE objective: active.
+V5 stacking meta-model: implemented and compared against weighted blend.
+V5 draw/low-score calibration: implemented and tuned on validation.
+V5 outcome classifier: active; alpha selected by validation.
+V5 custom objective: implemented as optional, disabled for this run.
