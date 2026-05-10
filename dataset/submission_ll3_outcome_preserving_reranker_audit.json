@@ -1,0 +1,22 @@
+{
+  "strategy": "ll3_outcome_preserving_scoreline_reranker",
+  "strategy_id": "LL3",
+  "output_path": "dataset\\submission_ll3_outcome_preserving_reranker.csv",
+  "base_path": "file-ozan\\submission_v29.csv",
+  "leakage_policy": "train-derived stats only; test_ground_truth used only in evaluation",
+  "actions": [
+    "outcome_preserving_rerank"
+  ],
+  "action_counts": {
+    "outcome_preserving_rerank": 53
+  },
+  "pair_policy": {},
+  "metrics": {
+    "exact_accuracy": 0.10612418084955919,
+    "outcome_accuracy": 0.5871481778322568,
+    "goal_diff_accuracy": 0.21807081231436518,
+    "awmae": 2.5265408707688826
+  },
+  "pair_inconsistent_matches": 3156,
+  "rule_count": 1
+}

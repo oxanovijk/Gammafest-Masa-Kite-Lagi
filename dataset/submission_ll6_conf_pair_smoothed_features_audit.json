@@ -1,0 +1,22 @@
+{
+  "strategy": "ll6_conf_pair_smoothed_feature_calibration",
+  "strategy_id": "LL6",
+  "output_path": "dataset\\submission_ll6_conf_pair_smoothed_features.csv",
+  "base_path": "file-ozan\\submission_v29.csv",
+  "leakage_policy": "train-derived stats only; test_ground_truth used only in evaluation",
+  "actions": [
+    "conf_pair_smoothed"
+  ],
+  "action_counts": {
+    "conf_pair_smoothed": 0
+  },
+  "pair_policy": {},
+  "metrics": {
+    "exact_accuracy": 0.10610060817500354,
+    "outcome_accuracy": 0.5871481778322568,
+    "goal_diff_accuracy": 0.21800009429069822,
+    "awmae": 2.525609235311921
+  },
+  "pair_inconsistent_matches": 3159,
+  "rule_count": 1
+}

@@ -1,0 +1,22 @@
+{
+  "strategy": "ll5_women_tail_era_shrink",
+  "strategy_id": "LL5",
+  "output_path": "dataset\\submission_ll5_women_tail_era_shrink.csv",
+  "base_path": "file-ozan\\submission_v29.csv",
+  "leakage_policy": "train-derived stats only; test_ground_truth used only in evaluation",
+  "actions": [
+    "women_tail_era_shrink"
+  ],
+  "action_counts": {
+    "women_tail_era_shrink": 1351
+  },
+  "pair_policy": {},
+  "metrics": {
+    "exact_accuracy": 0.10600631747678091,
+    "outcome_accuracy": 0.5871481778322568,
+    "goal_diff_accuracy": 0.2179529489415869,
+    "awmae": 2.527711761300863
+  },
+  "pair_inconsistent_matches": 3081,
+  "rule_count": 1
+}

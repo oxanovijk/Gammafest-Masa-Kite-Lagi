@@ -1,0 +1,22 @@
+{
+  "strategy": "ll1_train_archetype_prior",
+  "strategy_id": "LL1",
+  "output_path": "dataset\\submission_ll1_train_archetype_prior.csv",
+  "base_path": "file-ozan\\submission_v29.csv",
+  "leakage_policy": "train-derived stats only; test_ground_truth used only in evaluation",
+  "actions": [
+    "archetype_prior"
+  ],
+  "action_counts": {
+    "archetype_prior": 115
+  },
+  "pair_policy": {},
+  "metrics": {
+    "exact_accuracy": 0.10635990759511574,
+    "outcome_accuracy": 0.5871481778322568,
+    "goal_diff_accuracy": 0.21840082975814437,
+    "awmae": 2.5255344970654656
+  },
+  "pair_inconsistent_matches": 3149,
+  "rule_count": 1
+}

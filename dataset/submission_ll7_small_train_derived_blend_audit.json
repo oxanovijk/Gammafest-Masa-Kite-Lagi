@@ -1,0 +1,26 @@
+{
+  "strategy": "ll7_small_train_derived_blend",
+  "strategy_id": "LL7",
+  "output_path": "dataset\\submission_ll7_small_train_derived_blend.csv",
+  "base_path": "file-ozan\\submission_v29.csv",
+  "leakage_policy": "train-derived stats only; test_ground_truth used only in evaluation",
+  "actions": [
+    "small_expert_blend"
+  ],
+  "action_counts": {
+    "small_expert_blend": 532
+  },
+  "pair_policy": {
+    "policy": "prefer_draw",
+    "pair_inconsistent_before_policy": 3159,
+    "pair_inconsistent_after_policy": 0
+  },
+  "metrics": {
+    "exact_accuracy": 0.10650134364244968,
+    "outcome_accuracy": 0.5844137475838008,
+    "goal_diff_accuracy": 0.2224789024562727,
+    "awmae": 2.5201236190241465
+  },
+  "pair_inconsistent_matches": 0,
+  "rule_count": 2
+}

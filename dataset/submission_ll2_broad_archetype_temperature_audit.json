@@ -1,0 +1,22 @@
+{
+  "strategy": "ll2_broad_archetype_temperature_proxy",
+  "strategy_id": "LL2",
+  "output_path": "dataset\\submission_ll2_broad_archetype_temperature.csv",
+  "base_path": "file-ozan\\submission_v29.csv",
+  "leakage_policy": "train-derived stats only; test_ground_truth used only in evaluation",
+  "actions": [
+    "temperature_proxy"
+  ],
+  "action_counts": {
+    "temperature_proxy": 376
+  },
+  "pair_policy": {},
+  "metrics": {
+    "exact_accuracy": 0.10605346282589223,
+    "outcome_accuracy": 0.5871481778322568,
+    "goal_diff_accuracy": 0.21800009429069822,
+    "awmae": 2.526500483814641
+  },
+  "pair_inconsistent_matches": 3129,
+  "rule_count": 1
+}
